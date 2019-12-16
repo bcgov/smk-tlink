@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "name": "smk-tlink",
+  "title": "Translink Route Planner",
+  "license": "APSL-2.0",
+  "homepage": "https://bcgov.github.io/smk-tlink/",
+  "repository": "github:bcgov/smk-tlink",
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "^1.0.0",
+    "grunt-zip": "^0.17.1"
+  }
+}
