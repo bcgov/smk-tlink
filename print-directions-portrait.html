@@ -220,10 +220,12 @@
                                     v-bind:class="[ d.waypointStyle || '' ]"
                                 >
                                     <span class="index">#{{ d.index }}</span>
-                                    <span class="instruction">{{ d.instruction }}</span>
-                                    <span class="metric"
-                                        v-if="d.distance"
-                                    >for {{ d.distance }} ({{ d.time }})</span>
+
+                                    <span class="instruction" 
+                                    >{{ instructionTypePrefix( d.type, d.heading ) }} {{ d.name || d.text }}</span>
+                                    <span class="metric" v-if="d.distanceUnit"
+                                    >for {{ d.distanceUnit.value | dimensionalNumber( 1, d.distanceUnit.unit, 3 ) }} ({{ d.time | formatTime }})</span>
+
                                 </div>
                             </div>
 
@@ -236,7 +238,7 @@
     </body>
 
     <script>
-        var maxDirs = 10, thresholdFactor = 6, smallThresholdFactor = 10
+        var maxDirs = 10, thresholdFactor = 6, smallThresholdFactor = 20
 
         include.option( { baseUrl: ( new URL( '../..', document.location ) ).toString() } )
         include( 'vue', 'vue-config', 'turf' ).then( function () {
@@ -427,7 +429,25 @@
                 }
 
             } )
-            
+
+            var instructionType = {
+                START:              [ 'trip_origin', null,      'Go on' ],
+                START_NORTH:        [ 'trip_origin', null,      'Head north on' ],
+                START_SOUTH:        [ 'trip_origin', null,      'Head south on' ],
+                START_EAST:         [ 'trip_origin', null,      'Head east on' ],
+                START_WEST:         [ 'trip_origin', null,      'Head west on' ],
+                CONTINUE:           [ 'expand_more', null,      'Continue onto'  ],
+                TURN_LEFT:          [ 'arrow_back', null,       'Turn left onto' ],
+                TURN_SLIGHT_LEFT:   [ 'undo', null,             'Slight turn left onto' ],
+                TURN_SHARP_LEFT:    [ 'directions', true,       'Sharp turn left onto' ],
+                TURN_RIGHT:         [ 'arrow_forward', null,    'Turn right onto' ],
+                TURN_SLIGHT_RIGHT:  [ 'undo', true,             'Slight turn right onto' ],
+                TURN_SHARP_RIGHT:   [ 'directions', null,       'Sharp turn right onto' ],
+                FERRY:              [ 'directions_boat', null,  'Board' ],
+                STOPOVER:           [ 'pause', null,            '' ],
+                FINISH:             [ 'stop', null,             '' ],
+            }
+
             new Vue( {
                 el: '#vue-root',
                 template: '#template',
@@ -437,6 +457,13 @@
                         window.print()
                         window.parent.postMessage( 'printed', '*' )
                     } )
+                },
+                methods: {
+                    instructionTypePrefix: function ( type, heading ) {
+                        if ( heading ) type = type + '_' + heading
+                        if ( !instructionType[ type ] ) return ''
+                        return instructionType[ type ][ 2 ] || ''
+                    }
                 }
             } )
         } )
