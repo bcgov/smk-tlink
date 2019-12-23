@@ -8,53 +8,53 @@
         <link rel="stylesheet" type="text/css" href="node_modules/dialog-polyfill/dist/dialog-polyfill.css"/>
         <script src="node_modules/dialog-polyfill/dist/dialog-polyfill.js"></script>
 
-        <!-- SMK BOOTSTRAP - - - - - - - -->
         <script src="lib/smk.js"></script>
-        <!-- - - - - - - - - - - - - - - -->
 
         <style>
             body.hide {
                 visibility: hidden;
             }
         </style>
+
+        <link rel="stylesheet" type="text/css" href="article.css"/>       
+        <link rel="stylesheet" type="text/css" href="splash-dialog.css"/>       
     </head>
     
     <body class="hide">
-        <link rel="stylesheet" type="text/css" href="splash-dialog.css"/>       
-        <dialog id="disclaimer" data-type="flatScrollingDialog" class="DisclaimerDialog CVRPDisclaimerDialogTheme useAllInfinitely">
-            <form method="dialog">
-                <header>
-                    <h1><span class="translink-logo"></span>Commercial Vehicle Route Planner</h1>
-                </header>
-
-                <section class="CopyMain flexColumn flexContainer">
-                    <p>
-                        This website (the Commercial Vehicle Route Planner (CVRP) Beta) and all of the information it contains are provided "as is" without warranty of any kind, whether express or implied. 
-                        All implied warranties, including, without limitation, implied warranties of merchantability, fitness for a particular purpose, and non-infringement, are hereby expressly disclaimed.
-                    </p>
-                    <p>
-                        Links and references to any other websites are provided for information only and listing shall not be taken as endorsement of any kind. 
-                        TransLink is not responsible for the content or reliability of the linked websites and does not endorse the content, products, services or views expressed within them.
-                    </p>
-                    <p>
-                        Under no circumstances will TransLink be liable to any person or business entity for any direct, indirect, special, incidental, consequential, or other damage based on any use of this website or any other website to which this site is linked, including, without limitation, any lost profits, business interruption, or loss of programs or information, even if TransLink has been specifically advised.
-                    </p>
-                    <img src="images/no_mobile_icon.svg" class="warningImage" alt="Graphic warning to discourage using mobile devices">
-                    <p>
-                        <em>This website is intended to be used as a pre-trip planner. Do not operate a vehicle while using this website.</em>
-                    </p>
-                    <p>
-                        By proceeding, you are accepting this disclaimer, and you are indicating you understand the limitations of this website.
-                    </p>
-                </section>
-                <menu>
-                    <button type="submit" class="acceptButton">I accept the disclaimer and understand the limitations of this website</button>
-                </menu>
-            </form>
-        </dialog>
-
-        <link rel="stylesheet" type="text/css" href="article.css"/>       
         <article>
+            <dialog id="disclaimer">
+                <form method="dialog">
+                    <header>
+                        <h1><span class="translink-logo"></span>Commercial Vehicle Route Planner</h1>
+                    </header>
+
+                    <section>
+                        <p>
+                            This website (the Commercial Vehicle Route Planner (CVRP) Beta) and all of the information it contains are provided "as is" without warranty of any kind, whether express or implied. 
+                            All implied warranties, including, without limitation, implied warranties of merchantability, fitness for a particular purpose, and non-infringement, are hereby expressly disclaimed.
+                        </p>
+                        <p>
+                            Links and references to any other websites are provided for information only and listing shall not be taken as endorsement of any kind. 
+                            TransLink is not responsible for the content or reliability of the linked websites and does not endorse the content, products, services or views expressed within them.
+                        </p>
+                        <p>
+                            Under no circumstances will TransLink be liable to any person or business entity for any direct, indirect, special, incidental, consequential, or other damage based on any use of this website or any other website to which this site is linked, including, without limitation, any lost profits, business interruption, or loss of programs or information, even if TransLink has been specifically advised.
+                        </p>
+                        <img src="images/no_mobile_icon.svg" class="warningImage" alt="Graphic warning to discourage using mobile devices">
+                        <p>
+                            <em>This website is intended to be used as a pre-trip planner. Do not operate a vehicle while using this website.</em>
+                        </p>
+                        <p>
+                            By proceeding, you are accepting this disclaimer, and you are indicating you understand the limitations of this website.
+                        </p>
+                    </section>
+
+                    <menu>
+                        <button type="submit" class="acceptButton">I accept the disclaimer and understand the limitations of this website</button>
+                    </menu>
+                </form>
+            </dialog>
+
             <header>
                 <h1><span class="translink-logo"></span>Commercial Vehicle Route Planner</h1>
                 <h2>Beta
