@@ -1,10 +1,4 @@
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px;
-
     border-bottom:      2px solid #fcba19;
     background-color: #036;
     font-family:        Helvetica,Arial,sans-serif;
@@ -14,6 +8,7 @@ header {
     flex-direction:     column;
     justify-content:    center;
     align-items:        center;
+    padding: 5px;
 }
 
 header .translink-logo {
@@ -60,4 +55,12 @@ header h2 .date {
     bottom: 0;
     margin: 0;
     padding: 0;
+}
+
+article > header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;  
 }
