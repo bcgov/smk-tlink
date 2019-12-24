@@ -1,23 +1,24 @@
 dialog {
     top: 50%;
-    max-width: calc(100vw - 10rem);
-    max-height: calc(100% - 10rem);
+    max-width: 90vw;
+    max-height: 90vh;
     transform: translateY(-50%);
     font-family:"Meta W01 Medium", Arial, Helvetica, sans-serif;
     z-index: 3;
     padding: 0;
     border: none;      
+    min-height: auto;
+    display:        flex;
 }
 
 dialog form {
-    display:flex;
+    display:        flex;
     flex-direction: column;
+    min-height: auto;
 }
 
 dialog header {
-    position: static;
-    font-size:18px;
-    padding: 5px;
+    flex-shrink: 0;
 }
 
 dialog section {
@@ -26,7 +27,6 @@ dialog section {
     display:flex;
     flex-direction:column;
     font-size:18px;
-    line-height:20.7px;
     overflow-y: auto;
 }
 
@@ -46,7 +46,7 @@ dialog menu {
     padding: 5px;
     display: flex;
     justify-content: center;
-    height: 100px;
+    flex-shrink: 0;
 }
 
 dialog menu button {
@@ -77,16 +77,4 @@ dialog + .backdrop {
     right: 0px;
     bottom: 0px;
     left: 0px;
-}
-
-/**************************************************/
-
-.device-mobile dialog {
-    max-width: calc(100vw - 2rem);
-    max-height: calc(100% - 2rem);
-    height: 100%;
-}
-
-.device-mobile dialog form {
-    height: 100%;
 }
