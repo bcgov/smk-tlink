@@ -58,8 +58,8 @@
             <header>
                 <h1><span class="translink-logo"></span>Commercial Vehicle Route Planner</h1>
                 <h2>Beta
-                    <span class="version">ver: 0.0.2</span>
-                    <span class="date">built: 2019-12-20</span>
+                    <span class="version">ver: 0.0.5</span>
+                    <span class="date">built: 2020-01-08</span>
                 </h2>
             </header>
 
@@ -189,7 +189,7 @@
             SMK.HANDLER.set( 'bespoke', 'activated', function ( smk, tool, el ) {
                 var fm = document.importNode( document.getElementById( 'feedback' ).content, true )
                 $( fm ).find( 'form' )
-                    .append( $( '<input type="hidden">' ).prop( 'name', 'version' ).val( '0.0.2' ) )
+                    .append( $( '<input type="hidden">' ).prop( 'name', 'version' ).val( '0.0.5' ) )
                     // .append( $( '<input type="hidden">' ).prop( 'name', 'lastCommit' ).val( SMK.BUILD.lastCommit ) )
                     // .append( $( '<input type="hidden">' ).prop( 'name', 'commit' ).val( SMK.BUILD.commit ) )
                     // .append( $( '<input type="hidden">' ).prop( 'name', 'branch' ).val( SMK.BUILD.branch ) )
@@ -293,6 +293,25 @@
                 tool.truckWeight = config.weight
                 // console.log( vehicle, axle )
             }
+
+            SMK.HANDLER.set( 'directions', 'style-route', function ( segments ) {
+                segments.forEach( function ( s ) {
+                    s.style = { 
+                        color:  '#FF0000',
+                        weight: 7, 
+                        opacity:0.5,
+                        lineCap:'butt'
+                    }
+
+                    if ( s.properties.isFerry ) {
+                        s.style.dashArray = '10,10'
+                    }
+                    
+                    if ( s.properties.isTruckRoute ) {
+                        s.style.color = "#0000FF"
+                    }
+                } )
+            } )
 
             $( 'body' ).removeClass( 'hide' )
         } )
