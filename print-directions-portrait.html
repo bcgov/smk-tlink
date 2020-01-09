@@ -366,35 +366,87 @@
                     } 
                 }
 
-                p.map.create = function ( el ) {
-                    var ls = turf.lineString( p.route )
-                    var bb = turf.bbox( ls )
-                    var diag = turf.distance( [ bb[0], bb[1] ], [ bb[2], bb[3] ] )
-                    
+                p.map.create = function ( el ) {                    
                     var c = JSON.parse( mapCfg )
+
                     c.layers.unshift( {
                         type: 'vector',
                         id: 'route-base',
                         isVisible: true,
                         dataUrl: 'data:application/json,' + JSON.stringify( turf.lineString( dirs.route ) ),
                         style: {
-                            strokeColor: "gray",
-                            strokeWidth: 12,
+                            strokeColor: "green",
+                            strokeWidth: 4,
                             strokeOpacity: 0.6
                         }
                     } )
 
-                    c.layers.unshift( {
-                        type: 'vector',
-                        id: 'route-segment',
-                        isVisible: true,
-                        dataUrl: 'data:application/json,' + JSON.stringify( turf.lineString( p.route ) ),
-                        style: {
-                            strokeColor: "green",
-                            strokeWidth: 8,
-                            strokeOpacity: 0.8
+                    if ( dirs.segments ) {
+                        // debugger
+                        var pageRouteStart = p.directions[ 0 ].route.start
+                        var pageRouteEnd = p.directions[ p.directions.length - 1 ].route.end //- 1
+                        // console.log( 'page range', pageRouteStart, pageRouteEnd )
+                        for ( var si = 0; si < dirs.segments.features.length; si += 1 ) {
+                            var seg = JSON.parse( JSON.stringify( dirs.segments.features[ si ] ) )
+                            var segSt = seg.properties.index
+                            var segEn = segSt + seg.geometry.coordinates.length - 1
+
+                            var pageOffSt = Math.max( 0, pageRouteStart - segSt )
+                            var pageOffEn = Math.min( seg.geometry.coordinates.length, pageRouteEnd - segSt + 1 )
+
+                            // console.log( 'segment', segSt, segEn, seg.properties )
+
+                            if ( pageRouteStart >= segEn ) {
+                                // console.log( 'skip' )
+                                continue
+                            }
+                            else if ( pageRouteEnd <= segSt ) {
+                                // console.log( 'last' )
+                                break
+                            }
+                            else if ( pageRouteStart >= segSt ) {
+                                // console.log( 'overlap start', pageOffSt, pageOffEn )
+                                seg.geometry.coordinates = seg.geometry.coordinates.slice( pageOffSt, pageOffEn )
+                            }
+                            else if ( pageRouteStart < segSt && pageRouteEnd > segEn ) {
+                                // console.log( 'overlap middle')
+                            }
+                            else if ( pageRouteEnd > segSt ) {
+                                // console.log( 'overlap end', pageOffSt, pageOffEn)
+                                seg.geometry.coordinates = seg.geometry.coordinates.slice( pageOffSt, pageOffEn )
+                            }
+                            else {
+                                // dont know
+                                debugger
+                            }
+
+                            var st = seg.style
+                            delete seg.style
+                            st.strokeWidth = 10
+
+                            c.layers.unshift( {
+                                type: 'vector',
+                                id: 'route-segment-' + si,
+                                isVisible: true,
+                                dataUrl: 'data:application/json,' + JSON.stringify( seg ),
+                                style: st
+                            } )
+
                         }
-                    } )
+                    }
+                    else {
+                        c.layers.unshift( {
+                            type: 'vector',
+                            id: 'route-segment',
+                            isVisible: true,
+                            dataUrl: 'data:application/json,' + JSON.stringify( turf.lineString( p.route ) ),
+                            style: {
+                                strokeColor: "green",
+                                strokeWidth: 8,
+                                strokeOpacity: 0.8
+                            }
+                        } )
+                    }
 
                     p.directions.reverse().forEach( function ( d, i ) {
                         c.layers.unshift( {
@@ -416,6 +468,10 @@
                         } )
                     } )
                     p.directions.reverse()
+
+                    var ls = turf.lineString( p.route )
+                    var bb = turf.bbox( ls )
+                    var diag = turf.distance( [ bb[0], bb[1] ], [ bb[2], bb[3] ] )
 
                     c.viewer.location = {
                         extent: turf.bbox( turf.buffer( turf.bboxPolygon( bb ), diag * 0.1 ) )
