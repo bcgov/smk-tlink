@@ -215,20 +215,13 @@
                 } )
             } )
 
-            var customVehicle = {
-                id: 'custom',
-                title: 'Custom',
-                image: '',
-                configs: []
-            }
-
             SMK.HANDLER.set( 'directions-options', 'activated', function ( smk, tool, el ) {
                 Vue.nextTick( function () {
                     var vm = new Vue( {
                         template: '#truck-selection',
                         el: el,
                         data: {
-                            vehicleTypes: JSON.parse( JSON.stringify( window.vehicleTypes.concat( customVehicle ) ) ),
+                            vehicleTypes: JSON.parse( JSON.stringify( window.vehicleTypes ) ), //.concat( customVehicle ) ) ),
                             vehicleIndex: null,
                             configIndex: null,
                         },
