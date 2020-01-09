@@ -6,6 +6,7 @@ window.vehicleTypes.push( {
     title: 'Straight Truck',
     configs: [
         {
+            default: true,
             axles: 2,
             height: 4.15,
             width: 2.6,
@@ -27,7 +28,6 @@ window.vehicleTypes.push( {
             weight: 34000
         },
         {
-            default: true,
             axles: 5,
             height: 4.15,
             width: 2.6,
@@ -184,7 +184,7 @@ window.vehicleTypes.push( {
             axles: 7,
             height: 4.15,
             width: 2.6,
-            length: 23,
+            length: 23.5,
             weight: 55300
         },
         {
@@ -401,11 +401,11 @@ window.vehicleTypes.push( {
     configs: [
         {
             default: true,
-            axles: 6,
-            height: 4.15,
-            width: 2.6,
-            length: 23,
-            weight: 63500
+            axles: 8,
+            height: 4.16,
+            width: 2.61,
+            length: 27.51,
+            weight: 63501
         }
     ]
 } )
