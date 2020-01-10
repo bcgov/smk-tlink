@@ -93,6 +93,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                flex-basis: 100%;
             }
 
             section.left-side {
@@ -190,12 +191,37 @@
 
         <template id="template">
             <div id="route-pages">
+                <article>
+                    <header>
+                        <img src="https://tlweblibs.translink.ca/TransLink-logo-white.svg" alt="TransLink Logo" class="siteLogo">
+                        <div class="header-title">Truck Route Planner Beta</div>
+                        <div class="build-info"></div>
+                    </header>
+                        
+                    <div class="page">
+                        <section>
+                            <div class="waypoints">
+                                <div class="waypoint"
+                                    v-for="w in waypoints"
+                                    v-bind:class="[ w.style || '' ]"
+                                >{{ w.label }} at <span class="address">{{ w.fullAddress }}</span></div>
+                            </div>
+
+                            <div class="smk-map-frame"
+                                v-content="overview"
+                            ></div>
+
+                            <div class="page-number">Page 1 of {{ pages.length + 1 }}</div>
+                        </section>
+                    </div>
+                </article>            
+
                 <article
                     v-for="page in pages"
                 >
                     <header>
                         <img src="https://tlweblibs.translink.ca/TransLink-logo-white.svg" alt="TransLink Logo" class="siteLogo">
-                        <div class="header-title">Vehicle Route - Commercial Vehicle Route Planner Beta</div>
+                        <div class="header-title">Truck Route Planner Beta</div>
                         <div class="build-info"></div>
                     </header>
                         
@@ -229,7 +255,7 @@
                                 </div>
                             </div>
 
-                            <div class="page-number">Page {{ page.index }} of {{ pages.length }}</div>
+                            <div class="page-number">Page {{ page.index + 1 }} of {{ pages.length + 1 }}</div>
                         </section>
                     </div>
                 </article>            
@@ -347,6 +373,7 @@
 
             var model = {
                 waypoints: dirs.waypoints,
+                overview: {},
                 pages: dirPages.map( function ( dp, i ) {
                     return {
                         index: i + 1,
@@ -354,6 +381,72 @@
                         directions: dp,
                         map: {}
                     }
+                } )
+            }
+
+            model.overview.create = function ( el ) {                    
+                var c = JSON.parse( mapCfg )
+
+                if ( dirs.segments ) {
+                    for ( var si = 0; si < dirs.segments.features.length; si += 1 ) {
+                        var seg = JSON.parse( JSON.stringify( dirs.segments.features[ si ] ) )
+
+                        var st = seg.style
+                        delete seg.style
+                        st.strokeWidth = 10
+
+                        c.layers.unshift( {
+                            type: 'vector',
+                            id: 'route-segment-' + si,
+                            isVisible: true,
+                            dataUrl: 'data:application/json,' + JSON.stringify( seg ),
+                            style: st
+                        } )
+                    }
+                }
+
+                c.layers.unshift( {
+                    type: 'vector',
+                    id: 'start',
+                    isVisible: true,
+                    dataUrl: 'data:application/json,' + JSON.stringify( turf.point( [ dirs.waypoints[0].longitude, dirs.waypoints[0].latitude ] ) ),
+                    tooltip: {
+                        title: 'Start',
+                    },
+                    style: {
+                        strokeColor: "green",
+                        strokeWidth: 8,
+                        strokeOpacity: 0.8
+                    }
+                } )
+
+                c.layers.unshift( {
+                    type: 'vector',
+                    id: 'finish',
+                    isVisible: true,
+                    dataUrl: 'data:application/json,' + JSON.stringify( turf.point( [ dirs.waypoints[ dirs.waypoints.length - 1 ].longitude, dirs.waypoints[ dirs.waypoints.length - 1 ].latitude ] ) ),
+                    tooltip: {
+                        title: 'Finish',
+                    },
+                    style: {
+                        strokeColor: "red",
+                        strokeWidth: 8,
+                        strokeOpacity: 0.8
+                    }
+                } )
+
+                var ls = turf.lineString( dirs.route )
+                var bb = turf.bbox( ls )
+                var diag = turf.distance( [ bb[0], bb[1] ], [ bb[2], bb[3] ] )
+
+                c.viewer.location = {
+                    extent: turf.bbox( turf.buffer( turf.bboxPolygon( bb ), diag * 0.1 ) )
+                }
+
+                return SMK.INIT( {
+                    'smk-id':           'overview',
+                    'smk-container-sel': el,
+                    'smk-config':       [ c, 'hide-tool=all', 'show-tool=scale' ]
                 } )
             }
 
@@ -375,9 +468,9 @@
                         isVisible: true,
                         dataUrl: 'data:application/json,' + JSON.stringify( turf.lineString( dirs.route ) ),
                         style: {
-                            strokeColor: "green",
+                            strokeColor: "yellow",
                             strokeWidth: 4,
-                            strokeOpacity: 0.6
+                            strokeOpacity: 1
                         }
                     } )
 
