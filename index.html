@@ -189,14 +189,7 @@
             SMK.HANDLER.set( 'bespoke', 'initialized', function ( smk ) {} )
 
             SMK.HANDLER.set( 'bespoke', 'activated', function ( smk, tool, el ) {
-                var fm = document.importNode( document.getElementById( 'feedback' ).content, true )
-                $( fm ).find( 'form' )
-                    .append( $( '<input type="hidden">' ).prop( 'name', 'version' ).val( '0.0.6' ) )
-                    // .append( $( '<input type="hidden">' ).prop( 'name', 'lastCommit' ).val( SMK.BUILD.lastCommit ) )
-                    // .append( $( '<input type="hidden">' ).prop( 'name', 'commit' ).val( SMK.BUILD.commit ) )
-                    // .append( $( '<input type="hidden">' ).prop( 'name', 'branch' ).val( SMK.BUILD.branch ) )
-
-                el.appendChild( fm )               
+                el.appendChild( document.importNode( document.getElementById( 'feedback' ).content, true ) )
             } )
 
             SMK.HANDLER.set( 'directions-route', 'print', function ( smk, tool, key ) {
@@ -223,7 +216,7 @@
                         template: '#truck-selection',
                         el: el,
                         data: {
-                            vehicleTypes: JSON.parse( JSON.stringify( window.vehicleTypes ) ), //.concat( customVehicle ) ) ),
+                            vehicleTypes: JSON.parse( JSON.stringify( window.vehicleTypes ) ), 
                             vehicleIndex: null,
                             configIndex: null,
                         },
