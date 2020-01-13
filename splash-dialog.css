@@ -1,6 +1,6 @@
 dialog {
     top: 50%;
-    max-width: 90vw;
+    max-width: 57em;
     max-height: 90vh;
     transform: translateY(-50%);
     font-family:"Meta W01 Medium", Arial, Helvetica, sans-serif;
