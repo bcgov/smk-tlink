@@ -11,7 +11,7 @@
 
         <style>
             @page {
-                margin: 1em;
+                margin: auto;
                 size: letter portrait;
             }
 
@@ -35,8 +35,8 @@
 
             article {
                 position: relative;
-                height: 10in;
-                width: 7.5in;
+                height: 9in;
+                width: 7in;
                 margin: auto;
 
                 display: flex;
@@ -475,7 +475,6 @@
                     } )
 
                     if ( dirs.segments ) {
-                        // debugger
                         var pageRouteStart = p.directions[ 0 ].route.start
                         var pageRouteEnd = p.directions[ p.directions.length - 1 ].route.end //- 1
                         // console.log( 'page range', pageRouteStart, pageRouteEnd )
