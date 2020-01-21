@@ -1,10 +1,33 @@
+( function () {
+
 window.vehicleTypes = []
 
-window.vehicleTypes.push( {
-    id: 'straight',
-    image: 'images/trucks/truck-straight.svg',
-    title: 'Straight Truck',
-    configs: [
+function addVehicleType( opt, configs ) {
+    opt = Object.assign( {
+        id: '[missing]',
+        image: '[missing]',
+        title: '[missing]',
+    }, opt )
+
+    opt.configs = configs
+
+    var last = JSON.parse( JSON.stringify( configs[ configs.length - 1] ) )
+    last.axles = ( last.axles + 1 ) + '+'
+    last.default = false
+    last.oversize = true
+
+    opt.configs.push( last )
+
+    window.vehicleTypes.push( opt )
+} 
+
+addVehicleType( 
+    {
+        id: 'straight',
+        image: 'images/trucks/truck-straight.svg',
+        title: 'Straight Truck',
+    },
+    [
         {
             default: true,
             axles: 2,
@@ -35,13 +58,15 @@ window.vehicleTypes.push( {
             weight: 39200
         }
     ]
-} )
+)
 
-window.vehicleTypes.push( {
-    id: 'straight-pony-trailer',
-    image: 'images/trucks/truck-straight-pony-trailer.svg',
-    title: 'Straight Truck and Pony Trailer',
-    configs: [
+addVehicleType( 
+    {
+        id: 'straight-pony-trailer',
+        image: 'images/trucks/truck-straight-pony-trailer.svg',
+        title: 'Straight Truck and Pony Trailer',
+    },
+    [
         {
             axles: 3,
             height: 4.15,
@@ -86,13 +111,15 @@ window.vehicleTypes.push( {
             weight: 60200
         }
     ]
-} )
+)
 
-window.vehicleTypes.push( {
-    id: 'straight-full-trailer',
-    image: 'images/trucks/truck-straight-full-trailer.svg',
-    title: 'Straight Truck and Full Trailer',
-    configs: [
+addVehicleType( 
+    {
+        id: 'straight-full-trailer',
+        image: 'images/trucks/truck-straight-full-trailer.svg',
+        title: 'Straight Truck and Full Trailer',
+    },
+    [
         {
             axles: 4,
             height: 4.15,
@@ -144,13 +171,15 @@ window.vehicleTypes.push( {
             weight: 63500
         }
     ]
-} )
+)
 
-window.vehicleTypes.push( {
-    id: 'tractor-semi-trailer',
-    image: 'images/trucks/truck-tractor-semi-trailer.png',
-    title: 'Tractor Semi-Trailer',
-    configs: [
+addVehicleType( 
+    {
+        id: 'tractor-semi-trailer',
+        image: 'images/trucks/truck-tractor-semi-trailer.png',
+        title: 'Tractor Semi-Trailer',
+    },
+    [
         {
             axles: 3,
             height: 4.15,
@@ -195,13 +224,15 @@ window.vehicleTypes.push( {
             weight: 57100
         }
     ]
-} )
+)
 
-window.vehicleTypes.push( {
-    id: 'a-train',
-    image: 'images/trucks/truck-a-train.svg',
-    title: 'A Train (Double Trailer)',
-    configs: [
+addVehicleType( 
+    {
+        id: 'a-train',
+        image: 'images/trucks/truck-a-train.svg',
+        title: 'A Train (Double Trailer)',
+    },
+    [
         {
             axles: 5,
             height: 4.15,
@@ -253,13 +284,15 @@ window.vehicleTypes.push( {
             weight: 53500
         }
     ]
-} )
+)
 
-window.vehicleTypes.push( {
-    id: 'b-train',
-    image: 'images/trucks/truck-b-train.svg',
-    title: 'B Train (Double Trailer)',
-    configs: [
+addVehicleType( 
+    {
+        id: 'b-train',
+        image: 'images/trucks/truck-b-train.svg',
+        title: 'B Train (Double Trailer)',
+    },
+    [
         {
             axles: 4,
             height: 4.15,
@@ -311,13 +344,15 @@ window.vehicleTypes.push( {
             weight: 63500
         }
     ]
-} )
+)
 
-window.vehicleTypes.push( {
-    id: 'c-train',
-    image: 'images/trucks/truck-c-train.svg',
-    title: 'C Train (Double Trailer)',
-    configs: [
+addVehicleType( 
+    {
+        id: 'c-train',
+        image: 'images/trucks/truck-c-train.svg',
+        title: 'C Train (Double Trailer)',
+    },
+    [
         {
             axles: 5,
             height: 4.15,
@@ -369,13 +404,15 @@ window.vehicleTypes.push( {
             weight: 60500
         }
     ]
-} )
+)
 
-window.vehicleTypes.push( {
-    id: 'bus',
-    image: 'images/trucks/truck-bus.svg',
-    title: 'Bus',
-    configs: [
+addVehicleType( 
+    {
+        id: 'bus',
+        image: 'images/trucks/truck-bus.svg',
+        title: 'Bus',
+    },
+    [
         {
             axles: 2,
             height: 4.15,
@@ -392,13 +429,15 @@ window.vehicleTypes.push( {
             weight: 24250
         }
     ]
-} )
+)
 
-window.vehicleTypes.push( {
-    id: 'other',
-    image: 'images/trucks/truck-other.svg',
-    title: 'Other',
-    configs: [
+addVehicleType( 
+    {
+        id: 'other',
+        image: 'images/trucks/truck-other.svg',
+        title: 'Other',
+    },
+    [
         {
             default: true,
             axles: 8,
@@ -408,4 +447,6 @@ window.vehicleTypes.push( {
             weight: 63501
         }
     ]
-} )
+)
+
+} )()
