@@ -19,20 +19,6 @@
                 font-family: Helvetica,Arial,sans-serif;
             }
 
-            @media print {
-                header {
-                    background-color: white;
-                }
-
-                header .header-title {
-                    color: black;                    
-                }
-
-                header img {
-                    filter: invert(1);                    
-                }
-            }
-
             article {
                 position: relative;
                 height: 8.5in;
@@ -182,6 +168,20 @@
             .page-number {
                 text-align: right;
             }
+
+            @media print {
+                header {
+                    background-color: white;
+                }
+
+                header .header-title {
+                    color: black;                    
+                }
+
+                header img {
+                    filter: invert(1);                    
+                }
+            }
         </style>
 
     </head>
@@ -243,7 +243,7 @@
                             <div class="directions">
                                 <div class="direction"
                                     v-for="d in page.directions"
-                                    v-bind:class="[ d.waypointStyle || '' ]"
+                                    v-bind:class="[ d.waypointStyle || '', d.segmentStyle || '' ]"
                                 >
                                     <span class="index">#{{ d.index }}</span>
 
@@ -400,7 +400,8 @@
                             id: 'route-segment-' + si,
                             isVisible: true,
                             dataUrl: 'data:application/json,' + JSON.stringify( seg ),
-                            style: st
+                            style: st,
+                            legends: false
                         } )
                     }
                 }
@@ -417,7 +418,8 @@
                         strokeColor: "green",
                         strokeWidth: 8,
                         strokeOpacity: 0.8
-                    }
+                    },
+                    legends: false
                 } )
 
                 c.layers.unshift( {
@@ -432,7 +434,8 @@
                         strokeColor: "red",
                         strokeWidth: 8,
                         strokeOpacity: 0.8
-                    }
+                    },
+                    legends: false
                 } )
 
                 var ls = turf.lineString( dirs.route )
@@ -440,13 +443,13 @@
                 var diag = turf.distance( [ bb[0], bb[1] ], [ bb[2], bb[3] ] )
 
                 c.viewer.location = {
-                    extent: turf.bbox( turf.buffer( turf.bboxPolygon( bb ), diag * 0.1 ) )
+                    extent: turf.bbox( turf.buffer( turf.bboxPolygon( bb ), diag * 0.1 ) ).concat( [ [ 0, 0 ], [ 200, 0 ] ] )
                 }
 
                 return SMK.INIT( {
                     'smk-id':           'overview',
                     'smk-container-sel': el,
-                    'smk-config':       [ c, 'hide-tool=all', 'show-tool=scale' ]
+                    'smk-config':       [ c, 'hide-tool=all', 'show-tool=scale,legend' ]
                 } )
             }
 
@@ -471,7 +474,8 @@
                             strokeColor: "yellow",
                             strokeWidth: 4,
                             strokeOpacity: 1
-                        }
+                        },
+                        legends: false
                     } )
 
                     if ( dirs.segments ) {
@@ -521,7 +525,8 @@
                                 id: 'route-segment-' + si,
                                 isVisible: true,
                                 dataUrl: 'data:application/json,' + JSON.stringify( seg ),
-                                style: st
+                                style: st,
+                                legends: false
                             } )
 
                         }
@@ -536,7 +541,8 @@
                                 strokeColor: "green",
                                 strokeWidth: 8,
                                 strokeOpacity: 0.8
-                            }
+                            },
+                            legends: false
                         } )
                     }
 
@@ -556,7 +562,8 @@
                                 strokeColor: "red",
                                 strokeWidth: 8,
                                 strokeOpacity: 0.8
-                            }
+                            },
+                            legends: false
                         } )
                     } )
                     p.directions.reverse()
