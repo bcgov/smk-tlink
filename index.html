@@ -58,8 +58,8 @@
             <header>
                 <h1><span class="translink-logo"></span>Truck Route Planner</h1>
                 <h2>Beta
-                    <span class="version">version: 0.0.9</span>
-                    <span class="date">built: 2020-01-20</span>
+                    <span class="version">version: 0.0.10</span>
+                    <span class="date">built: 2020-01-28</span>
                 </h2>
             </header>
 
@@ -75,7 +75,7 @@
                 enctype="text/plain"
                 action="mailto:ipme@Translink.ca?subject=TRP Beta App Feedback"
             >
-                <input type="hidden" name="version" value="0.0.9">
+                <input type="hidden" name="version" value="0.0.10">
                 
                 <label>To submit feedback on this app please fill out our survey:
                     <a target="_blank" href="https://translink.checkbox.ca/CVRP-Feedback.aspx">TRP-Feedback</a>
@@ -281,30 +281,36 @@
 
             SMK.HANDLER.set( 'directions', 'style-route', function ( segments ) {
                 segments.forEach( function ( s ) {
-                    s.style = { 
-                        strokeWidth:    7, 
-                        strokeOpacity:  0.7,
-                        strokeCap:      'butt',
-                    }
-
-                    if ( ( !s.properties.isTruckRoute && !s.properties.isFerry ) || ( s.properties.isTruckRoute && s.properties.isOversize ) ) {
-                        s.style.strokeColor     = "#FF0000"
-                        s.style.strokeDashes    = '30,10'
-                    }
-                    else if ( ( !s.properties.isTruckRoute && s.properties.isFerry ) || ( s.properties.isTruckRoute && s.properties.isFerry && s.properties.isOversize ) ) {
-                        s.style.strokeColor     = "#FF0000"
-                        s.style.strokeDashes    = '10,10'
-                    }
-                    else if ( ( s.properties.isTruckRoute && !s.properties.isFerry && !s.properties.isOversize ) ) {
-                        s.style.strokeColor     = "#0000FF"
-                    }
-                    else if ( ( s.properties.isTruckRoute && s.properties.isFerry && !s.properties.isOversize ) ) {
-                        s.style.strokeColor     = "#0000FF"
-                        s.style.strokeDashes    = '10,10'
+                    if ( s.properties.isTruckRoute && !s.properties.isOversize && !s.properties.isFerry ) {
+                        s.properties[ '@layer' ] = '@potential'
                     }
                     else {
-                        debugger
+                        s.properties[ '@layer' ] = '@unverified'
                     }
+                    // s.style = { 
+                    //     strokeWidth:    7, 
+                    //     strokeOpacity:  0.7,
+                    //     strokeCap:      'butt',
+                    // }
+
+                    // if ( ( !s.properties.isTruckRoute && !s.properties.isFerry ) || ( s.properties.isTruckRoute && s.properties.isOversize ) ) {
+                    //     s.style.strokeColor     = "#FF0000"
+                    //     s.style.strokeDashes    = '30,10'
+                    // }
+                    // else if ( ( !s.properties.isTruckRoute && s.properties.isFerry ) || ( s.properties.isTruckRoute && s.properties.isFerry && s.properties.isOversize ) ) {
+                    //     s.style.strokeColor     = "#FF0000"
+                    //     s.style.strokeDashes    = '10,10'
+                    // }
+                    // else if ( ( s.properties.isTruckRoute && !s.properties.isFerry && !s.properties.isOversize ) ) {
+                    //     s.style.strokeColor     = "#0000FF"
+                    // }
+                    // else if ( ( s.properties.isTruckRoute && s.properties.isFerry && !s.properties.isOversize ) ) {
+                    //     s.style.strokeColor     = "#0000FF"
+                    //     s.style.strokeDashes    = '10,10'
+                    // }
+                    // else {
+                    //     debugger
+                    // }
                 } )
             } )
 
