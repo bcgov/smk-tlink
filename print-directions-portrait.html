@@ -393,7 +393,7 @@
 
                         var st = seg.style
                         delete seg.style
-                        st.strokeWidth = 10
+                        // st.strokeWidth = 10
 
                         c.layers.unshift( {
                             type: 'vector',
@@ -449,7 +449,7 @@
                 return SMK.INIT( {
                     'smk-id':           'overview',
                     'smk-container-sel': el,
-                    'smk-config':       [ c, 'hide-tool=all', 'show-tool=scale,legend' ]
+                    'smk-config':       [ c, 'hide-tool=all', 'show-tool=scale,legend,directions' ]
                 } )
             }
 
@@ -518,7 +518,7 @@
 
                             var st = seg.style
                             delete seg.style
-                            st.strokeWidth = 10
+                            // st.strokeWidth = 10
 
                             c.layers.unshift( {
                                 type: 'vector',
