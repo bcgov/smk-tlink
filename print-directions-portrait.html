@@ -273,7 +273,9 @@
 
             var dirs = cfg.etc.directions
             delete cfg.etc
+            var directions = cfg.tools.find( function ( t ) { return t.id == 'directions' } )
             delete cfg.tools
+            cfg.tools = [ directions ]
             var mapCfg = JSON.stringify( cfg )
 
             var wl = dirs.waypoints.length
