@@ -130,15 +130,22 @@
                 margin: 0.5em 0;
                 padding: 2px;
                 border-radius: 4px;
-                padding-left: 30px;
 
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
             }
 
+            .direction .prefix {
+                flex-basis: 100%;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
             .direction .index {
-                margin-left: -30px;
+                position: absolute;
+                left: 0px;
                 font-size: 12px;
                 font-weight: bold;
                 padding: 0px;
@@ -146,16 +153,18 @@
                 background-color: #fff;
                 border: 1px solid #fff;
                 box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-                flex-basis: 1%;
                 height: 1%;
             }
 
             .direction .instruction {
                 flex-basis: 100%;
+                position: relative;
+                padding-left: 25px;
             }
 
             .direction .metric {
                 font-size: 12px;
+                padding-left: 25px;
             }
 
             #route-pages .smk-map-frame .smk-route-tooltip {
@@ -244,11 +253,11 @@
                                 <div class="direction"
                                     v-for="d in page.directions"
                                     v-bind:class="[ d.waypointStyle || '', d.segmentStyle || '' ]"
-                                >
-                                    <span class="index">#{{ d.index }}</span>
+                                >                                   
+                                    <div class="prefix" v-if="d.prefix">{{ d.prefix }}</div>
 
                                     <span class="instruction" 
-                                    >{{ instructionTypePrefix( d.type, d.heading ) }} {{ d.name || d.text }}</span>
+                                    ><span class="index">#{{ d.index }}</span>{{ instructionTypePrefix( d.type, d.heading ) }} {{ d.name || d.text }}</span>
                                     <span class="metric" v-if="d.distanceUnit"
                                     >for {{ d.distanceUnit.value | dimensionalNumber( 1, d.distanceUnit.unit, 3 ) }} ({{ d.time | formatTime }})</span>
 
@@ -293,16 +302,92 @@
                 return ( d0 * d0 + d1 * d1 ) <= ( min * min )
             }
 
+            function getDirections( pt ) {
+                return dirs.directions.filter( function ( dr ) {
+                    return close( dr.point, pt, 0.0001 )
+                } )
+            }
+
+            var routeAttrs = []
+            for ( var i = 0; i < dirs.route.length; i += 1 ) routeAttrs[ i ] = {
+                segs: {},
+            }
+
+            dirs.segments.features.forEach( function ( sg, i ) {
+                for ( var j = 0; j < sg.geometry.coordinates.length; j += 1 ) {
+                    var ri = j + sg.properties.index
+                    routeAttrs[ ri ].segs[ i ] = true
+
+                    routeAttrs[ ri ].dirs = getDirections( dirs.route[ ri ] )                    
+                }
+            } )
+
+            // segments that start/end on a node without a direction are a problem
+            var problems = routeAttrs.filter( function ( ra ) {
+                return Object.keys( ra.segs ).length > 1 && ra.dirs.length == 0
+            } )
+
+            if ( problems.length > 0 ) {
+                console.log( "found problems", problems )
+                debugger
+                // throw "found problems"
+            }
+
+            // dir.segments.forEach( function ( sg ) {
+            //     var dir = getDirection( sg.geometry.coordinates[ 0 ] )
+            //     if ( !dir ) 
+            //         newDirs.push( {
+            //             // waypointStyle
+            //             index: 99999,
+            //             type: 'CONTINUE',
+            //             name: 'start new segment',
+            //             point: JSON.parse( JSON.stringify( sg.geometry.coordinates[ 0 ] ) ),
+            //             // heading: 
+            //             // distanceUnit                        
+            //         } )                    
+            //     }
+            //     else {
+            //         newDirs.push( dir )
+            //     }
+            // } )
+
             function getWaypoint( pt ) {
                 return dirs.waypoints.find( function ( wp ) {
                     return close( pt, [ wp.longitude, wp.latitude ], 0.0001 )
                 } ) || {}
             }
 
+            // function getSegmentStart( pt ) {
+            //     return dirs.waypoints.find( function ( wp ) {
+            //         return close( pt, [ wp.longitude, wp.latitude ], 0.0001 )
+            //     } ) || {}
+            // }
+
+            function segmentPrefix( i ) {
+                var sg = dirs.segments.features[ i ].properties
+
+                if ( sg.isTruckRoute && !sg.isFerry && !sg.isOversize ) {
+                    return 'Starting Proposed Truck Route'
+                }
+                else if ( !sg.isTruckRoute && !sg.isFerry && !sg.isOversize ) {
+                    return 'Starting Unverified Route'
+                }
+                else if ( sg.isFerry ) {
+                    return 'Starting Ferry Trip (Unverified)'
+                }
+                else if ( sg.isOversize ) {
+                    return 'Starting Oversized Truck Route'
+                }
+                else {
+                    throw 'dont know how to handle'
+                }
+            }
+
             var spi = 0, pi = 0, prevDir
             dirs.directions.forEach( function ( d, i ) {
                 d.index = i + 1
                 d.waypointStyle = getWaypoint( d.point ).style
+                // d.segStart = getSegmentStart( d.point )
 
                 if ( !prevDir ) {
                     prevDir = d
@@ -319,6 +404,11 @@
                     dist: turf.distance( d.point, prevDir.point )
                 }
 
+                if ( Object.keys( routeAttrs[ spi ].segs ).length == 2 || spi == 0 ) {
+                    var sgi = Math.max.apply( Math, Object.keys( routeAttrs[ spi ].segs ) )
+                    prevDir.prefix = segmentPrefix( sgi )
+                }
+
                 spi = pi
                 prevDir = d
             } )
@@ -327,6 +417,7 @@
                 end: pi,
                 dist: 0
             }
+
 
             var dirPages = [], dirPage
             var targetDist
