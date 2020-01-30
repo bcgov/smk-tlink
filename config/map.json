@@ -149,7 +149,7 @@
     },
     {
       "type": "legend",
-      "enabled": true
+      "enabled": "desktop"
     }
   ]
 }
