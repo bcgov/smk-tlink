@@ -358,21 +358,6 @@
           "defaultSymbol": null,
           "uniqueValueInfos": [
             {
-              "value": "Federal Road with No Truck Travel Restrictions",
-              "symbol": {
-                "color": [
-                  230,
-                  230,
-                  0,
-                  255
-                ],
-                "width": 3,
-                "type": "esriSLS",
-                "style": "esriSLSSolid"
-              },
-              "label": "Federal Road with No Truck Travel Restrictions"
-            },
-            {
               "value": "Provincial Highway",
               "symbol": {
                 "color": [
@@ -416,6 +401,21 @@
                 "style": "esriSLSSolid"
               },
               "label": "Municipal Road with No Truck Travel Restriction"
+            },
+            {
+              "value": "Federal Road with No Truck Travel Restrictions",
+              "symbol": {
+                "color": [
+                  230,
+                  230,
+                  0,
+                  255
+                ],
+                "width": 3,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+              },
+              "label": "Federal Road with No Truck Travel Restrictions"
             }
           ]
         }
@@ -438,21 +438,6 @@
           "defaultSymbol": null,
           "uniqueValueInfos": [
             {
-              "value": "Federal Road with No Truck Travel Restrictions",
-              "symbol": {
-                "color": [
-                  230,
-                  230,
-                  0,
-                  255
-                ],
-                "width": 1.5,
-                "type": "esriSLS",
-                "style": "esriSLSSolid"
-              },
-              "label": "Federal Road with No Truck Travel Restrictions"
-            },
-            {
               "value": "Provincial Highway",
               "symbol": {
                 "color": [
@@ -496,6 +481,21 @@
                 "style": "esriSLSSolid"
               },
               "label": "Municipal Road with No Truck Travel Restriction"
+            },
+            {
+              "value": "Federal Road with No Truck Travel Restrictions",
+              "symbol": {
+                "color": [
+                  230,
+                  230,
+                  0,
+                  255
+                ],
+                "width": 1.5,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+              },
+              "label": "Federal Road with No Truck Travel Restrictions"
             }
           ]
         }
