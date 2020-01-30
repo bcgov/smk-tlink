@@ -121,6 +121,12 @@
                 font-weight: bold;
             }
 
+            .notifications {
+                margin: 1em;
+                font-style: italic;
+                font-size: 14px;
+            }
+
             .directions {
                 height: 100%;
                 padding: 0 0.5em;
@@ -246,6 +252,14 @@
                             <div class="smk-map-frame"
                                 v-content="page.map"
                             ></div>
+
+                            <div class="notifications" v-if="notifications && notifications.length > 0">
+                                <div class="notification" 
+                                    v-for="n in notifications"
+                                    v-bind:class="[ n.type ]"
+                                    v-html="n.message"
+                                ></div>
+                            </div>
                         </section>
         
                         <section class="right-side">
@@ -261,6 +275,12 @@
                                     <span class="metric" v-if="d.distanceUnit"
                                     >for {{ d.distanceUnit.value | dimensionalNumber( 1, d.distanceUnit.unit, 3 ) }} ({{ d.time | formatTime }})</span>
 
+                                    <div class="notifications" v-if="d.notifications">
+                                        <span class="notification" 
+                                            v-for="n in d.notifications"
+                                            v-bind:class="[ n.type ]"
+                                        >{{ n.message }}</span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -304,7 +324,7 @@
 
             function getDirections( pt ) {
                 return dirs.directions.filter( function ( dr ) {
-                    return close( dr.point, pt, 0.0001 )
+                    return close( dr.point, pt, 0.00001 )
                 } )
             }
 
@@ -319,6 +339,7 @@
                     routeAttrs[ ri ].segs[ i ] = true
 
                     routeAttrs[ ri ].dirs = getDirections( dirs.route[ ri ] )                    
+                    routeAttrs[ ri ].index = ri
                 }
             } )
 
@@ -328,40 +349,26 @@
             } )
 
             if ( problems.length > 0 ) {
-                console.log( "found problems", problems )
-                debugger
-                // throw "found problems"
-            }
+                problems.forEach( function ( p ) {
+                    p.dirs = [ {
+                        type: 'CONTINUE',
+                        point: JSON.parse( JSON.stringify( dirs.route[ p.index ] ) ),
+                    } ]
+                } )
 
-            // dir.segments.forEach( function ( sg ) {
-            //     var dir = getDirection( sg.geometry.coordinates[ 0 ] )
-            //     if ( !dir ) 
-            //         newDirs.push( {
-            //             // waypointStyle
-            //             index: 99999,
-            //             type: 'CONTINUE',
-            //             name: 'start new segment',
-            //             point: JSON.parse( JSON.stringify( sg.geometry.coordinates[ 0 ] ) ),
-            //             // heading: 
-            //             // distanceUnit                        
-            //         } )                    
-            //     }
-            //     else {
-            //         newDirs.push( dir )
-            //     }
-            // } )
+                dirs.directions = routeAttrs
+                    .map( function ( ra ) { return ra.dirs } )
+                    .filter( function ( d ) { return !!d } )
+                    .reduce( function ( acc, v ) { return acc.concat( v ) }, [] )
+
+                // debugger
+            }
 
             function getWaypoint( pt ) {
                 return dirs.waypoints.find( function ( wp ) {
-                    return close( pt, [ wp.longitude, wp.latitude ], 0.0001 )
+                    return close( pt, [ wp.longitude, wp.latitude ], 0.00001 )
                 } ) || {}
             }
-
-            // function getSegmentStart( pt ) {
-            //     return dirs.waypoints.find( function ( wp ) {
-            //         return close( pt, [ wp.longitude, wp.latitude ], 0.0001 )
-            //     } ) || {}
-            // }
 
             function segmentPrefix( i ) {
                 var sg = dirs.segments.features[ i ].properties
@@ -387,14 +394,15 @@
             dirs.directions.forEach( function ( d, i ) {
                 d.index = i + 1
                 d.waypointStyle = getWaypoint( d.point ).style
-                // d.segStart = getSegmentStart( d.point )
 
                 if ( !prevDir ) {
                     prevDir = d
                     return
                 }
 
-                while ( !close( dirs.route[ pi ], d.point, 0.0001 ) ) {
+                if ( !d.name ) d.name = prevDir.name
+
+                while ( !close( dirs.route[ pi ], d.point, 0.00001 ) ) {
                     pi += 1
                 }
                 
@@ -406,6 +414,7 @@
 
                 if ( Object.keys( routeAttrs[ spi ].segs ).length == 2 || spi == 0 ) {
                     var sgi = Math.max.apply( Math, Object.keys( routeAttrs[ spi ].segs ) )
+
                     prevDir.prefix = segmentPrefix( sgi )
                 }
 
@@ -417,7 +426,6 @@
                 end: pi,
                 dist: 0
             }
-
 
             var dirPages = [], dirPage
             var targetDist
@@ -466,6 +474,7 @@
 
             var model = {
                 waypoints: dirs.waypoints,
+                notifications: dirs.notifications,
                 overview: {},
                 pages: dirPages.map( function ( dp, i ) {
                     return {
@@ -486,7 +495,6 @@
 
                         var st = seg.style
                         delete seg.style
-                        // st.strokeWidth = 10
 
                         c.layers.unshift( {
                             type: 'vector',
@@ -611,7 +619,6 @@
 
                             var st = seg.style
                             delete seg.style
-                            // st.strokeWidth = 10
 
                             c.layers.unshift( {
                                 type: 'vector',
