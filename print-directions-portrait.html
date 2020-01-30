@@ -121,6 +121,12 @@
                 font-weight: bold;
             }
 
+            .notifications {
+                margin: 1em;
+                font-style: italic;
+                font-size: 14px;
+            }
+
             .directions {
                 height: 100%;
                 padding: 0 0.5em;
@@ -130,15 +136,22 @@
                 margin: 0.5em 0;
                 padding: 2px;
                 border-radius: 4px;
-                padding-left: 30px;
 
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
             }
 
+            .direction .prefix {
+                flex-basis: 100%;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
             .direction .index {
-                margin-left: -30px;
+                position: absolute;
+                left: 0px;
                 font-size: 12px;
                 font-weight: bold;
                 padding: 0px;
@@ -146,16 +159,18 @@
                 background-color: #fff;
                 border: 1px solid #fff;
                 box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-                flex-basis: 1%;
                 height: 1%;
             }
 
             .direction .instruction {
                 flex-basis: 100%;
+                position: relative;
+                padding-left: 25px;
             }
 
             .direction .metric {
                 font-size: 12px;
+                padding-left: 25px;
             }
 
             #route-pages .smk-map-frame .smk-route-tooltip {
@@ -237,6 +252,14 @@
                             <div class="smk-map-frame"
                                 v-content="page.map"
                             ></div>
+
+                            <div class="notifications" v-if="notifications && notifications.length > 0">
+                                <div class="notification" 
+                                    v-for="n in notifications"
+                                    v-bind:class="[ n.type ]"
+                                    v-html="n.message"
+                                ></div>
+                            </div>
                         </section>
         
                         <section class="right-side">
@@ -244,21 +267,54 @@
                                 <div class="direction"
                                     v-for="d in page.directions"
                                     v-bind:class="[ d.waypointStyle || '', d.segmentStyle || '' ]"
-                                >
-                                    <span class="index">#{{ d.index }}</span>
+                                >                                   
+                                    <div class="prefix" v-if="d.prefix">{{ d.prefix }}</div>
 
                                     <span class="instruction" 
-                                    >{{ instructionTypePrefix( d.type, d.heading ) }} {{ d.name || d.text }}</span>
+                                    ><span class="index">#{{ d.index }}</span>{{ instructionTypePrefix( d.type, d.heading ) }} {{ d.name || d.text }}</span>
                                     <span class="metric" v-if="d.distanceUnit"
                                     >for {{ d.distanceUnit.value | dimensionalNumber( 1, d.distanceUnit.unit, 3 ) }} ({{ d.time | formatTime }})</span>
 
+                                    <div class="notifications" v-if="d.notifications">
+                                        <span class="notification" 
+                                            v-for="n in d.notifications"
+                                            v-bind:class="[ n.type ]"
+                                        >{{ n.message }}</span>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="page-number">Page {{ page.index + 1 }} of {{ pages.length + 1 }}</div>
                         </section>
                     </div>
-                </article>            
+                </article>     
+
+                <article>
+                    <header>
+                        <img src="https://tlweblibs.translink.ca/TransLink-logo-white.svg" alt="TransLink Logo" class="siteLogo">
+                        <div class="header-title">Truck Route Planner Beta</div>
+                        <div class="build-info"></div>
+                    </header>
+
+                    <section>
+                        <p>
+                            This website (the Truck Route Planner (TRP) Beta) and all of the information it contains are provided "as is" without warranty of any kind, whether express or implied. 
+                            All implied warranties, including, without limitation, implied warranties of merchantability, fitness for a particular purpose, and non-infringement, are hereby expressly disclaimed.
+                        </p>
+                        <p>
+                            Links and references to any other websites are provided for information only and listing shall not be taken as endorsement of any kind. 
+                            TransLink is not responsible for the content or reliability of the linked websites and does not endorse the content, products, services or views expressed within them.
+                        </p>
+                        <p>
+                            Under no circumstances will TransLink be liable to any person or business entity for any direct, indirect, special, incidental, consequential, or other damage based on any use of this website or any other website to which this site is linked, including, without limitation, any lost profits, business interruption, or loss of programs or information, even if TransLink has been specifically advised.
+                        </p>
+                        <img src="images/no_mobile_icon.svg" style="width: 150px;" alt="Graphic warning to discourage using mobile devices">
+                        <p>
+                            <em>This website is intended to be used as a pre-trip planner. Do not operate a vehicle while using this website.</em>
+                        </p>
+                    </section>
+                </article>     
+
             </div>
         </template>
     </body>
@@ -293,10 +349,72 @@
                 return ( d0 * d0 + d1 * d1 ) <= ( min * min )
             }
 
+            function getDirections( pt ) {
+                return dirs.directions.filter( function ( dr ) {
+                    return close( dr.point, pt, 0.00001 )
+                } )
+            }
+
+            var routeAttrs = []
+            for ( var i = 0; i < dirs.route.length; i += 1 ) routeAttrs[ i ] = {
+                segs: {},
+            }
+
+            dirs.segments.features.forEach( function ( sg, i ) {
+                for ( var j = 0; j < sg.geometry.coordinates.length; j += 1 ) {
+                    var ri = j + sg.properties.index
+                    routeAttrs[ ri ].segs[ i ] = true
+
+                    routeAttrs[ ri ].dirs = getDirections( dirs.route[ ri ] )                    
+                    routeAttrs[ ri ].index = ri
+                }
+            } )
+
+            // segments that start/end on a node without a direction are a problem
+            var problems = routeAttrs.filter( function ( ra ) {
+                return Object.keys( ra.segs ).length > 1 && ra.dirs.length == 0
+            } )
+
+            if ( problems.length > 0 ) {
+                problems.forEach( function ( p ) {
+                    p.dirs = [ {
+                        type: 'CONTINUE',
+                        point: JSON.parse( JSON.stringify( dirs.route[ p.index ] ) ),
+                    } ]
+                } )
+
+                dirs.directions = routeAttrs
+                    .map( function ( ra ) { return ra.dirs } )
+                    .filter( function ( d ) { return !!d } )
+                    .reduce( function ( acc, v ) { return acc.concat( v ) }, [] )
+
+                // debugger
+            }
+
             function getWaypoint( pt ) {
                 return dirs.waypoints.find( function ( wp ) {
-                    return close( pt, [ wp.longitude, wp.latitude ], 0.0001 )
+                    return close( pt, [ wp.longitude, wp.latitude ], 0.00001 )
                 } ) || {}
+            }
+
+            function segmentPrefix( i ) {
+                var sg = dirs.segments.features[ i ].properties
+
+                if ( sg.isTruckRoute && !sg.isFerry && !sg.isOversize ) {
+                    return 'Starting Proposed Truck Route'
+                }
+                else if ( !sg.isTruckRoute && !sg.isFerry && !sg.isOversize ) {
+                    return 'Starting Unverified Route'
+                }
+                else if ( sg.isFerry ) {
+                    return 'Starting Ferry Trip (Unverified)'
+                }
+                else if ( sg.isOversize ) {
+                    return 'Starting Oversized Truck Route'
+                }
+                else {
+                    throw 'dont know how to handle'
+                }
             }
 
             var spi = 0, pi = 0, prevDir
@@ -309,7 +427,9 @@
                     return
                 }
 
-                while ( !close( dirs.route[ pi ], d.point, 0.0001 ) ) {
+                if ( !d.name ) d.name = prevDir.name
+
+                while ( !close( dirs.route[ pi ], d.point, 0.00001 ) ) {
                     pi += 1
                 }
                 
@@ -317,6 +437,12 @@
                     start: spi,
                     end: pi,
                     dist: turf.distance( d.point, prevDir.point )
+                }
+
+                if ( Object.keys( routeAttrs[ spi ].segs ).length == 2 || spi == 0 ) {
+                    var sgi = Math.max.apply( Math, Object.keys( routeAttrs[ spi ].segs ) )
+
+                    prevDir.prefix = segmentPrefix( sgi )
                 }
 
                 spi = pi
@@ -375,6 +501,7 @@
 
             var model = {
                 waypoints: dirs.waypoints,
+                notifications: dirs.notifications,
                 overview: {},
                 pages: dirPages.map( function ( dp, i ) {
                     return {
@@ -395,7 +522,6 @@
 
                         var st = seg.style
                         delete seg.style
-                        // st.strokeWidth = 10
 
                         c.layers.unshift( {
                             type: 'vector',
@@ -520,7 +646,6 @@
 
                             var st = seg.style
                             delete seg.style
-                            // st.strokeWidth = 10
 
                             c.layers.unshift( {
                                 type: 'vector',
