@@ -9,9 +9,7 @@
                     "isVisible": true,
                     "items": [
                         { "id": "truck-routes-high-zoom" },
-                        { "id": "truck-routes" },
-                        { "id": "designated-municipal-truck-routes-with-restrictions-high-zoom" },
-                        { "id": "designated-municipal-truck-route-with-restrictions" }
+                        { "id": "truck-routes" }
                     ]
                 },
                 {

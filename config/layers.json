@@ -292,65 +292,11 @@
 
     {
       "type": "esri-feature",
-      "id": "designated-municipal-truck-routes-with-restrictions-high-zoom",
-      "title": "Designated Municipal Truck Routes with Restrictions - High Zoom",
-      "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TruckRoutes_Dissolved_Reduced_FL_DEV/FeatureServer/0",
-      "scaleMin": 31281,
-      "where": "Type = 'Designated Municipal Truck Route with Restrictions'",
-      "drawingInfo": {
-        "renderer": {
-          "type": "simple",
-          "symbol": {
-            "color": [
-              163,
-              255,
-              115,
-              255
-            ],
-            "width": 3,
-            "type": "esriSLS",
-            "style": "esriSLSSolid"
-          },
-          "label": "Designated Municipal Truck Route"
-        }
-      }
-    },
-
-
-    {
-      "type": "esri-feature",
-      "id": "designated-municipal-truck-route-with-restrictions",
-      "title": "Designated Municipal Truck Route with Restrictions",
-      "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TruckRoutes_Dissolved_Reduced_FL_DEV/FeatureServer/0",
-      "scaleMax": 33416,
-      "where": "Type = 'Designated Municipal Truck Route with Restrictions'",
-      "drawingInfo": {
-        "renderer": {
-          "type": "simple",
-          "symbol": {
-            "color": [
-              163,
-              255,
-              115,
-              255
-            ],
-            "width": 1.5,
-            "type": "esriSLS",
-            "style": "esriSLSSolid"
-          },
-          "label": "Designated Municipal Truck Route"
-        }
-      }
-    },
-
-
-    {
-      "type": "esri-feature",
       "id": "truck-routes-high-zoom",
       "title": "Truck Routes - High Zoom",
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TruckRoutes_Dissolved_Reduced_FL_DEV/FeatureServer/0",
       "scaleMin": 28505,
-      "where": "AdviseType = 'N/A'",
+      "where": "AdviseType = 'N/A' or Type = 'Designated Municipal Truck Route with Restrictions'",
       "drawingInfo": {
         "renderer": {
           "type": "uniqueValue",
@@ -386,6 +332,21 @@
                 "style": "esriSLSSolid"
               },
               "label": "Designated Municipal Truck Route"
+            },
+            {
+              "value": "Designated Municipal Truck Route with Restrictions",
+              "symbol": {
+                "color": [
+                    163,
+                    255,
+                    115,
+                    255
+                ],
+                "width": 3,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+              },
+              "label": "Designated Municipal Truck Route with Restrictions"
             },
             {
               "value": "Municipal Road with No Truck Travel Restriction",
@@ -430,7 +391,7 @@
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TruckRoutes_Dissolved_Reduced_FL_DEV/FeatureServer/0",
       "scaleMin": 4622325,
       "scaleMax": 27437,
-      "where": "AdviseType = 'N/A'",
+      "where": "AdviseType = 'N/A' or Type = 'Designated Municipal Truck Route with Restrictions'",
       "drawingInfo": {
         "renderer": {
           "type": "uniqueValue",
@@ -466,6 +427,21 @@
                 "style": "esriSLSSolid"
               },
               "label": "Designated Municipal Truck Route"
+            },
+            {
+              "value": "Designated Municipal Truck Route with Restrictions",
+              "symbol": {
+                "color": [
+                    163,
+                    255,
+                    115,
+                    255
+                ],
+                "width": 1.5,
+                "type": "esriSLS",
+                "style": "esriSLSSolid"
+              },
+              "label": "Designated Municipal Truck Route with Restrictions"
             },
             {
               "value": "Municipal Road with No Truck Travel Restriction",
