@@ -162,10 +162,22 @@
                 height: 1%;
             }
 
-            .direction .instruction {
+            .direction.isTruckRoute .instruction {
+                color: blue;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+            }
+
+            .direction .instruction, .direction.isOversize .instruction {
                 flex-basis: 100%;
                 position: relative;
                 padding-left: 25px;
+
+                color: red;
+                font-style: italic;
+                font-weight: normal;
+                font-size: 12px;
             }
 
             .direction .metric {
@@ -279,8 +291,9 @@
                             <div class="directions">
                                 <div class="direction"
                                     v-for="d in page.directions"
-                                    v-bind:class="[ d.waypointStyle || '', d.segmentStyle || '' ]"
-                                >                                   
+                                    v-bind:class="d.class"
+                                    v-bind:class="[ d.waypointStyle || '' ]"
+                                >                                  
                                     <div class="prefix" v-if="d.prefix">{{ d.prefix }}</div>
 
                                     <span class="instruction" 
@@ -360,12 +373,12 @@
 
             var wl = dirs.waypoints.length
             dirs.waypoints[ 0 ].label = 'Start'
-            dirs.waypoints[ 0 ].style = 'start'
+            dirs.waypoints[ 0 ].class = 'start'
             for ( var i = 1; i < ( wl - 1 ); i += 1 ) {
                 dirs.waypoints[ i ].label = 'Waypoint #' + i
             }
             dirs.waypoints[ wl - 1 ].label = 'Finish'
-            dirs.waypoints[ wl - 1 ].style = 'finish'
+            dirs.waypoints[ wl - 1 ].class = 'finish'
 
             function close( p1, p2, min ) { 
                 var d0 = p1[0] - p2[0]
@@ -425,7 +438,7 @@
                 var sg = dirs.segments.features[ i ].properties
 
                 if ( sg.isTruckRoute && !sg.isFerry && !sg.isOversize ) {
-                    return 'Starting Proposed Truck Route'
+                    return 'Starting Potential Truck Route'
                 }
                 else if ( !sg.isTruckRoute && !sg.isFerry && !sg.isOversize ) {
                     return 'Starting Unverified Route'
@@ -441,10 +454,19 @@
                 }
             }
 
+            function segmentClasses( i ) {
+                var sg = dirs.segments.features[ i ].properties
+                return {
+                    isTruckRoute: !!sg.isTruckRoute,
+                    isFerry: !!sg.isFerry,
+                    isOversize: !!sg.isOversize,
+                }
+            }
+
             var spi = 0, pi = 0, prevDir
             dirs.directions.forEach( function ( d, i ) {
                 d.index = i + 1
-                d.waypointStyle = getWaypoint( d.point ).style
+                // d.waypointStyle = getWaypoint( d.point ).style
 
                 if ( !prevDir ) {
                     prevDir = d
@@ -463,10 +485,14 @@
                     dist: turf.distance( d.point, prevDir.point )
                 }
 
+                var maxSeg = Math.max.apply( Math, Object.keys( routeAttrs[ spi ].segs ) )
+                prevDir.class = segmentClasses( maxSeg )
+                prevDir.class[ getWaypoint( prevDir.point ).class || '' ] = true
+
                 if ( Object.keys( routeAttrs[ spi ].segs ).length == 2 || spi == 0 ) {
                     var sgi = Math.max.apply( Math, Object.keys( routeAttrs[ spi ].segs ) )
 
-                    prevDir.prefix = segmentPrefix( sgi )
+                    prevDir.prefix = segmentPrefix( maxSeg )
                 }
 
                 spi = pi
