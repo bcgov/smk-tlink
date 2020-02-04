@@ -293,10 +293,32 @@
     {
       "type": "esri-feature",
       "id": "truck-routes-high-zoom",
-      "title": "Truck Routes - High Zoom",
+      "title": "Truck Routes",
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TruckRoutes_Dissolved_Reduced_FL_DEV/FeatureServer/0",
       "scaleMin": 28505,
       "where": "AdviseType = 'N/A' or Type = 'Designated Municipal Truck Route with Restrictions'",
+      "attributes": [
+        {
+          "name": "City",
+          "title": "Municipality"
+        },
+        {
+          "name": "Type",
+          "title": "Truck Route Type"
+        },
+        {
+          "name": "Bylaw",
+          "title": "Bylaw Link",
+          "format": "asLink(this.feature.properties.Bylaw_Link)"
+        },
+        {
+          "name": "TruckDefWt",
+          "title": "Truck Weight Definition",
+          "format": "asUnit('kg')"
+        }
+      ],
+      "xxxpopupTemplate": "@wf-feature",
+      "titleAttribute": "Type",
       "drawingInfo": {
         "renderer": {
           "type": "uniqueValue",
@@ -392,6 +414,28 @@
       "scaleMin": 4622325,
       "scaleMax": 27437,
       "where": "AdviseType = 'N/A' or Type = 'Designated Municipal Truck Route with Restrictions'",
+      "attributes": [
+        {
+          "name": "City",
+          "title": "Municipality"
+        },
+        {
+          "name": "Type",
+          "title": "Truck Route Type"
+        },
+        {
+          "name": "Bylaw",
+          "title": "Bylaw Link",
+          "format": "asLink(this.feature.properties.Bylaw_Link)"
+        },
+        {
+          "name": "TruckDefWt",
+          "title": "Truck Weight Definition",
+          "format": "asUnit('kg')"
+        }
+      ],
+      "xxxpopupTemplate": "@wf-feature",
+      "titleAttribute": "Type",
       "drawingInfo": {
         "renderer": {
           "type": "uniqueValue",
