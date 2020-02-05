@@ -201,6 +201,22 @@
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TruckRoutes_Dissolved_Reduced_FL_DEV/FeatureServer/0",
       "scaleMin": 27437,
       "where": "(Type <> 'Designated Municipal Truck Route with Restrictions') AND (AdviseType = 'Restriction' OR AdviseType = 'Truck Travel Warning')",
+      "attributes": [
+        {
+          "name": "City",
+          "title": "Municipality"
+        },
+        {
+          "name": "AdviseType",
+          "title": "Advisory Type"
+        },
+        {
+          "name": "AdviseDesc",
+          "title": "Advisory Description"
+        }
+      ],
+      "xxxpopupTemplate": "@wf-feature",
+      "titleAttribute": "AdviseType",
       "drawingInfo": {
         "renderer": {
           "type": "uniqueValue",
@@ -249,6 +265,22 @@
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TruckRoutes_Dissolved_Reduced_FL_DEV/FeatureServer/0",
       "scaleMax": 28505,
       "where": "(Type <> 'Designated Municipal Truck Route with Restrictions') AND (AdviseType = 'Restriction' OR AdviseType = 'Truck Travel Warning')",
+      "attributes": [
+        {
+          "name": "City",
+          "title": "Municipality"
+        },
+        {
+          "name": "AdviseType",
+          "title": "Advisory Type"
+        },
+        {
+          "name": "AdviseDesc",
+          "title": "Advisory Description"
+        }
+      ],
+      "xxxpopupTemplate": "@wf-feature",
+      "titleAttribute": "AdviseType",
       "drawingInfo": {
         "renderer": {
           "type": "uniqueValue",
