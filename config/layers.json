@@ -213,6 +213,11 @@
         {
           "name": "AdviseDesc",
           "title": "Advisory Description"
+        },
+        {
+          "name": "Bylaw",
+          "title": "Bylaw Link",
+          "format": "asLink(this.feature.properties.Bylaw_Link)"
         }
       ],
       "xxxpopupTemplate": "@wf-feature",
@@ -277,6 +282,11 @@
         {
           "name": "AdviseDesc",
           "title": "Advisory Description"
+        },
+        {
+          "name": "Bylaw",
+          "title": "Bylaw Link",
+          "format": "asLink(this.feature.properties.Bylaw_Link)"
         }
       ],
       "xxxpopupTemplate": "@wf-feature",
