@@ -620,6 +620,22 @@
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TR_OH_Structures_FL_DEV_1/FeatureServer/0",
       "scaleMin": 207900,
       "where": "(HeightSign <> 'Y') AND (StructType = 'Advertisement Sign' OR StructType = 'Overhead Sign/Signal' OR StructType = 'Scale Sign')",
+      "attributes": [
+        {
+          "name": "Route",
+          "title": "Route"
+        },
+        {
+          "name": "StructType",
+          "title": "Structure Type"
+        },
+        {
+          "name": "Comments",
+          "title": "Notes"
+        }
+      ],
+      "xxxpopupTemplate": "@wf-feature",
+      "titleAttribute": "Route",
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -645,6 +661,31 @@
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TR_OH_Structures_FL_DEV_1/FeatureServer/0",
       "scaleMin": 198647,
       "where": "(HeightSign <> 'Y') AND (StructType <> 'Advertisement Sign' AND StructType <> 'Overhead Sign/Signal' AND StructType <> 'Scale Sign')",
+      "attributes": [
+        {
+          "name": "Route",
+          "title": "Route"
+        },
+        {
+          "name": "StructName",
+          "title": "Structure Name"
+        },
+        {
+          "name": "StructType",
+          "title": "Structure Type"
+        },
+        {
+          "xxname": "",
+          "title": "Street View",
+          "format": "asLink( this.feature.properties.StviewLink, 'Link' )"
+        },
+        {
+          "name": "Comments",
+          "title": "Notes"
+        }
+      ],
+      "xxxpopupTemplate": "@wf-feature",
+      "titleAttribute": "Route",
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -782,6 +823,34 @@
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/MetroVancouver_InspectionStations_FL_DEV/FeatureServer/0",
       "scaleMin": 178426,
       "where": null,
+      "attributes": [
+        {
+          "name": "Scale",
+          "title": "Scale"
+        },
+        {
+          "title": "Street View",
+          "format": "asLink( this.feature.properties.Streetview, 'Link' )"
+        },
+        {
+          "name": "Open_Hours",
+          "title": "Hours"
+        },
+        {
+          "value": "<%= this.feature.properties.Street_Num %> <%= this.feature.properties.Address_St %> <%= this.feature.properties.City %> <%= this.feature.properties.Post_Code %>",
+          "title": "Address"
+        },
+        {
+          "name": "Phone_Num",
+          "title": "Phone"
+        },
+        {
+          "name": "Fax_Number",
+          "title": "Fax "
+        }
+      ],
+      "xxxpopupTemplate": "@wf-feature",
+      "titleAttribute": "Scale",
       "drawingInfo": {
         "renderer": {
           "type": "simple",
