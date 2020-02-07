@@ -659,6 +659,71 @@
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TR_OH_Structures_FL_DEV_1/FeatureServer/0",
       "scaleMin": 198647,
       "where": "HeightSign = 'Y'",
+      "attributes": [
+        {
+          "name": "Route",
+          "title": "Route"
+        },
+        {
+          "name": "StructName",
+          "title": "Structure Name"
+        },
+        {
+          "name": "StructType",
+          "title": "Structure Type"
+        },
+        {
+          "xxname": "",
+          "title": "Street View",
+          "format": "asLink( this.feature.properties.StviewLink, 'Link' )"
+        },
+        {
+          "name": "HeightL1CO",
+          "title": "<%= this.feature.properties.HeightL1CO ? 'Lane 1 Height, ' + ( this.feature.properties.OCardinal || 'SB/WB' ): '' %>",
+          "format": "asUnit('m')"
+        },
+        {
+          "name": "HeightL1CP",
+          "title": "<%= this.feature.properties.HeightL1CP ? 'Lane 1 Height, ' + ( this.feature.properties.PCardinal || 'NB/EB' ): '' %>",
+          "format": "asUnit('m')"
+        },
+        {
+          "name": "HeightL2O",
+          "title": "<%= this.feature.properties.HeightL2O ? 'Lane 2 Height, ' + ( this.feature.properties.OCardinal || 'SB/WB' ): '' %>",
+          "format": "asUnit('m')"
+        },
+        {
+          "name": "HeightL2P",
+          "title": "<%= this.feature.properties.HeightL2P ? 'Lane 2 Height, ' + ( this.feature.properties.PCardinal || 'NB/EB' ): '' %>",
+          "format": "asUnit('m')"
+        },
+        {
+          "name": "HeightL3O",
+          "title": "<%= this.feature.properties.HeightL3O ? 'Lane 3 Height, ' + ( this.feature.properties.OCardinal || 'SB/WB' ): '' %>",
+          "format": "asUnit('m')"
+        },
+        {
+          "name": "HeightL3P",
+          "title": "<%= this.feature.properties.HeightL3P ? 'Lane 3 Height, ' + ( this.feature.properties.PCardinal || 'NB/EB' ): '' %>",
+          "format": "asUnit('m')"
+        },
+        {
+          "name": "HeightL4O",
+          "title": "<%= this.feature.properties.HeightL4O ? 'Lane 4 Height, ' + ( this.feature.properties.OCardinal || 'SB/WB' ): '' %>",
+          "format": "asUnit('m')"
+        },
+        {
+          "name": "HeightL4P",
+          "title": "<%= this.feature.properties.HeightL4P ? 'Lane 4 Height, ' + ( this.feature.properties.PCardinal || 'NB/EB' ): '' %>",
+          "format": "asUnit('m')"
+        },
+        {
+          "name": "Comments",
+          "title": "Notes"
+        }
+      ],
+      "xxxpopupTemplate": "@wf-feature",
+      "titleAttribute": "Route",
       "drawingInfo": {
         "renderer": {
           "type": "simple",
