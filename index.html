@@ -58,8 +58,8 @@
             <header>
                 <h1><span class="translink-logo"></span>Truck Route Planner</h1>
                 <h2>Beta
-                    <span class="version">version: 0.0.11</span>
-                    <span class="date">built: 2020-01-29</span>
+                    <span class="version">version: 0.0.12</span>
+                    <span class="date">built: 2020-02-10</span>
                 </h2>
             </header>
 
@@ -75,7 +75,7 @@
                 enctype="text/plain"
                 action="mailto:ipme@Translink.ca?subject=TRP Beta App Feedback"
             >
-                <input type="hidden" name="version" value="0.0.11">
+                <input type="hidden" name="version" value="0.0.12">
                 
                 <label>To submit feedback on this app please fill out our survey:
                     <a target="_blank" href="https://translink.checkbox.ca/CVRP-Feedback.aspx">TRP-Feedback</a>
@@ -193,7 +193,19 @@
             } )
 
             SMK.HANDLER.set( 'directions-route', 'print', function ( smk, tool, key ) {
-                document.getElementById( 'print-holder' ).src = 'print-directions-portrait.html?' + key
+                if ( false ) {
+                    window.open( 'print-directions-portrait.html?' + key, '', [
+                        "location=no",
+                        "menubar=no",
+                        "titlebar=no",
+                        "status=no",
+                        "toolbar=no",
+                        "scrollbars=yes",
+                    ].join( ',' ) );
+                }
+                else {
+                    document.getElementById( 'print-holder' ).src = 'print-directions-portrait.html?' + key
+                }
 
                 return new Promise( function ( res, rej ) {
                     var handler = function ( ev ) {
