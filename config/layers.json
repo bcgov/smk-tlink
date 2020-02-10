@@ -5,6 +5,13 @@
       "id": "metro-vancouver-boundary",
       "title": "Metro Vancouver Boundary",
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/MetroVancouverBoundary_FL_DEV_1/FeatureServer/0",
+      "attributes": [
+        {
+          "value": "This application is only intended to be used within the Metro Vancouver region.",
+          "title": "Note"
+        }
+      ],
+      "xxxtitleAttribute": "AdviseType",
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -29,6 +36,7 @@
       "id": "industrial-area",
       "title": "Industrial Area",
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/Land_Use_2011_FL_DEV/FeatureServer/0",
+      "isQueryable": false,
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -58,6 +66,7 @@
       "id": "downtown-vancouver",
       "title": "Downtown Vancouver",
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/Vancouver_Downtown_FL_DEV/FeatureServer/0",
+      "isQueryable": false,
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -89,6 +98,7 @@
       "isVisible": false,
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/MRN_FL_DEV/FeatureServer/0",
       "scaleMin": 31281,
+      "isQueryable": false,
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -118,6 +128,7 @@
       "scaleMin": 1155582,
       "scaleMax": 18897,
       "where": null,
+      "isQueryable": false,
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -146,6 +157,7 @@
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TruckRoutes_Dissolved_Reduced_FL_DEV/FeatureServer/0",
       "scaleMin": 31281,
       "where": "Type = 'Provincial Highway'",
+      "isQueryable": false,
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -174,6 +186,7 @@
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/TruckRoutes_Dissolved_Reduced_FL_DEV/FeatureServer/0",
       "scaleMax": 23167,
       "where": "Type = 'Provincial Highway'",
+      "isQueryable": false,
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -218,6 +231,10 @@
           "name": "Bylaw",
           "title": "Bylaw Link",
           "format": "asLink(this.feature.properties.Bylaw_Link)"
+        },
+        {
+          "name": "Notes",
+          "title": "Notes"
         }
       ],
       "xxxpopupTemplate": "@wf-feature",
@@ -287,6 +304,10 @@
           "name": "Bylaw",
           "title": "Bylaw Link",
           "format": "asLink(this.feature.properties.Bylaw_Link)"
+        },
+        {
+          "name": "Notes",
+          "title": "Notes"
         }
       ],
       "xxxpopupTemplate": "@wf-feature",
@@ -355,8 +376,12 @@
         },
         {
           "name": "TruckDefWt",
-          "title": "Truck Weight Definition",
+          "title": "Heavy Truck Definition (LGVW)",
           "format": "asUnit('kg')"
+        },
+        {
+          "name": "Notes",
+          "title": "Notes"
         }
       ],
       "xxxpopupTemplate": "@wf-feature",
@@ -472,8 +497,12 @@
         },
         {
           "name": "TruckDefWt",
-          "title": "Truck Weight Definition",
+          "title": "Heavy Truck Definition (LGVW)",
           "format": "asUnit('kg')"
+        },
+        {
+          "name": "Notes",
+          "title": "Notes"
         }
       ],
       "xxxpopupTemplate": "@wf-feature",
@@ -571,6 +600,29 @@
       "title": "Truck Parking",
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/MetroVancouver_TruckParking_FL_DEV/FeatureServer/0",
       "scaleMin": 189394,
+      "attributes": [
+        {
+          "name": "Name",
+          "title": "Name"
+        },
+        {
+          "value": "<%= this.feature.properties.Street_Num || '' %> <%= this.feature.properties.Street_Nam %> <%= this.feature.properties.City %>",
+          "title": "Address"
+        },
+        {
+          "name": "Phone_Numb",
+          "title": "Phone"
+        },
+        {
+          "title": "Street View",
+          "format": "asLink( this.feature.properties.Streetview, 'Link' )"
+        },
+        {
+          "name": "Notes",
+          "title": "Notes"
+        }
+      ],
+      "titleAttribute": "Name",
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -594,6 +646,26 @@
       "title": "Port of Vancouver Facilities / Terminals",
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/PMV_Facilities_FL_DEV_1/FeatureServer/0",
       "scaleMin": 207900,
+      "attributes": [
+        {
+          "name": "Facility",
+          "title": "Facility"
+        },
+        {
+          "name": "Category",
+          "title": "Category"
+        },
+        {
+          "title": "Data",
+          "format": "asLink( 'https://www.portvancouver.com/port-dashboard', 'Link' )"
+        },
+        {
+          "name": "Desc_",
+          "title": "Notes"
+        }
+      ],
+      "xxxpopupTemplate": "@wf-feature",
+      "titleAttribute": "Facility",
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -799,6 +871,30 @@
       "serviceUrl": "https://services7.arcgis.com/WpS8F3vcmrEQUG8m/arcgis/rest/services/MetroVancouver_Cardlocks_FL_DEV/FeatureServer/0",
       "scaleMin": 198647,
       "where": null,
+      "attributes": [
+        {
+          "name": "Alias",
+          "title": "Cardlock Name"
+        },
+        {
+          "name": "Company",
+          "title": "Company"
+        },
+        {
+          "title": "Street View",
+          "format": "asLink( this.feature.properties.Streetview, 'Link' )"
+        },
+        {
+          "value": "<%= this.feature.properties.Street_Num %> <%= this.feature.properties.Street_Nam %> <%= this.feature.properties.City %>",
+          "title": "Address"
+        },
+        {
+          "name": "Notes",
+          "title": "Notes"
+        }
+      ],
+      "xxxpopupTemplate": "@wf-feature",
+      "titleAttribute": "Alias",
       "drawingInfo": {
         "renderer": {
           "type": "simple",
@@ -847,6 +943,10 @@
         {
           "name": "Fax_Number",
           "title": "Fax "
+        },
+        {
+          "name": "Notes",
+          "title": "Notes"
         }
       ],
       "xxxpopupTemplate": "@wf-feature",
