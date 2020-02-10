@@ -196,6 +196,10 @@
                 text-align: right;
             }
 
+            article.notifications .notification { 
+                margin-bottom: 1em;
+            }
+
             .disclaimer p {
                 font-size: 14px;
                 margin-bottom: 0;
@@ -278,13 +282,13 @@
                                 v-content="page.map"
                             ></div>
 
-                            <div class="notifications" v-if="notifications && notifications.length > 0">
+                            <!-- <div class="notifications" v-if="notifications && notifications.length > 0">
                                 <div class="notification" 
                                     v-for="n in notifications"
                                     v-bind:class="[ n.type ]"
                                     v-html="n.message"
                                 ></div>
-                            </div>
+                            </div> -->
                         </section>
         
                         <section class="right-side">
@@ -315,12 +319,34 @@
                     </div>
                 </article>     
 
+                <article class="notifications" v-if="notifications && notifications.length > 0">
+                    <header>
+                        <img src="https://tlweblibs.translink.ca/TransLink-logo-white.svg" alt="TransLink Logo" class="siteLogo">
+                        <div class="header-title">Truck Route Planner Beta</div>
+                        <div class="build-info"></div>
+                    </header>
+
+                    <h1>Reports and Notices</h1>
+
+                    <section>
+                        <div class="notifications" >
+                            <div class="notification" 
+                                v-for="n in notifications"
+                                v-bind:class="[ n.type ]"
+                                v-html="n.message"
+                            ></div>
+                        </div>
+                    </section>
+                </article>     
+
                 <article class="disclaimer">
                     <header>
                         <img src="https://tlweblibs.translink.ca/TransLink-logo-white.svg" alt="TransLink Logo" class="siteLogo">
                         <div class="header-title">Truck Route Planner Beta</div>
                         <div class="build-info"></div>
                     </header>
+
+                    <h1>Disclosure and Limitation of Liability</h1>
 
                     <section>
                         <p>
