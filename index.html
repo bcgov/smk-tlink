@@ -58,8 +58,8 @@
             <header>
                 <h1><span class="translink-logo"></span>Truck Route Planner</h1>
                 <h2>Beta
-                    <span class="version">version: 0.0.12</span>
-                    <span class="date">built: 2020-02-10</span>
+                    <span class="version">version: 0.0.13</span>
+                    <span class="date">built: 2020-02-12</span>
                 </h2>
             </header>
 
@@ -75,7 +75,7 @@
                 enctype="text/plain"
                 action="mailto:ipme@Translink.ca?subject=TRP Beta App Feedback"
             >
-                <input type="hidden" name="version" value="0.0.12">
+                <input type="hidden" name="version" value="0.0.13">
                 
                 <label>To submit feedback on this app please fill out our survey:
                     <a target="_blank" href="https://translink.checkbox.ca/CVRP-Feedback.aspx">TRP-Feedback</a>
@@ -182,7 +182,30 @@
 
         SMK.INIT( {
             'smk-container-sel': "#smk-map-frame",
-            'smk-config': [ './config/map.json','./config/layers.json', './config/layer-display.json', '?' ],
+            'smk-config': [ 
+                './layers/cardlock/config.json',
+                './layers/downtown-vancouver/config.json',
+                './layers/industrial-area/config.json',
+                './layers/inspection-station/config.json',
+                './layers/major-road-network/config.json',
+                './layers/metro-vancouver-boundary/config.json',
+                './layers/overhead-directional-signs/config.json',
+                './layers/overhead-structure-with-height-marker/config.json',
+                './layers/overhead-structure-without-height-marker/config.json',
+                './layers/port-of-vancouver-facilities-terminals/config.json',
+                './layers/provincial-highway/config.json',
+                './layers/truck-advisories-restrictions/config.json',
+                './layers/truck-advisories-warning/config.json',
+                './layers/truck-parking/config.json',
+                './layers/truck-routes-designated-municipal-truck-route-with-restrictions/config.json',
+                './layers/truck-routes-designated-municipal-truck-route/config.json',
+                './layers/truck-routes-federal-road-with-no-truck-travel-restrictions/config.json',
+                './layers/truck-routes-municipal-road-with-no-truck-travel-restriction/config.json',
+
+                './config/map.json', 
+                './config/layer-display.json', 
+                '?' 
+            ],
         } ).then( function () {
             $( 'body' ).addClass( 'device-' + SMK.MAP[ 1 ].$device )
 
