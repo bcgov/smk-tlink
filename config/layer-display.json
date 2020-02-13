@@ -8,14 +8,20 @@
                     "title": "Truck Routes",
                     "isVisible": true,
                     "items": [
-                        { "id": "truck-routes-designated-municipal-truck-route-with-restrictions" },
+                        { "id": "truck-routes-provincial-highway-high-zoom" },
+                        { "id": "truck-routes-provincial-highway" },
+
                         { "id": "truck-routes-designated-municipal-truck-route" },
-                        { "id": "truck-routes-federal-road-with-no-truck-travel-restrictions" },
-                        { "id": "truck-routes-municipal-road-with-no-truck-travel-restriction" },
-                        { "id": "truck-routes-designated-municipal-truck-route-with-restrictions-high-zoom" },
                         { "id": "truck-routes-designated-municipal-truck-route-high-zoom" },
-                        { "id": "truck-routes-federal-road-with-no-truck-travel-restrictions-high-zoom" },
-                        { "id": "truck-routes-municipal-road-with-no-truck-travel-restriction-high-zoom" }
+
+                        { "id": "truck-routes-designated-municipal-truck-route-with-restrictions" },
+                        { "id": "truck-routes-designated-municipal-truck-route-with-restrictions-high-zoom" },
+
+                        { "id": "truck-routes-municipal-road-with-no-truck-travel-restriction" },
+                        { "id": "truck-routes-municipal-road-with-no-truck-travel-restriction-high-zoom" },
+
+                        { "id": "truck-routes-federal-road-with-no-truck-travel-restrictions" },
+                        { "id": "truck-routes-federal-road-with-no-truck-travel-restrictions-high-zoom" }
                     ]
                 },
                 {

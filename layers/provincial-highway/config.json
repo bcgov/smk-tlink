@@ -6,7 +6,7 @@
             "title": "Provincial Highway",
             "isVisible": false,
             "dataUrl": "./layers/provincial-highway/provincial-highway.geojson",
-            "scaleMin": 31281,
+            "scaleMin": 23167,
             "isQueryable": false,
             "style": {
                 "strokeWidth": 3,
@@ -28,6 +28,40 @@
             "style": {
                 "strokeWidth": 1.5,
                 "strokeColor": "#0070FF",
+                "strokeOpacity": 1
+            },
+            "legend": {
+                "line": true
+            }
+        },
+        {
+            "type": "vector",
+            "id": "truck-routes-provincial-highway-high-zoom",
+            "title": "Provincial Highway",
+            "isVisible": false,
+            "dataUrl": "./layers/provincial-highway/provincial-highway.geojson",
+            "scaleMin": 23167,
+            "isQueryable": false,
+            "style": {
+                "strokeWidth": 3,
+                "strokeColor": "#267300",
+                "strokeOpacity": 1
+            },
+            "legend": {
+                "line": true
+            }
+        },
+        {
+            "type": "vector",
+            "id": "truck-routes-provincial-highway",
+            "title": "Provincial Highway",
+            "isVisible": false,
+            "dataUrl": "./layers/provincial-highway/provincial-highway.geojson",
+            "scaleMax": 23167,
+            "isQueryable": false,
+            "style": {
+                "strokeWidth": 1.5,
+                "strokeColor": "#267300",
                 "strokeOpacity": 1
             },
             "legend": {
