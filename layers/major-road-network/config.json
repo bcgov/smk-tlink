@@ -5,7 +5,7 @@
             "id": "major-road-network-high-zoom",
             "title": "Major Road Network",
             "dataUrl": "./layers/major-road-network/major-road-network.geojson",
-            "scaleMin": 31281,
+            "scaleMin": 18897,
             "isQueryable": false,
             "style": {
                 "strokeWidth": 7.5,
