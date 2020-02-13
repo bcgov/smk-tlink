@@ -812,8 +812,10 @@
                 data: model,
                 mounted: function () {
                     SMK.BOOT.then( function () {
-                        window.print()
-                        window.parent.postMessage( 'printed', '*' )
+                        setTimeout( function () {
+                            window.print()
+                            window.parent.postMessage( 'printed', '*' )
+                        }, 2000 ) 
                     } )
                 },
                 methods: {
