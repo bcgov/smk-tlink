@@ -215,14 +215,14 @@
                 el.appendChild( document.importNode( document.getElementById( 'feedback' ).content, true ) )
             } )
 
-            SMK.HANDLER.set( 'directions-route', 'print', function ( smk, tool, key ) {
-                if ( false ) {
+            SMK.HANDLER.set( 'directions-route', 'print', function ( smk, tool, key, opt ) {
+                if ( opt.debug ) {
                     window.open( 'print-directions-portrait.html?' + key, '', [
-                        "location=no",
-                        "menubar=no",
-                        "titlebar=no",
-                        "status=no",
-                        "toolbar=no",
+                        // "location=no",
+                        // "menubar=no",
+                        // "titlebar=no",
+                        // "status=no",
+                        // "toolbar=no",
                         "scrollbars=yes",
                     ].join( ',' ) );
                 }
