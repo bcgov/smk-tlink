@@ -1,6 +1,12 @@
 ( function () {
+'use strict'
 
-window.vehicleTypes = []
+var TRP = window.TRP || ( window.TRP = {} )
+
+// _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+// 
+
+TRP.vehicleTypes = []
 
 function addVehicleType( opt, configs ) {
     opt = Object.assign( {
@@ -18,7 +24,7 @@ function addVehicleType( opt, configs ) {
 
     opt.configs.push( last )
 
-    window.vehicleTypes.push( opt )
+    TRP.vehicleTypes.push( opt )
 } 
 
 addVehicleType( 
@@ -448,5 +454,42 @@ addVehicleType(
         }
     ]
 )
+
+// _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+// 
+
+TRP.getMunicipalityDefinition = function ( muni ) {
+    return municipality[ ( muni || '_default_' ).toLowerCase() ] || municipality[ '_default_' ]
+}
+
+TRP.isHeavyTruckInMunicipality = function ( muni, weight ) {
+    return weight >= this.getMunicipalityDefinition( muni ).truckWeightDefinition 
+}
+
+var municipality = {
+    '_default_':                { truckWeightDefinition:  13600 },
+    'anmore':                   { truckWeightDefinition:  11794 },
+    'belcarra':                 { truckWeightDefinition:  10900 },
+    'bowen island':             { truckWeightDefinition:  11800 },
+    'burnaby':                  { truckWeightDefinition:  13600 },
+    'coquitlam':                { truckWeightDefinition:  13600 },
+    'delta':                    { truckWeightDefinition:  11800 },
+    'langley city':             { truckWeightDefinition:  11800 },
+    'langley township':         { truckWeightDefinition:  11800 },
+    'lions bay':                { truckWeightDefinition: 300000 },
+    'maple ridge':              { truckWeightDefinition: 300000 },
+    'new westminster':          { truckWeightDefinition:  11800 },
+    'north vancouver city':     { truckWeightDefinition:  11800 },
+    'north vancouver district': { truckWeightDefinition: 300000 },
+    'pitt meadows':             { truckWeightDefinition:  10000 },
+    'port coquitlam':           { truckWeightDefinition:  11794 },
+    'port moody':               { truckWeightDefinition:  10000 },
+    'richmond':                 { truckWeightDefinition: 300000 },
+    'surrey':                   { truckWeightDefinition:  11800 },
+    'ubc':                      { truckWeightDefinition: 300000 },
+    'vancouver':                { truckWeightDefinition:  11800 },
+    'west vancouver':           { truckWeightDefinition:  11800 },
+    'white rock':               { truckWeightDefinition:   5500 },
+}
 
 } )()
