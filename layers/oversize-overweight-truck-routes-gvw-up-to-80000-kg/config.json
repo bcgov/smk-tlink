@@ -6,25 +6,21 @@
             "title": "Gross Vehicle Weight (GVW) up to 80,000 kg",
             "dataUrl": "./layers/oversize-overweight-truck-routes-gvw-up-to-80000-kg/oversize-overweight-truck-routes-gvw-up-to-80000-kg.geojson",
             "xxxscaleMin": 28505,
-            "xxxattributes": [
+            "attributes": [
                 {
-                    "name": "DangerousGoodsType",
+                    "name": "RouteType",
                     "title": "Route Type"
                 },
                 {
-                    "name": "Municipality",
-                    "title": "Municipality"
-                },
-                {
                     "title": "Link",
-                    "format": "asLink(this.feature.properties.DangerousGoodsLink, 'Link')"
+                    "format": "asLink(this.feature.properties.Link, 'Link')"
                 },
                 {
-                    "name": "DangerousGoodsNotes",
+                    "name": "Note",
                     "title": "Notes"
                 }
             ],
-            "titleAttribute": "DangerousGoodsType",
+            "titleAttribute": "RouteType",
             "style": [
                 {
                     "strokeWidth": 4,

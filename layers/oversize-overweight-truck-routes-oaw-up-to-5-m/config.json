@@ -6,25 +6,21 @@
             "title": "Overall Width (OAW) up to 5.00 m",
             "dataUrl": "./layers/oversize-overweight-truck-routes-oaw-up-to-5-m/oversize-overweight-truck-routes-oaw-up-to-5-m.geojson",
             "xxxscaleMin": 28505,
-            "xxxattributes": [
+            "attributes": [
                 {
-                    "name": "DangerousGoodsType",
+                    "name": "RouteType",
                     "title": "Route Type"
                 },
                 {
-                    "name": "Municipality",
-                    "title": "Municipality"
-                },
-                {
                     "title": "Link",
-                    "format": "asLink(this.feature.properties.DangerousGoodsLink, 'Link')"
+                    "format": "asLink(this.feature.properties.Link, 'Link')"
                 },
                 {
-                    "name": "DangerousGoodsNotes",
+                    "name": "Note",
                     "title": "Notes"
                 }
             ],
-            "titleAttribute": "DangerousGoodsType",
+            "titleAttribute": "RouteType",
             "style": [
                 {
                     "strokeWidth": 4,
