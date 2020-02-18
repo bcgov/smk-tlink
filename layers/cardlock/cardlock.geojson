@@ -11,7 +11,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1,
         "Name": "78 Glacier Street (Mayfair Industrial Park)",
         "Alias": "Petro Canada - Coquitlam Cardlock",
         "Company": "Petro Canada",
@@ -36,7 +35,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 2,
         "Name": "10178 Nordel Court (Nordel Business Park)",
         "Alias": "Petro Canada - Delta Cardlock",
         "Company": "Petro Canada",
@@ -61,7 +59,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 3,
         "Name": "1510 Powell Street",
         "Alias": "Petro Canada - Vancouver Cardlock",
         "Company": "Petro Canada",
@@ -86,7 +83,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 4,
         "Name": "628 Derwent Way",
         "Alias": "Chevron - Delta (Annacis Island) Cardlock",
         "Company": "Chevron",
@@ -111,7 +107,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 5,
         "Name": "5504 - 176 Street",
         "Alias": "Chevron - Surrey (Cloverdale) Cardlock",
         "Company": "Chevron",
@@ -136,7 +131,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 6,
         "Name": "2595 Shuswap Avenue",
         "Alias": "Chevron - Coquitlam Cardlock",
         "Company": "Chevron",
@@ -161,7 +155,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 7,
         "Name": "10187 Swenson Way",
         "Alias": "Chevron - Delta (North) Cardlock",
         "Company": "Chevron",
@@ -186,7 +179,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 8,
         "Name": "2859 41B Street",
         "Alias": "Chevron - Delta (Deltaport) Cardlock",
         "Company": "Chevron",
@@ -211,7 +203,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 9,
         "Name": "9450 - 200th Street",
         "Alias": "Chevron - Langley (North) Cardlock",
         "Company": "Chevron",
@@ -236,7 +227,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 10,
         "Name": "7891 Grauer Road",
         "Alias": "Chevron - Richmond Cardlock",
         "Company": "Chevron",
@@ -261,7 +251,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 11,
         "Name": "11807 Tannery Road",
         "Alias": "Esso - Surrey Cardlock",
         "Company": "Esso/M. R. Smith Limited",
@@ -286,7 +275,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 12,
         "Name": "17979 55th Avenue",
         "Alias": "Esso - Cloverdale Cardlock",
         "Company": "Esso/M. R. Smith Limited/Cool Creek Energy",
@@ -311,7 +299,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 13,
         "Name": "19186 - 96 Avenue",
         "Alias": "Esso - Surrey (Port Kells) Cardlock",
         "Company": "Esso",
@@ -336,7 +323,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 14,
         "Name": "24795 Fraser Highway",
         "Alias": "Otter Co-op - Langley Cardlock",
         "Company": "Otter Co-op",
@@ -361,7 +347,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 15,
         "Name": "Ruskin Cardlock / Ultra Fuels",
         "Alias": "AFD Petroleum Limited - Maple Ridge Cardlock",
         "Company": "AFD Petroleum Limited",
@@ -386,7 +371,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 16,
         "Name": "16 Bewicke Avenue",
         "Alias": "Columbia Fuels - North Vancouver Cardlock",
         "Company": "Columbia Fuels",
@@ -411,7 +395,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 17,
         "Name": "Flying J Cardlock #802",
         "Alias": "Shell/Flying J Cardlock #802",
         "Company": "Shell/Pilot Flying J",
@@ -436,7 +419,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 18,
         "Name": "Flying J Cardlock #832",
         "Alias": "Flying J Cardlock #832",
         "Company": "Pilot Flying J",
@@ -461,7 +443,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 19,
         "Name": "Flying J Fuel Stop #798",
         "Alias": "Shell/Flying J Fuel Stop #798",
         "Company": "Shell/Pilot Flying J",
@@ -486,7 +467,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 20,
         "Name": "Lougheed Highway - Westwood",
         "Alias": "Shell - Lougheed Highway - Westwood",
         "Company": "Shell",
@@ -511,7 +491,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 21,
         "Name": "Lougheed Highway - 203 Street",
         "Alias": "Shell - Lougheed Highway - 203 Street",
         "Company": "Shell",

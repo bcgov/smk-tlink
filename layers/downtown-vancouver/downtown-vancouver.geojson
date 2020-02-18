@@ -11,7 +11,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1,
         "Id": 0,
         "Shape_Length": 7800.791082324565,
         "Shape_Area": 2190931.782598866,

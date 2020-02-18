@@ -11,7 +11,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1,
         "Id": 0,
         "Shape_Length": 168792.77532596097,
         "Notes": null
@@ -8391,7 +8390,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 2,
         "Id": 0,
         "Shape_Length": 4080.6333560815947,
         "Notes": null
