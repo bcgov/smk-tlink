@@ -8,7 +8,7 @@
             "scaleMin": 27437,
             "attributes": [
                 {
-                    "name": "CITY",
+                    "name": "Municipality",
                     "title": "Municipality"
                 },
                 {
@@ -16,13 +16,13 @@
                     "title": "Advisory Type"
                 },
                 {
-                    "name": "Advisory_Description",
+                    "name": "AdvisoryDescription",
                     "title": "Advisory Description"
                 },
                 {
                     "name": "Bylaw",
                     "title": "Bylaw Link",
-                    "format": "asLink(this.feature.properties.Bylaw_Link)"
+                    "format": "asLink(this.feature.properties.BylawLink)"
                 },
                 {
                     "name": "Notes",
@@ -47,7 +47,7 @@
             "scaleMax": 28505,
             "attributes": [
                 {
-                    "name": "CITY",
+                    "name": "Municipality",
                     "title": "Municipality"
                 },
                 {
@@ -55,13 +55,13 @@
                     "title": "Advisory Type"
                 },
                 {
-                    "name": "Advisory_Description",
+                    "name": "AdvisoryDescription",
                     "title": "Advisory Description"
                 },
                 {
                     "name": "Bylaw",
                     "title": "Bylaw Link",
-                    "format": "asLink(this.feature.properties.Bylaw_Link)"
+                    "format": "asLink(this.feature.properties.BylawLink)"
                 },
                 {
                     "name": "Notes",

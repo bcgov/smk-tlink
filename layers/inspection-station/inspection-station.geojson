@@ -11,7 +11,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1,
         "Scale": "Deas",
         "Hours": "Random Operational Hours",
         "Mailing_Addr_StNum": "PO Box 26006",
@@ -36,7 +35,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 2,
         "Scale": "Nordel ",
         "Hours": "Random Operational Hours",
         "Mailing_Addr_StNum": "8150",
@@ -61,7 +59,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 3,
         "Scale": "Pacific",
         "Hours": "Random Operational Hours",
         "Mailing_Addr_StNum": "316",

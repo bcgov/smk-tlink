@@ -11,7 +11,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1,
         "Name": "Surrey Truck Park Inc.",
         "Alias": "",
         "Company": "Surrey Truck Park Inc.",
@@ -35,7 +34,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 2,
         "Name": "Can Am Truck Parking & Care Centre",
         "Alias": "",
         "Company": "Can Am Truck Parking & Care Centre",
@@ -59,7 +57,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 3,
         "Name": "The Truck Park",
         "Alias": "",
         "Company": "The Truck Park",
@@ -83,7 +80,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 4,
         "Name": "Zalkan Parking",
         "Alias": "",
         "Company": "Zalkan Parking",
@@ -107,7 +103,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 5,
         "Name": "SBB Holdings Ltd.",
         "Alias": "",
         "Company": "SBB Holdings Ltd.",
@@ -131,7 +126,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 6,
         "Name": "Nordel Way Truck Parking Area",
         "Alias": "",
         "Company": "",
@@ -155,7 +149,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 7,
         "Name": "Highway 17 Truck Parking",
         "Alias": "",
         "Company": "",

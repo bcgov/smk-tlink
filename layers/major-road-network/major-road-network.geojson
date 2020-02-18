@@ -11,7 +11,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1,
         "ROAD_NAME": "McGill St",
         "FROM_DESCRIPTION": "Nanaimo St",
         "TO_DESCRIPTION": "Trans Canada Hwy 1 (legal bdy)",
@@ -107,7 +106,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 2,
         "ROAD_NAME": "Nanaimo St",
         "FROM_DESCRIPTION": "Broadway Ave",
         "TO_DESCRIPTION": "McGill St",
@@ -191,7 +189,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 3,
         "ROAD_NAME": "Georgia St Viaduct",
         "FROM_DESCRIPTION": "Georgia St (west abut)",
         "TO_DESCRIPTION": "Main St",
@@ -267,7 +264,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 4,
         "ROAD_NAME": "Terminal Ave",
         "FROM_DESCRIPTION": "Main St",
         "TO_DESCRIPTION": "Clark Dr",
@@ -331,7 +327,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 5,
         "ROAD_NAME": "Alma St",
         "FROM_DESCRIPTION": "10th Ave",
         "TO_DESCRIPTION": "Broadway Ave",
@@ -359,7 +354,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 6,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Rupert St",
         "TO_DESCRIPTION": "Boundary Rd",
@@ -467,7 +461,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 7,
         "ROAD_NAME": "Nanaimo St",
         "FROM_DESCRIPTION": "Broadway Ave",
         "TO_DESCRIPTION": "Grandview Hwy",
@@ -495,7 +488,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 8,
         "ROAD_NAME": "Joyce St",
         "FROM_DESCRIPTION": "41st Ave",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -551,7 +543,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 9,
         "ROAD_NAME": "Howe St",
         "FROM_DESCRIPTION": "Nelson St",
         "TO_DESCRIPTION": "Granville St Bridge on-ramp",
@@ -591,7 +582,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 10,
         "ROAD_NAME": "Hastings St",
         "FROM_DESCRIPTION": "Seymour St",
         "TO_DESCRIPTION": "Clark Dr",
@@ -667,7 +657,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 11,
         "ROAD_NAME": "Broadway Ave",
         "FROM_DESCRIPTION": "Kingsway Ave",
         "TO_DESCRIPTION": "Clark Dr",
@@ -723,7 +712,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 12,
         "ROAD_NAME": "41st Ave",
         "FROM_DESCRIPTION": "Knight St",
         "TO_DESCRIPTION": "Joyce St",
@@ -851,7 +839,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 13,
         "ROAD_NAME": "Knight St",
         "FROM_DESCRIPTION": "Knight St off-ramp",
         "TO_DESCRIPTION": "Knight St Bridge",
@@ -883,7 +870,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 14,
         "ROAD_NAME": "Knight St Bridge",
         "FROM_DESCRIPTION": "Knight St",
         "TO_DESCRIPTION": "Knight St Bridge off-ramp",
@@ -915,7 +901,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 15,
         "ROAD_NAME": "Boundary Rd",
         "FROM_DESCRIPTION": "Marine Way",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -1127,7 +1112,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 16,
         "ROAD_NAME": "SE Marine Dr",
         "FROM_DESCRIPTION": "Knight St Bridge on-ramp",
         "TO_DESCRIPTION": "Knight St Bridge off-ramp",
@@ -1155,7 +1139,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 17,
         "ROAD_NAME": "Knight St Bridge",
         "FROM_DESCRIPTION": "Knight St Bridge on-ramp",
         "TO_DESCRIPTION": "Knight St Bridge off-ramp",
@@ -1191,7 +1174,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 18,
         "ROAD_NAME": "Knight St Bridge",
         "FROM_DESCRIPTION": "Knight St Bridge off-ramp",
         "TO_DESCRIPTION": "Knight St Bridge on-ramp",
@@ -1227,7 +1209,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 19,
         "ROAD_NAME": "Knight St Bridge",
         "FROM_DESCRIPTION": "Knight St Bridge on-ramp (Mitchell Isl)",
         "TO_DESCRIPTION": "Knight St",
@@ -1291,7 +1272,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 20,
         "ROAD_NAME": "Bridgeport Rd",
         "FROM_DESCRIPTION": "Hwy 99/St Edwards St",
         "TO_DESCRIPTION": "Sweden Way",
@@ -1355,7 +1335,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 21,
         "ROAD_NAME": "Bridgeport Rd",
         "FROM_DESCRIPTION": "Sweden Way",
         "TO_DESCRIPTION": "W end of Knight St overpass br deck",
@@ -1395,7 +1374,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 22,
         "ROAD_NAME": "Knight St Bridge on-ramp",
         "FROM_DESCRIPTION": "Knight St Bridge on-ramp",
         "TO_DESCRIPTION": "Knight St Bridge",
@@ -1451,7 +1429,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 23,
         "ROAD_NAME": "Knight St Bridge on-ramp",
         "FROM_DESCRIPTION": "SE Marine Dr",
         "TO_DESCRIPTION": "Knight St Bridge on-ramp",
@@ -1490,7 +1467,7 @@
             ],
             [
               -123.0788,
-              49.21039
+              49.21038
             ],
             [
               -123.07894,
@@ -1523,7 +1500,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 24,
         "ROAD_NAME": "Granville St Bridge off-ramp",
         "FROM_DESCRIPTION": "Granville St Bridge",
         "TO_DESCRIPTION": "Seymour St (ramp end)",
@@ -1571,7 +1547,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 25,
         "ROAD_NAME": "Marine Dr",
         "FROM_DESCRIPTION": "21st St",
         "TO_DESCRIPTION": "MRN Jurisdiction at Taylor Way",
@@ -1795,7 +1770,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 26,
         "ROAD_NAME": "Capilano Rd",
         "FROM_DESCRIPTION": "Marine Dr",
         "TO_DESCRIPTION": "MRN Jurisdiction at Hwy 1",
@@ -1867,7 +1841,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 27,
         "ROAD_NAME": "Marine Dr",
         "FROM_DESCRIPTION": " MacKay Ave (NV District/City border)",
         "TO_DESCRIPTION": "Bewicke_W 3rd St",
@@ -1935,7 +1908,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 28,
         "ROAD_NAME": "W 3rd St",
         "FROM_DESCRIPTION": "Marine Dr (Bewicke Ave)",
         "TO_DESCRIPTION": "Forbes Ave",
@@ -1995,7 +1967,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 29,
         "ROAD_NAME": "Forbes Ave",
         "FROM_DESCRIPTION": "W 3rd St",
         "TO_DESCRIPTION": "Ped Xing at Esplanade",
@@ -2047,7 +2018,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 30,
         "ROAD_NAME": "Low Level Rd",
         "FROM_DESCRIPTION": "WB Stop Bar at Esplanade",
         "TO_DESCRIPTION": "WB Stop bar at Cotton Rd",
@@ -2187,7 +2157,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 31,
         "ROAD_NAME": "Cotton Rd",
         "FROM_DESCRIPTION": "WB Stop Bar at Low Level Rd",
         "TO_DESCRIPTION": "E Lynn Crk Br Deck (North Van City/District border)",
@@ -2255,7 +2224,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 32,
         "ROAD_NAME": "Lonsdale Ave",
         "FROM_DESCRIPTION": "Esplanade",
         "TO_DESCRIPTION": "MRN Jurisdiction at HWY 1",
@@ -2379,7 +2347,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 33,
         "ROAD_NAME": "Main St",
         "FROM_DESCRIPTION": "North Van City/District border (Lynn Creek/Cotton Rd)",
         "TO_DESCRIPTION": "MRN Jurisdiction at Mountain Hwy",
@@ -2435,7 +2402,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 34,
         "ROAD_NAME": "Mountain Hwy",
         "FROM_DESCRIPTION": "MRN Jurisdiction at Main St",
         "TO_DESCRIPTION": "E Keith Rd",
@@ -2515,7 +2481,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 35,
         "ROAD_NAME": "Mt Seymour Pkwy",
         "FROM_DESCRIPTION": "Riverside Dr",
         "TO_DESCRIPTION": "Mt Seymour Rd",
@@ -2727,7 +2692,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 36,
         "ROAD_NAME": "Riverside Dr (East)",
         "FROM_DESCRIPTION": "Mt Seymour Pkwy",
         "TO_DESCRIPTION": "Dollarton Hwy",
@@ -2771,7 +2735,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 37,
         "ROAD_NAME": "Mt Seymour Rd",
         "FROM_DESCRIPTION": "Mt Seymour Pkwy",
         "TO_DESCRIPTION": "Anne Macdonald Way",
@@ -2875,7 +2838,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 38,
         "ROAD_NAME": "Inlet Dr",
         "FROM_DESCRIPTION": "Hastings St",
         "TO_DESCRIPTION": "Barnet Rd (Bayveiw Dr)",
@@ -2951,7 +2913,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 39,
         "ROAD_NAME": "Barnet Rd",
         "FROM_DESCRIPTION": "Inlet Dr (Bayview Dr)",
         "TO_DESCRIPTION": "Port Moody/Burnaby border",
@@ -3435,7 +3396,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 40,
         "ROAD_NAME": "Canada Way",
         "FROM_DESCRIPTION": "Willingdon Ave (TCH1 gap)",
         "TO_DESCRIPTION": "Kensington (TCH1 gap)",
@@ -3807,7 +3767,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 41,
         "ROAD_NAME": "Canada Way",
         "FROM_DESCRIPTION": "Kensington Ave (TCH1 gap)",
         "TO_DESCRIPTION": "10th Ave",
@@ -3959,7 +3918,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 42,
         "ROAD_NAME": "Willingdon Ave",
         "FROM_DESCRIPTION": "Canada Way (TCH1 gap)",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -4139,7 +4097,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 43,
         "ROAD_NAME": "Griffiths Ave",
         "FROM_DESCRIPTION": "Kingsway Ave",
         "TO_DESCRIPTION": "10th Ave",
@@ -4343,7 +4300,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 44,
         "ROAD_NAME": "Gaglardi Way",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Broadway Ave",
@@ -4467,7 +4423,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 45,
         "ROAD_NAME": "Gaglardi Way",
         "FROM_DESCRIPTION": "S end of Cariboo Rd overpass br deck",
         "TO_DESCRIPTION": "Lougheed Hwy",
@@ -4535,7 +4490,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 46,
         "ROAD_NAME": "Schou St",
         "FROM_DESCRIPTION": "Canada Way",
         "TO_DESCRIPTION": "Boundary Rd",
@@ -4575,7 +4529,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 47,
         "ROAD_NAME": "Canada Way",
         "FROM_DESCRIPTION": "Schou St",
         "TO_DESCRIPTION": "Willingdon Ave (TCH1 gap)",
@@ -4627,7 +4580,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 48,
         "ROAD_NAME": "Knight St on-ramp",
         "FROM_DESCRIPTION": "Start of Painted Gore on EB BridgePort Rd",
         "TO_DESCRIPTION": "End of Painted Gore on SB Knight St",
@@ -4699,7 +4651,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 49,
         "ROAD_NAME": "Mt Seymour Pkwy",
         "FROM_DESCRIPTION": "MRN Jurisdiction at Seymour Boulevard",
         "TO_DESCRIPTION": "Riverside Dr",
@@ -4779,7 +4730,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 50,
         "ROAD_NAME": "Stewardson Way",
         "FROM_DESCRIPTION": "6th Ave",
         "TO_DESCRIPTION": "Columbia St",
@@ -4943,7 +4893,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 51,
         "ROAD_NAME": "Columbia St",
         "FROM_DESCRIPTION": "Stewardson Way",
         "TO_DESCRIPTION": "Royal Ave",
@@ -4983,7 +4932,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 52,
         "ROAD_NAME": "East Columbia St",
         "FROM_DESCRIPTION": "McBride Blvd",
         "TO_DESCRIPTION": "Brunette Ave",
@@ -5095,7 +5043,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 53,
         "ROAD_NAME": "Brunette Ave",
         "FROM_DESCRIPTION": "East Columbia St",
         "TO_DESCRIPTION": "Trans Canada Hwy 1 (legal limits)",
@@ -5203,7 +5150,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 54,
         "ROAD_NAME": "Boyd St",
         "FROM_DESCRIPTION": "Derwent Way",
         "TO_DESCRIPTION": "Boundary Rd",
@@ -5427,7 +5373,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 55,
         "ROAD_NAME": "Derwent Way",
         "FROM_DESCRIPTION": "Boyd St",
         "TO_DESCRIPTION": "Annacis Island moveable bridge (north abut)",
@@ -5599,7 +5544,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 56,
         "ROAD_NAME": "Bedwell Bay Rd",
         "FROM_DESCRIPTION": "Midden Rd",
         "TO_DESCRIPTION": "Port Moody border",
@@ -5903,7 +5847,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 57,
         "ROAD_NAME": "Bedwell Bay Rd",
         "FROM_DESCRIPTION": "Belcarra/Port Moody border",
         "TO_DESCRIPTION": "Anmore/Port Moody border",
@@ -6103,7 +6046,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 58,
         "ROAD_NAME": "Bedwell Bay Rd",
         "FROM_DESCRIPTION": "Port Moody border",
         "TO_DESCRIPTION": "Port Moody border",
@@ -6167,7 +6109,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 59,
         "ROAD_NAME": "Bedwell Bay Rd",
         "FROM_DESCRIPTION": "Anmore/Port Moody border",
         "TO_DESCRIPTION": "Anmore/Port Moody border (1st Ave)",
@@ -6279,7 +6220,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 60,
         "ROAD_NAME": "1st Ave",
         "FROM_DESCRIPTION": "Anmore/Port Moody border",
         "TO_DESCRIPTION": "Sunny Side Rd",
@@ -6315,7 +6255,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 61,
         "ROAD_NAME": "1st Ave",
         "FROM_DESCRIPTION": "Ioco Rd",
         "TO_DESCRIPTION": "Anmore/Port Moody border",
@@ -6347,7 +6286,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 62,
         "ROAD_NAME": "McBride Blvd on-ramp",
         "FROM_DESCRIPTION": "Royal Ave",
         "TO_DESCRIPTION": "McBride Blvd",
@@ -6399,7 +6337,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 63,
         "ROAD_NAME": "Hastings St",
         "FROM_DESCRIPTION": "Inlet Dr",
         "TO_DESCRIPTION": "Burnaby Mountain Pkwy (Dalla-Tina Ave)",
@@ -6467,7 +6404,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 64,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "Scott Rd",
@@ -6547,7 +6483,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 65,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "Scott Rd on-ramp",
         "TO_DESCRIPTION": "King George Blvd",
@@ -6607,7 +6542,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 66,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "108th Ave",
@@ -6815,7 +6749,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 67,
         "ROAD_NAME": "Clarke Rd",
         "FROM_DESCRIPTION": "Port Moody/Coquitlam border",
         "TO_DESCRIPTION": "St Johns St",
@@ -6987,7 +6920,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 68,
         "ROAD_NAME": "Clarke St",
         "FROM_DESCRIPTION": "Barnet Hwy",
         "TO_DESCRIPTION": "Moody St",
@@ -7047,7 +6979,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 69,
         "ROAD_NAME": "Guildford Way",
         "FROM_DESCRIPTION": "Ioco Rd",
         "TO_DESCRIPTION": "Port Moody/Coquitlam border",
@@ -7119,7 +7050,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 70,
         "ROAD_NAME": "Austin Ave",
         "FROM_DESCRIPTION": "North Rd",
         "TO_DESCRIPTION": "Mariner Way",
@@ -7263,7 +7193,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 71,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "North Rd",
         "TO_DESCRIPTION": "Brunette Ave",
@@ -7359,7 +7288,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 72,
         "ROAD_NAME": "Brunette Ave",
         "FROM_DESCRIPTION": "Trans Canada Hwy 1",
         "TO_DESCRIPTION": "Lougheed Hwy",
@@ -7391,7 +7319,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 73,
         "ROAD_NAME": "King Edward St",
         "FROM_DESCRIPTION": "United Blvd",
         "TO_DESCRIPTION": "Lougheed Hwy",
@@ -7427,7 +7354,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 74,
         "ROAD_NAME": "United Blvd",
         "FROM_DESCRIPTION": "King Edward St",
         "TO_DESCRIPTION": "Trans Canada Hwy 1",
@@ -7767,7 +7693,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 75,
         "ROAD_NAME": "Pitt River Rd",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Coquitlam River (Coquitlam/Port Coquitlam border)",
@@ -7839,7 +7764,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 76,
         "ROAD_NAME": "Guildford Way",
         "FROM_DESCRIPTION": "Port Moody/Coquitlam border",
         "TO_DESCRIPTION": "Pinetree Way",
@@ -8059,7 +7983,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 77,
         "ROAD_NAME": "Ioco Rd",
         "FROM_DESCRIPTION": "1st Ave",
         "TO_DESCRIPTION": "Guildford Way",
@@ -8499,7 +8422,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 78,
         "ROAD_NAME": "Ioco Rd",
         "FROM_DESCRIPTION": "Guildford Way",
         "TO_DESCRIPTION": "Barnet Hwy",
@@ -8583,7 +8505,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 79,
         "ROAD_NAME": "Boundary Rd",
         "FROM_DESCRIPTION": "Kingsway Ave",
         "TO_DESCRIPTION": "Canada Way",
@@ -8703,7 +8624,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 80,
         "ROAD_NAME": "Boundary Rd",
         "FROM_DESCRIPTION": "Canada Way",
         "TO_DESCRIPTION": "Grandview Hwy",
@@ -8739,7 +8659,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 81,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Westwood St (Port Coquitlam/Coquitlam border",
         "TO_DESCRIPTION": "Ottawa St (approx)",
@@ -8855,7 +8774,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 82,
         "ROAD_NAME": "Dewdney Trunk Rd",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "232nd St",
@@ -9055,7 +8973,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 83,
         "ROAD_NAME": "232nd St",
         "FROM_DESCRIPTION": "Dewdney Trunk Rd",
         "TO_DESCRIPTION": "132nd Ave",
@@ -9131,7 +9048,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 84,
         "ROAD_NAME": "132nd Ave",
         "FROM_DESCRIPTION": "232nd St",
         "TO_DESCRIPTION": "Fern Cr",
@@ -9159,7 +9075,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 85,
         "ROAD_NAME": "Fern Cr",
         "FROM_DESCRIPTION": "132nd Ave",
         "TO_DESCRIPTION": "Golden Ears Park Gate",
@@ -9655,7 +9570,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 86,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "222nd St (Haney Bypass)",
         "TO_DESCRIPTION": "232nd St (Haney Bypass)",
@@ -9847,7 +9761,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 87,
         "ROAD_NAME": "Alderbridge Way",
         "FROM_DESCRIPTION": "No. 3 Rd",
         "TO_DESCRIPTION": "Hwy 91/Shell Rd",
@@ -9935,7 +9848,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 88,
         "ROAD_NAME": "Westminster Hwy",
         "FROM_DESCRIPTION": "Hwy 91",
         "TO_DESCRIPTION": "Boundary Rd",
@@ -10123,7 +10035,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 89,
         "ROAD_NAME": "Knight St",
         "FROM_DESCRIPTION": "Hwy 91 (legal bdy)",
         "TO_DESCRIPTION": "Westminster Hwy",
@@ -10151,7 +10062,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 90,
         "ROAD_NAME": "Gilbert Rd",
         "FROM_DESCRIPTION": "Dinsmore Bridge",
         "TO_DESCRIPTION": "Westminster Hwy",
@@ -10259,7 +10169,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 91,
         "ROAD_NAME": "Steveston Hwy",
         "FROM_DESCRIPTION": "Hwy 99",
         "TO_DESCRIPTION": "No 2 Rd",
@@ -10383,7 +10292,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 92,
         "ROAD_NAME": "Knight St off-ramp",
         "FROM_DESCRIPTION": "Start of Painted Gore on NB Knight St",
         "TO_DESCRIPTION": "Bridgeport Rd",
@@ -10463,7 +10371,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 93,
         "ROAD_NAME": "Kingsway Ave",
         "FROM_DESCRIPTION": "Boundary Rd",
         "TO_DESCRIPTION": "Willingdon Ave",
@@ -10587,7 +10494,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 94,
         "ROAD_NAME": "152nd St",
         "FROM_DESCRIPTION": "88th Ave",
         "TO_DESCRIPTION": "64th Ave",
@@ -10711,7 +10617,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 95,
         "ROAD_NAME": "No 2 Rd",
         "FROM_DESCRIPTION": "Westminster Hwy",
         "TO_DESCRIPTION": "Inglis Dr",
@@ -10819,7 +10724,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 96,
         "ROAD_NAME": "No 2 Rd",
         "FROM_DESCRIPTION": "Westminster Hwy",
         "TO_DESCRIPTION": "Steveston Hwy",
@@ -10931,7 +10835,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 97,
         "ROAD_NAME": "Westminster Hwy",
         "FROM_DESCRIPTION": "No 2 Rd",
         "TO_DESCRIPTION": "Gilbert Rd",
@@ -10971,7 +10874,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 98,
         "ROAD_NAME": "Nordel Way",
         "FROM_DESCRIPTION": "Hwy 91",
         "TO_DESCRIPTION": "Scott Rd",
@@ -11275,7 +11177,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 99,
         "ROAD_NAME": "72nd Ave",
         "FROM_DESCRIPTION": "Hwy 91",
         "TO_DESCRIPTION": "Scott Rd (Delta/Surrey border)",
@@ -11331,7 +11232,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 100,
         "ROAD_NAME": "64th Ave (Kittson Pkwy)",
         "FROM_DESCRIPTION": "Hwy 91",
         "TO_DESCRIPTION": "Scott Rd (Delta/Surrey border)",
@@ -11483,7 +11383,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 101,
         "ROAD_NAME": "Ladner Trunk Rd",
         "FROM_DESCRIPTION": "MRN Jurisdiction NE of Hwy 99",
         "TO_DESCRIPTION": "MRN Jurisdiction W of Hwy 91",
@@ -11591,7 +11490,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 102,
         "ROAD_NAME": "Ladner Trunk Rd",
         "FROM_DESCRIPTION": "MRN Jurisdiction at Hwy 17",
         "TO_DESCRIPTION": "MRN Jurisdiction at Hwy 99",
@@ -11655,7 +11553,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 103,
         "ROAD_NAME": "56th St",
         "FROM_DESCRIPTION": "Hwy 17",
         "TO_DESCRIPTION": "US Border",
@@ -11759,7 +11656,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 104,
         "ROAD_NAME": "108th Ave",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "Townline Diversion",
@@ -11855,7 +11751,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 105,
         "ROAD_NAME": "Townline Diversion",
         "FROM_DESCRIPTION": "108th Ave",
         "TO_DESCRIPTION": "152nd St",
@@ -11903,7 +11798,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 106,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "Barnston Dr",
         "TO_DESCRIPTION": "Surrey/Langley Township border",
@@ -11967,7 +11861,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 107,
         "ROAD_NAME": "88th Ave",
         "FROM_DESCRIPTION": "Hwy 15 (176th St)",
         "TO_DESCRIPTION": "Surrey/Langley Township border",
@@ -12039,7 +11932,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 108,
         "ROAD_NAME": "16th Ave/North Bluff Rd",
         "FROM_DESCRIPTION": "152nd St",
         "TO_DESCRIPTION": "160th St (White Rock/Surrey border)",
@@ -12091,7 +11983,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 109,
         "ROAD_NAME": "16th Ave",
         "FROM_DESCRIPTION": "MRN Jurisdiction E of Hwy 15 (176th Ave)",
         "TO_DESCRIPTION": "196th St Surrey/Langley border",
@@ -12159,7 +12050,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 110,
         "ROAD_NAME": "Scott Rd",
         "FROM_DESCRIPTION": "96th Ave",
         "TO_DESCRIPTION": "110th Ave (Golden St)",
@@ -12375,7 +12265,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 111,
         "ROAD_NAME": "Scott Rd on-ramp",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "Scott Rd",
@@ -12515,7 +12404,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 112,
         "ROAD_NAME": "Scott Rd",
         "FROM_DESCRIPTION": "Nordel Way",
         "TO_DESCRIPTION": "96th Ave",
@@ -12579,7 +12467,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 113,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "Hwy 15",
         "TO_DESCRIPTION": "64th Ave",
@@ -12755,7 +12642,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 114,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "64th Ave",
         "TO_DESCRIPTION": "Surrey/Langley City/Township border (196th St)",
@@ -12795,7 +12681,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 115,
         "ROAD_NAME": "64th Ave",
         "FROM_DESCRIPTION": "Hwy 15 (176th St)",
         "TO_DESCRIPTION": "Fraser Hwy",
@@ -12931,7 +12816,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 116,
         "ROAD_NAME": "64th Ave",
         "FROM_DESCRIPTION": "Fraser Hwy",
         "TO_DESCRIPTION": "Surrey/Langley Township border",
@@ -13019,7 +12903,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 117,
         "ROAD_NAME": "200th St",
         "FROM_DESCRIPTION": "Hwy 10 Langley Bypass",
         "TO_DESCRIPTION": "Fraser Hwy",
@@ -13051,7 +12934,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 118,
         "ROAD_NAME": "16th Ave",
         "FROM_DESCRIPTION": "196th St Surrey/Langley border",
         "TO_DESCRIPTION": "200th St",
@@ -13083,7 +12965,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 119,
         "ROAD_NAME": "16th Ave",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "MRN Jurisdiction W of Hwy 13 (264th St)",
@@ -13343,7 +13224,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 120,
         "ROAD_NAME": "River Rd",
         "FROM_DESCRIPTION": "Nordel Way",
         "TO_DESCRIPTION": "Hwy 99",
@@ -13927,7 +13807,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 121,
         "ROAD_NAME": "152nd St",
         "FROM_DESCRIPTION": "64th Ave",
         "TO_DESCRIPTION": "Hwy 10",
@@ -13979,7 +13858,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 122,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "Hwy 10",
         "TO_DESCRIPTION": "Hwy 99",
@@ -14227,7 +14105,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 123,
         "ROAD_NAME": "200th St",
         "FROM_DESCRIPTION": "96th Ave",
         "TO_DESCRIPTION": "Trans Canada Hwy 1",
@@ -14287,7 +14164,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 124,
         "ROAD_NAME": "200th St",
         "FROM_DESCRIPTION": "44th Ave (Langley Township/Langley City/Surrey border)",
         "TO_DESCRIPTION": "16th Ave",
@@ -14427,7 +14303,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 125,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "Langley Township/Surrey border",
         "TO_DESCRIPTION": "200th St",
@@ -14467,7 +14342,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 126,
         "ROAD_NAME": "88th Ave",
         "FROM_DESCRIPTION": "Langley Township/Surrey border",
         "TO_DESCRIPTION": "Trans Canada Hwy 1/200th St",
@@ -14547,7 +14421,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 127,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "196th St (Langley Township/Langley City/Surrey border",
         "TO_DESCRIPTION": "Hwy 10 Langley Bypass",
@@ -14575,7 +14448,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 128,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "Langley Township/City border",
         "TO_DESCRIPTION": "Hwy 13 (264th St)",
@@ -14791,7 +14663,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 129,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "Hwy 13 (264th St)",
         "TO_DESCRIPTION": "Langley Township/Abbotsford border",
@@ -14891,7 +14762,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 130,
         "ROAD_NAME": "16th Ave",
         "FROM_DESCRIPTION": "MRN Jurisdiction E of Hwy 13 (264th St)",
         "TO_DESCRIPTION": "276th St (S side) Langley/Abbotsford border",
@@ -14935,7 +14805,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 131,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "Hwy 10 Langley Bypass",
         "TO_DESCRIPTION": "200th St",
@@ -14967,7 +14836,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 132,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "104th Ave",
         "TO_DESCRIPTION": "Fraser Hwy",
@@ -15011,7 +14879,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 133,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "Scott Rd",
         "TO_DESCRIPTION": "King George Blvd",
@@ -15087,7 +14954,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 134,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "Fraser Hwy",
         "TO_DESCRIPTION": "96th Ave",
@@ -15127,7 +14993,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 135,
         "ROAD_NAME": "Scott Rd",
         "FROM_DESCRIPTION": "72nd Ave",
         "TO_DESCRIPTION": "Nordel Way",
@@ -15219,7 +15084,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 136,
         "ROAD_NAME": "200th St",
         "FROM_DESCRIPTION": "Fraser Hwy",
         "TO_DESCRIPTION": "44th Ave (Langley Township/Langley City/Surrey border)",
@@ -15315,7 +15179,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 137,
         "ROAD_NAME": "152nd St",
         "FROM_DESCRIPTION": "96th Ave",
         "TO_DESCRIPTION": "Fraser Hwy",
@@ -15355,7 +15218,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 138,
         "ROAD_NAME": "88th Ave",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "152nd St",
@@ -15443,7 +15305,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 139,
         "ROAD_NAME": "88th Ave",
         "FROM_DESCRIPTION": "152nd St",
         "TO_DESCRIPTION": "Fraser Hwy",
@@ -15503,7 +15364,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 140,
         "ROAD_NAME": "152nd St",
         "FROM_DESCRIPTION": "Fraser Hwy",
         "TO_DESCRIPTION": "88th Ave",
@@ -15535,7 +15395,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 141,
         "ROAD_NAME": "64th Ave",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "152nd St",
@@ -15619,7 +15478,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 142,
         "ROAD_NAME": "64th Ave",
         "FROM_DESCRIPTION": "152nd St",
         "TO_DESCRIPTION": "Hwy 15 (176th St)",
@@ -15767,7 +15625,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 143,
         "ROAD_NAME": "Barnet Hwy",
         "FROM_DESCRIPTION": "Port Moody/Coquitlam border",
         "TO_DESCRIPTION": "Mariner Way",
@@ -15855,7 +15712,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 144,
         "ROAD_NAME": "Barnet Hwy",
         "FROM_DESCRIPTION": "Mariner Way",
         "TO_DESCRIPTION": "Pinetree Way",
@@ -15903,7 +15759,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 145,
         "ROAD_NAME": "Langley Bypass",
         "FROM_DESCRIPTION": "Hwy10 Langley Bypass (Glover Rd)",
         "TO_DESCRIPTION": "Fraser Hwy",
@@ -16003,7 +15858,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 146,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "Langley Bypass",
         "TO_DESCRIPTION": "Langley Township/City border",
@@ -16051,7 +15905,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 147,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Pinetree Way",
         "TO_DESCRIPTION": "Westwood St (Port Coquitlam/Coquitlam border",
@@ -16099,7 +15952,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 148,
         "ROAD_NAME": "Scott Rd",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "Scott Rd",
@@ -16239,7 +16091,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 149,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "96th Ave",
         "TO_DESCRIPTION": "88th Ave",
@@ -16307,7 +16158,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 150,
         "ROAD_NAME": "88th Ave",
         "FROM_DESCRIPTION": "Scott Rd",
         "TO_DESCRIPTION": "King George Blvd",
@@ -16467,7 +16317,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 151,
         "ROAD_NAME": "Scott Rd",
         "FROM_DESCRIPTION": "64th Ave (Kittson Pkwy)",
         "TO_DESCRIPTION": "72nd Ave",
@@ -16523,7 +16372,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 152,
         "ROAD_NAME": "200th St",
         "FROM_DESCRIPTION": "Trans Canada Hwy 1",
         "TO_DESCRIPTION": "64th Ave",
@@ -16635,7 +16483,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 153,
         "ROAD_NAME": "200th St",
         "FROM_DESCRIPTION": "64th Ave",
         "TO_DESCRIPTION": "62nd Ave (Langley Township/City border)",
@@ -16667,7 +16514,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 154,
         "ROAD_NAME": "64th Ave",
         "FROM_DESCRIPTION": "LangleyTownship/Surrey border",
         "TO_DESCRIPTION": "200th St",
@@ -16703,7 +16549,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 155,
         "ROAD_NAME": "64th Ave",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Mufford Cr",
@@ -16775,7 +16620,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 156,
         "ROAD_NAME": "North Rd",
         "FROM_DESCRIPTION": "Bby/New/Coq border",
         "TO_DESCRIPTION": "Lougheed Hwy",
@@ -16831,7 +16675,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 157,
         "ROAD_NAME": "Clarke Rd",
         "FROM_DESCRIPTION": "Como Lake Ave",
         "TO_DESCRIPTION": "Coquitlam/Port Moody border",
@@ -16891,7 +16734,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 158,
         "ROAD_NAME": "Clarke Rd",
         "FROM_DESCRIPTION": "North Rd",
         "TO_DESCRIPTION": "Como Lake Ave",
@@ -16951,7 +16793,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 159,
         "ROAD_NAME": "Burnaby Mountain Pkwy",
         "FROM_DESCRIPTION": "Hastings St/Dalla-Tina Ave",
         "TO_DESCRIPTION": "Gaglardi Way on-ramp",
@@ -17127,7 +16968,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 160,
         "ROAD_NAME": "Burnaby Mountain Pkwy",
         "FROM_DESCRIPTION": "Gaglardi Way on-ramp",
         "TO_DESCRIPTION": "Gaglardi Way",
@@ -17163,7 +17003,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 161,
         "ROAD_NAME": "Mariner Way on-ramp",
         "FROM_DESCRIPTION": "United Blvd",
         "TO_DESCRIPTION": "Mariner Way",
@@ -17207,7 +17046,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 162,
         "ROAD_NAME": "United Blvd",
         "FROM_DESCRIPTION": "Trans Canada Hwy 1 (legal bdy)",
         "TO_DESCRIPTION": "Mary Hill By-Pass",
@@ -17235,7 +17073,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 163,
         "ROAD_NAME": "United Blvd",
         "FROM_DESCRIPTION": "Mariner Way on-ramp",
         "TO_DESCRIPTION": "Mariner Way",
@@ -17263,7 +17100,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 164,
         "ROAD_NAME": "Mariner Way",
         "FROM_DESCRIPTION": "United Blvd",
         "TO_DESCRIPTION": "Mariner Way on-ramp",
@@ -17291,7 +17127,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 165,
         "ROAD_NAME": "Mariner Way",
         "FROM_DESCRIPTION": "Mariner Way on-ramp",
         "TO_DESCRIPTION": "Austin Ave",
@@ -17435,7 +17270,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 166,
         "ROAD_NAME": "Knight St off-ramp",
         "FROM_DESCRIPTION": "Start of painted gore on SB Knight St",
         "TO_DESCRIPTION": "End of painted gore on WB Bridgeport",
@@ -17511,7 +17345,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 167,
         "ROAD_NAME": "Knight St on-ramp",
         "FROM_DESCRIPTION": "Start of painted gore on WB Bridgeport",
         "TO_DESCRIPTION": "Knight St",
@@ -17583,7 +17416,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 168,
         "ROAD_NAME": "Knight St on-ramp",
         "FROM_DESCRIPTION": "Start of painted median gore on Bridgeport WB Rd",
         "TO_DESCRIPTION": "End of painted gore on E-S Ramp",
@@ -17639,7 +17471,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 169,
         "ROAD_NAME": "Knight St off-ramp",
         "FROM_DESCRIPTION": "S Face of Bridgport Rd overpass",
         "TO_DESCRIPTION": "End of painted gore on Bridgeport EB",
@@ -17755,7 +17586,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 170,
         "ROAD_NAME": "Knight St on-ramp",
         "FROM_DESCRIPTION": "Start of Painted Gore on Bridgepot EB",
         "TO_DESCRIPTION": "S Face of Bridgport Rd overpass",
@@ -17871,7 +17701,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 171,
         "ROAD_NAME": "Knight St Bridge off-ramp",
         "FROM_DESCRIPTION": "Knight St Bridge",
         "TO_DESCRIPTION": "Mitchell Rd",
@@ -17975,7 +17804,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 172,
         "ROAD_NAME": "Knight St Bridge on-ramp",
         "FROM_DESCRIPTION": "Mitchell Rd",
         "TO_DESCRIPTION": "Knight St Bridge",
@@ -18075,7 +17903,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 173,
         "ROAD_NAME": "Bus Loop",
         "FROM_DESCRIPTION": "Knight St off-ramp",
         "TO_DESCRIPTION": "Knight St",
@@ -18171,7 +17998,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 174,
         "ROAD_NAME": "Knight St Bridge off-ramp",
         "FROM_DESCRIPTION": "Knight St Bridge",
         "TO_DESCRIPTION": "SE Marine Dr",
@@ -18283,7 +18109,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 175,
         "ROAD_NAME": "Knight St Bridge on-ramp",
         "FROM_DESCRIPTION": "SE Marine Dr",
         "TO_DESCRIPTION": "Knight St Bridge",
@@ -18387,7 +18212,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 176,
         "ROAD_NAME": "Knight St Bridge off-ramp",
         "FROM_DESCRIPTION": "Knight St Bridge off-ramp",
         "TO_DESCRIPTION": "SE Marine Dr",
@@ -18451,7 +18275,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 177,
         "ROAD_NAME": "Knight St Bridge on-ramp",
         "FROM_DESCRIPTION": "SE Marine Dr",
         "TO_DESCRIPTION": "Knight St Bridge on-ramp",
@@ -18515,7 +18338,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 178,
         "ROAD_NAME": "Knight St Bridge on-ramp",
         "FROM_DESCRIPTION": "Mitchell Rd",
         "TO_DESCRIPTION": "Knight St Bridge",
@@ -18639,7 +18461,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 179,
         "ROAD_NAME": "Kingsway Ave",
         "FROM_DESCRIPTION": "Willingdon Ave",
         "TO_DESCRIPTION": "Griffiths Ave",
@@ -18771,7 +18592,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 180,
         "ROAD_NAME": "Kingsway Ave",
         "FROM_DESCRIPTION": "Griffiths Ave",
         "TO_DESCRIPTION": "10th Ave",
@@ -18915,7 +18735,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 181,
         "ROAD_NAME": "Bridgeport Rd",
         "FROM_DESCRIPTION": "W end of Knight St overpass br deck",
         "TO_DESCRIPTION": "NB entrance Ramp from Knight St",
@@ -18975,7 +18794,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 182,
         "ROAD_NAME": "SW Marine Dr",
         "FROM_DESCRIPTION": "Arthur Laing Bridge (west ramp)",
         "TO_DESCRIPTION": "Arthur Laing Bridge (east ramp)",
@@ -19103,7 +18921,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 183,
         "ROAD_NAME": "Kensington Ave off-ramp",
         "FROM_DESCRIPTION": "Kensington Ave",
         "TO_DESCRIPTION": "Lougheed Hwy",
@@ -19207,7 +19024,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 184,
         "ROAD_NAME": "Kensington Ave on-ramp",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Kensington Ave",
@@ -19303,7 +19119,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 185,
         "ROAD_NAME": "McBride Blvd on-ramp",
         "FROM_DESCRIPTION": "10th Ave",
         "TO_DESCRIPTION": "McBride Blvd",
@@ -19359,7 +19174,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 186,
         "ROAD_NAME": "Granville St Bridge off-ramp",
         "FROM_DESCRIPTION": "Granville St Bridge",
         "TO_DESCRIPTION": "ramp end (Pacific Blvd)",
@@ -19467,7 +19281,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 187,
         "ROAD_NAME": "Cambie St Bridge on-ramp",
         "FROM_DESCRIPTION": "Nelson St",
         "TO_DESCRIPTION": "Cambie St Bridge",
@@ -19519,7 +19332,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 188,
         "ROAD_NAME": "Granville St Bridge on-ramp",
         "FROM_DESCRIPTION": "Howe St (ramp start)",
         "TO_DESCRIPTION": "Granville St Bridge",
@@ -19571,7 +19383,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 189,
         "ROAD_NAME": "Granville St Bridge off-ramp",
         "FROM_DESCRIPTION": "Granville St Bridge off-ramp",
         "TO_DESCRIPTION": "ramp end (Fir St)",
@@ -19635,7 +19446,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 190,
         "ROAD_NAME": "Cambie St Bridge off-ramp",
         "FROM_DESCRIPTION": "Cambie St Bridge",
         "TO_DESCRIPTION": "ramp end (6th Ave)",
@@ -19695,7 +19505,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 191,
         "ROAD_NAME": "Boundary Rd off-ramp",
         "FROM_DESCRIPTION": "Start of Painted Gore on SB Boundary Rd",
         "TO_DESCRIPTION": "End of Painted Gore on WB Marine Way",
@@ -19747,7 +19556,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 192,
         "ROAD_NAME": "Gaglardi Way on-ramp",
         "FROM_DESCRIPTION": "Burnaby Mountain Pkwy",
         "TO_DESCRIPTION": "Gaglardi Way",
@@ -19799,7 +19607,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 193,
         "ROAD_NAME": "Knight St Bridge off-ramp",
         "FROM_DESCRIPTION": "Knight St Bridge",
         "TO_DESCRIPTION": "Mitchell Rd",
@@ -19919,7 +19726,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 194,
         "ROAD_NAME": "Royal Ave",
         "FROM_DESCRIPTION": "Royal Ave on-ramp",
         "TO_DESCRIPTION": "McBride Blvd",
@@ -19947,7 +19753,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 195,
         "ROAD_NAME": "Cambie St Bridge",
         "FROM_DESCRIPTION": "Cambie St Bridge off-ramp",
         "TO_DESCRIPTION": "Cambie St Bridge off-ramp",
@@ -19987,7 +19792,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 196,
         "ROAD_NAME": "Granville St Bridge",
         "FROM_DESCRIPTION": "Granville St Bridge off-ramp",
         "TO_DESCRIPTION": "Granville St Bridge off-ramp",
@@ -20023,7 +19827,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 197,
         "ROAD_NAME": "Granville St Bridge on-ramp",
         "FROM_DESCRIPTION": "ramp start (Pacific Blvd)",
         "TO_DESCRIPTION": "Granville St Bridge",
@@ -20123,7 +19926,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 198,
         "ROAD_NAME": "Boundary Rd",
         "FROM_DESCRIPTION": "1st Ave",
         "TO_DESCRIPTION": "Hastings St",
@@ -20167,7 +19969,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 199,
         "ROAD_NAME": "Boundary Rd",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "1st Ave",
@@ -20199,7 +20000,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 200,
         "ROAD_NAME": "Boundary Rd",
         "FROM_DESCRIPTION": "Grandview Hwy",
         "TO_DESCRIPTION": "Lougheed Hwy",
@@ -20247,7 +20047,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 201,
         "ROAD_NAME": "SE Marine Dr",
         "FROM_DESCRIPTION": "Knight St Bridge off-ramp",
         "TO_DESCRIPTION": "Knight St Bridge on-ramp",
@@ -20279,7 +20078,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 202,
         "ROAD_NAME": "SE Marine Dr",
         "FROM_DESCRIPTION": "Knight St Bridge on-ramp",
         "TO_DESCRIPTION": "Knight St Bridge off-ramp",
@@ -20307,7 +20105,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 203,
         "ROAD_NAME": "Knight St off-ramp",
         "FROM_DESCRIPTION": "Knight St",
         "TO_DESCRIPTION": "Bus Loop",
@@ -20359,7 +20156,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 204,
         "ROAD_NAME": "Knight St off-ramp",
         "FROM_DESCRIPTION": "Bus Loop",
         "TO_DESCRIPTION": "SE Marine Dr",
@@ -20395,7 +20191,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 205,
         "ROAD_NAME": "Cambie St",
         "FROM_DESCRIPTION": "41st Ave",
         "TO_DESCRIPTION": "SW Marine Dr",
@@ -20451,7 +20246,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 206,
         "ROAD_NAME": "Cambie St",
         "FROM_DESCRIPTION": "Broadway Ave",
         "TO_DESCRIPTION": "41st Ave",
@@ -20663,7 +20457,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 207,
         "ROAD_NAME": "Granville St Bridge on-ramp",
         "FROM_DESCRIPTION": "ramp start (Hemlock St)",
         "TO_DESCRIPTION": "Granville St Bridge",
@@ -20743,7 +20536,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 208,
         "ROAD_NAME": "Granville St Bridge",
         "FROM_DESCRIPTION": "Granville St Bridge off-ramp",
         "TO_DESCRIPTION": "Granville St Bridge (north abut)",
@@ -20775,7 +20567,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 209,
         "ROAD_NAME": "Nelson St",
         "FROM_DESCRIPTION": "Howe St",
         "TO_DESCRIPTION": "Seymour St",
@@ -20803,7 +20594,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 210,
         "ROAD_NAME": "Nelson St",
         "FROM_DESCRIPTION": "Seymour St",
         "TO_DESCRIPTION": "Cambie St Bridge on-ramp",
@@ -20839,7 +20629,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 211,
         "ROAD_NAME": "Seymour St",
         "FROM_DESCRIPTION": "Granville St Bridge off-ramp",
         "TO_DESCRIPTION": "Nelson St",
@@ -20883,7 +20672,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 212,
         "ROAD_NAME": "Smithe St",
         "FROM_DESCRIPTION": "Seymour St",
         "TO_DESCRIPTION": "Howe St",
@@ -20911,7 +20699,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 213,
         "ROAD_NAME": "Smithe St",
         "FROM_DESCRIPTION": "Cambie St Bridge",
         "TO_DESCRIPTION": "Seymour St",
@@ -20963,7 +20750,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 214,
         "ROAD_NAME": "Oak St",
         "FROM_DESCRIPTION": "41st Ave",
         "TO_DESCRIPTION": "70th Ave",
@@ -21091,7 +20877,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 215,
         "ROAD_NAME": "SE Marine Dr",
         "FROM_DESCRIPTION": "Ontario St",
         "TO_DESCRIPTION": "Knight St Bridge on-ramp",
@@ -21243,7 +21028,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 216,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "88th Ave",
         "TO_DESCRIPTION": "64th Ave",
@@ -21335,7 +21119,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 217,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "64th Ave",
         "TO_DESCRIPTION": "Hwy 10",
@@ -21427,7 +21210,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 218,
         "ROAD_NAME": "64th Ave",
         "FROM_DESCRIPTION": "Scott Rd",
         "TO_DESCRIPTION": "King George Blvd",
@@ -21515,7 +21297,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 219,
         "ROAD_NAME": "Mariner Way",
         "FROM_DESCRIPTION": "Austin Ave",
         "TO_DESCRIPTION": "Como Lake Ave",
@@ -21651,7 +21432,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 220,
         "ROAD_NAME": "Marine Dr",
         "FROM_DESCRIPTION": "District of North Van/West Van border",
         "TO_DESCRIPTION": "Capilano Rd",
@@ -21679,7 +21459,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 221,
         "ROAD_NAME": "Marine Dr",
         "FROM_DESCRIPTION": "Capilano Rd",
         "TO_DESCRIPTION": " MacKay Ave (NV District/City border)",
@@ -21739,7 +21518,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 222,
         "ROAD_NAME": "Cambie St Bridge off-ramp",
         "FROM_DESCRIPTION": "Cambie St Bridge",
         "TO_DESCRIPTION": "ramp end (Pacific Blvd)",
@@ -21799,7 +21577,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 223,
         "ROAD_NAME": "Cambie St Bridge",
         "FROM_DESCRIPTION": "Cambie St Bridge off-ramp",
         "TO_DESCRIPTION": "Smithe St",
@@ -21843,7 +21620,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 224,
         "ROAD_NAME": "Cambie St Bridge",
         "FROM_DESCRIPTION": "Cambie St Bridge on-ramp",
         "TO_DESCRIPTION": "Cambie St Bridge on-ramp",
@@ -21891,7 +21667,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 225,
         "ROAD_NAME": "Granville St Bridge off-ramp",
         "FROM_DESCRIPTION": "Granville St Bridge off-ramp",
         "TO_DESCRIPTION": "ramp end (4th Ave)",
@@ -21951,7 +21726,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 226,
         "ROAD_NAME": "Granville St Bridge off-ramp",
         "FROM_DESCRIPTION": "Granville St Bridge",
         "TO_DESCRIPTION": "Granville St Bridge off-ramp",
@@ -21995,7 +21769,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 227,
         "ROAD_NAME": "Knight St",
         "FROM_DESCRIPTION": "S Face of Bridgport Rd overpass",
         "TO_DESCRIPTION": "S end of Knight St br deck",
@@ -22035,7 +21808,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 228,
         "ROAD_NAME": "SW Marine Dr",
         "FROM_DESCRIPTION": "70th Ave (SW Marine Dr off-ramp)",
         "TO_DESCRIPTION": "Cambie St",
@@ -22067,7 +21839,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 229,
         "ROAD_NAME": "SW Marine Dr",
         "FROM_DESCRIPTION": "Arthur Laing Bridge (east ramp)",
         "TO_DESCRIPTION": "70th Ave (SW Marine Dr on-ramp)",
@@ -22107,7 +21878,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 230,
         "ROAD_NAME": "SW Marine Dr",
         "FROM_DESCRIPTION": "70th Ave (SW Marine Dr on-ramp)",
         "TO_DESCRIPTION": "70th Ave (SW Marine Dr off-ramp)",
@@ -22139,7 +21909,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 231,
         "ROAD_NAME": "Kensington Ave interchange",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Kensington Ave",
@@ -22283,7 +22052,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 232,
         "ROAD_NAME": "Kensington Ave",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Sprott St",
@@ -22379,7 +22147,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 233,
         "ROAD_NAME": "Seymour St",
         "FROM_DESCRIPTION": "Nelson St",
         "TO_DESCRIPTION": "Smithe St",
@@ -22407,7 +22174,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 234,
         "ROAD_NAME": "Georgia St",
         "FROM_DESCRIPTION": "Seymour St",
         "TO_DESCRIPTION": "Georgia St Viaduct",
@@ -22451,7 +22217,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 235,
         "ROAD_NAME": "Seymour St",
         "FROM_DESCRIPTION": "Smithe St",
         "TO_DESCRIPTION": "Georgia St",
@@ -22479,7 +22244,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 236,
         "ROAD_NAME": "Seymour St",
         "FROM_DESCRIPTION": "Georgia St",
         "TO_DESCRIPTION": "Hastings St",
@@ -22511,7 +22275,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 237,
         "ROAD_NAME": "Hastings St",
         "FROM_DESCRIPTION": "Howe St",
         "TO_DESCRIPTION": "Seymour St",
@@ -22539,7 +22302,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 238,
         "ROAD_NAME": "Howe St",
         "FROM_DESCRIPTION": "Smithe St",
         "TO_DESCRIPTION": "Nelson St",
@@ -22567,7 +22329,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 239,
         "ROAD_NAME": "Georgia St",
         "FROM_DESCRIPTION": "Howe St",
         "TO_DESCRIPTION": "Seymour St",
@@ -22595,7 +22356,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 240,
         "ROAD_NAME": "Hastings St",
         "FROM_DESCRIPTION": "Clark Dr",
         "TO_DESCRIPTION": "Nanaimo St",
@@ -22627,7 +22387,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 241,
         "ROAD_NAME": "Hastings St",
         "FROM_DESCRIPTION": "Nanaimo St",
         "TO_DESCRIPTION": "Boundary Rd",
@@ -22683,7 +22442,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 242,
         "ROAD_NAME": "Georgia St",
         "FROM_DESCRIPTION": "Hwy 99/1A (Chilco St)",
         "TO_DESCRIPTION": "Georgia St Viaduct",
@@ -22739,7 +22497,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 243,
         "ROAD_NAME": "SE Marine Dr",
         "FROM_DESCRIPTION": "Knight St Bridge on-ramp",
         "TO_DESCRIPTION": "Knight St off-ramp",
@@ -22767,7 +22524,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 244,
         "ROAD_NAME": "McBride Blvd",
         "FROM_DESCRIPTION": "McBride Blvd",
         "TO_DESCRIPTION": "McBride Blvd off-ramp",
@@ -22815,7 +22571,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 245,
         "ROAD_NAME": "Howe St",
         "FROM_DESCRIPTION": "Georgia St",
         "TO_DESCRIPTION": "Smithe St",
@@ -22847,7 +22602,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 246,
         "ROAD_NAME": "Howe St",
         "FROM_DESCRIPTION": "Hastings St",
         "TO_DESCRIPTION": "Georgia St",
@@ -22883,7 +22637,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 247,
         "ROAD_NAME": "Granville St",
         "FROM_DESCRIPTION": "Broadway Ave",
         "TO_DESCRIPTION": "41st Ave",
@@ -22947,7 +22700,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 248,
         "ROAD_NAME": "Granville St",
         "FROM_DESCRIPTION": "41st Ave",
         "TO_DESCRIPTION": "70th Ave",
@@ -23015,7 +22767,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 249,
         "ROAD_NAME": "Granville St",
         "FROM_DESCRIPTION": "70th Ave",
         "TO_DESCRIPTION": "SW Marine Dr",
@@ -23075,7 +22826,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 250,
         "ROAD_NAME": "70th Ave",
         "FROM_DESCRIPTION": "Cornish St",
         "TO_DESCRIPTION": "Granville St",
@@ -23107,7 +22857,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 251,
         "ROAD_NAME": "Cambie St Bridge off-ramp",
         "FROM_DESCRIPTION": "Cambie St Bridge",
         "TO_DESCRIPTION": "ramp end (6th Ave)",
@@ -23175,7 +22924,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 252,
         "ROAD_NAME": "Broadway Ave",
         "FROM_DESCRIPTION": "Cambie St",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -23219,7 +22967,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 253,
         "ROAD_NAME": "Kingsway Ave",
         "FROM_DESCRIPTION": "Joyce St",
         "TO_DESCRIPTION": "Boundary Rd",
@@ -23287,7 +23034,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 254,
         "ROAD_NAME": "Cambie St Bridge",
         "FROM_DESCRIPTION": "Cambie St Bridge on-ramp",
         "TO_DESCRIPTION": "Cambie St Bridge off-ramp",
@@ -23323,7 +23069,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 255,
         "ROAD_NAME": "McBride Blvd",
         "FROM_DESCRIPTION": "McBride Blvd off-ramp",
         "TO_DESCRIPTION": "McBride Blvd off-ramp",
@@ -23359,7 +23104,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 256,
         "ROAD_NAME": "Pattullo Bridge",
         "FROM_DESCRIPTION": "McBride Blvd",
         "TO_DESCRIPTION": "King George Blvd",
@@ -23435,7 +23179,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 257,
         "ROAD_NAME": "McBride Blvd",
         "FROM_DESCRIPTION": "McBride Blvd off-ramp",
         "TO_DESCRIPTION": "McBride Blvd on-ramp",
@@ -23479,7 +23222,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 258,
         "ROAD_NAME": "McBride Blvd",
         "FROM_DESCRIPTION": "McBride Blvd on-ramp",
         "TO_DESCRIPTION": "Pattullo Bridge",
@@ -23523,7 +23265,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 259,
         "ROAD_NAME": "McBride Blvd",
         "FROM_DESCRIPTION": "Royal Ave",
         "TO_DESCRIPTION": "East Columbia St",
@@ -23563,7 +23304,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 260,
         "ROAD_NAME": "Cambie St Bridge on-ramp",
         "FROM_DESCRIPTION": "ramp start (6th Ave/2nd Ave)",
         "TO_DESCRIPTION": "Cambie St Bridge",
@@ -23611,7 +23351,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 261,
         "ROAD_NAME": "Broadway Ave",
         "FROM_DESCRIPTION": "Alma St",
         "TO_DESCRIPTION": "Granville St",
@@ -23667,7 +23406,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 262,
         "ROAD_NAME": "Broadway Ave",
         "FROM_DESCRIPTION": "Granville St",
         "TO_DESCRIPTION": "Oak St",
@@ -23707,7 +23445,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 263,
         "ROAD_NAME": "Broadway Ave",
         "FROM_DESCRIPTION": "Oak St",
         "TO_DESCRIPTION": "Cambie St",
@@ -23747,7 +23484,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 264,
         "ROAD_NAME": "Kingsway Ave",
         "FROM_DESCRIPTION": "Main St",
         "TO_DESCRIPTION": "Broadway Ave",
@@ -23783,7 +23519,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 265,
         "ROAD_NAME": "Clark Dr",
         "FROM_DESCRIPTION": "Broadway Ave",
         "TO_DESCRIPTION": "Kinght St",
@@ -23859,7 +23594,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 266,
         "ROAD_NAME": "Broadway Ave",
         "FROM_DESCRIPTION": "Clark Dr",
         "TO_DESCRIPTION": "Nanaimo St",
@@ -23915,7 +23649,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 267,
         "ROAD_NAME": "Broadway Ave",
         "FROM_DESCRIPTION": "Nanaimo St",
         "TO_DESCRIPTION": "Rupert St",
@@ -23983,7 +23716,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 268,
         "ROAD_NAME": "SW Marine Dr",
         "FROM_DESCRIPTION": "Camosun St",
         "TO_DESCRIPTION": "41st Ave",
@@ -24023,7 +23755,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 269,
         "ROAD_NAME": "SW Marine Dr",
         "FROM_DESCRIPTION": "41st Ave",
         "TO_DESCRIPTION": "Cornish St",
@@ -24455,7 +24186,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 270,
         "ROAD_NAME": "Oak St",
         "FROM_DESCRIPTION": "70th Ave",
         "TO_DESCRIPTION": "Oak St Bridge (Hwy 99)",
@@ -24495,7 +24225,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 271,
         "ROAD_NAME": "70th Ave",
         "FROM_DESCRIPTION": "Granville St",
         "TO_DESCRIPTION": "Oak St",
@@ -24551,7 +24280,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 272,
         "ROAD_NAME": "Grandview Hwy",
         "FROM_DESCRIPTION": "Nanaimo St",
         "TO_DESCRIPTION": "Boundary Rd",
@@ -24691,7 +24419,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 273,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "Pattullo Bridge",
         "TO_DESCRIPTION": "Scott Rd on-ramp",
@@ -24731,7 +24458,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 274,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "Scott Rd",
         "TO_DESCRIPTION": "Scott Rd on-ramp",
@@ -24783,7 +24509,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 275,
         "ROAD_NAME": "McBride Blvd",
         "FROM_DESCRIPTION": "McBride Blvd",
         "TO_DESCRIPTION": "10th Ave",
@@ -24827,7 +24552,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 276,
         "ROAD_NAME": "McBride Blvd",
         "FROM_DESCRIPTION": "10th Ave",
         "TO_DESCRIPTION": "McBride Blvd",
@@ -24939,7 +24663,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 277,
         "ROAD_NAME": "41st Ave",
         "FROM_DESCRIPTION": "SW Marine Dr",
         "TO_DESCRIPTION": "Granville St",
@@ -25019,7 +24742,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 278,
         "ROAD_NAME": "41st Ave",
         "FROM_DESCRIPTION": "Granville St",
         "TO_DESCRIPTION": "Oak St",
@@ -25063,7 +24785,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 279,
         "ROAD_NAME": "Oak St",
         "FROM_DESCRIPTION": "Broadway Ave",
         "TO_DESCRIPTION": "41st Ave",
@@ -25187,7 +24908,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 280,
         "ROAD_NAME": "41st Ave",
         "FROM_DESCRIPTION": "Oak St",
         "TO_DESCRIPTION": "Cambie St",
@@ -25223,7 +24943,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 281,
         "ROAD_NAME": "41st Ave",
         "FROM_DESCRIPTION": "Cambie St",
         "TO_DESCRIPTION": "Knight St",
@@ -25283,7 +25002,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 282,
         "ROAD_NAME": "Knight St",
         "FROM_DESCRIPTION": "41st Ave",
         "TO_DESCRIPTION": "Knight St off-ramp",
@@ -25359,7 +25077,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 283,
         "ROAD_NAME": "Clark Dr",
         "FROM_DESCRIPTION": "Hastings St",
         "TO_DESCRIPTION": "1st Ave",
@@ -25403,7 +25120,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 284,
         "ROAD_NAME": "Clark Dr",
         "FROM_DESCRIPTION": "1st Ave",
         "TO_DESCRIPTION": "Broadway Ave",
@@ -25435,7 +25151,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 285,
         "ROAD_NAME": "1st Ave",
         "FROM_DESCRIPTION": "Clark Dr",
         "TO_DESCRIPTION": "Boundary Rd",
@@ -25531,7 +25246,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 286,
         "ROAD_NAME": "70th Ave (SW Marine Dr off-ramp)",
         "FROM_DESCRIPTION": "SW Marine Dr",
         "TO_DESCRIPTION": "Heather St",
@@ -25599,7 +25313,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 287,
         "ROAD_NAME": "SE Marine Dr",
         "FROM_DESCRIPTION": "Knight St off-ramp",
         "TO_DESCRIPTION": "Knight St Bridge on-ramp",
@@ -25627,7 +25340,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 288,
         "ROAD_NAME": "SE Marine Dr",
         "FROM_DESCRIPTION": "Knight St Bridge off-ramp",
         "TO_DESCRIPTION": "Knight St Bridge off-ramp",
@@ -25655,7 +25367,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 289,
         "ROAD_NAME": "SE Marine Dr",
         "FROM_DESCRIPTION": "Knight St Bridge off-ramp",
         "TO_DESCRIPTION": "Marine Way",
@@ -25827,7 +25538,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 290,
         "ROAD_NAME": "Knight St Bridge off-ramp",
         "FROM_DESCRIPTION": "Knight St Bridge off-ramp",
         "TO_DESCRIPTION": "SE Marine Dr",
@@ -25891,7 +25601,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 291,
         "ROAD_NAME": "Marine Way",
         "FROM_DESCRIPTION": "SE Marine Dr",
         "TO_DESCRIPTION": "Boundary Rd",
@@ -26063,7 +25772,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 292,
         "ROAD_NAME": "Kingsway Ave",
         "FROM_DESCRIPTION": "Broadway Ave",
         "TO_DESCRIPTION": "Clark Dr",
@@ -26191,7 +25899,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 293,
         "ROAD_NAME": "Kingsway Ave",
         "FROM_DESCRIPTION": "Clark Dr",
         "TO_DESCRIPTION": "Joyce St",
@@ -26335,7 +26042,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 294,
         "ROAD_NAME": "Knight St",
         "FROM_DESCRIPTION": "Clark Dr",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -26415,7 +26121,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 295,
         "ROAD_NAME": "Knight St",
         "FROM_DESCRIPTION": "Kingsway Ave",
         "TO_DESCRIPTION": "41st Ave",
@@ -26487,7 +26192,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 296,
         "ROAD_NAME": "Knight St Bridge",
         "FROM_DESCRIPTION": "Knight St Bridge off-ramp",
         "TO_DESCRIPTION": "Knight St Bridge on-ramp",
@@ -26523,7 +26227,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 297,
         "ROAD_NAME": "Knight St Bridge off-ramp",
         "FROM_DESCRIPTION": "Knight St Bridge",
         "TO_DESCRIPTION": "Knight St Bridge off-ramp",
@@ -26575,7 +26278,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 298,
         "ROAD_NAME": "70th Ave",
         "FROM_DESCRIPTION": "Oak St",
         "TO_DESCRIPTION": "Heather St",
@@ -26615,7 +26317,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 299,
         "ROAD_NAME": "70th Ave (SW Marine Dr on-ramp)",
         "FROM_DESCRIPTION": "Heather St",
         "TO_DESCRIPTION": "SW Marine Dr",
@@ -26659,7 +26360,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 300,
         "ROAD_NAME": "SW Marine Dr",
         "FROM_DESCRIPTION": "Cambie St",
         "TO_DESCRIPTION": "Ontario St",
@@ -26779,7 +26479,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 301,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "108th Ave",
         "TO_DESCRIPTION": "104th Ave",
@@ -26839,7 +26538,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 302,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "Hwy 99",
         "TO_DESCRIPTION": "152nd St",
@@ -26903,7 +26601,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 303,
         "ROAD_NAME": "152nd St",
         "FROM_DESCRIPTION": "Hwy 10",
         "TO_DESCRIPTION": "King George Blvd",
@@ -27031,7 +26728,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 304,
         "ROAD_NAME": "152nd St",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "16th Ave (North Bluff Rd)",
@@ -27107,7 +26803,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 305,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "152nd St",
         "TO_DESCRIPTION": "16th Ave",
@@ -27171,7 +26866,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 306,
         "ROAD_NAME": "King George Blvd",
         "FROM_DESCRIPTION": "16th Ave",
         "TO_DESCRIPTION": "Hwy 99 (legal bdy near 8th Ave)",
@@ -27215,7 +26909,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 307,
         "ROAD_NAME": "16th Ave",
         "FROM_DESCRIPTION": "160 St (White Rock/Surrey border)",
         "TO_DESCRIPTION": "King George Blvd",
@@ -27243,7 +26936,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 308,
         "ROAD_NAME": "16th Ave",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "MRN Jurisdiction W of Hwy 15 (176th St)",
@@ -27323,7 +27015,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 309,
         "ROAD_NAME": "Scott Rd",
         "FROM_DESCRIPTION": "MRN Jurisdiction N of Hwy 10",
         "TO_DESCRIPTION": "64th Ave (Kittson Pkwy)",
@@ -27387,7 +27078,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 310,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "96th Ave",
@@ -27487,7 +27177,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 311,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "Fraser Hwy",
@@ -27595,7 +27284,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 312,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "Fraser Hwy",
         "TO_DESCRIPTION": "152nd St",
@@ -27671,7 +27359,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 313,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "96th Ave",
         "TO_DESCRIPTION": "152nd St",
@@ -27715,7 +27402,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 314,
         "ROAD_NAME": "88th Ave",
         "FROM_DESCRIPTION": "Fraser Hwy",
         "TO_DESCRIPTION": "Hwy 15 (176th St)",
@@ -27867,7 +27553,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 315,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "152nd St",
         "TO_DESCRIPTION": "88th Ave",
@@ -27899,7 +27584,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 316,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "88th Ave",
         "TO_DESCRIPTION": "Hwy 15",
@@ -28055,7 +27739,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 317,
         "ROAD_NAME": "104th Ave",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "152nd St",
@@ -28135,7 +27818,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 318,
         "ROAD_NAME": "104th Ave",
         "FROM_DESCRIPTION": "152nd St",
         "TO_DESCRIPTION": "Trans Canada Hwy 1",
@@ -28199,7 +27881,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 319,
         "ROAD_NAME": "152nd St",
         "FROM_DESCRIPTION": "Trans Canada Hwy 1 (Lincoln Dr)",
         "TO_DESCRIPTION": "104th Ave",
@@ -28231,7 +27912,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 320,
         "ROAD_NAME": "152nd St",
         "FROM_DESCRIPTION": "104th Ave",
         "TO_DESCRIPTION": "96th Ave",
@@ -28291,7 +27971,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 321,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Pitt River Rd",
         "TO_DESCRIPTION": "Colony Farm Rd",
@@ -28391,7 +28070,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 322,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Barnet Hwy",
         "TO_DESCRIPTION": "Pitt River Rd",
@@ -28563,7 +28241,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 323,
         "ROAD_NAME": "SW Marine Dr",
         "FROM_DESCRIPTION": "Arthur Laing Bridge (east ramp)",
         "TO_DESCRIPTION": "Arthur Laing Bridge (west ramp)",
@@ -28691,7 +28368,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 324,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "King Edward St",
         "TO_DESCRIPTION": "Trans Canada Hwy 1",
@@ -28747,7 +28423,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 325,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Brunette Ave",
         "TO_DESCRIPTION": "King Edward St",
@@ -28823,7 +28498,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 326,
         "ROAD_NAME": "Como Lake Ave",
         "FROM_DESCRIPTION": "North Rd",
         "TO_DESCRIPTION": "Clarke Rd",
@@ -28859,7 +28533,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 327,
         "ROAD_NAME": "Como Lake Ave",
         "FROM_DESCRIPTION": "Clarke Rd",
         "TO_DESCRIPTION": "Mariner Way",
@@ -28995,7 +28668,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 328,
         "ROAD_NAME": "Mariner Way",
         "FROM_DESCRIPTION": "Como Lake Ave",
         "TO_DESCRIPTION": "Barnet Hwy",
@@ -29359,7 +29031,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 329,
         "ROAD_NAME": "Barnet Hwy",
         "FROM_DESCRIPTION": "Port Moody/Burnaby border",
         "TO_DESCRIPTION": "Clarke St",
@@ -29715,7 +29386,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 330,
         "ROAD_NAME": "Barnet Hwy",
         "FROM_DESCRIPTION": "Clarke St",
         "TO_DESCRIPTION": "St Johns St",
@@ -29747,7 +29417,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 331,
         "ROAD_NAME": "St Johns St",
         "FROM_DESCRIPTION": "Clarke Rd",
         "TO_DESCRIPTION": "Barnet Hwy",
@@ -29779,7 +29448,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 332,
         "ROAD_NAME": "Moody St",
         "FROM_DESCRIPTION": "St Johns St",
         "TO_DESCRIPTION": "Clarke St",
@@ -29811,7 +29479,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 333,
         "ROAD_NAME": "St Johns St",
         "FROM_DESCRIPTION": "Barnet Hwy",
         "TO_DESCRIPTION": "Moody St",
@@ -29863,7 +29530,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 334,
         "ROAD_NAME": "St Johns St",
         "FROM_DESCRIPTION": "Moody St",
         "TO_DESCRIPTION": "Dewdney Trunk Rd (Barnet Hwy)",
@@ -29947,7 +29613,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 335,
         "ROAD_NAME": "Barnet Hwy",
         "FROM_DESCRIPTION": "Dewdney Trunk Rd (St Johns St)",
         "TO_DESCRIPTION": "Ioco Rd",
@@ -29983,7 +29648,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 336,
         "ROAD_NAME": "Barnet Hwy",
         "FROM_DESCRIPTION": "Ioco Rd",
         "TO_DESCRIPTION": "Port Moody/Coquitlam border",
@@ -30023,7 +29687,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 337,
         "ROAD_NAME": "Royal Ave",
         "FROM_DESCRIPTION": "Stewardson Way",
         "TO_DESCRIPTION": "Royal Ave on-ramp",
@@ -30143,7 +29806,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 338,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Austin Rd",
         "TO_DESCRIPTION": "North Rd",
@@ -30179,7 +29841,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 339,
         "ROAD_NAME": "Hastings St",
         "FROM_DESCRIPTION": "Boundary Rd",
         "TO_DESCRIPTION": "Willingdon Ave",
@@ -30235,7 +29896,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 340,
         "ROAD_NAME": "Hastings St",
         "FROM_DESCRIPTION": "Willingdon Ave",
         "TO_DESCRIPTION": "Inlet Dr (Hastings St)",
@@ -30419,7 +30079,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 341,
         "ROAD_NAME": "Broadway Ave",
         "FROM_DESCRIPTION": "Gaglardi Way",
         "TO_DESCRIPTION": "North Rd",
@@ -30499,7 +30158,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 342,
         "ROAD_NAME": "Gaglardi Way",
         "FROM_DESCRIPTION": "Broadway Ave",
         "TO_DESCRIPTION": "Burnaby Mountain Pkwy",
@@ -30779,7 +30437,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 343,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Gaglardi Way",
         "TO_DESCRIPTION": "Austin Rd",
@@ -30875,7 +30532,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 344,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Kensington Ave interchange",
         "TO_DESCRIPTION": "Gaglardi Way",
@@ -31111,7 +30767,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 345,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Boundary Rd",
         "TO_DESCRIPTION": "Willingdon Ave",
@@ -31227,7 +30882,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 346,
         "ROAD_NAME": "Willingdon Ave",
         "FROM_DESCRIPTION": "Hastings St",
         "TO_DESCRIPTION": "Lougheed Hwy",
@@ -31311,7 +30965,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 347,
         "ROAD_NAME": "Willingdon Ave",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Canada Way (TCH1 gap)",
@@ -31395,7 +31048,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 348,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Willingdon Ave",
         "TO_DESCRIPTION": "North Rd (bby/coq border)",
@@ -31567,7 +31219,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 349,
         "ROAD_NAME": "Lougheed Hwy",
         "FROM_DESCRIPTION": "Kensington Ave on-ramp",
         "TO_DESCRIPTION": "Kensington Ave interchange",
@@ -31623,7 +31274,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 350,
         "ROAD_NAME": "North Rd",
         "FROM_DESCRIPTION": "Austin Ave",
         "TO_DESCRIPTION": "Clarke Rd (Cottonwood Ave)",
@@ -31683,7 +31333,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 351,
         "ROAD_NAME": "North Rd",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Austin Rd/Austin Ave",
@@ -31715,7 +31364,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 352,
         "ROAD_NAME": "Esplanade",
         "FROM_DESCRIPTION": "Ped Xing at Forbes Ave",
         "TO_DESCRIPTION": "Lonsdale Ave",
@@ -31775,7 +31423,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 353,
         "ROAD_NAME": "Esplanade",
         "FROM_DESCRIPTION": "Lonsdale Ave",
         "TO_DESCRIPTION": "WB Stop Bar at Low Level Rd",
@@ -31827,7 +31474,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 354,
         "ROAD_NAME": "Westminster Hwy",
         "FROM_DESCRIPTION": "Hwy 99",
         "TO_DESCRIPTION": "Knight St",
@@ -31863,7 +31509,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 355,
         "ROAD_NAME": "Westminster Hwy",
         "FROM_DESCRIPTION": "Gilbert Rd",
         "TO_DESCRIPTION": "No 3 Rd",
@@ -31907,7 +31552,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 356,
         "ROAD_NAME": "Westminster Hwy",
         "FROM_DESCRIPTION": "No 3 Rd",
         "TO_DESCRIPTION": "Hwy 99 (legal bdy)",
@@ -32011,7 +31655,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 357,
         "ROAD_NAME": "No 3 Rd",
         "FROM_DESCRIPTION": "Alderbridge Way",
         "TO_DESCRIPTION": "Sea Island Way",
@@ -32091,7 +31734,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 358,
         "ROAD_NAME": "No 3 Rd",
         "FROM_DESCRIPTION": "Westminster Hwy",
         "TO_DESCRIPTION": "Alderbridge Way",
@@ -32131,7 +31773,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 359,
         "ROAD_NAME": "Moody St",
         "FROM_DESCRIPTION": "Clarke St",
         "TO_DESCRIPTION": "N end of br deck at Moody St loop",
@@ -32163,7 +31804,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 360,
         "ROAD_NAME": "Moody St Loop",
         "FROM_DESCRIPTION": "N end of br deck at Moody St loop",
         "TO_DESCRIPTION": "Murray St",
@@ -32259,7 +31899,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 361,
         "ROAD_NAME": "Knight St",
         "FROM_DESCRIPTION": "Knight St off-ramp",
         "TO_DESCRIPTION": "S Face of Bridgport Rd overpass",
@@ -32291,7 +31930,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 362,
         "ROAD_NAME": "Knight St",
         "FROM_DESCRIPTION": "Knight St on-ramp",
         "TO_DESCRIPTION": "Hwy 91 (legal bdy)",
@@ -32363,7 +32001,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 363,
         "ROAD_NAME": "Royal Ave on-ramp",
         "FROM_DESCRIPTION": "McBride Blvd off-ramp",
         "TO_DESCRIPTION": "Royal Ave",
@@ -32423,7 +32060,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 364,
         "ROAD_NAME": "Cambie St Bridge",
         "FROM_DESCRIPTION": "Cambie St Bridge off-ramp",
         "TO_DESCRIPTION": "Cambie St Bridge (south abut)",
@@ -32451,7 +32087,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 365,
         "ROAD_NAME": "Cambie St",
         "FROM_DESCRIPTION": "Cambie St Bridge",
         "TO_DESCRIPTION": "Broadway Ave",
@@ -32487,7 +32122,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 366,
         "ROAD_NAME": "Granville St Bridge",
         "FROM_DESCRIPTION": "Granville St Bridge on-ramp",
         "TO_DESCRIPTION": "Granville St Bridge off-ramp",
@@ -32547,7 +32181,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 367,
         "ROAD_NAME": "Royal Ave on-ramp",
         "FROM_DESCRIPTION": "McBride Blvd off-ramp",
         "TO_DESCRIPTION": "Royal Ave",
@@ -32603,7 +32236,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 368,
         "ROAD_NAME": "McBride Blvd off-ramp",
         "FROM_DESCRIPTION": "McBride Blvd",
         "TO_DESCRIPTION": "Royal Ave on-ramp",
@@ -32631,7 +32263,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 369,
         "ROAD_NAME": "Royal Ave on-ramp",
         "FROM_DESCRIPTION": "McBride Blvd off-ramp",
         "TO_DESCRIPTION": "Royal Ave",
@@ -32675,7 +32306,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 370,
         "ROAD_NAME": "Royal Ave",
         "FROM_DESCRIPTION": "Royal Ave on-ramp",
         "TO_DESCRIPTION": "Royal Ave on-ramp",
@@ -32703,7 +32333,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 371,
         "ROAD_NAME": "Royal Ave",
         "FROM_DESCRIPTION": "Royal Ave on-ramp",
         "TO_DESCRIPTION": "Royal Ave on-ramp",
@@ -32735,7 +32364,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 372,
         "ROAD_NAME": "McBride Blvd",
         "FROM_DESCRIPTION": "McBride Blvd on-ramp",
         "TO_DESCRIPTION": "McBride Blvd",
@@ -32771,7 +32399,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 373,
         "ROAD_NAME": "McBride Blvd",
         "FROM_DESCRIPTION": "McBride Blvd on-ramp",
         "TO_DESCRIPTION": "Royal Ave",
@@ -32799,7 +32426,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 374,
         "ROAD_NAME": "McBride Blvd off-ramp",
         "FROM_DESCRIPTION": "McBride Blvd",
         "TO_DESCRIPTION": "McBride Blvd",
@@ -32875,7 +32501,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 375,
         "ROAD_NAME": "Granville St",
         "FROM_DESCRIPTION": "Granville St Bridge",
         "TO_DESCRIPTION": "Broadway Ave",
@@ -32907,7 +32532,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 376,
         "ROAD_NAME": "Granville St Bridge",
         "FROM_DESCRIPTION": "Granville St Bridge on-ramp",
         "TO_DESCRIPTION": "Granville St (6th Ave)",
@@ -32975,7 +32599,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 377,
         "ROAD_NAME": "SW Marine Dr",
         "FROM_DESCRIPTION": "Granville St",
         "TO_DESCRIPTION": "Arthur Laing Bridge (west ramp)",
@@ -33035,7 +32658,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 378,
         "ROAD_NAME": "McBride Blvd on-ramp",
         "FROM_DESCRIPTION": "McBride Blvd off-ramp",
         "TO_DESCRIPTION": "McBride Blvd",
@@ -33067,7 +32689,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 379,
         "ROAD_NAME": "Lonsdale Ave",
         "FROM_DESCRIPTION": "MRN Jurisdiction at HWY 1",
         "TO_DESCRIPTION": "S End of br deck",
@@ -33095,7 +32716,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 380,
         "ROAD_NAME": "Murray St",
         "FROM_DESCRIPTION": "Moody St Loop",
         "TO_DESCRIPTION": "Moody St",
@@ -33127,7 +32747,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 381,
         "ROAD_NAME": "Murray St",
         "FROM_DESCRIPTION": "Moody St",
         "TO_DESCRIPTION": "Ioco Rd",
@@ -33267,7 +32886,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 382,
         "ROAD_NAME": "King George Hwy off-ramp",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "Scott Rd",
@@ -33415,7 +33033,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 383,
         "ROAD_NAME": "King George Hwy on-ramp",
         "FROM_DESCRIPTION": "Scott Rd",
         "TO_DESCRIPTION": "King George Hwy on-ramp",
@@ -33463,7 +33080,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 384,
         "ROAD_NAME": "King George Hwy on-ramp",
         "FROM_DESCRIPTION": "Scott Rd",
         "TO_DESCRIPTION": "King George Hwy on-ramp",
@@ -33491,7 +33107,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 385,
         "ROAD_NAME": "King George Hwy on-ramp",
         "FROM_DESCRIPTION": "King George Hwy on-ramp",
         "TO_DESCRIPTION": "King George Blvd",
@@ -33551,7 +33166,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 386,
         "ROAD_NAME": "Dewdney Trunk Rd",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Sharpe Rd",
@@ -33619,7 +33233,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 387,
         "ROAD_NAME": "Dewdney Trunk Rd",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Sharpe Rd",
@@ -33651,7 +33264,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 388,
         "ROAD_NAME": "Dewdney Trunk Rd",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Sharpe Rd",
@@ -33699,7 +33311,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 389,
         "ROAD_NAME": "Dollarton Hwy",
         "FROM_DESCRIPTION": "Seymour Ck bridge abut",
         "TO_DESCRIPTION": "Riverside Dr",
@@ -33783,7 +33394,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 390,
         "ROAD_NAME": "Marine Way",
         "FROM_DESCRIPTION": "Boundary Rd on-ramp",
         "TO_DESCRIPTION": "Byrne Rd",
@@ -33910,7 +33520,7 @@
             ],
             [
               -122.98379,
-              49.20335
+              49.20334
             ],
             [
               -122.9835,
@@ -33931,7 +33541,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 391,
         "ROAD_NAME": "Marine Way",
         "FROM_DESCRIPTION": "Byrne Rd",
         "TO_DESCRIPTION": "Burnaby/New Westminster border",
@@ -34103,7 +33712,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 392,
         "ROAD_NAME": "Byrne Rd",
         "FROM_DESCRIPTION": "Marine Way",
         "TO_DESCRIPTION": "Meadow Ave",
@@ -34135,7 +33743,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 393,
         "ROAD_NAME": "Southridge Dr",
         "FROM_DESCRIPTION": "Meadow Ave",
         "TO_DESCRIPTION": "Griffiths Ave",
@@ -34227,7 +33834,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 394,
         "ROAD_NAME": "Sunnyside Rd",
         "FROM_DESCRIPTION": "1st Ave",
         "TO_DESCRIPTION": "Park Access Rd",
@@ -34439,7 +34045,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 395,
         "ROAD_NAME": "East Rd",
         "FROM_DESCRIPTION": "Sunnyside Rd",
         "TO_DESCRIPTION": "PoMo/Anmore Border",
@@ -34699,7 +34304,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 396,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "152",
         "TO_DESCRIPTION": "W of 176th",
@@ -34791,7 +34395,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 397,
         "ROAD_NAME": "204 St Overpass",
         "FROM_DESCRIPTION": "62 Ave",
         "TO_DESCRIPTION": "Logan",
@@ -34863,7 +34466,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 398,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "201st St",
@@ -34891,7 +34493,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 399,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "201st St",
@@ -34919,7 +34520,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 400,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "201st St",
@@ -34947,7 +34547,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 401,
         "ROAD_NAME": "Abernethy Way",
         "FROM_DESCRIPTION": "Abernethy Connector",
         "TO_DESCRIPTION": "232nd St",
@@ -35019,7 +34618,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 402,
         "ROAD_NAME": "Abernethy Way",
         "FROM_DESCRIPTION": "Abernethy Connector",
         "TO_DESCRIPTION": "232nd St",
@@ -35055,7 +34653,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 403,
         "ROAD_NAME": "Abernethy Way",
         "FROM_DESCRIPTION": "Abernethy Connector",
         "TO_DESCRIPTION": "232nd St",
@@ -35083,7 +34680,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 404,
         "ROAD_NAME": "Abernethy Way",
         "FROM_DESCRIPTION": "Abernethy Connector",
         "TO_DESCRIPTION": "232nd St",
@@ -35127,7 +34723,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 405,
         "ROAD_NAME": "Abernethy Way",
         "FROM_DESCRIPTION": "Abernethy Connector",
         "TO_DESCRIPTION": "232nd St",
@@ -35167,7 +34762,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 406,
         "ROAD_NAME": "Abernethy Way",
         "FROM_DESCRIPTION": "Abernethy Connector",
         "TO_DESCRIPTION": "232nd St",
@@ -35207,7 +34801,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 407,
         "ROAD_NAME": "Abernethy Way",
         "FROM_DESCRIPTION": "Abernethy Connector",
         "TO_DESCRIPTION": "232nd St",
@@ -35243,7 +34836,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 408,
         "ROAD_NAME": "Abernethy Way",
         "FROM_DESCRIPTION": "Abernethy Connector",
         "TO_DESCRIPTION": "232nd St",
@@ -35279,7 +34871,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 409,
         "ROAD_NAME": "Abernethy Way",
         "FROM_DESCRIPTION": "Abernethy Connector",
         "TO_DESCRIPTION": "232nd St",
@@ -35311,7 +34902,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 410,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "W of 176th",
         "TO_DESCRIPTION": "176th",
@@ -35351,7 +34941,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 411,
         "ROAD_NAME": "Westham Island Bridge",
         "FROM_DESCRIPTION": "Delta",
         "TO_DESCRIPTION": "Westham Island",
@@ -35379,7 +34968,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 412,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35407,7 +34995,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 413,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35435,7 +35022,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 414,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35463,7 +35049,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 415,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35503,7 +35088,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 416,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35535,7 +35119,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 417,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35567,7 +35150,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 418,
         "ROAD_NAME": "Broadway St",
         "FROM_DESCRIPTION": "Mary Hill Bypass",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -35595,7 +35177,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 419,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35623,7 +35204,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 420,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35651,7 +35231,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 421,
         "ROAD_NAME": "Broadway St",
         "FROM_DESCRIPTION": "Mary Hill Bypass",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -35679,7 +35258,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 422,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35711,7 +35289,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 423,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35739,7 +35316,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 424,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35771,7 +35347,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 425,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35803,7 +35378,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 426,
         "ROAD_NAME": "Broadway St",
         "FROM_DESCRIPTION": "Mary Hill Bypass",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -35839,7 +35413,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 427,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35875,7 +35448,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 428,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35903,7 +35475,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 429,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35935,7 +35506,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 430,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35963,7 +35533,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 431,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -35991,7 +35560,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 432,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -36019,7 +35587,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 433,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -36047,7 +35614,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 434,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -36075,7 +35641,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 435,
         "ROAD_NAME": "Broadway St",
         "FROM_DESCRIPTION": "Mary Hill Bypass",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -36103,7 +35668,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 436,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Victoria Dr",
         "TO_DESCRIPTION": "David Ave",
@@ -36131,7 +35695,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 437,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Victoria Dr",
         "TO_DESCRIPTION": "David Ave",
@@ -36159,7 +35722,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 438,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Victoria Dr",
         "TO_DESCRIPTION": "David Ave",
@@ -36187,7 +35749,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 439,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Victoria Dr",
         "TO_DESCRIPTION": "David Ave",
@@ -36223,7 +35784,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 440,
         "ROAD_NAME": "Broadway St",
         "FROM_DESCRIPTION": "Mary Hill Bypass",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -36251,7 +35811,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 441,
         "ROAD_NAME": "Broadway St",
         "FROM_DESCRIPTION": "Mary Hill Bypass",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -36279,7 +35838,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 442,
         "ROAD_NAME": "Broadway St",
         "FROM_DESCRIPTION": "Mary Hill Bypass",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -36307,7 +35865,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 443,
         "ROAD_NAME": "Coast Meridian Overpass",
         "FROM_DESCRIPTION": "Broadway St",
         "TO_DESCRIPTION": "Coast Meridian Rd",
@@ -36335,7 +35892,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 444,
         "ROAD_NAME": "Coast Meridian Overpass",
         "FROM_DESCRIPTION": "Broadway St",
         "TO_DESCRIPTION": "Coast Meridian Rd",
@@ -36363,7 +35919,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 445,
         "ROAD_NAME": "Coast Meridian Overpass",
         "FROM_DESCRIPTION": "Broadway St",
         "TO_DESCRIPTION": "Coast Meridian Rd",
@@ -36391,7 +35946,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 446,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -36419,7 +35973,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 447,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -36451,7 +36004,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 448,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -36479,7 +36031,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 449,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -36515,7 +36066,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 450,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -36543,7 +36093,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 451,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -36571,7 +36120,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 452,
         "ROAD_NAME": "Coast Meridian Rd",
         "FROM_DESCRIPTION": "Coast Meridian Overpass",
         "TO_DESCRIPTION": "Victoria Dr",
@@ -36599,7 +36147,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 453,
         "ROAD_NAME": "Cordova Diversion",
         "FROM_DESCRIPTION": "21m East of crosswalk",
         "TO_DESCRIPTION": "Powell Street",
@@ -36635,7 +36182,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 454,
         "ROAD_NAME": "Cordova Diversion",
         "FROM_DESCRIPTION": "21m East of crosswalk",
         "TO_DESCRIPTION": "Powell Street",
@@ -36667,7 +36213,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 455,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -36699,7 +36244,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 456,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -36727,7 +36271,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 457,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -36755,7 +36298,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 458,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -36787,7 +36329,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 459,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -36815,7 +36356,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 460,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -36843,7 +36383,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 461,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -36875,7 +36414,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 462,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -36931,7 +36469,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 463,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -36979,7 +36516,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 464,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37023,7 +36559,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 465,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37051,7 +36586,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 466,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37083,7 +36617,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 467,
         "ROAD_NAME": "Golden Ears Way",
         "FROM_DESCRIPTION": "176th Street",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37111,7 +36644,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 468,
         "ROAD_NAME": "96th Ave Connector - Main",
         "FROM_DESCRIPTION": "96th Ave",
         "TO_DESCRIPTION": "GEB Mainline",
@@ -37147,7 +36679,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 469,
         "ROAD_NAME": "96th Ave Connector - Main",
         "FROM_DESCRIPTION": "96th Ave",
         "TO_DESCRIPTION": "GEB Mainline",
@@ -37175,7 +36706,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 470,
         "ROAD_NAME": "96th Ave Connector - Main",
         "FROM_DESCRIPTION": "96th Ave",
         "TO_DESCRIPTION": "GEB Mainline",
@@ -37207,7 +36737,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 471,
         "ROAD_NAME": "96th Ave Connector - Main",
         "FROM_DESCRIPTION": "96th Ave",
         "TO_DESCRIPTION": "GEB Mainline",
@@ -37235,7 +36764,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 472,
         "ROAD_NAME": "96th Ave Connector - Secondary",
         "FROM_DESCRIPTION": "96th Ave",
         "TO_DESCRIPTION": "96th Ave Connector - Main",
@@ -37263,7 +36791,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 473,
         "ROAD_NAME": "96th Ave Connector - Secondary",
         "FROM_DESCRIPTION": "96th Ave",
         "TO_DESCRIPTION": "96th Ave Connector - Main",
@@ -37295,7 +36822,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 474,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -37327,7 +36853,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 475,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -37371,7 +36896,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 476,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -37415,7 +36939,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 477,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -37451,7 +36974,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 478,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -37479,7 +37001,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 479,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -37507,7 +37028,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 480,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -37551,7 +37071,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 481,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -37579,7 +37098,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 482,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -37607,7 +37125,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 483,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -37643,7 +37160,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 484,
         "ROAD_NAME": "201st St",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37671,7 +37187,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 485,
         "ROAD_NAME": "201st St",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37703,7 +37218,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 486,
         "ROAD_NAME": "201st St",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37731,7 +37245,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 487,
         "ROAD_NAME": "201st St",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37759,7 +37272,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 488,
         "ROAD_NAME": "201st St",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37791,7 +37303,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 489,
         "ROAD_NAME": "201st St",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37831,7 +37342,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 490,
         "ROAD_NAME": "201st St",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37859,7 +37369,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 491,
         "ROAD_NAME": "201st St",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37887,7 +37396,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 492,
         "ROAD_NAME": "201st St",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37915,7 +37423,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 493,
         "ROAD_NAME": "201st St",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37955,7 +37462,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 494,
         "ROAD_NAME": "201st St",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "Golden Ears Bridge",
@@ -37991,7 +37497,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 495,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38035,7 +37540,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 496,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38063,7 +37567,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 497,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38091,7 +37594,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 498,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38127,7 +37629,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 499,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38163,7 +37664,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 500,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38199,7 +37699,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 501,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38231,7 +37730,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 502,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38259,7 +37757,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 503,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38287,7 +37784,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 504,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38315,7 +37811,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 505,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38343,7 +37838,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 506,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38371,7 +37865,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 507,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38399,7 +37892,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 508,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38439,7 +37931,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 509,
         "ROAD_NAME": "199A St",
         "FROM_DESCRIPTION": "Golden Ears Bridge",
         "TO_DESCRIPTION": "200th St",
@@ -38467,7 +37958,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 510,
         "ROAD_NAME": "199A St",
         "FROM_DESCRIPTION": "Golden Ears Bridge",
         "TO_DESCRIPTION": "200th St",
@@ -38495,7 +37985,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 511,
         "ROAD_NAME": "199A St",
         "FROM_DESCRIPTION": "Golden Ears Bridge",
         "TO_DESCRIPTION": "200th St",
@@ -38523,7 +38012,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 512,
         "ROAD_NAME": "199A St",
         "FROM_DESCRIPTION": "Golden Ears Bridge",
         "TO_DESCRIPTION": "200th St",
@@ -38579,7 +38067,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 513,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38615,7 +38102,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 514,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38643,7 +38129,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 515,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38695,7 +38180,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 516,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38731,7 +38215,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 517,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38759,7 +38242,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 518,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38795,7 +38277,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 519,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38823,7 +38304,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 520,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38879,7 +38359,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 521,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38911,7 +38390,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 522,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38947,7 +38425,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 523,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -38983,7 +38460,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 524,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39015,7 +38491,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 525,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39047,7 +38522,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 526,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39075,7 +38549,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 527,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39103,7 +38576,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 528,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39135,7 +38607,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 529,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39183,7 +38654,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 530,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39219,7 +38689,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 531,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39255,7 +38724,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 532,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39291,7 +38759,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 533,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39323,7 +38790,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 534,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39363,7 +38829,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 535,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39395,7 +38860,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 536,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39435,7 +38899,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 537,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39471,7 +38934,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 538,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39499,7 +38961,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 539,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39527,7 +38988,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 540,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39555,7 +39015,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 541,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39583,7 +39042,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 542,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39623,7 +39081,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 543,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -39679,7 +39136,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 544,
         "ROAD_NAME": "Abernethy Connector",
         "FROM_DESCRIPTION": "Golden Ears Bridge",
         "TO_DESCRIPTION": "Abernethy Way",
@@ -39743,7 +39199,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 545,
         "ROAD_NAME": "Abernethy Connector",
         "FROM_DESCRIPTION": "Golden Ears Bridge",
         "TO_DESCRIPTION": "Abernethy Way",
@@ -39791,7 +39246,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 546,
         "ROAD_NAME": "Abernethy Connector",
         "FROM_DESCRIPTION": "Golden Ears Bridge",
         "TO_DESCRIPTION": "Abernethy Way",
@@ -39895,7 +39349,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 547,
         "ROAD_NAME": "Abernethy Connector",
         "FROM_DESCRIPTION": "Golden Ears Bridge",
         "TO_DESCRIPTION": "Abernethy Way",
@@ -39927,7 +39380,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 548,
         "ROAD_NAME": "Abernethy Connector",
         "FROM_DESCRIPTION": "Golden Ears Bridge",
         "TO_DESCRIPTION": "Abernethy Way",
@@ -39963,7 +39415,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 549,
         "ROAD_NAME": "Abernethy Way",
         "FROM_DESCRIPTION": "Abernethy Connector",
         "TO_DESCRIPTION": "232nd Street",
@@ -40007,7 +39458,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 550,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -40039,7 +39489,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 551,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -40071,7 +39520,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 552,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -40107,7 +39555,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 553,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -40135,7 +39582,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 554,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -40163,7 +39609,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 555,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -40195,7 +39640,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 556,
         "ROAD_NAME": "Westminster Hwy",
         "FROM_DESCRIPTION": "East of Nelson Road",
         "TO_DESCRIPTION": "Hwy 91",
@@ -40367,7 +39811,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 557,
         "ROAD_NAME": "North Rd",
         "FROM_DESCRIPTION": "Bby/New/Coq border",
         "TO_DESCRIPTION": "Lougheed Hwy",
@@ -40399,7 +39842,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 558,
         "ROAD_NAME": "Knight St Bridge",
         "FROM_DESCRIPTION": "Knight St",
         "TO_DESCRIPTION": "Knight St Bridge off-ramp",
@@ -40427,7 +39869,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 559,
         "ROAD_NAME": "Knight St Bridge",
         "FROM_DESCRIPTION": "Knight St Bridge off-ramp",
         "TO_DESCRIPTION": "Knight St Bridge on-ramp",
@@ -40455,7 +39896,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 560,
         "ROAD_NAME": "Knight St Bridge on-ramp",
         "FROM_DESCRIPTION": "Knight St Bridge on-ramp",
         "TO_DESCRIPTION": "Knight St Bridge",
@@ -40487,7 +39927,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 561,
         "ROAD_NAME": "Knight St Bridge off-ramp",
         "FROM_DESCRIPTION": "Knight St Bridge",
         "TO_DESCRIPTION": "Knight St Bridge off-ramp",
@@ -40519,7 +39958,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 562,
         "ROAD_NAME": "Knight St Bridge",
         "FROM_DESCRIPTION": "Knight St Bridge on-ramp (Mitchell Isl)",
         "TO_DESCRIPTION": "Knight St",
@@ -40547,7 +39985,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 563,
         "ROAD_NAME": "199A St",
         "FROM_DESCRIPTION": "Golden Ears Bridge",
         "TO_DESCRIPTION": "200th St",
@@ -40575,7 +40012,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 564,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -40603,7 +40039,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 565,
         "ROAD_NAME": "Golden Ears Bridge",
         "FROM_DESCRIPTION": " ",
         "TO_DESCRIPTION": " ",
@@ -40631,7 +40066,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 566,
         "ROAD_NAME": "Abernethy Connector",
         "FROM_DESCRIPTION": "Golden Ears Bridge",
         "TO_DESCRIPTION": "Abernethy Way",
@@ -40659,7 +40093,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 567,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "201st St",
         "TO_DESCRIPTION": "216th St",
@@ -40723,7 +40156,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 568,
         "ROAD_NAME": "216th St",
         "FROM_DESCRIPTION": "88th Ave",
         "TO_DESCRIPTION": "96th Ave",
@@ -40771,7 +40203,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 569,
         "ROAD_NAME": "88th Ave",
         "FROM_DESCRIPTION": "200th St",
         "TO_DESCRIPTION": "216th St",
@@ -40887,7 +40318,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 570,
         "ROAD_NAME": "232nd St",
         "FROM_DESCRIPTION": "Fraser Hwy",
         "TO_DESCRIPTION": "Hwy 10",
@@ -40955,7 +40385,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 571,
         "ROAD_NAME": "204th St",
         "FROM_DESCRIPTION": "62nd Ave",
         "TO_DESCRIPTION": "64th Ave",
@@ -41015,7 +40444,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 572,
         "ROAD_NAME": "72nd St",
         "FROM_DESCRIPTION": "Ladner Trunk Rd",
         "TO_DESCRIPTION": "Churchill St",
@@ -41043,7 +40471,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 573,
         "ROAD_NAME": "Churchill St",
         "FROM_DESCRIPTION": "72nd St",
         "TO_DESCRIPTION": "80th St",
@@ -41147,7 +40574,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 574,
         "ROAD_NAME": "80th St",
         "FROM_DESCRIPTION": "Churchill St",
         "TO_DESCRIPTION": "Ladner Trunk Rd",
@@ -41179,7 +40605,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 575,
         "ROAD_NAME": "Hwy 91 Connector",
         "FROM_DESCRIPTION": "River Rd",
         "TO_DESCRIPTION": "Provincial Jurisdiction S of Rail Line",
@@ -41263,7 +40688,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 576,
         "ROAD_NAME": "Mufford Cr",
         "FROM_DESCRIPTION": "64th Ave",
         "TO_DESCRIPTION": "62nd Ave (Langley Township/City border)",
@@ -41303,7 +40727,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 577,
         "ROAD_NAME": "Mufford Crescent (Overpass)",
         "FROM_DESCRIPTION": "62 Avenue",
         "TO_DESCRIPTION": "west of Glover Rd",
@@ -41387,7 +40810,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 578,
         "ROAD_NAME": "200th St",
         "FROM_DESCRIPTION": "Fraser Hwy",
         "TO_DESCRIPTION": "44th Ave (Langley Township/Langley City/Surrey border)",
@@ -41415,7 +40837,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 579,
         "ROAD_NAME": "96th Ave",
         "FROM_DESCRIPTION": "Langley Township/Surrey border",
         "TO_DESCRIPTION": "200th St",
@@ -41443,7 +40864,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 580,
         "ROAD_NAME": "88th Ave",
         "FROM_DESCRIPTION": "Langley Township/Surrey border",
         "TO_DESCRIPTION": "Trans Canada Hwy 1/200th St",
@@ -41471,7 +40891,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 581,
         "ROAD_NAME": "10th Ave",
         "FROM_DESCRIPTION": "Twentieth Street",
         "TO_DESCRIPTION": "McBride Blvd",
@@ -41667,7 +41086,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 582,
         "ROAD_NAME": "128th St",
         "FROM_DESCRIPTION": "72nd Ave",
         "TO_DESCRIPTION": "88th Ave",
@@ -41763,7 +41181,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 583,
         "ROAD_NAME": "132nd Ave",
         "FROM_DESCRIPTION": "Sharpe Rd",
         "TO_DESCRIPTION": "Maple Ridge/Pitt Meadows Border",
@@ -41791,7 +41208,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 584,
         "ROAD_NAME": "160th St",
         "FROM_DESCRIPTION": "Fraser Hwy",
         "TO_DESCRIPTION": "Hwy 1",
@@ -42067,7 +41483,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 585,
         "ROAD_NAME": "203 St",
         "FROM_DESCRIPTION": "Fraser Hwy",
         "TO_DESCRIPTION": "Logan Ave",
@@ -42127,7 +41542,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 586,
         "ROAD_NAME": "210th St",
         "FROM_DESCRIPTION": "Golden Ears Way/128 Ave",
         "TO_DESCRIPTION": "132 Ave",
@@ -42155,7 +41569,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 587,
         "ROAD_NAME": "216th St",
         "FROM_DESCRIPTION": "Fraser Hwy",
         "TO_DESCRIPTION": "Glover Rd",
@@ -42311,7 +41724,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 588,
         "ROAD_NAME": "240th St",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Dewdney Trunk Rd",
@@ -42503,7 +41915,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 589,
         "ROAD_NAME": "32nd Ave",
         "FROM_DESCRIPTION": "196 St",
         "TO_DESCRIPTION": "200 St",
@@ -42571,7 +41982,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 590,
         "ROAD_NAME": "32nd Ave",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "176 St",
@@ -42871,7 +42281,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 591,
         "ROAD_NAME": "72nd Ave",
         "FROM_DESCRIPTION": "120 St",
         "TO_DESCRIPTION": "152 St",
@@ -43149,7 +42558,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 592,
         "ROAD_NAME": "Austin Rd",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "North Rd",
@@ -43237,7 +42645,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 593,
         "ROAD_NAME": "Braid St",
         "FROM_DESCRIPTION": "E Columbia St",
         "TO_DESCRIPTION": "Brunette Ave",
@@ -43329,7 +42736,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 594,
         "ROAD_NAME": "Bridgeport Rd",
         "FROM_DESCRIPTION": "Knight St",
         "TO_DESCRIPTION": "No 6 Rd",
@@ -43369,7 +42775,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 595,
         "ROAD_NAME": "Bridgeview Dr",
         "FROM_DESCRIPTION": "King George Blvd",
         "TO_DESCRIPTION": "Hwy 17",
@@ -43497,7 +42902,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 596,
         "ROAD_NAME": "Cambie Rd",
         "FROM_DESCRIPTION": "No 3 Rd",
         "TO_DESCRIPTION": "No 6 Rd",
@@ -43717,7 +43121,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 597,
         "ROAD_NAME": "Clark Dr",
         "FROM_DESCRIPTION": "E Hastings St",
         "TO_DESCRIPTION": "Powell St",
@@ -43757,7 +43160,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 598,
         "ROAD_NAME": "Como Lake Ave",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "Westwood St",
@@ -43801,7 +43203,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 599,
         "ROAD_NAME": "David Ave",
         "FROM_DESCRIPTION": "Pinetree Way",
         "TO_DESCRIPTION": "Coast Meridian Rd",
@@ -44101,7 +43502,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 600,
         "ROAD_NAME": "Dewdney Trunk Rd",
         "FROM_DESCRIPTION": "232 St",
         "TO_DESCRIPTION": "240 St",
@@ -44189,7 +43589,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 601,
         "ROAD_NAME": "Dundas St",
         "FROM_DESCRIPTION": "Powell St",
         "TO_DESCRIPTION": "Nanaimo St",
@@ -44241,7 +43640,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 602,
         "ROAD_NAME": "East Columbia St",
         "FROM_DESCRIPTION": "Braid St",
         "TO_DESCRIPTION": "New Westminster/Burnaby/Coquitlam Border",
@@ -44305,7 +43703,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 603,
         "ROAD_NAME": "Fir St",
         "FROM_DESCRIPTION": "Broadway Ave",
         "TO_DESCRIPTION": "Fir St Offramp",
@@ -44345,7 +43742,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 604,
         "ROAD_NAME": "Fraser Hwy",
         "FROM_DESCRIPTION": "200 St",
         "TO_DESCRIPTION": "203 St",
@@ -44401,7 +43797,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 605,
         "ROAD_NAME": "Gilmore Ave",
         "FROM_DESCRIPTION": "Gilmore Diversion",
         "TO_DESCRIPTION": "Lougheed Hwy",
@@ -44485,7 +43880,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 606,
         "ROAD_NAME": "Gilmore Diversion",
         "FROM_DESCRIPTION": "Canada Way",
         "TO_DESCRIPTION": "Gilmore Ave",
@@ -44601,7 +43995,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 607,
         "ROAD_NAME": "Fir St Offramp",
         "FROM_DESCRIPTION": "W 8th Ave",
         "TO_DESCRIPTION": "W 7th Ave",
@@ -44649,7 +44042,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 608,
         "ROAD_NAME": "Hemlock St",
         "FROM_DESCRIPTION": "Broadway Ave",
         "TO_DESCRIPTION": "Granville St Bridge On-ramp",
@@ -44701,7 +44093,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 609,
         "ROAD_NAME": "Imperial St",
         "FROM_DESCRIPTION": "Boundary Rd",
         "TO_DESCRIPTION": "Kingsway",
@@ -44929,7 +44320,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 610,
         "ROAD_NAME": "Kingsway Ave",
         "FROM_DESCRIPTION": "Port Coquitlam/Coquitlam Border",
         "TO_DESCRIPTION": "Mary Hill Bypass",
@@ -45177,7 +44567,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 611,
         "ROAD_NAME": "Lynn Valley Rd",
         "FROM_DESCRIPTION": "Hwy 1",
         "TO_DESCRIPTION": "Mountain Hwy",
@@ -45313,7 +44702,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 612,
         "ROAD_NAME": "Main St",
         "FROM_DESCRIPTION": "Kingsway",
         "TO_DESCRIPTION": "E Hastings St",
@@ -45469,7 +44857,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 613,
         "ROAD_NAME": "Nelson Rd",
         "FROM_DESCRIPTION": "Blundell Rd",
         "TO_DESCRIPTION": "Westminster Hwy",
@@ -45549,7 +44936,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 614,
         "ROAD_NAME": "No 6 Rd",
         "FROM_DESCRIPTION": "Hwy 91",
         "TO_DESCRIPTION": "Bridgeport Rd",
@@ -45605,7 +44991,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 615,
         "ROAD_NAME": "Pinetree Way",
         "FROM_DESCRIPTION": "Lougheed Hwy",
         "TO_DESCRIPTION": "David Ave",
@@ -45865,7 +45250,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 616,
         "ROAD_NAME": "Powell St",
         "FROM_DESCRIPTION": "57m E of Hawkes Ave",
         "TO_DESCRIPTION": "Dundas St",
@@ -45973,7 +45357,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 617,
         "ROAD_NAME": "Steveston Hwy",
         "FROM_DESCRIPTION": "Hwy 99",
         "TO_DESCRIPTION": "No 6 Rd",
@@ -46069,7 +45452,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 618,
         "ROAD_NAME": "W 1st St",
         "FROM_DESCRIPTION": "North Vancouver City/District Border",
         "TO_DESCRIPTION": "Fell Ave",
@@ -46133,7 +45515,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 619,
         "ROAD_NAME": "W 1st St",
         "FROM_DESCRIPTION": "Garden Ave",
         "TO_DESCRIPTION": "North Vancouver City/District Border",
@@ -46229,7 +45610,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 620,
         "ROAD_NAME": "W 1st St",
         "FROM_DESCRIPTION": "Fell Ave",
         "TO_DESCRIPTION": "W 3rd St",
@@ -46297,7 +45677,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 621,
         "ROAD_NAME": "Westminster Hwy",
         "FROM_DESCRIPTION": "Knight St",
         "TO_DESCRIPTION": "No 6 Rd",
@@ -46341,7 +45720,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 622,
         "ROAD_NAME": "Westwood St",
         "FROM_DESCRIPTION": "Como Lake Ave",
         "TO_DESCRIPTION": "Kingsway Ave",
@@ -46389,7 +45767,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 623,
         "ROAD_NAME": "No 6 Rd",
         "FROM_DESCRIPTION": "Westminster Hwy",
         "TO_DESCRIPTION": "Hwy 91",
@@ -46453,7 +45830,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 624,
         "ROAD_NAME": "32nd Ave",
         "FROM_DESCRIPTION": "176 St",
         "TO_DESCRIPTION": "196 St",
@@ -46613,7 +45989,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 625,
         "ROAD_NAME": "132nd Ave",
         "FROM_DESCRIPTION": "Maple Ridge/Pitt Meadows Border",
         "TO_DESCRIPTION": "210 St",
@@ -46645,7 +46020,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 626,
         "ROAD_NAME": "W 10th Ave",
         "FROM_DESCRIPTION": "Blanca St",
         "TO_DESCRIPTION": "Alma St",
@@ -46689,7 +46063,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 627,
         "ROAD_NAME": "Bowen Island Trunk Rd",
         "FROM_DESCRIPTION": "Ferry Ramp",
         "TO_DESCRIPTION": "Mt Gardner Rd",

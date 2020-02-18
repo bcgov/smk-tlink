@@ -11,7 +11,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1,
         "Route": "SW Marine Dr",
         "OVERHEAD": 1,
         "Structure_Name": "Arthur Laing Bridge (Northbound to Westbound)",
@@ -46,7 +45,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 2,
         "Route": "SW Marine Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -81,7 +79,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 10,
         "Route": "SW Marine Dr",
         "OVERHEAD": 1,
         "Structure_Name": "Oak Street Bridge",
@@ -116,7 +113,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 12,
         "Route": "199A St (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Golden Ears Bridge",
@@ -151,7 +147,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 13,
         "Route": "Boundary Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -186,7 +181,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 14,
         "Route": "Brunette Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -221,7 +215,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 20,
         "Route": "Golden Ears Way",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -256,7 +249,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 21,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Highway 1 Overpass",
@@ -291,7 +283,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 22,
         "Route": "200th St",
         "OVERHEAD": 1,
         "Structure_Name": "Ped Overpass",
@@ -326,7 +317,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 23,
         "Route": "Westminster Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -361,7 +351,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 26,
         "Route": "Kingsway Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -396,7 +385,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 27,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -431,7 +419,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 28,
         "Route": "Guildford Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -466,7 +453,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 29,
         "Route": "Hastings st",
         "OVERHEAD": 1,
         "Structure_Name": "Invergarry/Hastings St. Ped. O/P",
@@ -501,7 +487,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 31,
         "Route": "Kensington-Lougheed N-E Ramp",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -536,7 +521,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 33,
         "Route": "Brunette Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Sapperton Station Pedestrian Overpass",
@@ -571,7 +555,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 34,
         "Route": "Gaglardi Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -606,7 +589,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 35,
         "Route": "Golden Ears Way",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -641,7 +623,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 36,
         "Route": "Boundary Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Boundary Ped. O/P",
@@ -676,7 +657,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 37,
         "Route": "Knight St",
         "OVERHEAD": 1,
         "Structure_Name": "Cambie Rd./Knight O/P",
@@ -711,7 +691,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 39,
         "Route": "Scott-KGH N-W Ramp",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -746,7 +725,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 41,
         "Route": "Griffiths Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Griffiths Ped. Bridge",
@@ -781,7 +759,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 43,
         "Route": "Boundary Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -816,7 +793,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 44,
         "Route": "Southridge Dr-Byrne Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -851,7 +827,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 45,
         "Route": "Southridge Dr-Byrne Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Southridge Dr Ped. Bridge",
@@ -886,7 +861,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 46,
         "Route": "Broadway Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -921,7 +895,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 50,
         "Route": "Boyd St",
         "OVERHEAD": 1,
         "Structure_Name": "Queensborough Bridge",
@@ -956,7 +929,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 51,
         "Route": "Lougheed-Kensington E-S Ramp",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -991,7 +963,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 52,
         "Route": "Boundary Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy",
@@ -1026,7 +997,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 54,
         "Route": "Lincoln Ave (Mall Access)",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -1061,7 +1031,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 55,
         "Route": "King George Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -1096,7 +1065,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 57,
         "Route": "Main St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -1131,7 +1099,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 58,
         "Route": "North Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -1166,7 +1133,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 59,
         "Route": "Boundary Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Onramp",
@@ -1201,7 +1167,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 60,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Kensington Overpass",
@@ -1236,7 +1201,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 65,
         "Route": "Golden Ears Way",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -1271,7 +1235,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 66,
         "Route": "SE Marine Dr",
         "OVERHEAD": 1,
         "Structure_Name": "Gladstone. Ped. O/P",
@@ -1306,7 +1269,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 67,
         "Route": "McBride Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Royal Avenue O/P",
@@ -1341,7 +1303,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 68,
         "Route": "SE Marine Dr",
         "OVERHEAD": 1,
         "Structure_Name": "Knight St Bridge Overpass",
@@ -1376,7 +1337,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 69,
         "Route": "KGH-Scott E-S Ramp",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -1411,7 +1371,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 73,
         "Route": "Austin Rd/Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -1446,7 +1405,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 74,
         "Route": "Golden Ears Way",
         "OVERHEAD": 1,
         "Structure_Name": "113B Ave Overpass",
@@ -1481,7 +1439,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 80,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Still Creek Bridge",
@@ -1516,7 +1473,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 81,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Still Creek Bridge",
@@ -1551,7 +1507,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 84,
         "Route": "SW Marine Dr",
         "OVERHEAD": 1,
         "Structure_Name": "Arthur Laing Bridge (Eastbound to Southbound)",
@@ -1586,7 +1541,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 85,
         "Route": "SW Marine Dr",
         "OVERHEAD": 1,
         "Structure_Name": "Arthur Laing Bridge (Northbound to Westbound)",
@@ -1621,7 +1575,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 86,
         "Route": "SW Marine Dr",
         "OVERHEAD": 1,
         "Structure_Name": "Arthur Laing Bridge (Northbound to Eastbound)",
@@ -1656,7 +1609,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 87,
         "Route": "SW Marine Dr",
         "OVERHEAD": 1,
         "Structure_Name": "Arthur Laing Bridge (Northbound to Westbound)",
@@ -1691,7 +1643,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 88,
         "Route": "North Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -1726,7 +1677,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 89,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -1761,7 +1711,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 97,
         "Route": "Kingsway Ave",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -1796,7 +1745,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 106,
         "Route": "Pattullo Bridge",
         "OVERHEAD": 1,
         "Structure_Name": "Pattullo Bridge",
@@ -1831,7 +1779,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 107,
         "Route": "Pattullo Bridge",
         "OVERHEAD": 1,
         "Structure_Name": "Pattullo Bridge",
@@ -1866,7 +1813,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 108,
         "Route": "Hwy 17",
         "OVERHEAD": 1,
         "Structure_Name": "King George Blvd Overpass",
@@ -1901,7 +1847,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 109,
         "Route": "Columbia St",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 1A Overpass",
@@ -1936,7 +1881,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 110,
         "Route": "Front St",
         "OVERHEAD": 1,
         "Structure_Name": "Pattullo Bridge",
@@ -1971,7 +1915,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 111,
         "Route": "Front St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2006,7 +1949,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 115,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Golden Ears Way Overpass",
@@ -2041,7 +1983,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 116,
         "Route": "Bridge Rd",
         "OVERHEAD": 1,
         "Structure_Name": "King George Blvd Overpass",
@@ -2076,7 +2017,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 117,
         "Route": "Front St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2111,7 +2051,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 118,
         "Route": "Howes St",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 91A Overpass",
@@ -2146,7 +2085,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 125,
         "Route": "Marine Way",
         "OVERHEAD": 1,
         "Structure_Name": "Stewardson Way Overpass",
@@ -2181,7 +2119,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 127,
         "Route": "Stewardson Way",
         "OVERHEAD": 1,
         "Structure_Name": "Marine Way Overpass",
@@ -2216,7 +2153,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 129,
         "Route": "Twentieth St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -2251,7 +2187,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 130,
         "Route": "Stewardson Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -2286,7 +2221,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 132,
         "Route": "Quayside Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -2321,7 +2255,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 133,
         "Route": "Columbia St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -2356,7 +2289,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 134,
         "Route": "Columbia St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -2391,7 +2323,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 135,
         "Route": "Columbia St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -2426,7 +2357,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 136,
         "Route": "Columbia St",
         "OVERHEAD": 1,
         "Structure_Name": "Quayside Dr Overpass",
@@ -2461,7 +2391,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 137,
         "Route": "Front St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2496,7 +2425,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 138,
         "Route": "Front St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2531,7 +2459,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 139,
         "Route": "Front St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2566,7 +2493,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 140,
         "Route": "Front St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2601,7 +2527,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 141,
         "Route": "Front St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -2636,7 +2561,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 142,
         "Route": "Front St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -2671,7 +2595,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 144,
         "Route": "Langley Bypass",
         "OVERHEAD": 1,
         "Structure_Name": "196 St Overpass",
@@ -2706,7 +2629,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 146,
         "Route": "Langley Bypass",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2741,7 +2663,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 148,
         "Route": "Duncan Way",
         "OVERHEAD": 1,
         "Structure_Name": "204 St Overpass",
@@ -2776,7 +2697,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 149,
         "Route": "Duncan Way",
         "OVERHEAD": 1,
         "Structure_Name": "204 St Overpass",
@@ -2811,7 +2731,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 150,
         "Route": "200 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2846,7 +2765,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 151,
         "Route": "Langley Bypass",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2881,7 +2799,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 152,
         "Route": "200 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2916,7 +2833,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 157,
         "Route": "Alex Fraser Bridge",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2951,7 +2867,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 158,
         "Route": "Alex Fraser Bridge",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -2986,7 +2901,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 159,
         "Route": "Derwent Way",
         "OVERHEAD": 1,
         "Structure_Name": "Alex Fraser Bridge",
@@ -3021,7 +2935,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 161,
         "Route": "Hwy 17",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 17A Offramp Overpass",
@@ -3056,7 +2969,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 163,
         "Route": "Hwy 17",
         "OVERHEAD": 1,
         "Structure_Name": "64 St Overpass",
@@ -3091,7 +3003,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 164,
         "Route": "Deltaport Way",
         "OVERHEAD": 1,
         "Structure_Name": "53 St Overpass",
@@ -3126,7 +3037,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 165,
         "Route": "Deltaport Way",
         "OVERHEAD": 1,
         "Structure_Name": "41B St Overpass",
@@ -3161,7 +3071,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 166,
         "Route": "Roberts Bank Rd",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -3196,7 +3105,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 170,
         "Route": "Deltaport Way",
         "OVERHEAD": 1,
         "Structure_Name": "46a St Overpass (Farm Crossing)",
@@ -3231,7 +3139,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 171,
         "Route": "Deltaport Way",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 17A Overpass",
@@ -3266,7 +3173,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 172,
         "Route": "Deltaport Way",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 17 Overpass",
@@ -3301,7 +3207,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 178,
         "Route": "Hwy 17",
         "OVERHEAD": 1,
         "Structure_Name": "36 Ave Overpass",
@@ -3336,7 +3241,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 181,
         "Route": "Ladner Trunk Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 17 Overpass",
@@ -3371,7 +3275,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 183,
         "Route": "Hwy 99",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 17 Overpass",
@@ -3406,7 +3309,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 184,
         "Route": "Hwy 99",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 99 (Offramp) Overpass",
@@ -3441,7 +3343,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 185,
         "Route": "Hwy 99",
         "OVERHEAD": 1,
         "Structure_Name": "72 St Overpass",
@@ -3476,7 +3377,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 187,
         "Route": "72 St Offramp/Hwy 99 Offramp",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 17 Overpass",
@@ -3511,7 +3411,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 188,
         "Route": "72 St Offramp/Hwy 99 Offramp",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 17 Overpass",
@@ -3546,7 +3445,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 224,
         "Route": "Hwy 91",
         "OVERHEAD": 1,
         "Structure_Name": "64 Ave Overpass",
@@ -3581,7 +3479,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 230,
         "Route": "Hwy 17",
         "OVERHEAD": 1,
         "Structure_Name": "Alex Fraser Bridge",
@@ -3616,7 +3513,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 231,
         "Route": "Nordel Crt",
         "OVERHEAD": 1,
         "Structure_Name": "Alex Fraser Bridge",
@@ -3651,7 +3547,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 233,
         "Route": "Hwy 17",
         "OVERHEAD": 1,
         "Structure_Name": "72 St Overpass",
@@ -3686,7 +3581,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 234,
         "Route": "Aldrich Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 17 Overpass",
@@ -3721,7 +3615,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 241,
         "Route": "201 St",
         "OVERHEAD": 1,
         "Structure_Name": "Golden Ears Way",
@@ -3756,7 +3649,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 244,
         "Route": "201 St",
         "OVERHEAD": 1,
         "Structure_Name": "Golden Ears Way",
@@ -3791,7 +3683,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 245,
         "Route": "196 St",
         "OVERHEAD": 1,
         "Structure_Name": "Golden Ears Way",
@@ -3826,7 +3717,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 246,
         "Route": "201 St",
         "OVERHEAD": 1,
         "Structure_Name": "199A St Offramp",
@@ -3861,7 +3751,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 247,
         "Route": "201 St",
         "OVERHEAD": 1,
         "Structure_Name": "201 St Onramp",
@@ -3896,7 +3785,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 248,
         "Route": "199A St Conn",
         "OVERHEAD": 1,
         "Structure_Name": "201 St Onramp",
@@ -3931,7 +3819,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 252,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "248 St Overpass",
@@ -3966,7 +3853,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 258,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "200 St Overpass",
@@ -4001,7 +3887,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 259,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "208 St Overpass",
@@ -4036,7 +3921,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 265,
         "Route": "196 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -4071,7 +3955,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 268,
         "Route": "Marine Dr",
         "OVERHEAD": 1,
         "Structure_Name": "Lions Gate Bridge",
@@ -4106,7 +3989,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 270,
         "Route": "Taylor Way",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass",
@@ -4141,7 +4023,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 273,
         "Route": "Creery Ave",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -4176,7 +4057,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 274,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Marine Dr Overpass",
@@ -4211,7 +4091,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 276,
         "Route": "21st St",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Highway Overpass",
@@ -4246,7 +4125,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 277,
         "Route": "21st St",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Highway Overpass",
@@ -4281,7 +4159,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 278,
         "Route": "Keith Rd",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -4316,7 +4193,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 279,
         "Route": "Westport Rd",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -4351,7 +4227,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 281,
         "Route": "Capilano Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Highway Overpass",
@@ -4386,7 +4261,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 290,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Horseshoe Bay Dr Overpass (Offramp)",
@@ -4421,7 +4295,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 291,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Horseshoe Bay Dr Overpass (Offramp)",
@@ -4456,7 +4329,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 297,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Horseshoe Bay Dr Overpass (Onramp)",
@@ -4491,7 +4363,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 300,
         "Route": "Horseshoe Bay Dr (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 99 Overpass",
@@ -4526,7 +4397,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 301,
         "Route": "Hwy 99",
         "OVERHEAD": 1,
         "Structure_Name": "Horseshoe Bay Dr Overpass (Onramp)",
@@ -4561,7 +4431,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 303,
         "Route": "Hwy 99",
         "OVERHEAD": 1,
         "Structure_Name": "Kelvin Grove Way Overpass",
@@ -4596,7 +4465,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 305,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -4631,7 +4499,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 306,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -4666,7 +4533,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 307,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -4701,7 +4567,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 308,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -4736,7 +4601,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 309,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -4771,7 +4635,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 310,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -4806,7 +4669,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 311,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -4841,7 +4703,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 312,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -4876,7 +4737,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 313,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -4911,7 +4771,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 314,
         "Route": "Station St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -4946,7 +4805,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 315,
         "Route": "Station St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -4981,7 +4839,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 316,
         "Route": "Terminal Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5016,7 +4873,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 317,
         "Route": "Terminal Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5051,7 +4907,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 318,
         "Route": "Terminal Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5086,7 +4941,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 319,
         "Route": "Terminal Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5121,7 +4975,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 320,
         "Route": "Terminal Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5156,7 +5009,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 321,
         "Route": "Quebec St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5191,7 +5043,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 322,
         "Route": "Quebec St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5226,7 +5077,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 323,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5261,7 +5111,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 324,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5296,7 +5145,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 325,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5331,7 +5179,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 326,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5366,7 +5213,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 327,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5401,7 +5247,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 328,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5436,7 +5281,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 329,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5471,7 +5315,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 330,
         "Route": "Douglas Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5506,7 +5349,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 331,
         "Route": "Holdom Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5541,7 +5383,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 332,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5576,7 +5417,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 333,
         "Route": "Bainbridge Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5611,7 +5451,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 334,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5646,7 +5485,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 335,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5681,7 +5519,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 336,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5716,7 +5553,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 337,
         "Route": "Lake City Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5751,7 +5587,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 338,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5786,7 +5621,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 339,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5821,7 +5655,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 340,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5856,7 +5689,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 341,
         "Route": "North Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5891,7 +5723,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 342,
         "Route": "North Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5926,7 +5757,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 343,
         "Route": "North Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5961,7 +5791,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 344,
         "Route": "North Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -5996,7 +5825,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 345,
         "Route": "North Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6031,7 +5859,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 346,
         "Route": "North Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6066,7 +5893,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 347,
         "Route": "North Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6101,7 +5927,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 348,
         "Route": "Lansdowne Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6136,7 +5961,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 349,
         "Route": "Ackroyd Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6171,7 +5995,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 350,
         "Route": "Terminal Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6206,7 +6029,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 351,
         "Route": "Terminal Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6241,7 +6063,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 352,
         "Route": "Terminal Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6276,7 +6097,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 353,
         "Route": "Terminal Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6311,7 +6131,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 354,
         "Route": "Smith Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6346,7 +6165,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 355,
         "Route": "Cottonwood Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6381,7 +6199,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 356,
         "Route": "Clarke Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6416,7 +6233,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 357,
         "Route": "Como Lake Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6451,7 +6267,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 358,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6486,7 +6301,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 359,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6521,7 +6335,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 360,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6556,7 +6369,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 361,
         "Route": "Pinetree Way",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -6591,7 +6403,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 362,
         "Route": "Glen Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6626,7 +6437,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 363,
         "Route": "Obelisk Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6661,7 +6471,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 364,
         "Route": "Pinetree Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6696,7 +6505,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 365,
         "Route": "Pinetree Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6731,7 +6539,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 366,
         "Route": "Northern Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6766,7 +6573,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 367,
         "Route": "Coquitlam Centre Mall Access Road",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6801,7 +6607,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 368,
         "Route": "Barnet Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6836,7 +6641,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 369,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6871,7 +6675,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 370,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -6906,7 +6709,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 371,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "United Blvd Overpass",
@@ -6941,7 +6743,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 374,
         "Route": "United Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Mary Hill Bypass Overpass",
@@ -6976,7 +6777,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 375,
         "Route": "United Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Port Mann Bridge",
@@ -7011,7 +6811,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 378,
         "Route": "United Blvd (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass",
@@ -7046,7 +6845,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 379,
         "Route": "United Blvd (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass (Ramp)",
@@ -7081,7 +6879,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 381,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "King Edwards St Overpass",
@@ -7116,7 +6913,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 396,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 7 Overpass (Offramp)",
@@ -7151,7 +6947,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 400,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass (Offramp)",
@@ -7186,7 +6981,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 401,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass",
@@ -7221,7 +7015,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 402,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass (Offramp)",
@@ -7256,7 +7049,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 403,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass (Offramp)",
@@ -7291,7 +7083,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 404,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 7 Overpass (Offramp)",
@@ -7326,7 +7117,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 405,
         "Route": "Hwy 7B (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 7 Overpass (Offramp)",
@@ -7361,7 +7151,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 406,
         "Route": "Trans-Canada Hwy (Onramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 7 Overpass (Offramp)",
@@ -7396,7 +7185,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 407,
         "Route": "Hwy 7B (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass (Offramp)",
@@ -7431,7 +7219,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 409,
         "Route": "Hwy 7B (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass (Offramp)",
@@ -7466,7 +7253,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 411,
         "Route": "Trans-Canada Hwy (Ramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass",
@@ -7501,7 +7287,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 412,
         "Route": "Trans-Canada Hwy (Ramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass",
@@ -7536,7 +7321,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 413,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -7571,7 +7355,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 419,
         "Route": "Columbia St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -7606,7 +7389,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 420,
         "Route": "Beaverbrook Cres",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -7641,7 +7423,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 422,
         "Route": "Lougheed Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 7 Overpass (Offramp)",
@@ -7676,7 +7457,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 423,
         "Route": "United Blvd (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass (Offramp)",
@@ -7711,7 +7491,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 424,
         "Route": "Trans-Canada Hwy (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 7 Overpass (Offramp)",
@@ -7746,7 +7525,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 430,
         "Route": "Mitchell Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Knight St Bridge",
@@ -7781,7 +7559,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 431,
         "Route": "Vulcan Way",
         "OVERHEAD": 1,
         "Structure_Name": "Knight St Bridge",
@@ -7816,7 +7593,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 433,
         "Route": "Grauer Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Arthur Laing Bridge",
@@ -7851,7 +7627,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 434,
         "Route": "Airport Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -7886,7 +7661,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 435,
         "Route": "Grant McConachie Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -7921,7 +7695,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 439,
         "Route": "Russ Baker Way",
         "OVERHEAD": 1,
         "Structure_Name": "Sea Island Way Overpass",
@@ -7956,7 +7729,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 440,
         "Route": "Cessna Dr (Ramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Sea Island Way Overpass",
@@ -7991,7 +7763,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 441,
         "Route": "Aviation Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -8026,7 +7797,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 443,
         "Route": "Grant McConachie Way",
         "OVERHEAD": 1,
         "Structure_Name": "Sea Island Centre Station Pedestrian Overpass",
@@ -8061,7 +7831,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 448,
         "Route": "Grant McConachie Way",
         "OVERHEAD": 1,
         "Structure_Name": "Russ Baker Way Overpass (Offramp)",
@@ -8096,7 +7865,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 452,
         "Route": "Sea Island Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -8131,7 +7899,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 453,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -8166,7 +7933,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 454,
         "Route": "No. 3 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -8201,7 +7967,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 455,
         "Route": "Bridgeport Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Sea Island Way (Offramp)",
@@ -8236,7 +8001,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 457,
         "Route": "Bridgeport Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Oak St Bridge/Hwy 99",
@@ -8271,7 +8035,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 458,
         "Route": "Bridgeport Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -8306,7 +8069,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 461,
         "Route": "River Rd/Dr",
         "OVERHEAD": 1,
         "Structure_Name": "Oak St Bridge",
@@ -8341,7 +8103,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 463,
         "Route": "Van Horne Way",
         "OVERHEAD": 1,
         "Structure_Name": "Oak St Bridge",
@@ -8376,7 +8137,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 469,
         "Route": "Shell Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 99 Overpass",
@@ -8411,7 +8171,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 470,
         "Route": "Shell Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 99 Overpass",
@@ -8446,7 +8205,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 472,
         "Route": "Hwy 99",
         "OVERHEAD": 1,
         "Structure_Name": "Alouette Flyover Overpass",
@@ -8481,7 +8239,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 473,
         "Route": "Hwy 99",
         "OVERHEAD": 1,
         "Structure_Name": "No. 5 Rd Overpass",
@@ -8516,7 +8273,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 491,
         "Route": "No. 5 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Alouette Flyover Overpass",
@@ -8551,7 +8307,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 492,
         "Route": "No. 5 Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 91 Overpass",
@@ -8586,7 +8341,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 494,
         "Route": "Hwy 91 (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 91 Overpass",
@@ -8621,7 +8375,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 496,
         "Route": "Hwy 91",
         "OVERHEAD": 1,
         "Structure_Name": "Jacombs Rd Overpass",
@@ -8656,7 +8409,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 502,
         "Route": "Hwy 91",
         "OVERHEAD": 1,
         "Structure_Name": "No. 7 Rd Overpass",
@@ -8691,7 +8443,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 505,
         "Route": "Westminster Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 91 Overpass",
@@ -8726,7 +8477,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 511,
         "Route": "Hwy 91",
         "OVERHEAD": 1,
         "Structure_Name": "Westminster Hwy Overpass (Onramp)",
@@ -8761,7 +8511,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 514,
         "Route": "Hwy 91",
         "OVERHEAD": 1,
         "Structure_Name": "W Channel Bridge",
@@ -8796,7 +8545,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 518,
         "Route": "Boundary Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 91A Overpass",
@@ -8831,7 +8579,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 520,
         "Route": "Templeton Station Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Arthur Laing Bridge/Grant McConachie Way",
@@ -8866,7 +8613,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 521,
         "Route": "Parking Lot Access Road",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -8901,7 +8647,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 522,
         "Route": "North Service Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Sea Island Centre Station Pedestrian Overpass",
@@ -8936,7 +8681,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 533,
         "Route": "Hwy 91 (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 91 (Onramp)",
@@ -8971,7 +8715,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 538,
         "Route": "Imperial St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9006,7 +8749,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 539,
         "Route": "Boundary Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Marine Dr Overpass",
@@ -9041,7 +8783,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 542,
         "Route": "Patterson Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9076,7 +8817,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 543,
         "Route": "Wilson Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9111,7 +8851,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 544,
         "Route": "Willingdon Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9146,7 +8885,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 545,
         "Route": "Central Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Metrotown Station Pedestrian Overpass",
@@ -9181,7 +8919,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 546,
         "Route": "Central Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9216,7 +8953,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 553,
         "Route": "Gilmore Ave",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -9251,7 +8987,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 554,
         "Route": "Gilmore Ave",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -9286,7 +9021,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 555,
         "Route": "Gilmore Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9321,7 +9055,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 556,
         "Route": "Alaska St",
         "OVERHEAD": 1,
         "Structure_Name": "Willingdon Ave Overpass",
@@ -9356,7 +9089,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 558,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Sprott St Overpass",
@@ -9391,7 +9123,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 560,
         "Route": "Holdom Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9426,7 +9157,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 561,
         "Route": "Kingsland Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9461,7 +9191,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 562,
         "Route": "Kensington Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9496,7 +9225,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 563,
         "Route": "Sperling Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9531,7 +9259,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 565,
         "Route": "Underhill Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9566,7 +9293,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 566,
         "Route": "Production Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9601,7 +9327,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 567,
         "Route": "Production Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -9636,7 +9361,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 569,
         "Route": "Winston St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -9671,7 +9395,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 570,
         "Route": "Government St",
         "OVERHEAD": 1,
         "Structure_Name": "Gaglardi Way Overpass",
@@ -9706,7 +9429,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 571,
         "Route": "Cariboo Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Gaglardi Way Overpass",
@@ -9741,7 +9463,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 591,
         "Route": "Eastlake Dr",
         "OVERHEAD": 1,
         "Structure_Name": "Gaglardi Way Overpass",
@@ -9776,7 +9497,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 596,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Grandview Hwy Overpass",
@@ -9811,7 +9531,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 598,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Grandview Hwy (HOV Offramp)",
@@ -9846,7 +9565,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 600,
         "Route": "Grandview Hwy (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Grandview Hwy (HOV Offramp)",
@@ -9881,7 +9599,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 606,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Willingdon Ave Overpass",
@@ -9916,7 +9633,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 616,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Kensington Ave Overpass",
@@ -9951,7 +9667,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 628,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Gaglardy Way (Onramp) Overpass",
@@ -9986,7 +9701,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 630,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Cariboo Rd Overpass",
@@ -10021,7 +9735,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 641,
         "Route": "Royal Oak Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10056,7 +9769,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 642,
         "Route": "MacPherson Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10091,7 +9803,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 643,
         "Route": "Buller Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10126,7 +9837,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 644,
         "Route": "Gilley Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10161,7 +9871,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 645,
         "Route": "Rumble St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10196,7 +9905,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 646,
         "Route": "Twenty-Third St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10231,7 +9939,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 647,
         "Route": "Twenty-Second St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10266,7 +9973,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 648,
         "Route": "Seventh Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10301,7 +10007,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 649,
         "Route": "Sixth Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10336,7 +10041,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 650,
         "Route": "River Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10371,7 +10075,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 651,
         "Route": "Fifth Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10406,7 +10109,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 652,
         "Route": "Fifth Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10441,7 +10143,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 653,
         "Route": "Fourth Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10476,7 +10177,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 682,
         "Route": "Fifth Ave",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -10511,7 +10211,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 685,
         "Route": "W 75th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Granville St Overpass (Onramp)",
@@ -10546,7 +10245,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 688,
         "Route": "Joyce St",
         "OVERHEAD": 1,
         "Structure_Name": "Joyce-Collingwood SkyTrain Station",
@@ -10581,7 +10279,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 690,
         "Route": "W 4th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Fir St Overpass (Offramp)",
@@ -10616,7 +10313,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 691,
         "Route": "Fir St",
         "OVERHEAD": 1,
         "Structure_Name": "W 4th Ave Overpass (Offramp)",
@@ -10651,7 +10347,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 692,
         "Route": "W 4th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Granville Bridge",
@@ -10686,7 +10381,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 693,
         "Route": "W 4th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Hemlock St Overpass (Onramp)",
@@ -10721,7 +10415,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 694,
         "Route": "W 6th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -10756,7 +10449,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 696,
         "Route": "Clark Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10791,7 +10483,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 698,
         "Route": "Bus Ramp",
         "OVERHEAD": 1,
         "Structure_Name": "Knight St Bridge",
@@ -10826,7 +10517,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 701,
         "Route": "E Kent Ave N",
         "OVERHEAD": 1,
         "Structure_Name": "Knight St Bridge",
@@ -10861,7 +10551,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 702,
         "Route": "E 14th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10896,7 +10585,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 703,
         "Route": "E 15th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10931,7 +10619,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 704,
         "Route": "E 16th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -10966,7 +10653,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 705,
         "Route": "Porter St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11001,7 +10687,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 706,
         "Route": "Victoria Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11036,7 +10721,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 707,
         "Route": "Hull St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11071,7 +10755,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 708,
         "Route": "Nanaimo St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11106,7 +10789,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 709,
         "Route": "Renfrew St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11141,7 +10823,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 710,
         "Route": "Rupert St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11176,7 +10857,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 711,
         "Route": "Slocan St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11211,7 +10891,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 712,
         "Route": "Kaslo St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11246,7 +10925,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 713,
         "Route": "Rupert St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11281,7 +10959,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 714,
         "Route": "E 1st Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass",
@@ -11316,7 +10993,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 721,
         "Route": "E Hastings St (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "McGill St Overpass (Onramp)",
@@ -11351,7 +11027,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 722,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "McGill St Overpass (Onramp)",
@@ -11386,7 +11061,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 723,
         "Route": "Trans-Canada Hwy (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "McGill St Overpass (Onramp)",
@@ -11421,7 +11095,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 724,
         "Route": "Trans-Canada Hwy (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "E Hastings St Overpass (Offramp)",
@@ -11456,7 +11129,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 725,
         "Route": "E Hastings St (Onramp)",
         "OVERHEAD": 1,
         "Structure_Name": "McGill St Overpass (Onramp)",
@@ -11491,7 +11163,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 737,
         "Route": "Cassiar Connector",
         "OVERHEAD": 1,
         "Structure_Name": "Adanac St Overpass",
@@ -11526,7 +11197,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 738,
         "Route": "Cassiar Connector",
         "OVERHEAD": 1,
         "Structure_Name": "Adanac St Overpass",
@@ -11561,7 +11231,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 746,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11596,7 +11265,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 747,
         "Route": "Burrard St Bridge",
         "OVERHEAD": 1,
         "Structure_Name": "Burrard St Bridge",
@@ -11631,7 +11299,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 748,
         "Route": "Burrard St Bridge",
         "OVERHEAD": 1,
         "Structure_Name": "Burrard St Bridge",
@@ -11666,7 +11333,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 749,
         "Route": "Anderson St",
         "OVERHEAD": 1,
         "Structure_Name": "Granville Bridge",
@@ -11701,7 +11367,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 750,
         "Route": "Johnston St",
         "OVERHEAD": 1,
         "Structure_Name": "Granville Bridge",
@@ -11736,7 +11401,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 751,
         "Route": "Cartwright St/Duranleau St",
         "OVERHEAD": 1,
         "Structure_Name": "Granville Bridge",
@@ -11771,7 +11435,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 753,
         "Route": "Pacific Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11806,7 +11469,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 754,
         "Route": "Quebec St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -11841,7 +11503,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 755,
         "Route": "Expo Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Main St Overpass (Offramp)",
@@ -11876,7 +11537,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 756,
         "Route": "Expo Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Georgia Viaduct",
@@ -11911,7 +11571,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 757,
         "Route": "Expo Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Dunsmuir Viaduct",
@@ -11946,7 +11605,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 758,
         "Route": "Expo Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Main St Overpass (Onramp)",
@@ -11981,7 +11639,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 759,
         "Route": "Quebec St",
         "OVERHEAD": 1,
         "Structure_Name": "Dunsmuir Viaduct",
@@ -12016,7 +11673,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 760,
         "Route": "Quebec St",
         "OVERHEAD": 1,
         "Structure_Name": "Main St Overpass (Onramp)",
@@ -12051,7 +11707,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 761,
         "Route": "Quebec St",
         "OVERHEAD": 1,
         "Structure_Name": "Georgia Viaduct",
@@ -12086,7 +11741,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 762,
         "Route": "Quebec St",
         "OVERHEAD": 1,
         "Structure_Name": "Main St Overpass (Offramp)",
@@ -12121,7 +11775,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 763,
         "Route": "Carrall St",
         "OVERHEAD": 1,
         "Structure_Name": "Georgia Viaduct",
@@ -12156,7 +11809,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 764,
         "Route": "Pat Quinn Way",
         "OVERHEAD": 1,
         "Structure_Name": "Georgia Viaduct",
@@ -12191,7 +11843,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 766,
         "Route": "Pat Quinn Way",
         "OVERHEAD": 1,
         "Structure_Name": "Dunsmuir Viaduct",
@@ -12226,7 +11877,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 767,
         "Route": "Pat Quinn Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -12261,7 +11911,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 768,
         "Route": "Pat Quinn Way",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -12296,7 +11945,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 769,
         "Route": "Expo Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -12331,7 +11979,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 770,
         "Route": "Expo Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -12366,7 +12013,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 771,
         "Route": "Expo Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Dunsmuir Viaduct",
@@ -12401,7 +12047,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 772,
         "Route": "Griffiths Way",
         "OVERHEAD": 1,
         "Structure_Name": "Georgia Viaduct",
@@ -12436,7 +12081,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 773,
         "Route": "Main St",
         "OVERHEAD": 1,
         "Structure_Name": "Georgia Viaduct",
@@ -12471,7 +12115,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 774,
         "Route": "Main St",
         "OVERHEAD": 1,
         "Structure_Name": "Dunsmuir Viaduct",
@@ -12506,7 +12149,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 775,
         "Route": "Stewart St",
         "OVERHEAD": 1,
         "Structure_Name": "Clark Dr Overpass",
@@ -12541,7 +12183,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 776,
         "Route": "Powell St",
         "OVERHEAD": 1,
         "Structure_Name": "Clark Dr Overpass",
@@ -12576,7 +12217,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 778,
         "Route": "Centennial Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Heatley Ave Overpass",
@@ -12611,7 +12251,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 780,
         "Route": "Alexander St",
         "OVERHEAD": 1,
         "Structure_Name": "Heatley Ave Overpass",
@@ -12646,7 +12285,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 784,
         "Route": "Pacific Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Cambie St Bridge",
@@ -12681,7 +12319,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 785,
         "Route": "Pacific Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Cambie St Bridge",
@@ -12716,7 +12353,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 786,
         "Route": "Expo Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Cambie St Bridge",
@@ -12751,7 +12387,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 787,
         "Route": "Expo Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "Georgia Viaduct",
@@ -12786,7 +12421,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 788,
         "Route": "Carrall St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -12821,7 +12455,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 789,
         "Route": "Carrall St",
         "OVERHEAD": 1,
         "Structure_Name": "Dunsmuir Viaduct",
@@ -12856,7 +12489,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 791,
         "Route": "W Waterfront Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Seabus Pedestrian Walkway",
@@ -12891,7 +12523,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 792,
         "Route": "Pacific St",
         "OVERHEAD": 1,
         "Structure_Name": "Granville Bridge",
@@ -12926,7 +12557,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 793,
         "Route": "Pacific St",
         "OVERHEAD": 1,
         "Structure_Name": "Rolston St Overpass",
@@ -12961,7 +12591,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 794,
         "Route": "Pacific St",
         "OVERHEAD": 1,
         "Structure_Name": "Continental St Overpass",
@@ -12996,7 +12625,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 795,
         "Route": "Seymour St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13031,7 +12659,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 796,
         "Route": "Marinaside Cres",
         "OVERHEAD": 1,
         "Structure_Name": "Cambie St Bridge",
@@ -13066,7 +12693,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 797,
         "Route": "Beach Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Granville Bridge",
@@ -13101,7 +12727,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 798,
         "Route": "Beach Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Burrard St Bridge",
@@ -13136,7 +12761,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 799,
         "Route": "Smithe St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13171,7 +12795,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 800,
         "Route": "Smithe St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13206,7 +12829,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 804,
         "Route": "Hwy 99",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13241,7 +12863,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 808,
         "Route": "Hwy 99",
         "OVERHEAD": 1,
         "Structure_Name": "16 Ave Overpass",
@@ -13276,7 +12897,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 814,
         "Route": "Hwy 99",
         "OVERHEAD": 1,
         "Structure_Name": "Pioneer Overpass",
@@ -13311,7 +12931,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 822,
         "Route": "Colebrook Rd",
         "OVERHEAD": 1,
         "Structure_Name": "King George Blvd Overpass",
@@ -13346,7 +12965,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 823,
         "Route": "100 Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -13381,7 +12999,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 824,
         "Route": "University Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -13416,7 +13033,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 825,
         "Route": "132 St Diversion",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -13451,7 +13067,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 826,
         "Route": "128 St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -13486,7 +13101,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 827,
         "Route": "Scott Rd (Ramps)",
         "OVERHEAD": 1,
         "Structure_Name": "King George Blvd Overpass",
@@ -13521,7 +13135,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 828,
         "Route": "Hwy 17",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13556,7 +13169,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 833,
         "Route": "56 Ave",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13591,7 +13203,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 834,
         "Route": "56 Ave",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13626,7 +13237,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 837,
         "Route": "128 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13661,7 +13271,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 838,
         "Route": "132 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13696,7 +13305,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 839,
         "Route": "132 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13731,7 +13339,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 841,
         "Route": "120 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13766,7 +13373,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 842,
         "Route": "120 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13801,7 +13407,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 843,
         "Route": "120 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13836,7 +13441,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 844,
         "Route": "120 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13871,7 +13475,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 845,
         "Route": "Hwy 17",
         "OVERHEAD": 1,
         "Structure_Name": "Tannery Rd Overpass",
@@ -13906,7 +13509,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 849,
         "Route": "Bridge Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -13941,7 +13543,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 850,
         "Route": "Bridge Rd",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -13976,7 +13577,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 853,
         "Route": "128A St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14011,7 +13611,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 856,
         "Route": "108 Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Gateway SkyTrain Station",
@@ -14046,7 +13645,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 857,
         "Route": "Gateway Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14081,7 +13679,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 858,
         "Route": "City Pky",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14116,7 +13713,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 859,
         "Route": "107A Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14151,7 +13747,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 860,
         "Route": "107A Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14186,7 +13781,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 861,
         "Route": "105A Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14221,7 +13815,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 862,
         "Route": "134A St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14256,7 +13849,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 863,
         "Route": "105 Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14291,7 +13883,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 864,
         "Route": "City Pky",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14326,7 +13917,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 865,
         "Route": "104 Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14361,7 +13951,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 866,
         "Route": "104 Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14396,7 +13985,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 867,
         "Route": "City Pky",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14431,7 +14019,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 868,
         "Route": "102 Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14466,7 +14053,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 869,
         "Route": "Mall Access",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14501,7 +14087,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 870,
         "Route": "Whalley Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14536,7 +14121,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 872,
         "Route": "156 St",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass",
@@ -14571,7 +14155,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 873,
         "Route": "156 St",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass",
@@ -14606,7 +14189,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 908,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "176 St Overpass",
@@ -14641,7 +14223,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 909,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "176 St Overpass",
@@ -14676,7 +14257,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 914,
         "Route": "Hwy 17",
         "OVERHEAD": 1,
         "Structure_Name": "Port Mann Bridge",
@@ -14711,7 +14291,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 921,
         "Route": "Hwy 17",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -14746,7 +14325,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 933,
         "Route": "Colebrook Rd",
         "OVERHEAD": 1,
         "Structure_Name": "152 St Overpass",
@@ -14781,7 +14359,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 939,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "152 St Overpass (Onramp)",
@@ -14816,7 +14393,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 948,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Port Mann Bridge Toll Cameras",
@@ -14851,7 +14427,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 949,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "Port Mann Bridge Toll Cameras",
@@ -14886,7 +14461,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 964,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -14921,7 +14495,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 965,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -14956,7 +14529,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 967,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "104 Ave Flyover",
@@ -14991,7 +14563,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 969,
         "Route": "Hwy 1 (Onramp)",
         "OVERHEAD": 1,
         "Structure_Name": "104 Ave Overpass (Offramp)",
@@ -15026,7 +14597,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 973,
         "Route": "Trans-Canada Hwy",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -15061,7 +14631,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 974,
         "Route": "Tynehead Dr",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -15096,7 +14665,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 990,
         "Route": "W 75th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SW Marine Dr Overpass (Ramp)",
@@ -15131,7 +14699,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 991,
         "Route": "W 75th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Granville St Overpass (Offramp)",
@@ -15166,7 +14733,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 992,
         "Route": "Pattullo Pl",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15201,7 +14767,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 993,
         "Route": "Scott Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15236,7 +14801,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 994,
         "Route": "Scott Rd",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15271,7 +14835,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 995,
         "Route": "112 Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15306,7 +14869,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 996,
         "Route": "Gateway Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15341,7 +14903,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 997,
         "Route": "City Pky",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15376,7 +14937,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 998,
         "Route": "City Pky",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15411,7 +14971,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 999,
         "Route": "Pattullo Pl",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15446,7 +15005,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1000,
         "Route": "Anderson St",
         "OVERHEAD": 1,
         "Structure_Name": "Granville Bridge",
@@ -15481,7 +15039,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1001,
         "Route": "W 3rd Ave",
         "OVERHEAD": 1,
         "Structure_Name": "Fir St (Offramp)",
@@ -15516,7 +15073,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1005,
         "Route": "Commercial Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15551,7 +15107,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1006,
         "Route": "Commercial Dr",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15586,7 +15141,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1007,
         "Route": "E 10th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15621,7 +15175,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1008,
         "Route": "E 10th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15656,7 +15209,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1009,
         "Route": "E 11th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15691,7 +15243,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1010,
         "Route": "E 11th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15726,7 +15277,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1011,
         "Route": "E 12th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15761,7 +15311,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1012,
         "Route": "E 13th Ave",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15796,7 +15345,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1013,
         "Route": "Walker St",
         "OVERHEAD": 1,
         "Structure_Name": "SkyTrain",
@@ -15831,7 +15379,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1024,
         "Route": "99 Ave",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -15866,7 +15413,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1025,
         "Route": "99 Ave",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -15901,7 +15447,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1028,
         "Route": "Railway Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 99 Overpass",
@@ -15936,7 +15481,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1029,
         "Route": "Railway Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 99 Overpass",
@@ -15971,7 +15515,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1030,
         "Route": "131A St",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 99 Overpass",
@@ -16006,7 +15549,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1031,
         "Route": "131A St",
         "OVERHEAD": 1,
         "Structure_Name": "Hwy 99 Overpass",
@@ -16041,7 +15583,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1037,
         "Route": "176 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -16076,7 +15617,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1039,
         "Route": "Trans-Canada Hwy (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Trans-Canada Hwy Overpass",
@@ -16111,7 +15651,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1040,
         "Route": "Trans-Canada Hwy (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "McGill St Overpass (Offramp)",
@@ -16146,7 +15685,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1045,
         "Route": "Burrard St Bridge",
         "OVERHEAD": 1,
         "Structure_Name": "Burrard St Bridge",
@@ -16181,7 +15719,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1047,
         "Route": "Wall St",
         "OVERHEAD": 1,
         "Structure_Name": "Commissioner St",
@@ -16216,7 +15753,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1053,
         "Route": "W Cordova St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -16251,7 +15787,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1054,
         "Route": "W Waterfront Rd",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -16286,7 +15821,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1058,
         "Route": "Expo Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "BC Place",
@@ -16321,7 +15855,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1059,
         "Route": "Expo Blvd",
         "OVERHEAD": 1,
         "Structure_Name": "BC Place",
@@ -16356,7 +15889,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1060,
         "Route": "Cooperage Way",
         "OVERHEAD": 1,
         "Structure_Name": "Cambie St Bridge",
@@ -16391,7 +15923,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1063,
         "Route": "River Rd",
         "OVERHEAD": 1,
         "Structure_Name": "No. 2 Rd Bridge",
@@ -16426,7 +15957,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1065,
         "Route": "192 St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -16461,7 +15991,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1080,
         "Route": "McMurray Ave",
         "OVERHEAD": 1,
         "Structure_Name": "McMurray Ave Overpass",
@@ -16496,7 +16025,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1081,
         "Route": "River Rd",
         "OVERHEAD": 1,
         "Structure_Name": "Ped. Overpass for the Hotel at River Rock",
@@ -16531,7 +16059,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1090,
         "Route": "Brunette Ave (Offramp)",
         "OVERHEAD": 1,
         "Structure_Name": "Brunette Ave Overpass",
@@ -16566,7 +16093,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1093,
         "Route": "Lane between E 2nd St and E 3rd St",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -16601,7 +16127,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1096,
         "Route": "Trans-Canada Hwy Onramp",
         "OVERHEAD": 1,
         "Structure_Name": "Fern St Overpass",
@@ -16636,7 +16161,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1097,
         "Route": "Hornby Dr",
         "OVERHEAD": 1,
         "Structure_Name": "",
@@ -16671,7 +16195,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1104,
         "Route": "Stanley Park Causeway",
         "OVERHEAD": 1,
         "Structure_Name": "Stanley Park Dr Overpass",

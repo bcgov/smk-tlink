@@ -11,7 +11,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 1,
         "Name": "Annacis Auto Terminal",
         "Category": "Auto",
         "Operator": "Wallenius Wilhelmsen Logistics (WWL) Vehicle Services Canada Ltd.",
@@ -31,7 +30,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 2,
         "Name": "Richmond Auto Terminal",
         "Category": "Auto",
         "Operator": "Wallenius Wilhelmsen Logistics (WWL) Vehicle Services Canada Ltd.",
@@ -51,7 +49,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 3,
         "Name": "Fraser Surrey Docks",
         "Category": "BreakBulk, Container",
         "Operator": "Fraser Surrey Docks LP",
@@ -71,7 +68,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 4,
         "Name": "Lynnterm (East Gate)",
         "Category": "BreakBulk",
         "Operator": "Western Stevedoring Company Ltd.",
@@ -91,7 +87,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 5,
         "Name": "Lynnterm (West Gate)",
         "Category": "BreakBulk",
         "Operator": "Western Stevedoring Company Ltd.",
@@ -111,7 +106,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 6,
         "Name": "Fibrecco Terminal",
         "Category": "Bulk",
         "Operator": "Fibreco Export Inc.",
@@ -131,7 +125,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 7,
         "Name": "Kinder Morgan - Westridge Marine Terminal",
         "Category": "Bulk, Oil/Chemical",
         "Operator": "Kinder Morgan Canada Terminals Limited Partnership",
@@ -151,7 +144,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 8,
         "Name": "Kinder Morgan Vancouver Wharves",
         "Category": "Bulk",
         "Operator": "Kinder Morgan Canada Terminals Limited Partnership",
@@ -171,7 +163,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 9,
         "Name": "Lantic Inc.",
         "Category": "Bulk",
         "Operator": "Lantic Inc.",
@@ -191,7 +182,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 10,
         "Name": "Pacific Coast Terminals",
         "Category": "Bulk",
         "Operator": "Pacific Coast Terminals Co. Ltd.",
@@ -211,7 +201,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 11,
         "Name": "West Coast Reductions",
         "Category": "Bulk",
         "Operator": "West Coast Reduction Ltd",
@@ -231,7 +220,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 12,
         "Name": "Neptune Bulk Terminals",
         "Category": "Coal",
         "Operator": "Neptune Bulk Terminals (Canada) Ltd.",
@@ -251,7 +239,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 13,
         "Name": "Westshore Terminals",
         "Category": "Coal",
         "Operator": "Westshore Terminals Limited Partnership",
@@ -271,7 +258,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 14,
         "Name": "Centerm",
         "Category": "Container",
         "Operator": "DP World Vancouver",
@@ -291,7 +277,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 15,
         "Name": "Delta Port",
         "Category": "Container",
         "Operator": "GCT Canada Limited Partnership",
@@ -311,7 +296,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 16,
         "Name": "Vanterm",
         "Category": "Container",
         "Operator": "GCT Canada Limited Partnership",
@@ -331,7 +315,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 17,
         "Name": "Alliance Grain Terminal",
         "Category": "Grain",
         "Operator": "AGT Ltd.",
@@ -351,7 +334,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 18,
         "Name": "Cargill Grain Terminal",
         "Category": "Grain",
         "Operator": "Cargill Ltd.",
@@ -371,7 +353,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 19,
         "Name": "Cascadia Terminal",
         "Category": "Grain",
         "Operator": "Viterra Inc.",
@@ -391,7 +372,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 20,
         "Name": "Columbia Containers",
         "Category": "Grain",
         "Operator": "",
@@ -411,7 +391,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 21,
         "Name": "Pacific Elevators Terminal",
         "Category": "Grain",
         "Operator": "Viterra Inc.",
@@ -431,7 +410,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 22,
         "Name": "Richardson International",
         "Category": "Grain",
         "Operator": "Richardson International Ltd.",
@@ -451,7 +429,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 23,
         "Name": "Chemtrade Chemicals",
         "Category": "Oil/Chemicals",
         "Operator": "Chemtrade Chemicals Canada",
@@ -471,7 +448,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 24,
         "Name": "IOCO Terminal",
         "Category": "Oil/Chemicals",
         "Operator": "Imperial Oil Limited",
@@ -491,7 +467,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 25,
         "Name": "Richmond Logistics Hub",
         "Category": "Oil/Chemicals",
         "Operator": "",
@@ -511,7 +486,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 26,
         "Name": "Shellburn Terminal",
         "Category": "Oil/Chemicals",
         "Operator": "Shell Canada Ltd.",
@@ -531,7 +505,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 27,
         "Name": "Stanovan Terminal",
         "Category": "Oil/Chemicals",
         "Operator": "Chevron Canada Ltd.",
@@ -551,7 +524,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 28,
         "Name": "Suncor Burrard Prodcuts Terminal",
         "Category": "Oil/Chemicals",
         "Operator": "",
@@ -571,7 +543,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 29,
         "Name": "Univar Canada Terminal",
         "Category": "Oil/Chemicals",
         "Operator": "Univar Canada",
@@ -591,7 +562,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 30,
         "Name": "Ballantyne Cruise Ship Terminal",
         "Category": "Passenger",
         "Operator": "Cerescorp Company",
@@ -611,7 +581,6 @@
     {
       "type": "Feature",
       "properties": {
-        "OBJECTID": 31,
         "Name": "Canada Place",
         "Category": "Passenger",
         "Operator": "Cerescorp Company",

@@ -8,20 +8,20 @@
             "scaleMin": 28505,
             "attributes": [
                 {
-                    "name": "CITY",
+                    "name": "Municipality",
                     "title": "Municipality"
                 },
                 {
-                    "name": "Type",
+                    "name": "RouteType",
                     "title": "Truck Route Type"
                 },
                 {
                     "name": "Bylaw",
                     "title": "Bylaw Link",
-                    "format": "asLink(this.feature.properties.Bylaw_Link)"
+                    "format": "asLink(this.feature.properties.BylawLink)"
                 },
                 {
-                    "name": "Truck_Definition_Weight",
+                    "name": "TruckDefinitionWeight",
                     "title": "Heavy Truck Definition (LGVW)",
                     "format": "asUnit('kg')"
                 },
@@ -30,7 +30,7 @@
                     "title": "Notes"
                 }
             ],
-            "titleAttribute": "Type",
+            "titleAttribute": "RouteType",
             "style": {
                 "strokeWidth": 3,
                 "strokeColor": "#A3FF73",
@@ -49,20 +49,20 @@
             "scaleMax": 28505,
             "attributes": [
                 {
-                    "name": "CITY",
+                    "name": "Municipality",
                     "title": "Municipality"
                 },
                 {
-                    "name": "Type",
+                    "name": "RouteType",
                     "title": "Truck Route Type"
                 },
                 {
                     "name": "Bylaw",
                     "title": "Bylaw Link",
-                    "format": "asLink(this.feature.properties.Bylaw_Link)"
+                    "format": "asLink(this.feature.properties.BylawLink)"
                 },
                 {
-                    "name": "Truck_Definition_Weight",
+                    "name": "TruckDefinitionWeight",
                     "title": "Heavy Truck Definition (LGVW)",
                     "format": "asUnit('kg')"
                 },
@@ -71,7 +71,7 @@
                     "title": "Notes"
                 }
             ],
-            "titleAttribute": "Type",
+            "titleAttribute": "RouteType",
             "style": {
                 "strokeWidth": 1.5,
                 "strokeColor": "#A3FF73",
