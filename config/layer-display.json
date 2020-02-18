@@ -36,6 +36,10 @@
                     ]
                 },
                 {
+                    "id": "dangerous-goods-routes",
+                    "class": "smk-inline-legend"
+                },
+                {
                     "type": "group",
                     "title": "Temporary Road Closures",
                     "isVisible": true,
