@@ -48,6 +48,18 @@
                         { "id": "temporary-road-closure" }
                     ]
                 },
+                {
+                    "type": "group",
+                    "title": "Oversize-Overweight (OS-OW) Truck Routes",
+                    "isVisible": false,
+                    "items": [
+                        { "id": "oversize-overweight-truck-routes-oah-up-to-4-88-m" },
+                        { "id": "oversize-overweight-truck-routes-oaw-up-to-5-m" },
+                        { "id": "oversize-overweight-truck-routes-gvw-up-to-80000-kg" },
+                        { "id": "oversize-overweight-truck-routes-gvw-up-to-85000-kg" },
+                        { "id": "oversize-overweight-truck-routes-gvw-up-to-125000-kg" }
+                    ]
+                },
                 { 
                     "type": "folder",
                     "title": "Height Restrictions",
