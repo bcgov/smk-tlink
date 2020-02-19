@@ -49,15 +49,26 @@
                     ]
                 },
                 {
-                    "type": "group",
+                    "type": "folder",
                     "title": "Oversize-Overweight (OS-OW) Truck Routes",
                     "isVisible": false,
                     "items": [
-                        { "id": "oversize-overweight-truck-routes-oah-up-to-4-88-m" },
-                        { "id": "oversize-overweight-truck-routes-oaw-up-to-5-m" },
-                        { "id": "oversize-overweight-truck-routes-gvw-up-to-80000-kg" },
-                        { "id": "oversize-overweight-truck-routes-gvw-up-to-85000-kg" },
-                        { "id": "oversize-overweight-truck-routes-gvw-up-to-125000-kg" }
+                        {
+                            "type": "folder",
+                            "title": "Term Permit Routes & Restrictions",
+                            "isVisible": false,
+                            "items": [
+                                { "id": "term-permit-oaw-over-3-2-m", "class": "smk-inline-legend" },
+                                { "id": "term-permit-oaw-over-3-8-m", "class": "smk-inline-legend" },
+                                { "id": "term-permit-os-ow-truck-restriction", "class": "smk-inline-legend" },
+                                { "id": "term-permit-roundabout", "class": "smk-inline-legend" }
+                            ]
+                        },
+                        { "id": "oversize-overweight-truck-routes-oah-up-to-4-88-m", "class": "smk-inline-legend" },
+                        { "id": "oversize-overweight-truck-routes-oaw-up-to-5-m", "class": "smk-inline-legend" },
+                        { "id": "oversize-overweight-truck-routes-gvw-up-to-80000-kg", "class": "smk-inline-legend" },
+                        { "id": "oversize-overweight-truck-routes-gvw-up-to-85000-kg", "class": "smk-inline-legend" },
+                        { "id": "oversize-overweight-truck-routes-gvw-up-to-125000-kg", "class": "smk-inline-legend" }
                     ]
                 },
                 { 
