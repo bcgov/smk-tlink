@@ -1,0 +1,29 @@
+{
+    "layers": [
+        {
+            "type": "vector",
+            "id": "term-permit-oaw-over-3-8-m",
+            "title": "Overall Width (OAW) > 3.8 m Not Permitted",
+            "dataUrl": "./layers/term-permit-oaw-over-3-8-m/term-permit-oaw-over-3-8-m.geojson",
+            "xxxscaleMin": 198647,
+            "attributes": [
+                { "name": "Location", "title": "Location" },
+                { "name": "Note", "title": "Note" },
+                { "name": "Status", "title": "Status" },
+                { "name": "Description", "title": "Description" },
+                { "name": "Municipality", "title": "Municipality" }
+            ],
+            "titleAttribute": "Location",
+            "style": {
+                "strokeWidth": 10,
+                "strokeColor": "#000000",
+                "strokeOpacity": 0.5,
+                "fillColor": "#E61AA8",
+                "fillOpacity":  0.5
+            },
+            "legend": {
+                "point": true
+            }
+        }
+    ]
+}
