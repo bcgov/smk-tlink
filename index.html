@@ -68,40 +68,6 @@
        
         <iframe id="print-holder" style="position: absolute; left: 0; top: 0; visibility: hidden;"></iframe>
 
-        <link rel="stylesheet" type="text/css" href="feedback-form.css"/>       
-        <template id="feedback">
-            <form class="feedback-form"
-                method="post"
-                enctype="text/plain"
-                action="mailto:ipme@Translink.ca?subject=TRP Beta App Feedback"
-            >
-                <input type="hidden" name="version" value="0.0.13">
-                
-                <label>To submit feedback on this app please fill out our survey:
-                    <a target="_blank" href="https://translink.checkbox.ca/CVRP-Feedback.aspx">TRP-Feedback</a>
-                    Or use this form to email Translink:
-                </label>
-
-                <label class="name">Your name
-                    <input name="name">
-                </label>
-
-                <label class="email">Your email address
-                    <input name="email">
-                </label>
-
-                <label class="feedback">Your feedback on this app.
-                    <textarea name="feedback" rows=10></textarea>
-                </label>
-
-                <div class="buttons">
-                    <button type="submit">Send Feedback</button>
-                    <button type="reset">Reset</button>
-                </div>
-
-            </form>
-        </template>
-
         <style>
             .truck-options {
                 display: flex;
@@ -244,20 +210,22 @@
         } ).then( function () {
             $( 'body' ).addClass( 'device-' + SMK.MAP[ 1 ].$device )
 
-            SMK.HANDLER.set( 'bespoke', 'initialized', function ( smk ) {} )
+            SMK.HANDLER.set( 'bespoke--feedback', 'initialized', function ( smk ) {} )
 
-            SMK.HANDLER.set( 'bespoke', 'activated', function ( smk, tool, el ) {
-                el.appendChild( document.importNode( document.getElementById( 'feedback' ).content, true ) )
+            SMK.HANDLER.set( 'bespoke--feedback', 'activated', function ( smk, tool, el ) {
+                include( [ { url: './fragments/feedback.html' }, { url: './fragments/feedback.css' } ], 'bespoke--feedback' ).then( function ( inc ) {
+                    el.innerHTML = inc[ 'bespoke--feedback.feedback-html' ]
+                } ) 
             } )
 
             SMK.HANDLER.set( 'directions-route', 'print', function ( smk, tool, key, opt ) {
                 if ( opt.debug ) {
                     window.open( 'print-directions-portrait.html?' + key, '', [
-                        // "location=no",
-                        // "menubar=no",
-                        // "titlebar=no",
-                        // "status=no",
-                        // "toolbar=no",
+                        "location=yes",
+                        "menubar=yes",
+                        "titlebar=yes",
+                        "status=yes",
+                        "toolbar=yes",
                         "scrollbars=yes",
                     ].join( ',' ) );
                 }
@@ -371,12 +339,31 @@
                 })
             } )
 
+            SMK.HANDLER.set( 'bespoke--about', 'activated', function ( smk, tool, el ) {
+                include( [ { url: './fragments/about.html' }, { url: './fragments/about.css' } ], 'bespoke--about' ).then( function ( inc ) {
+                    el.innerHTML = inc[ 'bespoke--about.about-html' ]
+                } ) 
+            } )
+
+            SMK.HANDLER.set( 'bespoke--glossary', 'activated', function ( smk, tool, el ) {
+                include( [ { url: './fragments/glossary.html' }, { url: './fragments/glossary.css' } ], 'bespoke--glossary' ).then( function ( inc ) {
+                    el.innerHTML = inc[ 'bespoke--glossary.glossary-html' ]
+                } ) 
+            } )
+
+            SMK.HANDLER.set( 'bespoke--contacts', 'activated', function ( smk, tool, el ) {
+                include( [ { url: './fragments/contacts.html' }, { url: './fragments/contacts.css' } ],'bespoke--contacts' ).then( function ( inc ) {
+                    el.innerHTML = inc[ 'bespoke--contacts.contacts-html' ]
+                } ) 
+            } )
+
             $( 'body' ).removeClass( 'hide' )
         } )
 
         function htmlTemplate( template, data ) {
             return ( new Vue( { template: template, data: data } ) ).$mount().$el.innerHTML
         }
+
     </script>
 
 
