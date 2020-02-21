@@ -4,6 +4,10 @@ section.trp-contacts h1 {
     margin-bottom: 0;
 }
 
+section.trp-contacts * + h1 {
+    margin-top: 15px;
+}
+
 section.trp-contacts h2 {
     font-size: 14px;
     margin-top: 10px;
@@ -12,6 +16,7 @@ section.trp-contacts h2 {
 
 section.trp-contacts address {
     font-size: 13px;
+    font-style: normal;
 }
 
 section.trp-contacts address a {
@@ -52,12 +57,12 @@ section.trp-contacts p {
     font-size: 12px;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 section.trp-contacts em.warning::before {
     content: 'warning';
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -69,4 +74,11 @@ section.trp-contacts em.warning::before {
     direction: ltr;
     transform: translateY( 5px );
     margin-right: 5px;
+}
+
+section.trp-contacts ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+    font-size: 13px;
 }
