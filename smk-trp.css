@@ -1,0 +1,7 @@
+.smk-map-frame .smk-toolbar .smk-bespoke--reports-tool {
+    color: red;
+}
+
+.smk-map-frame .smk-toolbar .smk-bespoke--reports-tool.smk-hide {
+    display: none;
+}

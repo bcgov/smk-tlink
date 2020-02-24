@@ -9,6 +9,7 @@
         <script src="lib/dialog-polyfill/dialog-polyfill.js"></script>
 
         <script src="lib/smk.js"></script>
+        <link rel="stylesheet" type="text/css" href="smk-trp.css"/>
 
         <style>
             body.hide {
@@ -105,21 +106,6 @@
                 </div>
             </div>
         </template>
-
-        <template id="truck-definition-by-municipality">
-            <div v-if="municipalities.length > 0">
-                <p>
-                    Based on the GVW and axle count, your vehicle is not considered to be a heavy truck in the following municipalities: 
-                </p>
-                <ul class="municipalities">
-                    <li v-for="muni in municipalities">{{ muni }}</li>
-                </ul> 
-                <p>
-                    The driver and/or carrier is responsible for ensuring the default vehicle parameters or user-entered vehicle parameters are an accurate representation of the actual vehicle, for verifying all clearances and restrictions on the route, and for ensuring the vehicle is operated in compliance with all applicable municipal bylaws and provincial and federal regulations. 
-                    <a href="[LINK to Municipal and Provincial contact information]">LINK to Municipal and Provincial contact information</a>
-                </p>
-            </div>
-        </template>
     </body>
 
     <script src="trp-vehicle-definitions.js"></script>
@@ -132,8 +118,11 @@
             dialog.showModal()
         } ) 
 
-        var defaultVehicle = TRP.vehicleTypes[ 0 ].configs[ 0 ]
+        SMK.HANDLER.set( 'bespoke--reports', 'initialized', function ( smk, tool ) {
+            tool.status = 'hide'
+        } )
 
+        var defaultVehicle = TRP.vehicleTypes[ 0 ].configs[ 0 ]
         SMK.INIT( {
             'smk-container-sel': "#smk-map-frame",
             'smk-config': [ 
@@ -289,26 +278,28 @@
                 } )
             } )
 
-            SMK.HANDLER.set( 'directions', 'route', function ( response ) {
-                var muni = {}
+            var routingReports
+            SMK.HANDLER.set( 'directions', 'route', function ( smk, response ) {
+                smk.$tool[ 'bespoke--reports' ].status = 'hide'
+                routingReports = null
 
-                response.segments.features.forEach( function ( s ) {
-                    if ( s.properties.isTruckRoute && !s.properties.isOversize && !s.properties.isFerry ) {
-                        s.properties[ '@layer' ] = '@potential'
-                    }
-                    else {
-                        s.properties[ '@layer' ] = '@unverified'
-                    }
-
-                    muni[ s.properties.locality ] = true
-                } )
-                
-                response.notifications.push( {
-                    type: 'TruckRestriction',
-                    message: htmlTemplate( '#truck-definition-by-municipality', { 
-                        municipalities: Object.keys( muni ).filter( function ( m ) { return !TRP.isHeavyTruckInMunicipality( m, response.request.data.weight ) } )
+                if ( response ) {
+                    response.segments.features.forEach( function ( s ) {
+                        if ( s.properties.isTruckRoute && !s.properties.isOversize && !s.properties.isFerry ) {
+                            s.properties[ '@layer' ] = '@potential'
+                        }
+                        else {
+                            s.properties[ '@layer' ] = '@unverified'
+                        }
                     } )
-                })
+                    
+                    TRP.makeReports( response ).then( function ( reports ) {
+                        if ( !reports || reports.length == 0 ) return
+
+                        smk.$tool[ 'bespoke--reports' ].status = 'ready'
+                        routingReports = response.reports = reports
+                    } )
+                }
             } )
 
             SMK.HANDLER.set( 'bespoke--about', 'activated', function ( smk, tool, el ) {
@@ -324,8 +315,17 @@
             } )
 
             SMK.HANDLER.set( 'bespoke--contacts', 'activated', function ( smk, tool, el ) {
-                include( [ { url: './fragments/contacts.html' }, { url: './fragments/contacts.css' } ],'bespoke--contacts' ).then( function ( inc ) {
+                include( [ { url: './fragments/contacts.html' }, { url: './fragments/contacts.css' } ], 'bespoke--contacts' ).then( function ( inc ) {
                     el.innerHTML = inc[ 'bespoke--contacts.contacts-html' ]
+                } ) 
+            } )
+
+            SMK.HANDLER.set( 'bespoke--reports', 'activated', function ( smk, tool, el ) {
+                // debugger
+                include( [ { url: './fragments/reports.html' }, { url: './fragments/reports.css' } ], 'bespoke--reports' ).then( function ( inc ) {
+                    el.innerHTML = htmlTemplate( inc[ 'bespoke--reports.reports-html' ], {
+                        reports: routingReports 
+                    } )
                 } ) 
             } )
 
@@ -333,9 +333,8 @@
         } )
 
         function htmlTemplate( template, data ) {
-            return ( new Vue( { template: template, data: data } ) ).$mount().$el.innerHTML
+            return ( new Vue( { template: '<div>' + template + '</div>', data: data } ) ).$mount().$el.innerHTML
         }
-
     </script>
 
 

@@ -42,7 +42,7 @@
         "allVisibility": true,
         "filter": true
       },
-      "order": 3,
+      "order": 1,
       "legend": true
     },
     {
@@ -101,7 +101,7 @@
       "type": "directions",
       "enabled": true,
       "position": "toolbar",
-      "order": 1,
+      "order": 2,
       "command": {
           "criteria": false,
           "optimal": false
@@ -188,6 +188,15 @@
       "title": "Contacts",
       "icon": "email",
       "xxorder": 1
+    },
+    {
+      "type": "bespoke",
+      "instance": "reports",
+      "enabled": true,
+      "position": "toolbar",
+      "title": "Reports and Notices",
+      "icon": "warning",
+      "order": 99
     }
   ]
 }

@@ -467,29 +467,87 @@ TRP.isHeavyTruckInMunicipality = function ( muni, weight ) {
 }
 
 var municipality = {
-    '_default_':                { truckWeightDefinition:  13600 },
-    'anmore':                   { truckWeightDefinition:  11794 },
-    'belcarra':                 { truckWeightDefinition:  10900 },
-    'bowen island':             { truckWeightDefinition:  11800 },
-    'burnaby':                  { truckWeightDefinition:  13600 },
-    'coquitlam':                { truckWeightDefinition:  13600 },
-    'delta':                    { truckWeightDefinition:  11800 },
-    'langley city':             { truckWeightDefinition:  11800 },
-    'langley township':         { truckWeightDefinition:  11800 },
-    'lions bay':                { truckWeightDefinition: 300000 },
-    'maple ridge':              { truckWeightDefinition: 300000 },
-    'new westminster':          { truckWeightDefinition:  11800 },
-    'north vancouver city':     { truckWeightDefinition:  11800 },
-    'north vancouver district': { truckWeightDefinition: 300000 },
-    'pitt meadows':             { truckWeightDefinition:  10000 },
-    'port coquitlam':           { truckWeightDefinition:  11794 },
-    'port moody':               { truckWeightDefinition:  10000 },
-    'richmond':                 { truckWeightDefinition: 300000 },
-    'surrey':                   { truckWeightDefinition:  11800 },
-    'ubc':                      { truckWeightDefinition: 300000 },
-    'vancouver':                { truckWeightDefinition:  11800 },
-    'west vancouver':           { truckWeightDefinition:  11800 },
-    'white rock':               { truckWeightDefinition:   5500 },
+    '_default_':                    { truckWeightDefinition:  13600 },
+    'anmore':                       { truckWeightDefinition:  11794 },
+    'belcarra':                     { truckWeightDefinition:  10900 },
+    'bowen island':                 { truckWeightDefinition:  11800 },
+    'burnaby':                      { truckWeightDefinition:  13600 },
+    'coquitlam':                    { truckWeightDefinition:  13600 },
+    'delta':                        { truckWeightDefinition:  11800 },
+    'langley':                      { truckWeightDefinition:  11800 },
+    'langley city':                 { truckWeightDefinition:  11800 },
+    'langley township':             { truckWeightDefinition:  11800 },
+    'township of langley':          { truckWeightDefinition:  11800 },
+    'lions bay':                    { truckWeightDefinition: 300000 },
+    'maple ridge':                  { truckWeightDefinition: 300000 },
+    'new westminster':              { truckWeightDefinition:  11800 },
+    'north vancouver':              { truckWeightDefinition:  11800 },
+    'north vancouver city':         { truckWeightDefinition:  11800 },
+    'north vancouver district':     { truckWeightDefinition: 300000 },
+    'district of north vancouver':  { truckWeightDefinition: 300000 },
+    'pitt meadows':                 { truckWeightDefinition:  10000 },
+    'port coquitlam':               { truckWeightDefinition:  11794 },
+    'port moody':                   { truckWeightDefinition:  10000 },
+    'richmond':                     { truckWeightDefinition: 300000 },
+    'surrey':                       { truckWeightDefinition:  11800 },
+    'ubc':                          { truckWeightDefinition: 300000 },
+    'vancouver':                    { truckWeightDefinition:  11800 },
+    'west vancouver':               { truckWeightDefinition:  11800 },
+    'white rock':                   { truckWeightDefinition:   5500 },
 }
+
+// _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+// 
+
+TRP.makeReports = function ( routeResponse ) {
+    var reports = clone( routeResponse.notifications || [] )
+
+    var muni = {}
+    routeResponse.segments.features.forEach( function ( s ) {
+        muni[ s.properties.locality ] = true
+    } )
+
+    var notHeavyTruckMunis = Object.keys( muni ).filter( function ( m ) { 
+        return !TRP.isHeavyTruckInMunicipality( m, routeResponse.request.data.weight ) 
+    } )
+
+    return include( [ { url: './fragments/report-not-heavy-truck.html' }, { url: './fragments/report-direction-notification.html' } ], 'report' )
+        .then( function ( inc ) {
+            routeResponse.directions.forEach( function ( d ) {
+                if ( !d.notifications ) return
+
+                d.notifications.forEach( function ( n ) {
+                    var r = clone( n )
+
+                    r.message = htmlTemplate( inc[ 'report.report-direction-notification-html' ], { 
+                        notification: r,
+                        direction: clone( d ),
+                        segment: clone( routeResponse.segments.features[ d.segmentIndex ].properties )
+                    } ) 
+
+                    reports.push( r )
+                } )
+            } )
+
+            reports.push( {
+                type: 'TruckRestriction',
+                message: htmlTemplate( inc[ 'report.report-not-heavy-truck-html' ], { 
+                    municipalities: notHeavyTruckMunis
+                } )
+            } )
+        } )
+        .then( function() {
+            return reports
+        } )
+}
+
+// _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+// 
+
+function htmlTemplate( template, data ) {
+    return ( new Vue( { template: '<div>' + template + '</div>', data: data } ) ).$mount().$el.innerHTML
+}
+
+function clone( obj ) { return JSON.parse( JSON.stringify( obj ) ) }
 
 } )()
