@@ -104,7 +104,8 @@
       "order": 2,
       "command": {
           "criteria": false,
-          "optimal": false
+          "optimal": false,
+          "truckRoute": false
       },
       "apiKey": "11dd756f680c47b5aef5093d95543738",
       "truck": true,
