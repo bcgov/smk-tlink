@@ -9,6 +9,7 @@
         <script src="lib/dialog-polyfill/dialog-polyfill.js"></script>
 
         <script src="lib/smk.js"></script>
+        <link rel="stylesheet" type="text/css" href="smk-trp.css"/>
 
         <style>
             body.hide {
@@ -17,49 +18,18 @@
         </style>
 
         <link rel="stylesheet" type="text/css" href="article.css"/>       
-        <link rel="stylesheet" type="text/css" href="splash-dialog.css"/>       
     </head>
     
     <body class="hide">
         <article>
             <dialog id="disclaimer">
-                <form method="dialog">
-                    <header>
-                        <h1><span class="translink-logo"></span>Truck Route Planner</h1>
-                    </header>
-
-                    <section>
-                        <p>
-                            This website (the Truck Route Planner (TRP) Beta) and all of the information it contains are provided "as is" without warranty of any kind, whether express or implied. 
-                            All implied warranties, including, without limitation, implied warranties of merchantability, fitness for a particular purpose, and non-infringement, are hereby expressly disclaimed.
-                        </p>
-                        <p>
-                            Links and references to any other websites are provided for information only and listing shall not be taken as endorsement of any kind. 
-                            TransLink is not responsible for the content or reliability of the linked websites and does not endorse the content, products, services or views expressed within them.
-                        </p>
-                        <p>
-                            Under no circumstances will TransLink be liable to any person or business entity for any direct, indirect, special, incidental, consequential, or other damage based on any use of this website or any other website to which this site is linked, including, without limitation, any lost profits, business interruption, or loss of programs or information, even if TransLink has been specifically advised.
-                        </p>
-                        <img src="images/no_mobile_icon.svg" class="warningImage" alt="Graphic warning to discourage using mobile devices">
-                        <p>
-                            <em>This website is intended to be used as a pre-trip planner. Do not operate a vehicle while using this website.</em>
-                        </p>
-                        <p>
-                            By proceeding, you are accepting this disclaimer, and you are indicating you understand the limitations of this website.
-                        </p>
-                    </section>
-
-                    <menu>
-                        <button type="submit" class="acceptButton">I accept the disclaimer and understand the limitations of this website</button>
-                    </menu>
-                </form>
             </dialog>
 
             <header>
                 <h1><span class="translink-logo"></span>Truck Route Planner</h1>
                 <h2>Beta
-                    <span class="version">version: 0.0.13</span>
-                    <span class="date">built: 2020-02-12</span>
+                    <span class="version">version: 0.0.14</span>
+                    <span class="date">built: 2020-02-24</span>
                 </h2>
             </header>
 
@@ -136,32 +106,23 @@
                 </div>
             </div>
         </template>
-
-        <template id="truck-definition-by-municipality">
-            <div v-if="municipalities.length > 0">
-                <p>
-                    Based on the GVW and axle count, your vehicle is not considered to be a heavy truck in the following municipalities: 
-                </p>
-                <ul class="municipalities">
-                    <li v-for="muni in municipalities">{{ muni }}</li>
-                </ul> 
-                <p>
-                    The driver and/or carrier is responsible for ensuring the default vehicle parameters or user-entered vehicle parameters are an accurate representation of the actual vehicle, for verifying all clearances and restrictions on the route, and for ensuring the vehicle is operated in compliance with all applicable municipal bylaws and provincial and federal regulations. 
-                    <a href="[LINK to Municipal and Provincial contact information]">LINK to Municipal and Provincial contact information</a>
-                </p>
-            </div>
-        </template>
     </body>
 
     <script src="trp-vehicle-definitions.js"></script>
 
     <script>
         var dialog = document.getElementById( 'disclaimer' )
-        dialogPolyfill.registerDialog(dialog)
-        dialog.showModal()
+        include( [ { url: './fragments/disclaimer.html' }, { url: './fragments/disclaimer.css' } ], 'disclaimer' ).then( function ( inc ) {
+            dialog.innerHTML = inc[ 'disclaimer.disclaimer-html' ]
+            dialogPolyfill.registerDialog(dialog)
+            dialog.showModal()
+        } ) 
+
+        SMK.HANDLER.set( 'bespoke--reports', 'initialized', function ( smk, tool ) {
+            tool.status = 'hide'
+        } )
 
         var defaultVehicle = TRP.vehicleTypes[ 0 ].configs[ 0 ]
-
         SMK.INIT( {
             'smk-container-sel': "#smk-map-frame",
             'smk-config': [ 
@@ -317,26 +278,28 @@
                 } )
             } )
 
-            SMK.HANDLER.set( 'directions', 'route', function ( response ) {
-                var muni = {}
+            var routingReports
+            SMK.HANDLER.set( 'directions', 'route', function ( smk, response ) {
+                smk.$tool[ 'bespoke--reports' ].status = 'hide'
+                routingReports = null
 
-                response.segments.features.forEach( function ( s ) {
-                    if ( s.properties.isTruckRoute && !s.properties.isOversize && !s.properties.isFerry ) {
-                        s.properties[ '@layer' ] = '@potential'
-                    }
-                    else {
-                        s.properties[ '@layer' ] = '@unverified'
-                    }
-
-                    muni[ s.properties.locality ] = true
-                } )
-                
-                response.notifications.push( {
-                    type: 'TruckRestriction',
-                    message: htmlTemplate( '#truck-definition-by-municipality', { 
-                        municipalities: Object.keys( muni ).filter( function ( m ) { return !TRP.isHeavyTruckInMunicipality( m, response.request.data.weight ) } )
+                if ( response ) {
+                    response.segments.features.forEach( function ( s ) {
+                        if ( s.properties.isTruckRoute && !s.properties.isOversize && !s.properties.isFerry ) {
+                            s.properties[ '@layer' ] = '@potential'
+                        }
+                        else {
+                            s.properties[ '@layer' ] = '@unverified'
+                        }
                     } )
-                })
+                    
+                    TRP.makeReports( response ).then( function ( reports ) {
+                        if ( !reports || reports.length == 0 ) return
+
+                        smk.$tool[ 'bespoke--reports' ].status = 'ready'
+                        routingReports = response.reports = reports
+                    } )
+                }
             } )
 
             SMK.HANDLER.set( 'bespoke--about', 'activated', function ( smk, tool, el ) {
@@ -352,8 +315,17 @@
             } )
 
             SMK.HANDLER.set( 'bespoke--contacts', 'activated', function ( smk, tool, el ) {
-                include( [ { url: './fragments/contacts.html' }, { url: './fragments/contacts.css' } ],'bespoke--contacts' ).then( function ( inc ) {
+                include( [ { url: './fragments/contacts.html' }, { url: './fragments/contacts.css' } ], 'bespoke--contacts' ).then( function ( inc ) {
                     el.innerHTML = inc[ 'bespoke--contacts.contacts-html' ]
+                } ) 
+            } )
+
+            SMK.HANDLER.set( 'bespoke--reports', 'activated', function ( smk, tool, el ) {
+                // debugger
+                include( [ { url: './fragments/reports.html' }, { url: './fragments/reports.css' } ], 'bespoke--reports' ).then( function ( inc ) {
+                    el.innerHTML = htmlTemplate( inc[ 'bespoke--reports.reports-html' ], {
+                        reports: routingReports 
+                    } )
                 } ) 
             } )
 
@@ -361,9 +333,8 @@
         } )
 
         function htmlTemplate( template, data ) {
-            return ( new Vue( { template: template, data: data } ) ).$mount().$el.innerHTML
+            return ( new Vue( { template: '<div>' + template + '</div>', data: data } ) ).$mount().$el.innerHTML
         }
-
     </script>
 
 

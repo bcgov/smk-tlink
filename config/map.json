@@ -42,7 +42,7 @@
         "allVisibility": true,
         "filter": true
       },
-      "order": 3,
+      "order": 1,
       "legend": true
     },
     {
@@ -101,10 +101,11 @@
       "type": "directions",
       "enabled": true,
       "position": "toolbar",
-      "order": 1,
+      "order": 2,
       "command": {
           "criteria": false,
-          "optimal": false
+          "optimal": false,
+          "truckRoute": false
       },
       "apiKey": "11dd756f680c47b5aef5093d95543738",
       "truck": true,
@@ -188,6 +189,15 @@
       "title": "Contacts",
       "icon": "email",
       "xxorder": 1
+    },
+    {
+      "type": "bespoke",
+      "instance": "reports",
+      "enabled": true,
+      "position": "toolbar",
+      "title": "Reports and Notices",
+      "icon": "warning",
+      "order": 99
     }
   ]
 }

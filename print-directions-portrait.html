@@ -415,48 +415,6 @@
                 return ( d0 * d0 + d1 * d1 ) <= ( min * min )
             }
 
-            function getDirections( pt ) {
-                return dirs.directions.filter( function ( dr ) {
-                    return close( dr.point, pt, 0.00001 )
-                } )
-            }
-
-            var routeAttrs = []
-            for ( var i = 0; i < dirs.route.length; i += 1 ) routeAttrs[ i ] = {
-                segs: {},
-            }
-
-            dirs.segments.features.forEach( function ( sg, i ) {
-                for ( var j = 0; j < sg.geometry.coordinates.length; j += 1 ) {
-                    var ri = j + sg.properties.index
-                    routeAttrs[ ri ].segs[ i ] = true
-
-                    routeAttrs[ ri ].dirs = getDirections( dirs.route[ ri ] )                    
-                    routeAttrs[ ri ].index = ri
-                }
-            } )
-
-            // segments that start/end on a node without a direction are a problem
-            var problems = routeAttrs.filter( function ( ra ) {
-                return Object.keys( ra.segs ).length > 1 && ra.dirs.length == 0
-            } )
-
-            if ( problems.length > 0 ) {
-                problems.forEach( function ( p ) {
-                    p.dirs = [ {
-                        type: 'CONTINUE',
-                        point: JSON.parse( JSON.stringify( dirs.route[ p.index ] ) ),
-                    } ]
-                } )
-
-                dirs.directions = routeAttrs
-                    .map( function ( ra ) { return ra.dirs } )
-                    .filter( function ( d ) { return !!d } )
-                    .reduce( function ( acc, v ) { return acc.concat( v ) }, [] )
-
-                // debugger
-            }
-
             function getWaypoint( pt ) {
                 return dirs.waypoints.find( function ( wp ) {
                     return close( pt, [ wp.longitude, wp.latitude ], 0.00001 )
@@ -514,14 +472,15 @@
                     dist: turf.distance( d.point, prevDir.point )
                 }
 
-                var maxSeg = Math.max.apply( Math, Object.keys( routeAttrs[ spi ].segs ) )
-                prevDir.class = segmentClasses( maxSeg )
+                // var maxSeg = Math.max.apply( Math, Object.keys( routeAttrs[ spi ].segs ) )
+                prevDir.class = segmentClasses( prevDir.segmentIndex )
                 prevDir.class[ getWaypoint( prevDir.point ).class || '' ] = true
 
-                if ( Object.keys( routeAttrs[ spi ].segs ).length == 2 || spi == 0 ) {
-                    var sgi = Math.max.apply( Math, Object.keys( routeAttrs[ spi ].segs ) )
+                // if ( Object.keys( routeAttrs[ spi ].segs ).length == 2 || spi == 0 ) {
+                if ( d.segmentIndex != prevDir.segmentIndex || spi == 0 ) {
+                    // var sgi = Math.max.apply( Math, Object.keys( routeAttrs[ spi ].segs ) )
 
-                    prevDir.prefix = segmentPrefix( maxSeg )
+                    prevDir.prefix = segmentPrefix( prevDir.segmentIndex )
                 }
 
                 spi = pi
