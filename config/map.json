@@ -50,7 +50,7 @@
       "title": "Identify",
       "enabled": true,
       "xxxshowTitle": "mobile",
-      "position": "list-menu",
+      "position": "toolbar",
       "tolerance": 10,
       "command": {
         "attributeMode": false,
