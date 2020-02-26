@@ -16,6 +16,10 @@
                     "title": "Truck Route Type"
                 },
                 {
+                    "name": "AdvisoryDescription",
+                    "title": "Advisory Description"
+                },                
+                {
                     "name": "Bylaw",
                     "title": "Bylaw Link",
                     "format": "asLink(this.feature.properties.BylawLink)"
@@ -56,6 +60,10 @@
                     "name": "RouteType",
                     "title": "Truck Route Type"
                 },
+                {
+                    "name": "AdvisoryDescription",
+                    "title": "Advisory Description"
+                },                
                 {
                     "name": "Bylaw",
                     "title": "Bylaw Link",
