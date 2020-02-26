@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>BETA - TRP - Translink</title>
+        <title>TRP - Translink</title>
 
         <link rel="stylesheet" type="text/css" href="lib/dialog-polyfill/dialog-polyfill.css"/>
         <script src="lib/dialog-polyfill/dialog-polyfill.js"></script>
@@ -27,10 +27,10 @@
 
             <header>
                 <h1><span class="translink-logo"></span>Truck Route Planner</h1>
-                <h2>Beta
-                    <span class="version">version: 0.0.14</span>
-                    <span class="date">built: 2020-02-24</span>
-                </h2>
+                <h3 id="package-build-date" title="?">
+                    <div class="release" id="package-release">?</div>
+                    <div class="version" id="package-version">?</div>
+                </h3>
             </header>
 
             <div id="smk-map-frame"></div>
@@ -118,6 +118,15 @@
             dialog.showModal()
         } ) 
 
+        var package
+        include( [ { url: './package.json', loader: 'template' } ], 'package' ).then( function ( inc ) {
+            package = JSON.parse( inc[ 'package.package-json' ] )
+
+            document.getElementById( 'package-build-date' ).title = 'Built: ' + package[ 'build-date' ]
+            document.getElementById( 'package-release' ).innerText = package.release
+            document.getElementById( 'package-version' ).innerText = 'Version ' + package.version
+        } )
+
         SMK.HANDLER.set( 'bespoke--reports', 'initialized', function ( smk, tool ) {
             tool.status = 'hide'
         } )
@@ -175,7 +184,9 @@
 
             SMK.HANDLER.set( 'bespoke--feedback', 'activated', function ( smk, tool, el ) {
                 include( [ { url: './fragments/feedback.html' }, { url: './fragments/feedback.css' } ], 'bespoke--feedback' ).then( function ( inc ) {
-                    el.innerHTML = inc[ 'bespoke--feedback.feedback-html' ]
+                    el.innerHTML = htmlTemplate( inc[ 'bespoke--feedback.feedback-html' ], {
+                        package: package 
+                    } )
                 } ) 
             } )
 

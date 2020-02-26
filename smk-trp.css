@@ -5,3 +5,25 @@
 .smk-map-frame .smk-toolbar .smk-bespoke--reports-tool.smk-hide {
     display: none;
 }
+
+.smk-map-frame .smk-layers-panel .smk-display-group.smk-inline-legend {
+    position: relative;
+}
+
+.smk-map-frame .smk-layers-panel .smk-display-group.smk-inline-legend.smk-visible .smk-item .smk-layer-title {
+    margin-left: 29px;
+}
+
+.smk-map-frame .smk-layers-panel .smk-display-group.smk-inline-legend.smk-obscured .smk-item .smk-layer-title {
+    margin-left: 5px;
+}
+
+.smk-map-frame .smk-layers-panel .smk-display-group.smk-inline-legend .smk-display {
+    position: absolute;
+    left: 40px;
+    top: 0;
+}
+
+.smk-map-frame .smk-legend-status .smk-display.smk-inline-legend.smk-display-group .smk-legend .smk-legend-title {
+    display: block;
+}
