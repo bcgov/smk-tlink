@@ -98,6 +98,7 @@
       "enabled": false
     },
     {
+      "icon": "local_shipping",  
       "type": "directions",
       "enabled": true,
       "position": "toolbar",
@@ -105,7 +106,8 @@
       "command": {
           "criteria": false,
           "optimal": false,
-          "truckRoute": false
+          "truckRoute": false,
+          "vehicleType": false
       },
       "apiKey": "11dd756f680c47b5aef5093d95543738",
       "truck": true,
@@ -169,7 +171,7 @@
       "enabled": true,
       "position": "list-menu",
       "title": "About",
-      "icon": "local_shipping",
+      "icon": "help",
       "order": 1
     },
     {
