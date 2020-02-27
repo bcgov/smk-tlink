@@ -64,11 +64,18 @@
                                 { "id": "term-permit-roundabout", "class": "smk-inline-legend" }
                             ]
                         },
-                        { "id": "oversize-overweight-truck-routes-oah-up-to-4-88-m", "class": "smk-inline-legend" },
-                        { "id": "oversize-overweight-truck-routes-oaw-up-to-5-m", "class": "smk-inline-legend" },
-                        { "id": "oversize-overweight-truck-routes-gvw-up-to-80000-kg", "class": "smk-inline-legend" },
-                        { "id": "oversize-overweight-truck-routes-gvw-up-to-85000-kg", "class": "smk-inline-legend" },
-                        { "id": "oversize-overweight-truck-routes-gvw-up-to-125000-kg", "class": "smk-inline-legend" }
+                        {
+                            "type": "folder",
+                            "title": "Pre-screened OS-OW Truck Routes",
+                            "isVisible": false,
+                            "items": [
+                                { "id": "oversize-overweight-truck-routes-oah-up-to-4-88-m", "class": "smk-inline-legend" },
+                                { "id": "oversize-overweight-truck-routes-oaw-up-to-5-m", "class": "smk-inline-legend" },
+                                { "id": "oversize-overweight-truck-routes-gvw-up-to-80000-kg", "class": "smk-inline-legend" },
+                                { "id": "oversize-overweight-truck-routes-gvw-up-to-85000-kg", "class": "smk-inline-legend" },
+                                { "id": "oversize-overweight-truck-routes-gvw-up-to-125000-kg", "class": "smk-inline-legend" }
+                            ]
+                        }
                     ]
                 },
                 { 
