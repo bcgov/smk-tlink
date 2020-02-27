@@ -294,7 +294,7 @@
                                 <div class="direction"
                                     v-for="d in page.directions"
                                     v-bind:class="d.class"
-                                    v-bind:class="[ d.waypointStyle || '' ]"
+                                    xxxv-bind:class="[ d.waypointStyle || '' ]"
                                 >                                  
                                     <div class="prefix" v-if="d.prefix">{{ d.prefix }}</div>
 
@@ -450,12 +450,13 @@
                 }
             }
 
-            var spi = 0, pi = 0, prevDir
+            var spi = 0, pi = 0, prevDir, prevPrefix
             dirs.directions.forEach( function ( d, i ) {
                 d.index = i + 1
                 // d.waypointStyle = getWaypoint( d.point ).style
 
                 if ( !prevDir ) {
+                    prevPrefix = d.prefix = segmentPrefix( d.segmentIndex )
                     prevDir = d
                     return
                 }
@@ -474,13 +475,17 @@
 
                 // var maxSeg = Math.max.apply( Math, Object.keys( routeAttrs[ spi ].segs ) )
                 prevDir.class = segmentClasses( prevDir.segmentIndex )
-                prevDir.class[ getWaypoint( prevDir.point ).class || '' ] = true
+                // prevDir.class[ getWaypoint( prevDir.point ).class || '' ] = true
 
                 // if ( Object.keys( routeAttrs[ spi ].segs ).length == 2 || spi == 0 ) {
                 if ( d.segmentIndex != prevDir.segmentIndex || spi == 0 ) {
                     // var sgi = Math.max.apply( Math, Object.keys( routeAttrs[ spi ].segs ) )
 
-                    prevDir.prefix = segmentPrefix( prevDir.segmentIndex )
+                    var pfx =  segmentPrefix( d.segmentIndex )
+                    if ( pfx != prevPrefix )
+                        d.prefix = pfx
+
+                    prevPrefix = pfx
                 }
 
                 spi = pi
