@@ -124,7 +124,8 @@
             "legend": {
                 "title": "Potential Route",
                 "line": true
-            }
+            },
+            "isQueryable": false
         },
         {
             "id": "@unverified",
@@ -139,7 +140,8 @@
             "legend": {
                 "title": "Unverified Route",
                 "line": true
-            }
+            },
+            "isQueryable": false
         }
       ]
     },
