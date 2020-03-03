@@ -3,7 +3,7 @@
         {
             "type": "vector",
             "id": "dangerous-goods-routes",
-            "title": "Dangerous Goods Eligible Route",
+            "title": "Dangerous Goods Eligible Routes",
             "dataUrl": "./layers/dangerous-goods-routes/dangerous-goods-routes.geojson",
             "xxxscaleMin": 28505,
             "attributes": [
