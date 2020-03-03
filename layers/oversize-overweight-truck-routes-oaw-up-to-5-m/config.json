@@ -3,7 +3,7 @@
         {
             "type": "vector",
             "id": "oversize-overweight-truck-routes-oaw-up-to-5-m",
-            "title": "Overall Width (OAW) up to 5.00 m",
+            "title": "Overall Width up to 5.00 m",
             "dataUrl": "./layers/oversize-overweight-truck-routes-oaw-up-to-5-m/oversize-overweight-truck-routes-oaw-up-to-5-m.geojson",
             "xxxscaleMin": 28505,
             "attributes": [

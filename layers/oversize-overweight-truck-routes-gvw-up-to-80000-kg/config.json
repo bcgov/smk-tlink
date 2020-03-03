@@ -3,7 +3,7 @@
         {
             "type": "vector",
             "id": "oversize-overweight-truck-routes-gvw-up-to-80000-kg",
-            "title": "Gross Vehicle Weight (GVW) up to 80,000 kg",
+            "title": "GVW up to 80,000 kg",
             "dataUrl": "./layers/oversize-overweight-truck-routes-gvw-up-to-80000-kg/oversize-overweight-truck-routes-gvw-up-to-80000-kg.geojson",
             "xxxscaleMin": 28505,
             "attributes": [

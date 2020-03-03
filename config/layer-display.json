@@ -51,7 +51,7 @@
                 },
                 {
                     "type": "folder",
-                    "title": "Pre-screened OS-OW Truck Routes",
+                    "title": "Pre-screened Oversize-Overweight (OS-OW) Truck Routes",
                     "isVisible": false,
                     "items": [
                         { "id": "oversize-overweight-truck-routes-oah-up-to-4-88-m", "class": "smk-inline-legend" },
