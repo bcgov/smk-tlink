@@ -559,56 +559,6 @@
             model.overview.create = function ( el ) {                    
                 var c = JSON.parse( mapCfg )
 
-                if ( dirs.segments ) {
-                    for ( var si = 0; si < dirs.segments.features.length; si += 1 ) {
-                        var seg = JSON.parse( JSON.stringify( dirs.segments.features[ si ] ) )
-
-                        var st = seg.style
-                        delete seg.style
-
-                        c.layers.unshift( {
-                            type: 'vector',
-                            id: 'route-segment-' + si,
-                            isVisible: true,
-                            dataUrl: 'data:application/json,' + JSON.stringify( seg ),
-                            style: st,
-                            legends: false
-                        } )
-                    }
-                }
-
-                c.layers.unshift( {
-                    type: 'vector',
-                    id: 'start',
-                    isVisible: true,
-                    dataUrl: 'data:application/json,' + JSON.stringify( turf.point( [ dirs.waypoints[0].longitude, dirs.waypoints[0].latitude ] ) ),
-                    tooltip: {
-                        title: 'Start',
-                    },
-                    style: {
-                        strokeColor: "green",
-                        strokeWidth: 8,
-                        strokeOpacity: 0.8
-                    },
-                    legends: false
-                } )
-
-                c.layers.unshift( {
-                    type: 'vector',
-                    id: 'finish',
-                    isVisible: true,
-                    dataUrl: 'data:application/json,' + JSON.stringify( turf.point( [ dirs.waypoints[ dirs.waypoints.length - 1 ].longitude, dirs.waypoints[ dirs.waypoints.length - 1 ].latitude ] ) ),
-                    tooltip: {
-                        title: 'Finish',
-                    },
-                    style: {
-                        strokeColor: "red",
-                        strokeWidth: 8,
-                        strokeOpacity: 0.8
-                    },
-                    legends: false
-                } )
-
                 var ls = turf.lineString( dirs.route )
                 var bb = turf.bbox( ls )
                 var diag = turf.distance( [ bb[0], bb[1] ], [ bb[2], bb[3] ] )
@@ -620,7 +570,7 @@
                 return SMK.INIT( {
                     'smk-id':           'overview',
                     'smk-container-sel': el,
-                    'smk-config':       [ c, 'hide-tool=all', 'show-tool=scale,legend,directions' ]
+                    'smk-config':       [ c, 'hide-tool=all', 'show-tool=scale,legend' ]
                 } )
             }
 
@@ -636,6 +586,12 @@
                 p.map.create = function ( el ) {                    
                     var c = JSON.parse( mapCfg )
 
+                    c.viewer.displayContext.print = [ {
+                        type: 'folder',
+                        items: []
+                    } ]
+                    var disp = c.viewer.displayContext.print[ 0 ].items
+
                     c.layers.unshift( {
                         type: 'vector',
                         id: 'route-base',
@@ -648,6 +604,7 @@
                         },
                         legends: false
                     } )
+                    disp.push( { id: 'route-base' } )
 
                     if ( dirs.segments ) {
                         var pageRouteStart = p.directions[ 0 ].route.start
@@ -698,6 +655,7 @@
                                 style: st,
                                 legends: false
                             } )
+                            disp.push( { id: 'route-segment-' + si } )
 
                         }
                     }
@@ -714,6 +672,7 @@
                             },
                             legends: false
                         } )
+                        disp.push( { id: 'route-segment' } )
                     }
 
                     p.directions.reverse().forEach( function ( d, i ) {
@@ -735,6 +694,7 @@
                             },
                             legends: false
                         } )
+                        disp.push( { id: 'dir-' + i } )
                     } )
                     p.directions.reverse()
 
