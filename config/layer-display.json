@@ -37,7 +37,8 @@
                 },
                 {
                     "id": "dangerous-goods-routes",
-                    "class": "smk-inline-legend"
+                    "class": "smk-inline-legend",
+                    "isVisible": false
                 },
                 {
                     "type": "group",
