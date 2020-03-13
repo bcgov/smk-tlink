@@ -1,0 +1,8 @@
+<section class="trp-reports">
+    <div class="trp-report" 
+        v-bind:class="[ r.type ]"
+        v-for="r in reports"
+        v-if="r.message"
+        v-html="r.message"
+    ></div>
+</section>

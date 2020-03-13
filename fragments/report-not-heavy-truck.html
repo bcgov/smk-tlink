@@ -1,0 +1,12 @@
+<template v-if="municipalities.length > 0">
+    <p>
+        Based on the GVW and axle count, your vehicle is not considered to be a heavy truck in the following municipalities: 
+    </p>
+    <ul class="municipalities">
+        <li v-for="muni in municipalities">{{ muni }}</li>
+    </ul> 
+    <p>
+        The driver and/or carrier is responsible for ensuring the default vehicle parameters or user-entered vehicle parameters are an accurate representation of the actual vehicle, for verifying all clearances and restrictions on the route, and for ensuring the vehicle is operated in compliance with all applicable municipal bylaws and provincial and federal regulations. 
+        <a href="[LINK to Municipal and Provincial contact information]">LINK to Municipal and Provincial contact information</a>
+    </p>
+</template>

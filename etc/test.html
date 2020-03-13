@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>BETA - CVRP - Translink</title>
+        <link rel="stylesheet" type="text/css" href="node_modules/dialog-polyfill/dist/dialog-polyfill.css"/>
+
+        <!-- <link rel="stylesheet" type="text/css" href="node_modules/dialog-polyfill/dist/dialog-polyfill.css"/> -->
+        <!-- <script src="node_modules/dialog-polyfill/dist/dialog-polyfill.js"></script> -->
+
+        <!-- <script src="lib/smk.js"></script> -->
+
+        <!-- <link rel="stylesheet" type="text/css" href="article.css"/>        -->
+        <!-- <link rel="stylesheet" type="text/css" href="splash-dialog.css"/>        -->
+        <style>
+body {
+    background-color: red;
+}
+
+header {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px; */
+
+    border-bottom:      2px solid #fcba19;
+    background-color: #036;
+    font-family:        Helvetica,Arial,sans-serif;
+    color:            white;
+
+    display:            flex;
+    flex-direction:     column;
+    justify-content:    center;
+    align-items:        center;
+    padding: 5px;
+}
+
+header .translink-logo {
+    background-image: url( "https://tlweblibs.translink.ca/TransLink-logo-white.svg" );
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 80px;
+    margin-right: 10px;
+}
+
+header h1 {
+    display:        flex;
+    justify-content:center;
+    align-items:    center;
+    font-size:      18px;
+    margin: 0;
+    padding: 0;
+}
+
+header h2 {
+    font-weight:    bold;
+    font-size:      14px;
+    font-style:     italic;
+    margin: 0;
+    padding: 0;
+}
+
+dialog {
+    top: 50%;
+    max-width: 90vw;
+    max-height: 90vh;
+    transform: translateY(-50%);
+    font-family:"Meta W01 Medium", Arial, Helvetica, sans-serif;
+    z-index: 3;
+    padding: 0;
+    border: none;      
+    min-height: auto;
+    display:        flex;
+}
+
+dialog form {
+    display:        flex;
+    flex-direction: column;
+    min-height: auto;
+}
+
+dialog header {
+    flex-shrink: 0;
+}
+
+dialog section {
+    flex-shrink: 1;
+
+    display:flex;
+    flex-direction:column;
+    font-size:18px;
+    overflow-y: auto;
+}
+
+dialog section p {
+    margin-bottom: 0;
+    margin-left:18px;
+    margin-right:18px;
+}
+
+img.warningImage {
+    width: 150px;
+    align-self: center;
+}
+
+dialog menu {
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+dialog menu button {
+    background-color:rgb(0, 53, 95);
+    border: none;
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+    font-size:14px;
+    outline: none;
+    padding: 9px;
+}
+
+dialog::backdrop {
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+dialog + .backdrop {
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+/**************************************************/
+
+
+        </style>
+    </head>
+    
+    <body class="device-mobile">
+        <article>
+            <dialog id="disclaimer" open>
+                <form method="dialog">
+                    <header>
+                        <h1><span class="translink-logo"></span>Commercial Vehicle Route Planner</h1>
+                    </header>
+
+                    <section class="CopyMain flexColumn flexContainer">
+                        <p>
+                            This website (the Commercial Vehicle Route Planner (CVRP) Beta) and all of the information it contains are provided "as is" without warranty of any kind, whether express or implied. 
+                            All implied warranties, including, without limitation, implied warranties of merchantability, fitness for a particular purpose, and non-infringement, are hereby expressly disclaimed.
+                        </p>
+                        <p>
+                            Links and references to any other websites are provided for information only and listing shall not be taken as endorsement of any kind. 
+                            TransLink is not responsible for the content or reliability of the linked websites and does not endorse the content, products, services or views expressed within them.
+                        </p>
+                        <p>
+                            Under no circumstances will TransLink be liable to any person or business entity for any direct, indirect, special, incidental, consequential, or other damage based on any use of this website or any other website to which this site is linked, including, without limitation, any lost profits, business interruption, or loss of programs or information, even if TransLink has been specifically advised.
+                        </p>
+                        <img src="images/no_mobile_icon.svg" class="warningImage" alt="Graphic warning to discourage using mobile devices">
+                        <p>
+                            <em>This website is intended to be used as a pre-trip planner. Do not operate a vehicle while using this website.</em>
+                        </p>
+                        <p>
+                            By proceeding, you are accepting this disclaimer, and you are indicating you understand the limitations of this website.
+                        </p>
+                    </section>
+                    <menu>
+                        <button type="submit" class="acceptButton">I accept the disclaimer and understand the limitations of this website</button>
+                    </menu>
+                </form>
+            </dialog>
+<!-- 
+            <header>
+                <h1><span class="translink-logo"></span>Commercial Vehicle Route Planner</h1>
+                <h2>Beta
+                    <span class="version">ver: 0.0.2</span>
+                    <span class="date">built: 2019-12-20</span>
+                </h2>
+            </header>
+
+            <div id="smk-map-frame"></div> -->
+        </article>
+       
+    </body>
+
+    <script>
+        // var dialog = document.getElementById( 'disclaimer' )
+        // dialogPolyfill.registerDialog(dialog)
+        // dialog.showModal()
+
+        // SMK.INIT( {
+        //     'smk-container-sel': "#smk-map-frame",
+        //     'smk-config': [ './config/map.json','./config/layers.json', './config/layer-display.json', '?' ],
+        // } ).then( function () {
+        //     $( 'body' ).addClass( 'device-' + SMK.MAP[ 1 ].$device )
+
+        //     SMK.HANDLER.set( 'bespoke', 'initialized', function ( smk ) {} )
+
+        //     SMK.HANDLER.set( 'bespoke', 'activated', function ( smk, tool, el ) {
+        //         var fm = document.importNode( document.getElementById( 'feedback' ).content, true )
+        //         $( fm ).find( 'form' )
+        //             .append( $( '<input type="hidden">' ).prop( 'name', 'version' ).val( '0.0.2' ) )
+        //             // .append( $( '<input type="hidden">' ).prop( 'name', 'lastCommit' ).val( SMK.BUILD.lastCommit ) )
+        //             // .append( $( '<input type="hidden">' ).prop( 'name', 'commit' ).val( SMK.BUILD.commit ) )
+        //             // .append( $( '<input type="hidden">' ).prop( 'name', 'branch' ).val( SMK.BUILD.branch ) )
+
+        //         el.appendChild( fm )               
+        //     } )
+
+        //     SMK.HANDLER.set( 'directions-route', 'print', function ( smk, tool, key ) {
+        //         document.getElementById( 'print-holder' ).src = 'print-directions-portrait.html?' + key
+
+        //         return new Promise( function ( res, rej ) {
+        //             var handler = function ( ev ) {
+        //                 console.log( ev )
+        //                 if ( ev.data == 'printed' ) {
+        //                     res()
+        //                     window.removeEventListener( 'message', handler )
+        //                 }
+        //             }
+
+        //             window.addEventListener( 'message', handler, false )
+
+        //             setTimeout( function () { rej( new Error( 'timeout' ) ) }, 30 * 1000 )
+        //         } )
+        //     } )
+
+        //     $( 'body' ).removeClass( 'hide' )
+        // } )
+    </script>
+
+
+</html>
