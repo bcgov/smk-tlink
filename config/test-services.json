@@ -1,0 +1,14 @@
+{
+  "tools": [
+    {
+      "type": "directions",
+      "routePlannerService": {
+        "# url": "https://ssl.refractions.net/ols/router/",
+        "url": "https://routertst.pathfinder.gov.bc.ca/"
+      },
+      "geocoderService": {
+        "url": "https://geocodertst.api.gov.bc.ca/"
+      }
+    }
+  ]
+}
