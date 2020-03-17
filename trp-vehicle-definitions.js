@@ -500,7 +500,15 @@ var municipality = {
 // 
 
 TRP.makeReports = function ( routeResponse ) {
-    var reports = clone( routeResponse.notifications || [] )
+    var reports = clone( routeResponse.notifications || [] ).map( function ( r ) {
+        return {
+            type: r.type,
+            component: {
+                template: r.message,
+                data: function () { return r }
+            }
+        }
+    } )
 
     var muni = {}
     routeResponse.segments.features.forEach( function ( s ) {
@@ -511,42 +519,44 @@ TRP.makeReports = function ( routeResponse ) {
         return !TRP.isHeavyTruckInMunicipality( m, routeResponse.request.data.weight ) 
     } )
 
-    return include( [ { url: './fragments/report-not-heavy-truck.html' }, { url: './fragments/report-direction-notification.html' } ], 'report' )
+    return include( [ 
+        { url: './fragments/report-not-heavy-truck.html' }, 
+        { url: './fragments/report-direction-notification.html' } 
+    ], 'report' )
         .then( function ( inc ) {
             routeResponse.directions.forEach( function ( d ) {
                 if ( !d.notifications ) return
 
                 d.notifications.forEach( function ( n ) {
-                    var r = clone( n )
-
-                    r.message = htmlTemplate( inc[ 'report.report-direction-notification-html' ], { 
-                        notification: r,
-                        direction: clone( d ),
-                        segment: clone( routeResponse.segments.features[ d.segmentIndex ].properties )
-                    } ) 
-
-                    reports.push( r )
+                    reports.push( {
+                        type: n.type,
+                        component: {
+                            template: inc[ 'report.report-direction-notification-html' ],
+                            data: function () { return Object.assign( clone( n ), {
+                                direction: clone( d ),
+                                segment: clone( routeResponse.segments.features[ d.segmentIndex ].properties )                                        
+                            } ) }
+                        }
+                    } )
                 } )
             } )
 
             reports.push( {
                 type: 'TruckRestriction',
-                message: htmlTemplate( inc[ 'report.report-not-heavy-truck-html' ], { 
-                    municipalities: notHeavyTruckMunis
-                } )
+                component: {
+                    template: inc[ 'report.report-not-heavy-truck-html' ],
+                    data: function () { return {
+                        municipalities: notHeavyTruckMunis
+                    } }
+                }
             } )
-        } )
-        .then( function() {
+
             return reports
         } )
 }
 
 // _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 // 
-
-function htmlTemplate( template, data ) {
-    return ( new Vue( { template: '<div>' + template + '</div>', data: data } ) ).$mount().$el.innerHTML
-}
 
 function clone( obj ) { return JSON.parse( JSON.stringify( obj ) ) }
 
