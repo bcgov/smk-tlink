@@ -334,9 +334,14 @@
             SMK.HANDLER.set( 'bespoke--reports', 'activated', function ( smk, tool, el ) {
                 // debugger
                 include( [ { url: './fragments/reports.html' }, { url: './fragments/reports.css' } ], 'bespoke--reports' ).then( function ( inc ) {
-                    el.innerHTML = htmlTemplate( inc[ 'bespoke--reports.reports-html' ], {
-                        reports: routingReports 
-                    } )
+                    tool.component = {
+                        template: inc[ 'bespoke--reports.reports-html' ],
+                        data: function () {
+                            return {
+                                reports: routingReports 
+                            }
+                        }
+                    } 
                 } ) 
             } )
 

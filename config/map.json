@@ -207,7 +207,8 @@
       "position": "toolbar",
       "title": "Reports and Notices",
       "icon": "warning",
-      "order": 99
+      "order": 99,
+      "useComponent": true
     }
   ]
 }
