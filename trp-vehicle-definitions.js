@@ -521,7 +521,8 @@ TRP.makeReports = function ( routeResponse ) {
 
     return include( [ 
         { url: './fragments/report-not-heavy-truck.html' }, 
-        { url: './fragments/report-direction-notification.html' } 
+        { url: './fragments/report-direction-notification.html' },
+        { url: './fragments/report-oversize.html' } 
     ], 'report' )
         .then( function ( inc ) {
             routeResponse.directions.forEach( function ( d ) {
@@ -550,6 +551,15 @@ TRP.makeReports = function ( routeResponse ) {
                     } }
                 }
             } )
+
+            if ( routeResponse.segments.properties.isOversize )
+                reports.push( {
+                    type: 'TruckRestriction',
+                    component: {
+                        template: inc[ 'report.report-oversize-html' ],
+                        // data: function () { return {} }
+                    }
+                } )
 
             return reports
         } )
