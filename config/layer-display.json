@@ -83,7 +83,7 @@
                         { "id": "cardlock", "isVisible": false, "class": "smk-inline-legend" },
                         { "id": "truck-parking", "isVisible": false, "class": "smk-inline-legend" },
                         { "id": "port-of-vancouver-facilities-terminals", "isVisible": false, "class": "smk-inline-legend" },
-                        { "id": "industrial-area", "isVisible": false, "class": "smk-inline-legend" },
+                        { "id": "industrial-area", "isVisible": true, "class": "smk-inline-legend" },
                         { "id": "downtown-vancouver", "isVisible": false, "class": "smk-inline-legend" },
                         {
                             "type": "group",
