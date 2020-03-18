@@ -36,7 +36,7 @@
                     ]
                 },
                 {
-                    "id": "dangerous-goods-routes",
+                    "id": "dangerous-goods-restrictions",
                     "class": "smk-inline-legend",
                     "isVisible": false
                 },
