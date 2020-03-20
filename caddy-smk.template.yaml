@@ -1,0 +1,318 @@
+apiVersion: v1
+kind: Template
+
+labels:
+  template: caddy-smk
+
+message: |-
+    The following Objects have been created in your project:
+
+      Deployment: ${DEPLOYMENT_NAME}
+      Persistent Volume Claim (PVC): ${PVC_NAME}
+      Service: ${SERVICE_NAME}
+      Config Map: ${CADDYFILE_CONFIGMAP_NAME}
+
+    Blah blah blah. This build config follows the pattern decribed here:
+
+    https://github.com/kubernetes/examples/tree/master/staging/javaweb-tomcat-sidecar
+
+    For more information about using this template, including OpenShift considerations, please contact teh rocketchat community.
+metadata:
+  annotations:
+    description: |-
+      caddy-deploytmnet Deployment Template for use in OpenShift.
+
+    iconClass: icon-other-unknown
+    openshift.io/display-name: caddy-deployment
+    openshift.io/documentation-url: https://github.com/bcgov/smk
+    openshift.io/long-description: >-
+      Blah blah balh.  This template provides a parameterized BuildConfig for the ols-geocoder-sidecare containers.
+      The resulting BuildConfig, when run, created an imageStream containing the indicated version of the ols-geocoder-web WAR file.
+
+        * When the associated Deployment runs, this imageStream is used as an initContainer in a pod.
+        * It's purpose is to "copy the ols-geocoder.war to /app/ROOT.war"
+        * The long-running container then launches tomcat which subsequently loads the WAR, thus starting the application.
+
+      For details on the patter being used see:
+        https://github.com/kubernetes/examples/tree/master/staging/javaweb-tomcat-sidecar
+    openshift.io/provider-display-name: Caddy-Thing
+    openshift.io/support-url: https://github.com/bcgov/smk
+    tags: caddy, deployment, smk
+  name: caddy-deployment-template
+
+parameters:
+  - description: The name of the Deployment to be created
+    displayName: Deployment Name
+    name: DEPLOYMENT_NAME
+    required: true
+    value: caddy-deployment
+  - description: The label to apply to the deployment
+    displayName: App Label
+    name: APP_LABEL
+    required: true
+    # value: caddy-deployment
+  - description: The name of the client this SMK app belongs to.
+    displayName: Client Name
+    name: CLIENT_NAME
+    required: true
+    # value: caddy-deployment
+  - description: The label to add for site-label
+    displayName: Site Label
+    name: SITE_LABEL
+    required: true
+    # value: caddy-deployment
+  - description: The GitHub repo contaning the site SMK resources.
+    displayName: Site Repo
+    name: SITE_REPO
+    required: true
+    #value: https://github.com/bcgov/smk-trans.git
+  - description: The branch name contaning the site SMK resources.
+    displayName: Branch
+    name: BRANCH
+    required: true
+    #value: qa
+  - description: The long running container image.
+    displayName: Container Image
+    name: CONTAINER_IMAGE
+    required: true
+    #value: qa
+  - description: The label of the long running container image.
+    displayName: Container Image Label
+    name: CONTAINER_IMAGE_LABEL
+    required: true
+    #value: qa
+  - description: The Init contaner image.
+    displayName: Init Container Image
+    name: INIT_CONTAINER_IMAGE
+    required: true
+    #value: qa
+  - description: The Label of the Init contaner image.
+    displayName: Init Container Image Label
+    name: INIT_CONTAINER_IMAGE_LABEL
+    required: true
+    #value: qa
+  - description: The name of the configMap that is the CaddyFile to be used by caddy.
+    displayName: ConfigMap Name
+    name: CONFIG_MAP_NAME
+    required: true
+    #value: qa
+  - description: The name of the Persistent Volume which will store site resources.
+    displayName: Persistent Volumn Name
+    name: PERSISTENT_VOLUME_NAME
+    required: true
+    #value: qa
+  - description: The name of the Persistent Volume Claim (PVC)
+    displayName: Persisten Volume Claim Name
+    name: PVC_NAME
+    required: true
+    value: caddy-site
+  - description: The app label for this Service
+    displayName: Service App Label
+    name: SERVICE_APP_LABEL
+    required: true
+    # value: caddyfile
+  - description: The name for this Service
+    displayName: Service Name
+    name: SERVICE_NAME
+    required: true
+    # value: caddyfile
+  - description: The selector used by this Service
+    displayName: Service Selector
+    name: SERVICE_SELECTOR
+    required: true
+    # value: caddyfile
+  - description: The name of the CaddyFile ConfigMap to be created
+    displayName: CaddyFile ConfigMap Name
+    name: CONFIG_MAP_NAME
+    required: true
+    value: caddyfile
+  - description: The webhook key that will allow the Caddy webook to run.
+    displayName: Web Hook Key
+    name: WEBHOOK_KEY
+    required: true
+    value: Y2hhbmdlIG1lISBjaGFuZ2UgbWUh
+  - description: The name of the route
+    displayName: Route Name
+    name: ROUTE_NAME
+    required: true
+    #value: translink-trp-dev
+  - description: The Route hostname
+    displayName: Route Hostname
+    name: ROUTE_HOSTNAME
+    required: true
+    #value: translin-t.apps.gov.bc.ca
+
+objects:
+- apiVersion: extensions/v1beta1
+  kind: Deployment
+  metadata:
+    labels:
+      app: ${APP_LABEL} # smk-moh
+      smk-client: ${CLIENT_NAME} # moh
+      smk-site: ${SITE_LABEL}  # moh
+    name: ${DEPLOYMENT_NAME} # smk-moh
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        app: ${APP_LABEL} # smk-moh
+    strategy:
+      rollingUpdate:
+        maxSurge: 1
+        maxUnavailable: 1
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          app: ${APP_LABEL} # smk-moh
+      spec:
+        containers:
+        - command:
+          - /go/caddy
+          - -quic
+          - -conf
+          - /conf/Caddyfile
+          env:
+          - name: siteRepo
+            value: ${SITE_REPO}
+            # value: https://github.com/bcgov/smk-moh.git
+          - name: branch
+            value: ${BRANCH}
+            # value: qa
+          - name: hookPath
+            value: /webhook
+          - name: hookKey
+            valueFrom:
+              secretKeyRef:
+                key: caddy.webhook
+                name: tlink-webhook-key
+          image: ${CONTAINER_IMAGE}:${CONTAINER_IMAGE_LABEL}
+          # image: docker-registry.default.svc:5000/dbc-mapsdk-tools/smk-base:latest
+          imagePullPolicy: Always
+          name: www
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /go
+            name: bin-volume
+          - mountPath: /conf
+            name: caddy-conf
+          - mountPath: /app/smk/trp
+            name: site-data
+        dnsPolicy: ClusterFirst
+        initContainers:
+        - command:
+          - cp
+          - /usr/bin/caddy
+          - /dist
+          # - /install/caddy
+          image: ${INIT_CONTAINER_IMAGE}:${INIT_CONTAINER_IMAGE_LABEL}
+          # image: docker-registry.default.svc:5000/dbc-mapsdk-tools/iac-core
+          imagePullPolicy: Always
+          name: installcaddy
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /dist
+            name: bin-volume
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - emptyDir: {}
+          name: bin-volume
+        - configMap:
+            defaultMode: 420
+            items:
+            - key: caddifile
+              path: Caddyfile
+            name: ${CONFIG_MAP_NAME} # moh-caddifile
+          name: caddy-conf
+        - name: site-data
+          persistentVolumeClaim:
+            claimName: ${PERSISTENT_VOLUME_NAME} # moh-site
+- apiVersion: v1
+  kind: PersistentVolumeClaim
+  metadata:
+    annotations:
+      pv.kubernetes.io/bind-completed: "yes"
+      pv.kubernetes.io/bound-by-controller: "yes"
+      volume.beta.kubernetes.io/storage-provisioner: netapp.io/trident
+    finalizers:
+    - kubernetes.io/pvc-protection
+    name: ${PVC_NAME}
+  spec:
+    accessModes:
+    - ReadWriteOnce
+    resources:
+      requests:
+        storage: 1Gi
+        # volumeName: pvc-91085096-e1fa-11e8-bbed-0050568379a2
+  status: {}
+- apiVersion: v1
+  kind: Service
+  metadata:
+    creationTimestamp: null
+    labels:
+      app: ${SERVICE_APP_LABEL} # smk-moh
+    name: ${SERVICE_NAME} # smk-moh
+  spec:
+    ports:
+    - name: http-proxy
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+    selector:
+      app: ${SERVICE_SELECTOR} # smk-moh
+    sessionAffinity: None
+    type: ClusterIP
+  status:
+    loadBalancer: {}
+- apiVersion: v1
+  kind: ConfigMap
+  metadata:
+     name: ${CONFIG_MAP_NAME}
+  data:
+    caddifile: |-
+      0.0.0.0:8080 {
+      git {$siteRepo} /app/smk/trp {
+       branch {$branch}
+       hook {$hookPath} {$hookKey}
+      }
+      root /app/smk
+      gzip
+      log stdout
+      errors stdout
+      }
+- apiVersion: v1
+  data:
+    caddy.webhook: ${WEBHOOK_KEY}
+  kind: Secret
+  metadata:
+    creationTimestamp: null
+    name: tlink-webhook-key
+  type: Opaque
+- apiVersion: route.openshift.io/v1
+  kind: Route
+  metadata:
+    labels:
+      app: ${APP_LABEL} # trp-caddy
+      template: caddy-service
+    name: ${ROUTE_NAME} # translink-trp-dev
+  spec:
+    host: ${ROUTE_HOSTNAME} # translink-d.apps.gov.bc.ca
+    port:
+      targetPort: http-proxy
+    tls:
+      termination: edge
+    to:
+      kind: Service
+      name: trp-service
+      weight: 100
+    wildcardPolicy: None

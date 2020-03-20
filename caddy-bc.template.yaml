@@ -1,0 +1,200 @@
+apiVersion: v1
+kind: Template
+
+labels:
+  template: caddy-bc-smk
+
+message: |-
+    The following Build Config has been created in your project:
+
+      ${CADDY_BUILD_CONFIG_NAME}
+      ${CADDY_RUN_BUILD_CONFIG_NAME}
+
+    Note: These should only be created in your project's tools namespace.
+    This build config follows the pattern decribed here:
+
+    TODO:
+    ~~https://github.com/kubernetes/examples/tree/master/staging/javaweb-tomcat-sidecar~~
+
+    For more information about using this template, including OpenShift considerations, please contact teh rocketchat community.
+metadata:
+  annotations:
+    description: |-
+      caddy-bc-smk BuildConfig Template for use in OpenShift.
+    iconClass: icon-other-unknown
+    openshift.io/display-name: caddy-bc-smk
+    openshift.io/documentation-url: https://github.com/bcgov/smk
+    openshift.io/long-description: >-
+      This template provides a parameterized BuildConfig for the caddy-bc-smk ImageStreams.
+      The resulting BuildConfig, when run, creates an imageStream containing a build of caddy with required plugins.
+
+        * Build Caddy
+        * Run Caddy
+
+      TODO: this isn't correct - fix.
+      For details on the patter being used see:
+        https://github.com/kubernetes/examples/tree/master/staging/javaweb-tomcat-sidecar
+    openshift.io/provider-display-name: Caddy-BC-SMK
+    openshift.io/support-url: https://github.com/bcgov/smk
+    tags: caddy, smk
+  name: caddy-bc-smk-template
+
+parameters:
+  - description: The name of the Caddy Build Config to be created
+    displayName: Caddy BuildConfig Name
+    name: CADDY_BUILD_CONFIG_NAME
+    required: true
+    value: caddy-build
+  - description: The name of the Build Config to be created
+    displayName: BuildConfig Name
+    name: CADDY_RUN_BUILD_CONFIG_NAME
+    required: true
+    value: caddy-run
+
+objects:
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    creationTimestamp: null
+    labels:
+      app: ${CADDY_RUN_BUILD_CONFIG_NAME}
+    name: ${CADDY_RUN_BUILD_CONFIG_NAME}
+  spec:
+    failedBuildsHistoryLimit: 5
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: ${CADDY_RUN_BUILD_CONFIG_NAME}:latest
+    postCommit: {}
+    resources: {}
+    runPolicy: Serial
+    source:
+      dockerfile: |-
+        #FROM alpine:3.8
+        ##USER root
+        #ENV ENABLE_TELEMETRY="false"
+        #WORKDIR /app
+        #RUN apk add --no-cache git openssh-client \
+        # && adduser -S smk \
+        # && chown -R smk:0 /app && chmod -R 770 /app
+        #USER smk
+        #EXPOSE 8080
+        #CMD ["/go/caddy", "-quic", "--conf", "/conf/Caddyfile"]
+        FROM alpine:3.10
+        #USER root
+        ENV ENABLE_TELEMETRY="false"
+        WORKDIR /app
+        RUN apk add --no-cache git openssh-client \
+         && adduser -S smk \
+         && chown -R smk:0 /app && chmod -R 770 /app
+        USER smk
+        EXPOSE 8080
+
+        ENTRYPOINT ["/bin/parent", "caddy"]
+        #CMD ["--conf", "/etc/Caddyfile", "--log", "stdout", "--agree=$ACME_AGREE"]
+        CMD ["--conf", "/conf/Caddyfile", "-quic"]
+        #CMD ["/go/caddy", "-quic", "--conf", "/conf/Caddyfile"]
+
+      type: Dockerfile
+    strategy:
+      dockerStrategy:
+        from:
+          kind: DockerImage
+          name: alpine:3.8
+      type: Docker
+    successfulBuildsHistoryLimit: 5
+    triggers: []
+- apiVersion: build.openshift.io/v1
+  kind: BuildConfig
+  metadata:
+    labels:
+      app: ${CADDY_BUILD_CONFIG_NAME}
+    name: ${CADDY_BUILD_CONFIG_NAME}
+  spec:
+    failedBuildsHistoryLimit: 5
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: ${CADDY_BUILD_CONFIG_NAME}:latest
+    postCommit: {}
+    resources: {}
+    runPolicy: Serial
+    source:
+      dockerfile: |-
+        #FROM abiosoft/caddy:builder
+        ##USER root
+        #ARG TELEMETRY=${ENABLE_TELEMETRY:-"false"}
+        #ARG PLUGINS='cors,realip,git'
+        ##ARG VERSION='0.11.0' # use the default version
+        #RUN apk add --no-cache --virtual .dev bash \
+        # && wget -O - https://raw.githubusercontent.com/abiosoft/caddy-docker/${VERSION}/builder/builder.sh | bash \
+        # && apk del --purge .dev
+        #
+        # Builder
+        #
+        FROM abiosoft/caddy:builder as builder
+
+        ARG version="1.0.3"
+        # ARG plugins="git,cors,realip" # ,expires,cache,cloudflare"
+        ARG plugins="git,cors,realip"
+        # ARG enable_telemetry="true"
+        ARG enable_telemetry="false"
+
+        # process wrapper
+        RUN go get -v github.com/abiosoft/parent
+
+        RUN VERSION=${version} PLUGINS=${plugins} ENABLE_TELEMETRY=${enable_telemetry} /bin/sh /usr/bin/builder.sh
+
+        #
+        # Final stage
+        #
+        FROM alpine:3.10
+        LABEL maintainer "Abiola Ibrahim <abiola89@gmail.com>"
+
+        ARG version="1.0.3"
+        LABEL caddy_version="$version"
+
+        # Let's Encrypt Agreement
+        ENV ACME_AGREE="false"
+
+        # Telemetry Stats
+        ENV ENABLE_TELEMETRY="$enable_telemetry"
+
+        RUN apk add --no-cache \
+            ca-certificates \
+            git \
+            mailcap \
+            openssh-client \
+            tzdata
+
+        # install caddy
+        COPY --from=builder /install/caddy /usr/bin/caddy
+
+        # validate install
+        RUN /usr/bin/caddy -version
+        RUN /usr/bin/caddy -plugins
+
+        #EXPOSE 80 443 2015
+        #VOLUME /root/.caddy /srv
+        #WORKDIR /srv
+
+        #COPY Caddyfile /etc/Caddyfile
+        #COPY index.html /srv/index.html
+
+        # install process wrapper
+        COPY --from=builder /go/bin/parent /bin/parent
+
+        #ENTRYPOINT ["/bin/parent", "caddy"]
+        #CMD ["--conf", "/etc/Caddyfile", "--log", "stdout", "--agree=$ACME_AGREE"]
+
+      type: Dockerfile
+    strategy:
+      dockerStrategy:
+        from:
+          kind: DockerImage
+          name: abiosoft/caddy:builder
+      type: Docker
+    successfulBuildsHistoryLimit: 5
+    triggers: []
