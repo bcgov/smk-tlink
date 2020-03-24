@@ -258,7 +258,17 @@
                                 <div class="waypoint"
                                     v-for="w in waypoints"
                                     v-bind:class="[ w.style || '' ]"
-                                >{{ w.label }} at <span class="address">{{ w.fullAddress }}</span></div>
+                                >{{ w.label }} at
+                                    <span class="address" v-if="w.fullAddress">{{ w.fullAddress }}</span>
+                                    <span class="coordinates" v-else>
+                                        <span class="smk-ordinate">
+                                            <label>latitude <span>{{ w.latitude | formatNumber( 6, 3 ) }}</span></label>
+                                        </span>,
+                                        <span class="smk-ordinate">
+                                            <label>longitude <span>{{ w.longitude | formatNumber( 6, 3 ) }}</span></label>
+                                        </span>                    
+                                    </span>
+                                </div>
                             </div>
 
                             <div class="smk-map-frame"
@@ -285,7 +295,17 @@
                                 <div class="waypoint"
                                     v-for="w in waypoints"
                                     v-bind:class="[ w.style || '' ]"
-                                >{{ w.label }} at <span class="address">{{ w.fullAddress }}</span></div>
+                                >{{ w.label }} at 
+                                    <span class="address" v-if="w.fullAddress">{{ w.fullAddress }}</span>
+                                    <span class="coordinates" v-else>
+                                        <span class="smk-ordinate">
+                                            <label>latitude <span>{{ w.latitude | formatNumber( 6, 3 ) }}</span></label>
+                                        </span>,
+                                        <span class="smk-ordinate">
+                                            <label>longitude <span>{{ w.longitude | formatNumber( 6, 3 ) }}</span></label>
+                                        </span>                    
+                                    </span>
+                                </div>
                             </div>
 
                             <div class="smk-map-frame"
