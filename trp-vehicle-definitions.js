@@ -472,7 +472,7 @@ var municipality = {
     'belcarra':                     { truckWeightDefinition:  10900 },
     'bowen island':                 { truckWeightDefinition:  11800 },
     'burnaby':                      { truckWeightDefinition:  13600 },
-    'coquitlam':                    { truckWeightDefinition:  13600 },
+    'coquitlam':                    { truckWeightDefinition:  11800 },
     'delta':                        { truckWeightDefinition:  11800 },
     'langley':                      { truckWeightDefinition:  11800 },
     'langley city':                 { truckWeightDefinition:  11800 },
