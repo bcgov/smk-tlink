@@ -21,7 +21,7 @@
                     "title": "Hours"
                 },
                 {
-                    "value": "<%= this.feature.properties.Mailing_Addr_StNum %> <%= this.feature.properties.Mailing_Addr_St %> <%= this.feature.properties.City %> <%= this.feature.properties.Postal_Code %>",
+                    "value": "<%= this.feature.properties.Street_Num %> <%= this.feature.properties.Address_St %> <%= this.feature.properties.City %> <%= this.feature.properties.Post_Code %>",
                     "title": "Address"
                 },
                 {
