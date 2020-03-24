@@ -1,7 +1,7 @@
 {
-  "version": "0.0.18",
+  "version": "0.0.19",
   "release": "Beta",
-  "build-date": "2020-03-18",
+  "build-date": "2020-03-24",
   "name": "smk-tlink",
   "title": "Translink Route Planner",
   "license": "APSL-2.0",
