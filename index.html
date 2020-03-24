@@ -321,7 +321,8 @@
                         if ( !reports || reports.length == 0 ) return
 
                         smk.$tool[ 'bespoke--reports' ].status = 'ready'
-                        routingReports = response.reports = reports
+                        response.reports = JSON.parse( JSON.stringify( reports ) )
+                        routingReports = reports
                     } )
                 }
             } )
@@ -351,7 +352,10 @@
                         template: inc[ 'bespoke--reports.reports-html' ],
                         data: function () {
                             return {
-                                reports: routingReports 
+                                reports: routingReports.map( function ( r ) {
+                                    r.component.data = function () { return r.component.dataObj }
+                                    return r
+                                } ) 
                             }
                         }
                     } 

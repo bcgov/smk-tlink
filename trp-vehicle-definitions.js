@@ -504,8 +504,8 @@ TRP.makeReports = function ( routeResponse ) {
         return {
             type: r.type,
             component: {
-                template: r.message,
-                data: function () { return r }
+                template: '<div>' + r.message + '</div>',
+                dataObj: {}
             }
         }
     } )
@@ -533,10 +533,10 @@ TRP.makeReports = function ( routeResponse ) {
                         type: n.type,
                         component: {
                             template: inc[ 'report.report-direction-notification-html' ],
-                            data: function () { return Object.assign( clone( n ), {
+                            dataObj: Object.assign( clone( n ), {
                                 direction: clone( d ),
                                 segment: clone( routeResponse.segments.features[ d.segmentIndex ].properties )                                        
-                            } ) }
+                            } )
                         }
                     } )
                 } )
@@ -546,9 +546,9 @@ TRP.makeReports = function ( routeResponse ) {
                 type: 'TruckRestriction',
                 component: {
                     template: inc[ 'report.report-not-heavy-truck-html' ],
-                    data: function () { return {
+                    dataObj: {
                         municipalities: notHeavyTruckMunis
-                    } }
+                    }
                 }
             } )
 
@@ -557,7 +557,7 @@ TRP.makeReports = function ( routeResponse ) {
                     type: 'TruckRestriction',
                     component: {
                         template: inc[ 'report.report-oversize-html' ],
-                        // data: function () { return {} }
+                        dataObj: {}
                     }
                 } )
 

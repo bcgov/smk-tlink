@@ -219,6 +219,10 @@
                 margin-bottom: 0;
             }
 
+            article.notifications activate-tool { 
+                display: none;
+            }
+
             @media print {
                 header {
                     background-color: white;
@@ -329,10 +333,11 @@
                             <h1>Reports and Notices</h1>
 
                             <div class="notification" 
-                                v-for="n in notifications"
-                                v-if="n.message"
-                                v-bind:class="[ n.type ]"
-                                v-html="n.message"
+                                v-for="r in reports"
+                                xxv-if="r.message"
+                                v-bind:class="[ r.type ]"
+                                v-bind:is="r.component"
+                                xxv-html="r.message"
                             ></div>
 
                             <div class="notification">
@@ -544,7 +549,10 @@
 
             var model = {
                 waypoints: dirs.waypoints,
-                notifications: dirs.notifications,
+                reports: dirs.reports.map( function ( r ) {
+                    r.component.data = function () { return r.component.dataObj }
+                    return r
+                } ),
                 overview: {},
                 pages: dirPages.map( function ( dp, i ) {
                     return {
@@ -732,6 +740,10 @@
                 STOPOVER:           [ 'pause', null,            '' ],
                 FINISH:             [ 'stop', null,             '' ],
             }
+
+            Vue.config.ignoredElements = [
+                'activate-tool'
+            ]
 
             new Vue( {
                 el: '#vue-root',
