@@ -121,6 +121,7 @@
         }
       },
       "truck": true,
+      "criteria": "fastest",
       "segmentLayers": [
         {
             "id": "@potential",

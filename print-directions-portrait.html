@@ -219,6 +219,10 @@
                 margin-bottom: 0;
             }
 
+            article.notifications activate-tool { 
+                display: none;
+            }
+
             @media print {
                 header {
                     background-color: white;
@@ -254,7 +258,17 @@
                                 <div class="waypoint"
                                     v-for="w in waypoints"
                                     v-bind:class="[ w.style || '' ]"
-                                >{{ w.label }} at <span class="address">{{ w.fullAddress }}</span></div>
+                                >{{ w.label }} at
+                                    <span class="address" v-if="w.fullAddress">{{ w.fullAddress }}</span>
+                                    <span class="coordinates" v-else>
+                                        <span class="smk-ordinate">
+                                            <label>latitude <span>{{ w.latitude | formatNumber( 6, 3 ) }}</span></label>
+                                        </span>,
+                                        <span class="smk-ordinate">
+                                            <label>longitude <span>{{ w.longitude | formatNumber( 6, 3 ) }}</span></label>
+                                        </span>                    
+                                    </span>
+                                </div>
                             </div>
 
                             <div class="smk-map-frame"
@@ -281,7 +295,17 @@
                                 <div class="waypoint"
                                     v-for="w in waypoints"
                                     v-bind:class="[ w.style || '' ]"
-                                >{{ w.label }} at <span class="address">{{ w.fullAddress }}</span></div>
+                                >{{ w.label }} at 
+                                    <span class="address" v-if="w.fullAddress">{{ w.fullAddress }}</span>
+                                    <span class="coordinates" v-else>
+                                        <span class="smk-ordinate">
+                                            <label>latitude <span>{{ w.latitude | formatNumber( 6, 3 ) }}</span></label>
+                                        </span>,
+                                        <span class="smk-ordinate">
+                                            <label>longitude <span>{{ w.longitude | formatNumber( 6, 3 ) }}</span></label>
+                                        </span>                    
+                                    </span>
+                                </div>
                             </div>
 
                             <div class="smk-map-frame"
@@ -329,10 +353,11 @@
                             <h1>Reports and Notices</h1>
 
                             <div class="notification" 
-                                v-for="n in notifications"
-                                v-if="n.message"
-                                v-bind:class="[ n.type ]"
-                                v-html="n.message"
+                                v-for="r in reports"
+                                xxv-if="r.message"
+                                v-bind:class="[ r.type ]"
+                                v-bind:is="r.component"
+                                xxv-html="r.message"
                             ></div>
 
                             <div class="notification">
@@ -368,10 +393,10 @@
                             </p>
                             <p>
                                 Links and references to any other websites are provided for information only and listing shall not be taken as endorsement of any kind. 
-                                TransLink is not responsible for the content or reliability of the linked websites and does not endorse the content, products, services or views expressed within them.
+                                TransLink or any of its partners or stakeholders (including, without limitation, the Province of BC) are not responsible for the content or reliability of the linked websites and do not endorse the content, products, services or views expressed within them.
                             </p>
                             <p>
-                                Under no circumstances will TransLink be liable to any person or business entity for any direct, indirect, special, incidental, consequential, or other damage based on any use of this website or any other website to which this site is linked, including, without limitation, any lost profits, business interruption, or loss of programs or information, even if TransLink has been specifically advised.
+                                Under no circumstances will TransLink or any of its partners or stakeholders (including, without limitation, the Province of BC) be liable to any person or business entity for any direct, indirect, special, incidental, consequential, or other damage based on any use of this website or any other website to which this site is linked, including, without limitation, any lost profits, business interruption, or loss of programs or information, even if TransLink or any of its partners or stakeholders (including, without limitation, the Province of BC) have been specifically advised.
                             </p>
                             <img src="images/no_mobile_icon.svg" style="width: 150px;" alt="Graphic warning to discourage using mobile devices">
                             <p>
@@ -544,7 +569,10 @@
 
             var model = {
                 waypoints: dirs.waypoints,
-                notifications: dirs.notifications,
+                reports: dirs.reports.map( function ( r ) {
+                    r.component.data = function () { return r.component.dataObj }
+                    return r
+                } ),
                 overview: {},
                 pages: dirPages.map( function ( dp, i ) {
                     return {
@@ -732,6 +760,10 @@
                 STOPOVER:           [ 'pause', null,            '' ],
                 FINISH:             [ 'stop', null,             '' ],
             }
+
+            Vue.config.ignoredElements = [
+                'activate-tool'
+            ]
 
             new Vue( {
                 el: '#vue-root',
