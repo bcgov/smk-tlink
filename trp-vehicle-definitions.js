@@ -525,6 +525,7 @@ TRP.makeReports = function ( routeResponse ) {
 
     return include( [ 
         { url: './fragments/report-not-heavy-truck.html' }, 
+        { url: './fragments/report-truck.html' }, 
         { url: './fragments/report-direction-notification.html' },
         { url: './fragments/report-oversize.html' } 
     ], 'report' )
@@ -561,6 +562,14 @@ TRP.makeReports = function ( routeResponse ) {
                     type: 'TruckRestriction',
                     component: {
                         template: inc[ 'report.report-oversize-html' ],
+                        dataObj: {}
+                    }
+                } )
+            else
+                reports.push( {
+                    type: 'TruckRestriction',
+                    component: {
+                        template: inc[ 'report.report-truck-html' ],
                         dataObj: {}
                     }
                 } )
