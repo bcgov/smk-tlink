@@ -64,7 +64,7 @@
                 { 
                     "type": "folder",
                     "title": "Height Restrictions",
-                    "isVisible": false,
+                    "isVisible": true,
                     "isExpanded": true,
                     "items": [                
                         { "id": "overhead-structure-with-height-marker", "isVisible": true, "class": "smk-inline-legend" },

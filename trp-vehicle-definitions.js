@@ -500,15 +500,19 @@ var municipality = {
 // 
 
 TRP.makeReports = function ( routeResponse ) {
-    var reports = clone( routeResponse.notifications || [] ).map( function ( r ) {
-        return {
-            type: r.type,
-            component: {
-                template: '<div>' + r.message + '</div>',
-                dataObj: {}
+    var reports = clone( routeResponse.notifications || [] )
+        .filter( function ( r ) {
+            return r.type != 'Oversize'
+        } )
+        .map( function ( r ) {
+            return {
+                type: r.type,
+                component: {
+                    template: '<div>' + r.message + '</div>',
+                    dataObj: {}
+                }
             }
-        }
-    } )
+        } )
 
     var muni = {}
     routeResponse.segments.features.forEach( function ( s ) {
@@ -521,6 +525,7 @@ TRP.makeReports = function ( routeResponse ) {
 
     return include( [ 
         { url: './fragments/report-not-heavy-truck.html' }, 
+        { url: './fragments/report-truck.html' }, 
         { url: './fragments/report-direction-notification.html' },
         { url: './fragments/report-oversize.html' } 
     ], 'report' )
@@ -557,6 +562,14 @@ TRP.makeReports = function ( routeResponse ) {
                     type: 'TruckRestriction',
                     component: {
                         template: inc[ 'report.report-oversize-html' ],
+                        dataObj: {}
+                    }
+                } )
+            else
+                reports.push( {
+                    type: 'TruckRestriction',
+                    component: {
+                        template: inc[ 'report.report-truck-html' ],
                         dataObj: {}
                     }
                 } )
