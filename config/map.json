@@ -109,8 +109,19 @@
           "truckRoute": false,
           "vehicleType": false
       },
-      "apiKey": "11dd756f680c47b5aef5093d95543738",
+      "routePlannerService": {
+        "url": "https://router.api.gov.bc.ca/",
+        "apiKey": "11dd756f680c47b5aef5093d95543738"
+      },
+      "geocoderService": {
+        "url": "https://geocoder.api.gov.bc.ca/",
+        "parameter": {
+          "maxDistance": 50,
+          "locationMode": "input"
+        }
+      },
       "truck": true,
+      "criteria": "fastest",
       "segmentLayers": [
         {
             "id": "@potential",
@@ -201,7 +212,8 @@
       "position": "toolbar",
       "title": "Reports and Notices",
       "icon": "warning",
-      "order": 99
+      "order": 99,
+      "useComponent": true
     }
   ]
 }
