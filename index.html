@@ -136,7 +136,8 @@
             'smk-container-sel': "#smk-map-frame",
             'smk-config': [ 
                 './layers/cardlock/config.json',
-                './layers/dangerous-goods-routes/config.json',
+                // './layers/dangerous-goods-routes/config.json',
+                './layers/dangerous-goods-restrictions/config.json',
                 './layers/downtown-vancouver/config.json',
                 './layers/industrial-area/config.json',
                 './layers/inspection-station/config.json',
@@ -227,8 +228,8 @@
                         el: el,
                         data: {
                             vehicleTypes: JSON.parse( JSON.stringify( TRP.vehicleTypes ) ), 
-                            vehicleIndex: null,
-                            configIndex: null,
+                            vehicleIndex: tool.trp && tool.trp.vehicleIndex,
+                            configIndex: tool.trp && tool.trp.configIndex,
                         },
                         computed: {
                             vehicleStyle: function () {
@@ -266,6 +267,11 @@
                                 tool.truckWeight = config.weight
                                 tool.oversize = config.oversize 
 
+                                tool.trp = {
+                                    vehicleIndex: this.vehicleIndex,
+                                    configIndex: this.configIndex
+                                }
+
                                 Vue.nextTick( function () {
                                     smk.$tool[ 'directions' ].findRoute()
                                 } )
@@ -273,17 +279,24 @@
                         }
                     } )
 
-                    vm.selectVehicle( 0 )
+                    if ( !tool.trp ) {
+                        vm.selectVehicle( 0 )
+                    }
 
                     smk.on( tool.id, {
                         'change': function ( ev ) {
                             var config = vm.$data.vehicleTypes[ vm.$data.vehicleIndex ].configs[ vm.$data.configIndex ]
-
+                            
                             tool.oversize = config.oversize 
                                         || config.height < tool.truckHeight
                                         || config.width < tool.truckWidth
                                         || config.length < tool.truckLength
                                         || config.weight < tool.truckWeight
+
+                            tool.trp = {
+                                vehicleIndex: vm.$data.vehicleIndex,
+                                configIndex: vm.$data.configIndex
+                            }
                         }
                     } )
                 } )
@@ -308,7 +321,8 @@
                         if ( !reports || reports.length == 0 ) return
 
                         smk.$tool[ 'bespoke--reports' ].status = 'ready'
-                        routingReports = response.reports = reports
+                        response.reports = JSON.parse( JSON.stringify( reports ) )
+                        routingReports = reports
                     } )
                 }
             } )
@@ -334,9 +348,17 @@
             SMK.HANDLER.set( 'bespoke--reports', 'activated', function ( smk, tool, el ) {
                 // debugger
                 include( [ { url: './fragments/reports.html' }, { url: './fragments/reports.css' } ], 'bespoke--reports' ).then( function ( inc ) {
-                    el.innerHTML = htmlTemplate( inc[ 'bespoke--reports.reports-html' ], {
-                        reports: routingReports 
-                    } )
+                    tool.component = {
+                        template: inc[ 'bespoke--reports.reports-html' ],
+                        data: function () {
+                            return {
+                                reports: routingReports.map( function ( r ) {
+                                    r.component.data = function () { return r.component.dataObj }
+                                    return r
+                                } ) 
+                            }
+                        }
+                    } 
                 } ) 
             } )
 
@@ -346,6 +368,7 @@
         function htmlTemplate( template, data ) {
             return ( new Vue( { template: '<div>' + template + '</div>', data: data } ) ).$mount().$el.innerHTML
         }
+        
     </script>
 
 

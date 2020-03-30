@@ -5,6 +5,7 @@
             "id": "cardlock",
             "title": "Cardlock",
             "dataUrl": "./layers/cardlock/cardlock.geojson",
+            "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/66398912-7103-4557-a17e-6a5d68577fba",
             "scaleMin": 198647,
             "attributes": [
                 {
@@ -17,10 +18,10 @@
                 },
                 {
                     "title": "Street View",
-                    "format": "asLink( this.feature.properties.Streetview_Link, 'Link' )"
+                    "format": "asLink( this.feature.properties.Streetview, 'Link' )"
                 },
                 {
-                    "value": "<%= this.feature.properties.Street_Number %> <%= this.feature.properties.Street_Name %> <%= this.feature.properties.City %>",
+                    "value": "<%= this.feature.properties.Street_Num %> <%= this.feature.properties.Street_Nam %> <%= this.feature.properties.City %>",
                     "title": "Address"
                 },
                 {
