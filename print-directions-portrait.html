@@ -20,7 +20,10 @@
             }
 
             article {
-                position: relative;
+                /* this change seems to fix the slow print preview */
+                /* position: relative; */
+                overflow: hidden;
+
                 height: 8.5in;
                 width: 6.85in;
                 margin: auto;
@@ -275,7 +278,7 @@
                                 v-content="overview"
                             ></div>
 
-                            <div class="page-number">Page 1 of {{ pages.length + 1 }}</div>
+                            <!-- <div class="page-number">Page 1 of {{ pages.length + 1 }}</div> -->
                         </section>
                     </div>
                 </article>            
@@ -336,7 +339,7 @@
                                 </div>
                             </div>
 
-                            <div class="page-number">Page {{ page.index + 1 }} of {{ pages.length + 1 }}</div>
+                            <!-- <div class="page-number">Page {{ page.index + 1 }} of {{ pages.length + 1 }}</div> -->
                         </section>
                     </div>
                 </article>     
