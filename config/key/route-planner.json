@@ -1,0 +1,10 @@
+{
+  "tools": [
+    {
+      "type": "directions",
+      "routePlannerService": {
+        "apiKey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      }
+    }
+  ]
+}
