@@ -1,10 +1,34 @@
 # Translink Router APP
 
+| Sections |
+| --- |
+| [TL'DR](#tldr) |
+| [- Preparation Work](#preparation-work)|
+| [- Provision the ImageStream Builds](#provision-the-imagestream-builds)|
+| [- Provision Components in the Operational Environment](#provision-necessary-components-in-the-operational-environment) |
+| [- Create a Webhook on Github](#create-a-webhook-in-the-associated-github-repo-and-modify-the-associated-webhook-secrete-in-the-namesapce) |
+| [-------------------------------------------------------------------]() |
+| [How Does all this work?](#how-does-all-this-work) |
+| [- The Basic App](#the-basic-app) |
+| [- What are the all the parts](#what-are-all-the-parts) |
+| [- OpenShift Overview](#openshift-overview) |
+| [-------------------------------------------------------------------]() |
+| [What are the Parts - more Detail](#what-are-the-parts---more-detail) |
+| [- BuildConfigs](#buildconfigs) |
+| [- Deployment](#deployment) |
+| [-------------------------------------------------------------------]() |
+| [A Word about other resources](#a-word-about-other-resources) |
+| [A word about templates](#a-word-about-templates) |
+| [Provisioning the BuildConfig](#provisioning-the-buildconfigs) |
+| [Provisioning the deployment and other objects](#provisioning-the-deployment-and-other-objects) |
+| [Create the ConfigMap for the `apikey` and map into the Deployment](#create-the-configmap-for-the-apikey-and-map-into-the-deployment) |
+| [Update the webhook secret and create a webhook on github.](#update-the-webhook-secreat-and-create-a-webhook-in-the-github-repo) |
+
 ## TL'DR
 * Image Builds and ImageStreams reside in your **tools** namespace
 * All other objects reside in you operational environment.
 * There is an `apikey` that is not stored in the code repository.  The `apikey` is required to access online Geocoder and online Route Planner APIs.  This `apikey` is manually added to a config map in the appropriate namespace and mapped into the deployment.
-* There is an additional post provisioning step: you must configure webhooks in the github repo and update the webhook key in the corresponding namespaces secrets.
+* There is an additional post-provisioning step: you must configure webhooks in the github repo and update the webhook key in the corresponding namespaces secrets.
 
 ## Preparation Work
 1. You will need to create a Persistent Volume (PV) in the operational environment (dev, test, or prod)- This has to be done before provisioning any object in the respective namespace - the Persistent Volume Claim (PVC) will not find the PV to use.
@@ -308,4 +332,4 @@ I describe this in the **Prepartion Work** Section
 
 ## Update the webhook secreat and create a webhook in the github repo.
 
-I also described this in **Prepartion Work** 
+I also described this in **Prepartion Work**
