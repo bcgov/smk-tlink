@@ -56,6 +56,10 @@ header h3 .version {
     opacity:        50%;
 }
 
+#logo {
+    cursor: pointer;
+}
+
 #smk-map-frame {
     flex-grow: 1;
 }

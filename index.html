@@ -26,7 +26,7 @@
             </dialog>
 
             <header>
-                <h1><span class="translink-logo"></span>Truck Route Planner</h1>
+                <h1 id="logo"><span class="translink-logo"></span>Truck Route Planner</h1>
                 <h3 id="package-build-date" title="?">
                     <div class="release" id="package-release">?</div>
                     <div class="version" id="package-version">?</div>
@@ -125,6 +125,10 @@
             document.getElementById( 'package-build-date' ).title = 'Built: ' + package[ 'build-date' ]
             document.getElementById( 'package-release' ).innerText = package.release
             document.getElementById( 'package-version' ).innerText = 'Version ' + package.version
+        } )
+
+        document.getElementById( 'logo' ).addEventListener( 'click', function () {
+            SMK.MAP[ 1 ].$tool[ 'bespoke--about' ].active = true
         } )
 
         SMK.HANDLER.set( 'bespoke--reports', 'initialized', function ( smk, tool ) {
