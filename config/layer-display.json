@@ -3,6 +3,21 @@
         {
             "type": "layers",
             "display": [
+                {
+                    "type": "group",
+                    "title": "COVID 19 Relief",
+                    "isVisible": true,
+                    "items": [
+                        { "id": "covid19-relief-cardlock" },
+                        { "id": "covid19-relief-food-truck" },
+                        { "id": "covid19-relief-hotel" },
+                        { "id": "covid19-relief-inspection-station" },
+                        { "id": "covid19-relief-public-washroom" },
+                        { "id": "covid19-relief-restaurant" },
+                        { "id": "covid19-relief-temporary-respite-area" },
+                        { "id": "covid19-relief-tourist-centre" }
+                    ]
+                },
                 { 
                     "type": "group",
                     "title": "Truck Routes",
