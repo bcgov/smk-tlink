@@ -22,18 +22,20 @@
     
     <body class="hide">
         <dialog id="disclaimer">
-            <header>
-                <h1><span class="translink-logo"></span>Truck Route Planner</h1>
-            </header>
-        
-            <section>
-                <p>
-                    This website requires a more recent web browser.
-                </p>
-                <p>
-                    Please use Google Chrome, or Microsoft Edge, or Firefox, or Safari.
-                </p>
-            </section>            
+            <form>
+                <header>
+                    <h1><span class="translink-logo"></span>Truck Route Planner</h1>
+                </header>
+                <section>
+                    <p>
+                        This website requires a more recent web browser.
+                    </p>
+                    <p>
+                        Please use Google Chrome, or Microsoft Edge, or Firefox, or Safari.
+                    </p>
+                </section>      
+                <menu></menu>
+            </form>
         </dialog>
 
         <article>
@@ -157,10 +159,59 @@
                 tool.status = 'hide'
             } )
 
+            function formatYesNo( attrName ) {
+                return '<%= this.feature.properties[ "' + attrName + '" ] ? "Yes" : "No" %>'
+            }
+
+            var covid19Layers = [
+                'cardlock',
+                'food-truck',
+                'hotel',
+                'inspection-station',
+                'public-washroom',
+                'restaurant',
+                'temporary-respite-area',
+                'tourist-centre',
+            ].reduce( function ( acc, n ) {
+                return acc.concat(
+                    './layers/covid19-relief-' + n + '/config.json',
+                    { layers: [ { id: 'covid19-relief-' + n, titleAttribute: 'Name', attributes: [
+                        { name: "Name", title: "Name" },
+                        /*{ name: "Active", title: "Active" },*/
+                        { name: "Address", title: "Address" },
+                        { name: "AmenityLocation", title: "Amenity Location" },
+                        { name: "AmenityType", title: "Amenity Type" },
+                        { name: "BuildingType", title: "Building Type" },
+                        { /*name: "Comments", */title: "Comments", format: "asHTML( this.feature.properties.Comments )" },
+                        { name: "ContactInfo", title: "Contact Info", format: "asHTML( this.feature.properties.ContactInfo )" },
+                        { /*name: "CurbsideParking",*/ title: "Curbside Parking", value: formatYesNo( 'CurbsideParking' ) },
+                        { name: "CurbsideParkingHours", title: "Curbside Parking Hours" },
+                        { /*name: "DirectionsToFood",*/ title: "Directions To Food", format: "asHTML( this.feature.properties.DirectionsToFood )" },
+                        { /*name: "DirectionsToGarbageBin",*/ title: "Directions To Garbage Bin", format: "asHTML( this.feature.properties.DirectionsToGarbageBin )" },
+                        { /*name: "DirectionsToOtherAmenity",*/ title: "Directions To Other Amenity", format: "asHTML( this.feature.properties.DirectionsToOtherAmenity )" },
+                        { /*name: "DirectionsToShowers",*/ title: "Directions To Showers", format: "asHTML( this.feature.properties.DirectionsToShowers )" },
+                        { /*name: "DirectionsToWashroom",*/ title: "Directions To Washroom", format: "asHTML( this.feature.properties.DirectionsToWashroom )" },
+                        { /*name: "DocumentLink",*/ title: "Document", format: "asLink( this.feature.properties.DocumentLink, 'Link' )" },
+                        { /*name: "FoodNearby",*/ title: "Food Nearby", value: formatYesNo( 'FoodNearby' ) },
+                        { /*name: "GarbageBinNearby",*/ title: "Garbage Bin Nearby", value: formatYesNo( 'GarbageBinNearby' ) },
+                        { /*name: "InformationLink",*/ title: "Information", format: "asLink( this.feature.properties.InformationLink, 'Link' )" },
+                        { name: "OpenHours", title: "Open Hours" },
+                        { name: "OtherAmenity", title: "Other Amenity" },
+                        { /*name: "ParkingLot",*/ title: "Parking Lot", value: formatYesNo( 'ParkingLot' ) },
+                        { name: "ParkingLotHours", title: "Parking Lot Hours" },
+                        { name: "ParkingSpaces", title: "Parking Spaces" },
+                        { /*name: "ShowersNearby",*/ title: "Showers Nearby", value: formatYesNo( 'ShowersNearby' ) },
+                        { /*name: "StreetviewLink",*/ title: "Streetview", format: "asLink( this.feature.properties.StreetviewLink, 'Link' )" },
+                        { name: "TermsOfUse", title: "Terms Of Use" },
+                        { /*name: "WashroomNearby",*/ title: "Washroom Nearby", value: formatYesNo( 'WashroomNearby' ) }
+                    ] } ] }
+                )
+            }, [] )
+
             var defaultVehicle = TRP.vehicleTypes[ 0 ].configs[ 0 ]
             SMK.INIT( {
                 'smk-container-sel': "#smk-map-frame",
-                'smk-config': [ 
+                'smk-config': [].concat( [ 
                     './layers/cardlock/config.json',
                     // './layers/dangerous-goods-routes/config.json',
                     './layers/dangerous-goods-restrictions/config.json',
@@ -191,16 +242,8 @@
                     './layers/truck-routes-federal-road-with-no-truck-travel-restrictions/config.json',
                     './layers/truck-routes-municipal-road-with-no-truck-travel-restriction/config.json',
                     './layers/temporary-road-closure/config.json',
-                    './layers/temporary-road-closure-extent/config.json',
-                    './layers/covid19-relief-cardlock/config.json',
-                    './layers/covid19-relief-food-truck/config.json',
-                    './layers/covid19-relief-hotel/config.json',
-                    './layers/covid19-relief-inspection-station/config.json',
-                    './layers/covid19-relief-public-washroom/config.json',
-                    './layers/covid19-relief-restaurant/config.json',
-                    './layers/covid19-relief-temporary-respite-area/config.json',
-                    './layers/covid19-relief-tourist-centre/config.json',
-
+                    './layers/temporary-road-closure-extent/config.json'
+                ], covid19Layers, [
                     './config/map.json', 
                     './config/layer-display.json', 
                     {
@@ -214,7 +257,7 @@
                     },
                     './config/key/route-planner.json', 
                     '?' 
-                ],
+                ] ),
             } ).then( function () {
                 $( 'body' ).addClass( 'device-' + SMK.MAP[ 1 ].$device )
 

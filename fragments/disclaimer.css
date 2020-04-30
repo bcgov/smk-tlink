@@ -2,21 +2,3 @@ img.warningImage {
     width: 150px;
     align-self: center;
 }
-
-dialog menu {
-    margin: 0;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-dialog menu button {
-    background-color:rgb(0, 53, 95);
-    border: none;
-    color:rgb(255, 255, 255);
-    cursor:pointer;
-    font-size:14px;
-    outline: none;
-    padding: 9px;
-}

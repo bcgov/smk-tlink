@@ -35,7 +35,7 @@
                     "title": "Contact Info"
                 },
                 {
-                    "name": "CurbsideParking\n",
+                    "name": "CurbsideParking",
                     "title": "Curbside Parking"
                 },
                 {
@@ -51,7 +51,7 @@
                     "title": "Directions To Garbage Bin"
                 },
                 {
-                    "name": "DirectionsToOtherAmenity\n",
+                    "name": "DirectionsToOtherAmenity",
                     "title": "Directions To Other Amenity"
                 },
                 {
@@ -87,7 +87,7 @@
                     "title": "Open Hours"
                 },
                 {
-                    "name": "OtherAmenity\n",
+                    "name": "OtherAmenity",
                     "title": "Other Amenity"
                 },
                 {
