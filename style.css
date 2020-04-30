@@ -51,7 +51,7 @@ header h3 .release {
     font-style:     italic;
 }
 
-header h3 .version {
+.version {
     font-size:      12px;
     opacity:        50%;
 }

@@ -41,10 +41,10 @@
         <article>
             <header>
                 <h1 id="logo"><span class="translink-logo"></span>Truck Route Planner</h1>
-                <h3 id="package-build-date" title="">
+                <!-- <h3 id="package-build-date" title="">
                     <div class="release" id="package-release"></div>
                     <div class="version" id="package-version"></div>
-                </h3>
+                </h3> -->
             </header>
 
             <div id="smk-map-frame"></div>
@@ -146,9 +146,9 @@
             include( [ { url: './package.json', loader: 'template' } ], 'package' ).then( function ( inc ) {
                 package = JSON.parse( inc[ 'package.package-json' ] )
 
-                document.getElementById( 'package-build-date' ).title = 'Built: ' + package[ 'build-date' ]
-                document.getElementById( 'package-release' ).innerText = package.release
-                document.getElementById( 'package-version' ).innerText = 'Version ' + package.version
+                // document.getElementById( 'package-build-date' ).title = 'Built: ' + package[ 'build-date' ]
+                // document.getElementById( 'package-release' ).innerText = package.release
+                // document.getElementById( 'package-version' ).innerText = 'Version ' + package.version
             } )
 
             document.getElementById( 'logo' ).addEventListener( 'click', function () {
@@ -409,7 +409,9 @@
 
                 SMK.HANDLER.set( 'bespoke--about', 'activated', function ( smk, tool, el ) {
                     include( [ { url: './fragments/about.html' }, { url: './fragments/about.css' } ], 'bespoke--about' ).then( function ( inc ) {
-                        el.innerHTML = inc[ 'bespoke--about.about-html' ]
+                        el.innerHTML = htmlTemplate( inc[ 'bespoke--about.about-html' ], {
+                            package: package 
+                        } )
                     } ) 
                 } )
 
