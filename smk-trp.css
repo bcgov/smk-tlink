@@ -27,3 +27,20 @@
 .smk-map-frame .smk-legend-status .smk-display.smk-inline-legend.smk-display-group .smk-legend .smk-legend-title {
     display: block;
 }
+
+.smk-map-frame .smk-feature .smk-attributes .smk-attribute .smk-value a[target="_blank"]::after {
+    content: 'open_in_new';
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+}
+
+.smk-map-frame .smk-feature .smk-attributes .smk-attribute .smk-value a[target="_blank"] i {
+    display: none;
+}
