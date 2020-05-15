@@ -2,9 +2,9 @@
     "layers": [
         {
             "type": "vector",
-            "id": "covid19-relief-public-washroom",
-            "title": "Public Washroom",
-            "dataUrl": "./layers/covid19-relief-public-washroom/covid19-relief-public-washroom.geojson",
+            "id": "covid19-relief-temporary-truck-parking",
+            "title": "Temporary Truck Parking",
+            "dataUrl": "./layers/covid19-relief-temporary-truck-parking/covid19-relief-temporary-truck-parking.geojson",
             "attributes": [
                 {
                     "name": "Active",
@@ -121,7 +121,7 @@
             ],
             "titleAttribute": "Name",
             "style": {
-                "markerUrl": "./layers/covid19-relief-public-washroom/images/washrooms.png",
+                "markerUrl": "./layers/covid19-relief-temporary-truck-parking/images/parking.png",
                 "markerSize": [ 22, 22 ],
                 "markerOffset": [ 11, 11 ]
             },

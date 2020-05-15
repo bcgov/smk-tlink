@@ -2,9 +2,9 @@
     "layers": [
         {
             "type": "vector",
-            "id": "covid19-relief-restaurant",
-            "title": "Restaurant",
-            "dataUrl": "./layers/covid19-relief-restaurant/covid19-relief-restaurant.geojson",
+            "id": "covid19-relief-rest-area",
+            "title": "Rest Area",
+            "dataUrl": "./layers/covid19-relief-rest-area/covid19-relief-rest-area.geojson",
             "attributes": [
                 {
                     "name": "Active",
@@ -121,7 +121,7 @@
             ],
             "titleAttribute": "Name",
             "style": {
-                "markerUrl": "./layers/covid19-relief-restaurant/images/relief-restaurant.png",
+                "markerUrl": "./layers/covid19-relief-rest-area/images/relief-rest-area.png",
                 "markerSize": [ 22, 22 ],
                 "markerOffset": [ 11, 11 ]
             },
