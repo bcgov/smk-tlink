@@ -2,9 +2,9 @@
     "layers": [
         {
             "type": "vector",
-            "id": "covid19-relief-temporary-respite-area",
-            "title": "Temporary Respite Area",
-            "dataUrl": "./layers/covid19-relief-temporary-respite-area/covid19-relief-temporary-respite-area.geojson",
+            "id": "covid19-relief-portable-toilet",
+            "title": "Portable Toilet",
+            "dataUrl": "./layers/covid19-relief-portable-toilet/covid19-relief-portable-toilet.geojson",
             "attributes": [
                 {
                     "name": "Active",
@@ -121,7 +121,7 @@
             ],
             "titleAttribute": "Name",
             "style": {
-                "markerUrl": "./layers/covid19-relief-temporary-respite-area/images/parking.png",
+                "markerUrl": "./layers/covid19-relief-portable-toilet/images/washrooms.png",
                 "markerSize": [ 22, 22 ],
                 "markerOffset": [ 11, 11 ]
             },
