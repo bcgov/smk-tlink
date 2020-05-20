@@ -14,3 +14,7 @@
     * They will also, after merging, tag the repo, following [Semantic Versioning](https://semver.org/).
 * As with the delivery environment and test environment, there is a webhook configured:
     * When code is merged to the `master` branch a webhook is fired which triggers an updated of the code running in OpenShift - the latest version of the code in the `master` branch is used.
+
+
+# Notes
+## How to create a tag: see [Stack Overflow: Create a Tag in a GitHub Repositgory](https://stackoverflow.com/questions/18216991/create-a-tag-in-a-github-repository)
