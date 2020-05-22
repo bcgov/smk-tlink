@@ -5,6 +5,7 @@
             "id": "covid19-relief-portable-toilet",
             "title": "Portable Toilet",
             "dataUrl": "./layers/covid19-relief-portable-toilet/covid19-relief-portable-toilet.geojson",
+            "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/0e8f256a-8b2d-48d0-aea3-4398e61dc829",
             "attributes": [
                 {
                     "name": "Active",

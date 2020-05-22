@@ -5,6 +5,7 @@
             "id": "covid19-relief-tourist-centre",
             "title": "Tourist Centre",
             "dataUrl": "./layers/covid19-relief-tourist-centre/covid19-relief-tourist-centre.geojson",
+            "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/0e8f256a-8b2d-48d0-aea3-4398e61dc829",
             "attributes": [
                 {
                     "name": "Active",
