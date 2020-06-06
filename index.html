@@ -24,7 +24,7 @@
         <dialog id="disclaimer">
             <form>
                 <header>
-                    <h1><span class="translink-logo"></span>Truck Route Planner</h1>
+                    <span class="translink-logo"></span>Truck Route Planner
                 </header>
                 <section>
                     <p>
@@ -39,12 +39,8 @@
         </dialog>
 
         <article>
-            <header>
-                <h1 id="logo"><span class="translink-logo"></span>Truck Route Planner</h1>
-                <!-- <h3 id="package-build-date" title="">
-                    <div class="release" id="package-release"></div>
-                    <div class="version" id="package-version"></div>
-                </h3> -->
+            <header id="logo">
+                <span class="translink-logo"></span>Truck Route Planner
             </header>
 
             <div id="smk-map-frame"></div>
@@ -203,7 +199,7 @@
                         { title: "Directions To Other Amenity", format: "asHTML( this.feature.properties.DirectionsToOtherAmenity )" },
                         { title: "Terms Of Use",                name: "TermsOfUse" },
                         { title: "Comments",                    format: "asHTML( this.feature.properties.Comments )" },
-                        { title: "Contact Info",                format: "asHTML( this.feature.properties.ContactInfo )",                name: "ContactInfo" }
+                        { title: "Contact Info",                format: "asLink( this.feature.properties.ContactInfo )",                name: "ContactInfo" }
                     ] } ] }
                 )
             }, [] )

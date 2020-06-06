@@ -17,38 +17,31 @@ header {
 
     display:            flex;
     flex-direction:     row;
-    justify-content:    space-between;
     align-items:        center;
     padding:            0 5px;
+    align-items:        center;
+    margin:             0;
 }
 
 header .translink-logo {
-    background-image: url( "https://tlweblibs.translink.ca/TransLink-logo-white.svg" );
-    background-position: center;
+    display: inline-block;
+    background-image: url( "images/translink-logo-white.svg" );
+    background-position: right;
     background-repeat: no-repeat;
     height: 40px;
-    width: 80px;
+    width: 200px;
+    min-width: 200px;
     margin-right: 10px;
 }
 
-header h1 {
-    display:        flex;
-    justify-content:center;
-    align-items:    center;
-    font-size:      18px;
-    margin: 0;
-    padding: 0;
-}
-
-header h3 {
-    margin: 0;
-    padding: 0;
-}
-
-header h3 .release {
-    font-weight:    bold;
-    font-size:      14px;
-    font-style:     italic;
+header .translink-logo::before {
+    content: '';
+    display: inline-block;
+    background-image: url( "images/gov_bc_logo.svg" );
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100px;
 }
 
 .version {

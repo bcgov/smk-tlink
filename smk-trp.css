@@ -44,3 +44,9 @@
 .smk-map-frame .smk-feature .smk-attributes .smk-attribute .smk-value a[target="_blank"] i {
     display: none;
 }
+
+.smk-map-frame .smk-sidepanel .smk-panel .smk-can-scroll-up,
+.smk-map-frame .smk-sidepanel .smk-panel .smk-can-scroll-down {
+    display: none;
+}
+
