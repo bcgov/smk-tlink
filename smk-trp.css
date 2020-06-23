@@ -1,3 +1,7 @@
+.smk-map-frame .smk-overlay {
+    touch-action: none;
+}
+
 .smk-map-frame .smk-toolbar .smk-bespoke--reports-tool {
     color: red;
 }
