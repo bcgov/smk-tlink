@@ -1,9 +1,9 @@
 {
 "type": "FeatureCollection",
-"totalFeatures": 157,
-"numberMatched": 157,
-"numberReturned": 157,
-"timeStamp": "2020-05-15T23:01:55.580Z",
+"totalFeatures": 156,
+"numberMatched": 156,
+"numberReturned": 156,
+"timeStamp": "2020-06-30T00:13:49.728Z",
 "name": "covid19-relief-rest-area",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
