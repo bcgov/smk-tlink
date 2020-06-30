@@ -17,9 +17,9 @@
             }
         </style>
 
-        <link rel="stylesheet" type="text/css" href="style.css"/>       
+        <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
-    
+
     <body class="hide">
         <dialog id="disclaimer">
             <form>
@@ -33,7 +33,7 @@
                     <p>
                         Please use Google Chrome, or Microsoft Edge, or Firefox, or Safari.
                     </p>
-                </section>      
+                </section>
                 <menu></menu>
             </form>
         </dialog>
@@ -45,11 +45,11 @@
 
             <div id="smk-map-frame"></div>
         </article>
-       
+
         <iframe id="print-holder" style="position: absolute; left: 0; top: 0; visibility: hidden;"></iframe>
 
         <style>
-            template { 
+            template {
                 display: none;
             }
             .truck-options {
@@ -136,7 +136,7 @@
                 dialog.innerHTML = inc[ 'disclaimer.disclaimer-html' ]
                 dialogPolyfill.registerDialog(dialog)
                 dialog.showModal()
-            } ) 
+            } )
 
             var package
             include( [ { url: './package.json', loader: 'template' } ], 'package' ).then( function ( inc ) {
@@ -156,7 +156,7 @@
             } )
 
             function formatYesNo( attrName ) {
-                return '<%= this.feature.properties[ "' + attrName + '" ] ? "Yes" : "No" %>'
+                return '<%= this.feature.properties[ "' + attrName + '" ] ? "Yes" : "" %>'
             }
 
             var covid19Layers = [
@@ -207,7 +207,7 @@
             var defaultVehicle = TRP.vehicleTypes[ 0 ].configs[ 0 ]
             SMK.INIT( {
                 'smk-container-sel': "#smk-map-frame",
-                'smk-config': [].concat( [ 
+                'smk-config': [].concat( [
                     './layers/cardlock/config.json',
                     // './layers/dangerous-goods-routes/config.json',
                     './layers/dangerous-goods-restrictions/config.json',
@@ -240,8 +240,8 @@
                     './layers/temporary-road-closure/config.json',
                     './layers/temporary-road-closure-extent/config.json'
                 ], covid19Layers, [
-                    './config/map.json', 
-                    './config/layer-display.json', 
+                    './config/map.json',
+                    './config/layer-display.json',
                     {
                         tools: [ {
                             type: 'directions',
@@ -251,8 +251,8 @@
                             truckWeight: defaultVehicle.weight,
                         } ]
                     },
-                    './config/key/route-planner.json', 
-                    '?' 
+                    './config/key/route-planner.json',
+                    '?'
                 ] ),
             } ).then( function () {
                 $( 'body' ).addClass( 'device-' + SMK.MAP[ 1 ].$device )
@@ -262,9 +262,9 @@
                 SMK.HANDLER.set( 'bespoke--feedback', 'activated', function ( smk, tool, el ) {
                     include( [ { url: './fragments/feedback.html' }, { url: './fragments/feedback.css' } ], 'bespoke--feedback' ).then( function ( inc ) {
                         el.innerHTML = htmlTemplate( inc[ 'bespoke--feedback.feedback-html' ], {
-                            package: package 
+                            package: package
                         } )
-                    } ) 
+                    } )
                 } )
 
                 SMK.HANDLER.set( 'directions-route', 'print', function ( smk, tool, key, opt ) {
@@ -303,21 +303,21 @@
                             template: '#truck-selection',
                             el: el,
                             data: {
-                                vehicleTypes: JSON.parse( JSON.stringify( TRP.vehicleTypes ) ), 
+                                vehicleTypes: JSON.parse( JSON.stringify( TRP.vehicleTypes ) ),
                                 vehicleIndex: tool.trp && tool.trp.vehicleIndex,
                                 configIndex: tool.trp && tool.trp.configIndex,
                             },
                             computed: {
                                 vehicleStyle: function () {
                                     if ( this.vehicleIndex == null ) return
-                                    return { 
-                                        'background-image': 'url( "' + this.vehicleTypes[ this.vehicleIndex ].image + '" )' 
+                                    return {
+                                        'background-image': 'url( "' + this.vehicleTypes[ this.vehicleIndex ].image + '" )'
                                     }
                                 }
                             },
-                            methods: {               
+                            methods: {
                                 selectVehicle: function ( vehicleIndex ) {
-                                    var self = this 
+                                    var self = this
 
                                     this.vehicleIndex = vehicleIndex
 
@@ -326,7 +326,7 @@
                                             return a.default
                                         } )
 
-                                        if ( defaultIndex == -1 ) return 
+                                        if ( defaultIndex == -1 ) return
 
                                         self.selectConfig( defaultIndex )
                                     } )
@@ -334,14 +334,14 @@
 
                                 selectConfig: function ( configIndex ) {
                                     this.configIndex = configIndex
-                                    
+
                                     var config = this.vehicleTypes[ this.vehicleIndex ].configs[ this.configIndex ]
 
                                     tool.truckHeight = config.height
                                     tool.truckWidth = config.width
                                     tool.truckLength = config.length
                                     tool.truckWeight = config.weight
-                                    tool.oversize = config.oversize 
+                                    tool.oversize = config.oversize
 
                                     tool.trp = {
                                         vehicleIndex: this.vehicleIndex,
@@ -362,8 +362,8 @@
                         smk.on( tool.id, {
                             'change': function ( ev ) {
                                 var config = vm.$data.vehicleTypes[ vm.$data.vehicleIndex ].configs[ vm.$data.configIndex ]
-                                
-                                tool.oversize = config.oversize 
+
+                                tool.oversize = config.oversize
                                             || config.height < tool.truckHeight
                                             || config.width < tool.truckWidth
                                             || config.length < tool.truckLength
@@ -392,7 +392,7 @@
                                 s.properties[ '@layer' ] = '@unverified'
                             }
                         } )
-                        
+
                         TRP.makeReports( response ).then( function ( reports ) {
                             if ( !reports || reports.length == 0 ) return
 
@@ -406,21 +406,21 @@
                 SMK.HANDLER.set( 'bespoke--about', 'activated', function ( smk, tool, el ) {
                     include( [ { url: './fragments/about.html' }, { url: './fragments/about.css' } ], 'bespoke--about' ).then( function ( inc ) {
                         el.innerHTML = htmlTemplate( inc[ 'bespoke--about.about-html' ], {
-                            package: package 
+                            package: package
                         } )
-                    } ) 
+                    } )
                 } )
 
                 SMK.HANDLER.set( 'bespoke--glossary', 'activated', function ( smk, tool, el ) {
                     include( [ { url: './fragments/glossary.html' }, { url: './fragments/glossary.css' } ], 'bespoke--glossary' ).then( function ( inc ) {
                         el.innerHTML = inc[ 'bespoke--glossary.glossary-html' ]
-                    } ) 
+                    } )
                 } )
 
                 SMK.HANDLER.set( 'bespoke--contacts', 'activated', function ( smk, tool, el ) {
                     include( [ { url: './fragments/contacts.html' }, { url: './fragments/contacts.css' } ], 'bespoke--contacts' ).then( function ( inc ) {
                         el.innerHTML = inc[ 'bespoke--contacts.contacts-html' ]
-                    } ) 
+                    } )
                 } )
 
                 SMK.HANDLER.set( 'bespoke--reports', 'activated', function ( smk, tool, el ) {
@@ -433,11 +433,11 @@
                                     reports: routingReports.map( function ( r ) {
                                         r.component.data = function () { return r.component.dataObj }
                                         return r
-                                    } ) 
+                                    } )
                                 }
                             }
-                        } 
-                    } ) 
+                        }
+                    } )
                 } )
 
                 $( 'body' ).removeClass( 'hide' )
@@ -446,7 +446,7 @@
             function htmlTemplate( template, data ) {
                 return ( new Vue( { template: '<div>' + template + '</div>', data: data } ) ).$mount().$el.innerHTML
             }
-        } )()        
+        } )()
         </script>
 
     </body>
