@@ -54,3 +54,6 @@
     display: none;
 }
 
+.smk-map-frame .smk-sidepanel .smk-panel .smk-commands {
+    flex-shrink: 0;
+}
