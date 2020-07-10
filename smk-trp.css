@@ -1,5 +1,5 @@
-.smk-map-frame .smk-overlay * {
-    touch-action: none;
+.smk-map-frame .smk-overlay .smk-panel .smk-body, .smk-map-frame .smk-overlay .smk-panel .smk-body * {
+    touch-action: pan-y;
 }
 
 .smk-map-frame .smk-toolbar .smk-bespoke--reports-tool {
