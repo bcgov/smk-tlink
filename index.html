@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
         <title>TRP - Translink</title>
 
@@ -21,7 +21,7 @@
     </head>
 
     <body class="hide">
-        <dialog id="disclaimer">
+        <dialog id="disclaimer" class="no-zoom">
             <form>
                 <header>
                     <span class="translink-logo"></span>Truck Route Planner
@@ -39,7 +39,7 @@
         </dialog>
 
         <article>
-            <header id="logo">
+            <header id="logo" class="no-zoom">
                 <span class="translink-logo"></span>Truck Route Planner
             </header>
 
@@ -255,6 +255,14 @@
                     '?'
                 ] ),
             } ).then( function () {
+                // suppress double-tap to zoom
+                $( '.no-zoom, .smk-overlay' ).bind( 'touchend', function( e ) {
+                    e.preventDefault()
+
+                    // console.log(e.target)
+                    $( e.target ).click()
+                } )
+
                 $( 'body' ).addClass( 'device-' + SMK.MAP[ 1 ].$device )
 
                 SMK.HANDLER.set( 'bespoke--feedback', 'initialized', function ( smk ) {} )
