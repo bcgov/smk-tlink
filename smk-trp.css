@@ -1,3 +1,7 @@
+.smk-map-frame .smk-overlay .smk-panel .smk-body, .smk-map-frame .smk-overlay .smk-panel .smk-body * {
+    touch-action: pan-y;
+}
+
 .smk-map-frame .smk-toolbar .smk-bespoke--reports-tool {
     color: red;
 }
@@ -50,3 +54,6 @@
     display: none;
 }
 
+.smk-map-frame .smk-sidepanel .smk-panel .smk-commands {
+    flex-shrink: 0;
+}

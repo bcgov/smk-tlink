@@ -21,6 +21,8 @@ header {
     padding:            0 5px;
     align-items:        center;
     margin:             0;
+
+    touch-action: none;
 }
 
 header .translink-logo {
@@ -70,7 +72,7 @@ dialog {
     font-family:"Meta W01 Medium", Arial, Helvetica, sans-serif;
     z-index: 3;
     padding: 0;
-    border: none;      
+    border: none;
     min-height: auto;
 }
 
