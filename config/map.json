@@ -116,7 +116,10 @@
         "url": "https://geocoder.api.gov.bc.ca/",
         "parameter": {
           "maxDistance": 50,
-          "locationMode": "input"
+          "locationMode": "input",
+          "brief": false,
+          "minScore": 50,
+          "echo": true
         }
       },
       "truck": true,

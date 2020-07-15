@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>BETA - CVRP - Translink</title>
+        <title>Trunk Route Planner</title>
         
         <!-- SMK BOOTSTRAP - - - - - - - -->
         <script src="lib/smk.js"></script>
@@ -37,11 +37,20 @@
                 height: 70px;
 
                 border-bottom:      2px solid #fcba19;
-                background-color: #036;
+                background-color: #fff;
+                color: #000;
 
                 display:            flex;
                 justify-content:    flex-start;
                 align-items:        center;
+            }
+
+            header .bc-logo {
+                filter: invert( 0% );
+            } 
+
+            header .translink-logo {
+                filter: invert( 0% );
             }
 
             .build-info {
@@ -55,14 +64,13 @@
                 padding-right: 10px;
             }
 
-            img.siteLogo {
+            header img {
                 margin-left:    10px;
                 margin-bottom:  10px;
                 height: 40px;
             }
 
             .header-title {
-                color:          white;
                 margin-left:    20px;
 
                 display:        flex;
@@ -120,11 +128,6 @@
             .address {
                 font-size: 20px;
                 font-weight: bold;
-            }
-
-            .notifications {
-                font-style: italic;
-                font-size: 14px;
             }
 
             .directions {
@@ -250,8 +253,9 @@
             <div id="route-pages">
                 <article>
                     <header>
-                        <img src="https://tlweblibs.translink.ca/TransLink-logo-white.svg" alt="TransLink Logo" class="siteLogo">
-                        <div class="header-title">Truck Route Planner Beta</div>
+                        <img src="images/BCID_H_rgb_pos.png" alt="BC Logo" class="bc-logo">
+                        <img src="images/translink-logo-black.svg" alt="TransLink Logo" class="translink-logo">
+                        <div class="header-title">Truck Route Planner</div>
                         <div class="build-info"></div>
                     </header>
                         
@@ -287,9 +291,9 @@
                     v-for="page in pages"
                 >
                     <header>
-                        <img src="https://tlweblibs.translink.ca/TransLink-logo-white.svg" alt="TransLink Logo" class="siteLogo">
-                        <div class="header-title">Truck Route Planner Beta</div>
-                        <div class="build-info"></div>
+                        <img src="images/BCID_H_rgb_pos.png" alt="BC Logo" class="bc-logo">
+                        <img src="images/translink-logo-black.svg" alt="TransLink Logo" class="translink-logo">
+                        <div class="header-title">Truck Route Planner</div>
                     </header>
                         
                     <div class="page">
@@ -346,8 +350,9 @@
 
                 <article class="notifications">
                     <header>
-                        <img src="https://tlweblibs.translink.ca/TransLink-logo-white.svg" alt="TransLink Logo" class="siteLogo">
-                        <div class="header-title">Truck Route Planner Beta</div>
+                        <img src="images/BCID_H_rgb_pos.png" alt="BC Logo" class="bc-logo">
+                        <img src="images/translink-logo-black.svg" alt="TransLink Logo" class="translink-logo">
+                        <div class="header-title">Truck Route Planner</div>
                         <div class="build-info"></div>
                     </header>
 
@@ -381,8 +386,9 @@
 
                 <article class="disclaimer">
                     <header>
-                        <img src="https://tlweblibs.translink.ca/TransLink-logo-white.svg" alt="TransLink Logo" class="siteLogo">
-                        <div class="header-title">Truck Route Planner Beta</div>
+                        <img src="images/BCID_H_rgb_pos.png" alt="BC Logo" class="bc-logo">
+                        <img src="images/translink-logo-black.svg" alt="TransLink Logo" class="translink-logo">
+                        <div class="header-title">Truck Route Planner</div>
                         <div class="build-info"></div>
                     </header>
 
@@ -632,7 +638,7 @@
                         isVisible: true,
                         dataUrl: 'data:application/json,' + JSON.stringify( turf.lineString( dirs.route ) ),
                         style: {
-                            strokeColor: "yellow",
+                            strokeColor: "#10dee6",
                             strokeWidth: 4,
                             strokeOpacity: 1
                         },
