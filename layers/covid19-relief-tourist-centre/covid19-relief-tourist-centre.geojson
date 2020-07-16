@@ -1,9 +1,9 @@
 {
 "type": "FeatureCollection",
-"totalFeatures": 126,
-"numberMatched": 126,
-"numberReturned": 126,
-"timeStamp": "2020-06-30T23:03:18.144Z",
+"totalFeatures": 206,
+"numberMatched": 206,
+"numberReturned": 206,
+"timeStamp": "2020-07-16T21:20:40.947Z",
 "name": "covid19-relief-tourist-centre",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
