@@ -1,1 +1,57 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","id":"GM_TemporaryRoadClosures.1","geometry":{"type":"Point","coordinates":[-122.9126511,49.20047734]},"geometry_name":"Shape","properties":{"ClosureName":"Front St Closed at Begbie St & Columbia Street","StartDate":"2018-04-01T00:00:00Z","EndDate":"2018-11-01T00:00:00Z","Status":"Inactive","Link":"http://www.metrovancouver.org/services/liquid-waste/construction-maintenance/front-street-sewer","Notes":null,"ClosureDescription":"Metro Vancouver will begin sewer construction at the intersection of Columbia Street and Front Street in New Westminster during the week of April 16.  All truck traffic with three or more axles will be detoured along Royal Avenue or should plan an alternate route."}},{"type":"Feature","id":"GM_TemporaryRoadClosures.2","geometry":{"type":"Point","coordinates":[-123.09415059,49.3209859]},"geometry_name":"Shape","properties":{"ClosureName":"Mosquito Creek Bridge Replacement","StartDate":"2020-02-18T00:00:00Z","EndDate":"2020-08-31T00:00:00Z","Status":"Active","Link":"https://www.cnv.org/property-and-development/projects-and-developments/major-studies-and-projects/mosquito-creek-bridge-replacement","Notes":null,"ClosureDescription":"A truck detour around the Mosquito Creek Bridge, between Fell Ave and Bewicke Ave in North Vancouver will be in place for approximately six months, beginning February 18, 2020. The bridge replacement project involves lane closures and a reduction of the bridge load rating to maximum 20,000 kg gross vehicle weight (GVW), hence requiring heavy trucks to detour around the bridge. Detour route suggestions and additional information about the project are available on the City of North Vancouver’s website."}},{"type":"Feature","id":"GM_TemporaryRoadClosures.3","geometry":{"type":"Point","coordinates":[-122.89917657,49.20775513]},"geometry_name":"Shape","properties":{"ClosureName":"Temporary Front Street Closure on Weekends and Holidays, Summer 2020 (8:00 AM to 8:00 PM)","StartDate":"2020-07-04T08:00:00Z","EndDate":"2020-09-07T20:00:00Z","Status":"Active","Link":"https://www.newwestcity.ca/2020/06/29/front-street-open-to-walking-wheeling-and-biking-on-weekends.php#:~:text=As%20part%20of%20the%20city's,around%20while%20respecting%20physical%20distancing.","Notes":null,"ClosureDescription":"Front Street in the City of New Westminster is closed to all vehicle traffic between E. Columbia Street and Begbie Street on weekends and statutory holidays between 8:00 AM and 8:00 PM. This is a temporary closure in effect as of July 4, 2020 through September 7, 2020. The alternate route for trucks is via Royal Avenue while the closure is in effect (<a href=\"http://www.regionalroads.com/files/FrontStreetClosureMap.pdf\" target=\"_blank\">PDF<\/a>)  Please contact the City of New Westminster for additional information."}}],"totalFeatures":3,"numberMatched":3,"numberReturned":3,"timeStamp":"2020-07-30T16:41:20.081Z","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::4326"}}}
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": "GM_TemporaryRoadClosures.2",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.09415059,
+                    49.3209859
+                ]
+            },
+            "geometry_name": "Shape",
+            "properties": {
+                "ClosureName": "Mosquito Creek Bridge Replacement",
+                "StartDate": "2020-02-18T00:00:00Z",
+                "EndDate": "2020-08-31T00:00:00Z",
+                "Status": "Active",
+                "Link": "https://www.cnv.org/property-and-development/projects-and-developments/major-studies-and-projects/mosquito-creek-bridge-replacement",
+                "Notes": null,
+                "ClosureDescription": "A truck detour around the Mosquito Creek Bridge, between Fell Ave and Bewicke Ave in North Vancouver will be in place for approximately six months, beginning February 18, 2020. The bridge replacement project involves lane closures and a reduction of the bridge load rating to maximum 20,000 kg gross vehicle weight (GVW), hence requiring heavy trucks to detour around the bridge. Detour route suggestions and additional information about the project are available on the City of North Vancouver’s website."
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "GM_TemporaryRoadClosures.3",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.89917657,
+                    49.20775513
+                ]
+            },
+            "geometry_name": "Shape",
+            "properties": {
+                "ClosureName": "Temporary Front Street Closure on Weekends and Holidays, Summer 2020 (8:00 AM to 8:00 PM)",
+                "StartDate": "2020-07-04T08:00:00Z",
+                "EndDate": "2020-09-07T20:00:00Z",
+                "Status": "Active",
+                "Link": "https://www.newwestcity.ca/2020/06/29/front-street-open-to-walking-wheeling-and-biking-on-weekends.php#:~:text=As%20part%20of%20the%20city's,around%20while%20respecting%20physical%20distancing.",
+                "Notes": null,
+                "ClosureDescription": "Front Street in the City of New Westminster is closed to all vehicle traffic between E. Columbia Street and Begbie Street on weekends and statutory holidays between 8:00 AM and 8:00 PM. This is a temporary closure in effect as of July 4, 2020 through September 7, 2020. The alternate route for trucks is via Royal Avenue while the closure is in effect (<a href=\"http://www.regionalroads.com/files/FrontStreetClosureMap.pdf\" target=\"_blank\">PDF<\/a>)  Please contact the City of New Westminster for additional information."
+            }
+        }
+    ],
+    "totalFeatures": 3,
+    "numberMatched": 3,
+    "numberReturned": 3,
+    "timeStamp": "2020-07-30T16:41:20.081Z",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+        }
+    }
+}
