@@ -11,8 +11,8 @@
                     "title": "Closure Name"
                 },
                 {
-                    "name": "ClosureDescription",
-                    "title": "Closure Description"
+                    "title": "Closure Description",
+                    "format": "asHTML( this.feature.properties.ClosureDescription )"
                 },
                 {
                     "name": "StartDate",
