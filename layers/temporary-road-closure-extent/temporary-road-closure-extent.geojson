@@ -1,8 +1,273 @@
 {
-"type": "FeatureCollection",
-"name": "temporary-road-closure-extent",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Status": "Active", "StartDate": "2020\/02\/18 00:00:00", "EndDate": "2020\/07\/31 00:00:00", "Link": "https:\/\/www.cnv.org\/property-and-development\/projects-and-developments\/major-studies-and-projects\/mosquito-creek-bridge-replacement", "Notes": null, "ClosureName": "Mosquito Creek Bridge Replacement", "ClosureDescription": "A truck detour around the Mosquito Creek Bridge, between Fell Ave and Bewicke Ave in North Vancouver will be in place for approximately five months, beginning February 18, 2020. The bridge replacement project involves lane closures and a reduction of the bridge load rating to maximum 20,000 kg gross vehicle weight (GVW), hence requiring heavy trucks to detour around the bridge. Detour route suggestions and additional information about the project are available on the City of North Vancouver’s website.", "Shape_Length": 1639.816972263251, "Shape_Area": 42541.035244593571 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -123.09138, 49.32032 ], [ -123.09144, 49.3198 ], [ -123.09465, 49.32093 ], [ -123.09834, 49.32214 ], [ -123.10095, 49.32313 ], [ -123.10042, 49.32346 ], [ -123.09694, 49.32226 ], [ -123.09406, 49.32128 ], [ -123.09138, 49.32032 ] ] ] ] } }
-]
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": "GM_TemporaryRoadClosuresExtent.2",
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -123.0913828,
+                                49.32031808
+                            ],
+                            [
+                                -123.09143581,
+                                49.31979972
+                            ],
+                            [
+                                -123.09465358,
+                                49.32092607
+                            ],
+                            [
+                                -123.0983427,
+                                49.32213874
+                            ],
+                            [
+                                -123.10095258,
+                                49.32312592
+                            ],
+                            [
+                                -123.10042438,
+                                49.32346016
+                            ],
+                            [
+                                -123.0969427,
+                                49.3222617
+                            ],
+                            [
+                                -123.09405542,
+                                49.321284
+                            ],
+                            [
+                                -123.0913828,
+                                49.32031808
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "geometry_name": "Shape",
+            "properties": {
+                "Status": "Active",
+                "StartDate": "2020-02-18T00:00:00Z",
+                "EndDate": "2020-08-31T00:00:00Z",
+                "Link": "https://www.cnv.org/property-and-development/projects-and-developments/major-studies-and-projects/mosquito-creek-bridge-replacement",
+                "Notes": null,
+                "ClosureName": "Mosquito Creek Bridge Replacement",
+                "ClosureDescription": "A truck detour around the Mosquito Creek Bridge, between Fell Ave and Bewicke Ave in North Vancouver will be in place for approximately six months, beginning February 18, 2020. The bridge replacement project involves lane closures and a reduction of the bridge load rating to maximum 20,000 kg gross vehicle weight (GVW), hence requiring heavy trucks to detour around the bridge. Detour route suggestions and additional information about the project are available on the City of North Vancouver’s website.",
+                "Shape_Length": 1639.81697226325,
+                "Shape_Area": 42541.0352445936
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "GM_TemporaryRoadClosuresExtent.3",
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                -122.90981478,
+                                49.20140186
+                            ],
+                            [
+                                -122.9096462,
+                                49.2012647
+                            ],
+                            [
+                                -122.90932215,
+                                49.20143801
+                            ],
+                            [
+                                -122.90905856,
+                                49.20158194
+                            ],
+                            [
+                                -122.90834688,
+                                49.20195998
+                            ],
+                            [
+                                -122.90802283,
+                                49.20212821
+                            ],
+                            [
+                                -122.90747081,
+                                49.20243633
+                            ],
+                            [
+                                -122.9072165,
+                                49.20258229
+                            ],
+                            [
+                                -122.90588305,
+                                49.20326736
+                            ],
+                            [
+                                -122.90535575,
+                                49.20359986
+                            ],
+                            [
+                                -122.9051076,
+                                49.20375799
+                            ],
+                            [
+                                -122.90467942,
+                                49.20409057
+                            ],
+                            [
+                                -122.90338928,
+                                49.20477158
+                            ],
+                            [
+                                -122.90160888,
+                                49.20580945
+                            ],
+                            [
+                                -122.89993352,
+                                49.20696107
+                            ],
+                            [
+                                -122.89922587,
+                                49.20757352
+                            ],
+                            [
+                                -122.89845602,
+                                49.20828741
+                            ],
+                            [
+                                -122.89787242,
+                                49.20882283
+                            ],
+                            [
+                                -122.89737539,
+                                49.20944357
+                            ],
+                            [
+                                -122.8966231,
+                                49.21062844
+                            ],
+                            [
+                                -122.8957713,
+                                49.21195937
+                            ],
+                            [
+                                -122.89460829,
+                                49.21390713
+                            ],
+                            [
+                                -122.89437162,
+                                49.21445096
+                            ],
+                            [
+                                -122.89442696,
+                                49.21465807
+                            ],
+                            [
+                                -122.89452597,
+                                49.21453373
+                            ],
+                            [
+                                -122.89456928,
+                                49.2144283
+                            ],
+                            [
+                                -122.89465278,
+                                49.21425509
+                            ],
+                            [
+                                -122.89508968,
+                                49.21351873
+                            ],
+                            [
+                                -122.89559308,
+                                49.21277452
+                            ],
+                            [
+                                -122.89628461,
+                                49.21168982
+                            ],
+                            [
+                                -122.89720058,
+                                49.21023299
+                            ],
+                            [
+                                -122.89784953,
+                                49.20924331
+                            ],
+                            [
+                                -122.89825548,
+                                49.20880795
+                            ],
+                            [
+                                -122.89936993,
+                                49.20779887
+                            ],
+                            [
+                                -122.90067788,
+                                49.20674637
+                            ],
+                            [
+                                -122.90191885,
+                                49.20590769
+                            ],
+                            [
+                                -122.90498117,
+                                49.20413967
+                            ],
+                            [
+                                -122.90527783,
+                                49.20390225
+                            ],
+                            [
+                                -122.9075289,
+                                49.20266824
+                            ],
+                            [
+                                -122.90778312,
+                                49.20248623
+                            ],
+                            [
+                                -122.90930794,
+                                49.20166751
+                            ],
+                            [
+                                -122.90930794,
+                                49.20166751
+                            ],
+                            [
+                                -122.90981478,
+                                49.20140186
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "geometry_name": "Shape",
+            "properties": {
+                "Status": "Active",
+                "StartDate": "2020-07-04T08:00:00Z",
+                "EndDate": "2020-09-07T20:00:00Z",
+                "Link": "https://www.newwestcity.ca/2020/06/29/front-street-open-to-walking-wheeling-and-biking-on-weekends.php#:~:text=As%20part%20of%20the%20city's,around%20while%20respecting%20physical%20distancing.",
+                "Notes": null,
+                "ClosureName": "Temporary Front Street Closure on Weekends and Holidays, Summer 2020 (8:00 AM to 8:00 PM)",
+                "ClosureDescription": "Front Street in the City of New Westminster is closed to all vehicle traffic between E. Columbia Street and Begbie Street on weekends and statutory holidays between 8:00 AM and 8:00 PM. This is a temporary closure in effect as of July 4, 2020 through September 7, 2020. The alternate route for trucks is via Royal Avenue while the closure is in effect (<a href=\"http://www.regionalroads.com/files/FrontStreetClosureMap.pdf\" target=\"_blank\">PDF<\/a>) Please contact the City of New Westminster for additional information.",
+                "Shape_Length": null,
+                "Shape_Area": null
+            }
+        }
+    ],
+    "totalFeatures": 3,
+    "numberMatched": 3,
+    "numberReturned": 3,
+    "timeStamp": "2020-07-30T16:41:13.779Z",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+        }
+    }
 }
