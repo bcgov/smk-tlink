@@ -4,7 +4,7 @@ filter () {
     echo
     mkdir -p "temp/layers/$3"
     local out="temp/layers/$3/$3.geojson"
-    jq -c ".features |= [ .[] | if .properties | $2 then del( .id, .geometry_name ) else empty end ] | .name = \"$3\" | del( .totalFeatures, .numberMatched, .numberReturned, .timeStamp ) $4" $1 | ogr2ogr  "$out" /vsistdin/ -lco COORDINATE_PRECISION=5
+    jq -c ".features |= [ .[] | if .properties | $2 then del( .id, .geometry_name ) else empty end ] | .name = \"$3\" | .features |= sort_by( .geometry.coordinates ) | del( .totalFeatures, .numberMatched, .numberReturned, .timeStamp ) $4" $1 | ogr2ogr  "$out" /vsistdin/ -lco COORDINATE_PRECISION=5
     echo "$1 ( $( jq ".features|length" "$1" ) ) -> $out ( $( jq ".features|length" "$out" ) )"
 }
 
