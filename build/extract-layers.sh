@@ -66,11 +66,11 @@ filter temp/geojson/GM_TermPermitRoutes.geojson '.TermPermitType == "Term Permit
 filter temp/geojson/GM_TemporaryRoadClosuresExtent.geojson '.Status == "Active"' temporary-road-closure-extent
 filter temp/geojson/GM_TemporaryRoadClosures.geojson '.Status == "Active"' temporary-road-closure
 
-filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Cardlock"' covid19-relief-cardlock
-filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Food Truck"' covid19-relief-food-truck
-filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Hotel"' covid19-relief-hotel
-filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Inspection Station"' covid19-relief-inspection-station
-filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Portable Toilet"' covid19-relief-portable-toilet
-filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Rest Area"' covid19-relief-rest-area
-filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Temporary Truck Parking"' covid19-relief-temporary-truck-parking
-filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Tourist Centre"' covid19-relief-tourist-centre
+# filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Cardlock"' covid19-relief-cardlock
+# filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Food Truck"' covid19-relief-food-truck
+# filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Hotel"' covid19-relief-hotel
+# filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Inspection Station"' covid19-relief-inspection-station
+# filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Portable Toilet"' covid19-relief-portable-toilet
+# filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Rest Area"' covid19-relief-rest-area
+# filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Temporary Truck Parking"' covid19-relief-temporary-truck-parking
+# filter temp/geojson/GM_Covid19Relief.geojson '.Active and .AmenityType == "Tourist Centre"' covid19-relief-tourist-centre
