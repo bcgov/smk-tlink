@@ -160,51 +160,6 @@
                 return '<%= this.feature.properties[ "' + attrName + '" ] ? "Yes" : "" %>'
             }
 
-            var covid19Layers = [
-                'cardlock',
-                'food-truck',
-                'hotel',
-                'inspection-station',
-                'portable-toilet',
-                'rest-area',
-                'temporary-truck-parking',
-                'tourist-centre',
-            ].reduce( function ( acc, n ) {
-                return acc.concat(
-                    './layers/covid19-relief-' + n + '/config.json',
-                    { layers: [ { id: 'covid19-relief-' + n, titleAttribute: 'Name', attributes: [
-                        /*{ name: "Active", title: "Active" },*/
-                        { title: "Name",                        name: "Name" },
-                        { title: "Amenity Type",                name: "AmenityType" },
-                        { title: "Address",                     name: "Address" },
-                        { title: "Building Type",               name: "BuildingType" },
-                        { title: "Amenity Location",            name: "AmenityLocation" },
-                        { title: "Streetview",                  format: "asLink( this.feature.properties.StreetviewLink, 'Link' )" },
-                        { title: "Information",                 format: "asLink( this.feature.properties.InformationLink, 'Link' )" },
-                        { title: "Document",                    format: "asLink( this.feature.properties.DocumentLink, 'Link' )" },
-                        { title: "Open Hours",                  name: "OpenHours" },
-                        { title: "Parking Lot",                 value: formatYesNo( 'ParkingLot' ) },
-                        { title: "Parking Lot Hours",           name: "ParkingLotHours" },
-                        { title: "Parking Spaces",              name: "ParkingSpaces" },
-                        { title: "Curbside Parking",            value: formatYesNo( 'CurbsideParking' ) },
-                        { title: "Curbside Parking Hours",      name: "CurbsideParkingHours" },
-                        { title: "Food Nearby",                 value: formatYesNo( 'FoodNearby' ) },
-                        { title: "Directions To Food",          format: "asHTML( this.feature.properties.DirectionsToFood )" },
-                        { title: "Washroom Nearby",             value: formatYesNo( 'WashroomNearby' ) },
-                        { title: "Directions To Washroom",      format: "asHTML( this.feature.properties.DirectionsToWashroom )" },
-                        { title: "Showers Nearby",              value: formatYesNo( 'ShowersNearby' ) },
-                        { title: "Directions To Showers",       format: "asHTML( this.feature.properties.DirectionsToShowers )" },
-                        { title: "Garbage Bin Nearby",          value: formatYesNo( 'GarbageBinNearby' ) },
-                        { title: "Directions To Garbage Bin",   format: "asHTML( this.feature.properties.DirectionsToGarbageBin )" },
-                        { title: "Other Amenity",               name: "OtherAmenity" },
-                        { title: "Directions To Other Amenity", format: "asHTML( this.feature.properties.DirectionsToOtherAmenity )" },
-                        { title: "Terms Of Use",                name: "TermsOfUse" },
-                        { title: "Comments",                    format: "asHTML( this.feature.properties.Comments )" },
-                        { title: "Contact Info",                format: "asHTML( this.feature.properties.ContactInfo )",                name: "ContactInfo" }
-                    ] } ] }
-                )
-            }, [] )
-
             var defaultVehicle = TRP.vehicleTypes[ 0 ].configs[ 0 ]
             SMK.INIT( {
                 'smk-container-sel': "#smk-map-frame",
@@ -240,7 +195,7 @@
                     './layers/truck-routes-municipal-road-with-no-truck-travel-restriction/config.json',
                     './layers/temporary-road-closure/config.json',
                     './layers/temporary-road-closure-extent/config.json'
-                ], covid19Layers, [
+                ], [
                     './config/map.json',
                     './config/layer-display.json',
                     {
