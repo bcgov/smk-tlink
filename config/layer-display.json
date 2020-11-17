@@ -5,21 +5,6 @@
             "display": [
                 {
                     "type": "group",
-                    "title": "COVID 19 Relief",
-                    "isVisible": true,
-                    "items": [
-                        { "id": "covid19-relief-cardlock" },
-                        { "id": "covid19-relief-food-truck" },
-                        { "id": "covid19-relief-hotel" },
-                        { "id": "covid19-relief-inspection-station" },
-                        { "id": "covid19-relief-portable-toilet" },
-                        { "id": "covid19-relief-rest-area" },
-                        { "id": "covid19-relief-temporary-truck-parking" },
-                        { "id": "covid19-relief-tourist-centre" }
-                    ]
-                },
-                { 
-                    "type": "group",
                     "title": "Truck Routes",
                     "isVisible": true,
                     "items": [
@@ -76,23 +61,23 @@
                         { "id": "oversize-overweight-truck-routes-gvw-up-to-125000-kg", "class": "smk-inline-legend" }
                     ]
                 },
-                { 
+                {
                     "type": "folder",
                     "title": "Height Restrictions",
                     "isVisible": true,
                     "isExpanded": true,
-                    "items": [                
+                    "items": [
                         { "id": "overhead-structure-with-height-marker", "isVisible": true, "class": "smk-inline-legend" },
                         { "id": "overhead-structure-without-height-marker", "isVisible": false, "class": "smk-inline-legend" },
                         { "id": "overhead-directional-signs", "isVisible": false, "class": "smk-inline-legend" }
                     ]
                 },
-                { 
+                {
                     "type": "folder",
                     "title": "Special Areas & POIs",
                     "isVisible": true,
                     "isExpanded": true,
-                    "items": [                
+                    "items": [
 
                         { "id": "inspection-station", "isVisible": true, "class": "smk-inline-legend" },
                         { "id": "cardlock", "isVisible": false, "class": "smk-inline-legend" },

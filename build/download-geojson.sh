@@ -23,7 +23,7 @@ echo "Copying cached datasets"
 cp -v cache/* temp/geojson
 
 download GM_Cardlock
-download GM_Covid19Relief
+# download GM_Covid19Relief
 download GM_DangerousGoodsRestrictions
 # download GM_DangerousGoodsRoutes
 download GM_DowntownVancouver
