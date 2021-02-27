@@ -73,7 +73,7 @@ dialog {
     justify-content: center;
     align-items: center;
     max-width: 50em;
-    max-height: 55em;
+    max-height: calc( 100% - 5em );
     font-family:"Meta W01 Medium", Arial, Helvetica, sans-serif;
     z-index: 3;
     padding: 0;
@@ -86,6 +86,7 @@ dialog form {
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
+    min-height: 0;
 }
 
 dialog header {
