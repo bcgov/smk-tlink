@@ -1,0 +1,54 @@
+kind: BuildConfig
+apiVersion: build.openshift.io/v1
+metadata:
+  name: truck-route-planner-dev-bc
+  labels:
+    app: truck-route-planner-dev
+  nodeSelector: null
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'truck-route-planner-dev:latest'
+  resources: {}
+  successfulBuildsHistoryLimit: 5
+  failedBuildsHistoryLimit: 5
+  strategy:
+    type: Docker
+    dockerStrategy:
+      pullSecret:
+        name: artifactory-creds
+  postCommit: {}
+  source:
+    type: Dockerfile
+    dockerfile: >-
+      FROM docker-remote.artifacts.developer.gov.bc.ca/alpine:edge
+
+
+      RUN apk update \
+          && apk --no-cache add git openssh-client \
+          && apk --no-cache add --virtual devs tar curl
+
+      WORKDIR /app
+
+
+      RUN git clone -b develop https://github.com/bcgov/smk-tlink.git
+      /app/smk-tlink
+
+
+      RUN adduser -S app
+
+
+      RUN chown -R app:0 /app && chmod -R 770 /app
+
+
+      RUN apk del --purge devs  
+
+
+      USER app
+  triggers:
+    - type: Generic
+      generic:
+        secretReference:
+          name: github-smk-tlink-dev-webhook-key
+  runPolicy: Serial
+
