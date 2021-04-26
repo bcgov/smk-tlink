@@ -1,0 +1,219 @@
+apiVersion: template.openshift.io/v1
+kind: Template
+labels:
+  template: truck-route-planner-template
+metadata:
+  name: truck-route-planner-template
+
+parameters:
+  - name: "DEPLOY_NAMESPACE"
+    description: "ocp namespace to be deployed"
+    value: namespace
+  - name: "APP_NAME"
+    description: "name of app"
+    value: truck-route-planner
+  - name: "ENV"
+    description: "environment"
+    value: dev
+  - name: "GIT_URL"
+    description: "github repo rul"
+    value: https://github.com/bcgov/smk-tlink.git
+  - name: "GIT_BRANCH"
+    description: "github repo branch"
+    value: dev
+  - name: "TOOLS_NAMESPACE"
+    description: "tools namespace where build will be"
+    value: tools_namespace
+  - name: "API_KEY"
+    description: "Route Planner Service API Key"
+    value: secret
+ 
+objects:
+ 
+  - apiVersion: route.openshift.io/v1
+    kind: Route
+    metadata:
+      labels:
+        app: ${APP_NAME}-${ENV}
+      name: ${APP_NAME}-${ENV}-route
+    spec:
+      host: ${APP_NAME}-${ENV}.apps.silver.devops.gov.bc.ca
+      port:
+        targetPort: http-proxy
+      tls:
+        termination: edge
+      to:
+        kind: Service
+        name: ${APP_NAME}-${ENV}-service
+        weight: 100
+      wildcardPolicy: None
+ 
+  - apiVersion: v1
+    kind: Service
+    metadata:
+      labels:
+        app: ${APP_NAME}-${ENV}
+      name: ${APP_NAME}-${ENV}-service
+    spec:
+      ports:
+        - name: http-proxy
+          port: 8080
+          protocol: TCP
+          targetPort: 8080
+      selector:
+        app: ${APP_NAME}-${ENV}
+      sessionAffinity: None
+      type: ClusterIP
+ 
+  - apiVersion: v1
+    data:
+      caddifile: |-
+        0.0.0.0:8080 {
+        root /app/smk
+        gzip
+        log stdout
+        errors stdout
+        }
+    kind: ConfigMap
+    metadata:
+      labels:
+        app: ${APP_NAME}-${ENV}
+      name: ${APP_NAME}-${ENV}-caddyfile
+ 
+  - apiVersion: v1
+    data:
+      api-key: |-
+        {
+          "tools": [
+            {
+              "type": "directions",
+              "routePlannerService": {
+                "apiKey": "${API_KEY}"
+              }
+            }
+          ]
+        }
+    kind: ConfigMap
+    metadata:
+      name: ${APP_NAME}-${ENV}-api-key
+ 
+  - apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      generation: 10
+      labels:
+        app: ${APP_NAME}-${ENV}
+      name: ${APP_NAME}-${ENV}-dc
+    spec:
+      progressDeadlineSeconds: 600
+      replicas: 2
+      revisionHistoryLimit: 10
+      selector:
+        matchLabels:
+          app: ${APP_NAME}-${ENV}
+      strategy:
+        rollingUpdate:
+          maxSurge: 1
+          maxUnavailable: 1
+        type: RollingUpdate
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            app: ${APP_NAME}-${ENV}
+        spec:
+          containers:
+            - command:
+                - /go/caddy
+                - '-quic'
+                - '-conf'
+                - /conf/Caddyfile
+              env:
+                - name: hookPath
+                  value: /webhook
+                - name: hookKey
+                  valueFrom:
+                    secretKeyRef:
+                      key: caddy.webhook
+                      name: ${APP_NAME}-${ENV}-webhook-key
+              image: 'image-registry.openshift-image-registry.svc:5000/${TOOLS_NAMESPACE}/caddy-run:latest'
+              imagePullPolicy: Always
+              name: www
+              resources: {}
+              terminationMessagePath: /dev/termination-log
+              terminationMessagePolicy: File
+              volumeMounts:
+                - mountPath: /go
+                  name: bin-volume
+                - mountPath: /conf
+                  name: caddy-conf
+                - mountPath: /app/smk/trp
+                  name: site-data
+                - mountPath: /app/smk/trp/config/key/
+                  name: volume-xy8eh
+          dnsPolicy: ClusterFirst
+          initContainers:
+            - command:
+                - cp
+                - /usr/bin/caddy
+                - /dist
+              image: 'image-registry.openshift-image-registry.svc:5000/b16795-tools/caddy-build:latest'
+              imagePullPolicy: Always
+              name: installcaddy
+              resources: {}
+              terminationMessagePath: /dev/termination-log
+              terminationMessagePolicy: File
+              volumeMounts:
+                - mountPath: /dist
+                  name: bin-volume
+            - resources: {}
+              terminationMessagePath: /dev/termination-log
+              name: git-cloner
+              command:
+              - cp
+              - '-r'
+              - /app/smk-tlink/. 
+              - /app/smk/trp/
+              imagePullPolicy: Always
+              volumeMounts:
+                - name: site-data
+                  mountPath: /app/smk/trp
+              image: >-
+                image-registry.openshift-image-registry.svc:5000/${TOOLS_NAMESPACE}/${APP_NAME}-${ENV}:latest
+          restartPolicy: Always
+          schedulerName: default-scheduler
+          securityContext: {}
+          terminationGracePeriodSeconds: 30
+          volumes:
+            - emptyDir: {}
+              name: bin-volume
+            - configMap:
+                defaultMode: 420
+                items:
+                  - key: caddifile
+                    path: Caddyfile
+                name: ${APP_NAME}-${ENV}-caddyfile
+              name: caddy-conf
+            - name: site-data
+              persistentVolumeClaim:
+                claimName: ${APP_NAME}-${ENV}-pvc
+            - configMap:
+                defaultMode: 420
+                items:
+                  - key: api-key
+                    path: route-planner.json
+                name: ${APP_NAME}-${ENV}-api-key
+              name: volume-xy8eh
+ 
+  - apiVersion: v1
+    kind: PersistentVolumeClaim
+    metadata:
+      name: ${APP_NAME}-${ENV}-pvc
+    spec:
+      accessModes:
+      - ReadWriteMany
+      resources:
+        requests:
+          storage: 1Gi
+      storageClassName: netapp-file-standard
+ 
