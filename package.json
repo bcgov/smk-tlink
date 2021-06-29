@@ -13,5 +13,8 @@
     "grunt-cli": "^1.2.0",
     "grunt-contrib-connect": "^1.0.0",
     "grunt-zip": "^0.17.1"
+  },
+  "scripts": {
+      "start": "grunt"
   }
 }
