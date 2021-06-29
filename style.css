@@ -79,14 +79,16 @@ dialog {
     padding: 0;
     border: none;
     min-height: auto;
+    height: unset;
+    background-color: transparent;
 }
 
 dialog form {
     display:        flex;
     flex-direction: column;
-    height: 100%;
     justify-content: space-between;
     min-height: 0;
+    background-color: white;
 }
 
 dialog header {
