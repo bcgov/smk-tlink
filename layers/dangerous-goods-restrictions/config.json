@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "dangerous-goods-restrictions",
             "title": "Dangerous Goods Restrictions",
-            "dataUrl": "./layers/dangerous-goods-restrictions/dangerous-goods-restrictions.geojson",
+            "layerName": "GM_DangerousGoodsRestrictions",
             "xxscaleMin": 189394,
             "attributes": [
                 {
@@ -34,7 +34,8 @@
             },
             "legend": {
                 "point": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }

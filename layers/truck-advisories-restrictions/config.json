@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "truck-advisories-restrictions-high-zoom",
             "title": "Restrictions",
-            "dataUrl": "./layers/truck-advisories-restrictions/truck-advisories-restrictions.geojson",
+            "layerName": "GM_TruckRoutes",
             "scaleMin": 27437,
             "attributes": [
                 {
@@ -38,13 +38,14 @@
             },
             "legend": {
                 "line": true
-            }
+            },
+            "isInternal": true
         },
         {
             "type": "vector",
             "id": "truck-advisories-restrictions",
             "title": "Restrictions",
-            "dataUrl": "./layers/truck-advisories-restrictions/truck-advisories-restrictions.geojson",
+            "layerName": "GM_TruckRoutes",
             "scaleMax": 28505,
             "attributes": [
                 {
@@ -78,7 +79,8 @@
             },
             "legend": {
                 "line": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }

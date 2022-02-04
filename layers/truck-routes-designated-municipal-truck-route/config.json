@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "truck-routes-designated-municipal-truck-route-high-zoom",
             "title": "Designated Municipal Truck Route",
-            "dataUrl": "./layers/truck-routes-designated-municipal-truck-route/truck-routes-designated-municipal-truck-route.geojson",
+            "layerName": "GM_TruckRoutes",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/0636a01a-a13f-48f9-94cf-1c0e59b3ba6b",
             "scaleMin": 28505,
             "attributes": [
@@ -39,13 +39,14 @@
             },
             "legend": {
                 "line": true
-            }
+            },
+            "isInternal": true
         },
         {
             "type": "vector",
             "id": "truck-routes-designated-municipal-truck-route",
             "title": "Designated Municipal Truck Route",
-            "dataUrl": "./layers/truck-routes-designated-municipal-truck-route/truck-routes-designated-municipal-truck-route.geojson",
+            "layerName": "GM_TruckRoutes",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/0636a01a-a13f-48f9-94cf-1c0e59b3ba6b",
             "scaleMin": 4622325,
             "scaleMax": 28505,
@@ -81,7 +82,8 @@
             },
             "legend": {
                 "line": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }

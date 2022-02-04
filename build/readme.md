@@ -1,3 +1,6 @@
+# THIS IS OBSOLETE - NOT NEEDED ANYMORE
+# KEPT FOR REFERENCE PURPOSES
+
 # Instructions for updating the layer geo-data
 
 ## Prerequisites
