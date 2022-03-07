@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "overhead-directional-signs",
             "title": "Overhead Directional Signs",
-            "dataUrl": "./layers/overhead-directional-signs/overhead-directional-signs.geojson",
+            "layerName": "GM_OverheadStructures",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/f3c942c0-7188-4661-82c8-1c46a82f7520",
             "scaleMin": 207900,
             "attributes": [
@@ -35,7 +35,8 @@
             },
             "legend": {
                 "point": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }

@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "temporary-road-closure-extent",
             "title": "Temporary Road Closure Extent",
-            "dataUrl": "./layers/temporary-road-closure-extent/temporary-road-closure-extent.geojson",
+            "layerName": "GM_TemporaryRoadClosuresExtent",
             "attributes": [
                 {
                     "name": "ClosureName",
@@ -40,7 +40,8 @@
             },
             "legend": {
                 "fill": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }

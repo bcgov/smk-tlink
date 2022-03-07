@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "port-of-vancouver-facilities-terminals",
             "title": "Port of Vancouver Facilities / Terminals",
-            "dataUrl": "./layers/port-of-vancouver-facilities-terminals/port-of-vancouver-facilities-terminals.geojson",
+            "layerName": "GM_PortofVancouverFacilities",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/67e381f5-0ee3-437b-ba55-15789842f4db",
             "scaleMin": 207900,
             "attributes": [
@@ -39,7 +39,8 @@
             },
             "legend": {
                 "point": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }

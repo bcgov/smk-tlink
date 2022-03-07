@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "oversize-overweight-truck-routes-oah-up-to-4-88-m",
             "title": "Overall Height up to 4.88 m",
-            "dataUrl": "./layers/oversize-overweight-truck-routes-oah-up-to-4-88-m/oversize-overweight-truck-routes-oah-up-to-4-88-m.geojson",
+            "layerName": "GM_OSOWRoutes",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/4798ee98-f87d-400b-9926-704ba96ef6ab",
             "xxxscaleMin": 28505,
             "attributes": [
@@ -41,7 +41,8 @@
             ],
             "legend": {
                 "line": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }
