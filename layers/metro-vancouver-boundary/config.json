@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "metro-vancouver-boundary",
             "title": "Metro Vancouver Boundary",
-            "dataUrl": "./layers/metro-vancouver-boundary/metro-vancouver-boundary.geojson",
+            "layerName": "GM_MetroVancouverBoundary",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/874721e7-6d61-49f4-8bd0-379904575d2b",
             "attributes": [
                 {
@@ -19,7 +19,8 @@
             },
             "legend": {
                 "line": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }
