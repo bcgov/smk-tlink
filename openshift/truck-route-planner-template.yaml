@@ -27,6 +27,9 @@ parameters:
   - name: "API_KEY"
     description: "Route Planner Service API Key"
     value: secret
+  - name: "TLINK_API_HOST"
+    description: "The Translink GeoServer host subdomain."
+    value: devapi
  
 objects:
  
@@ -96,6 +99,18 @@ objects:
     kind: ConfigMap
     metadata:
       name: ${APP_NAME}-${ENV}-api-key
+
+  - apiVersion: v1
+    data:
+      value: |-
+        window.TLINK_CONFIG = {
+          "regionalRoadsApiUrl": "https://${TLINK_API_HOST}.regionalroads.com/simplewfs/"
+        }
+    kind: ConfigMap
+    metadata:
+      labels:
+        app: ${APP_NAME}-${ENV}
+      name: ${APP_NAME}-${ENV}-site-config
  
   - apiVersion: apps/v1
     kind: Deployment
@@ -151,6 +166,8 @@ objects:
                   name: site-data
                 - mountPath: /app/smk/trp/config/key/
                   name: volume-xy8eh
+                - mountPath: /app/smk/trp/config/site
+                  name: site-config
           dnsPolicy: ClusterFirst
           initContainers:
             - command:
@@ -204,6 +221,13 @@ objects:
                     path: route-planner.json
                 name: ${APP_NAME}-${ENV}-api-key
               name: volume-xy8eh
+            - configMap:
+                defaultMode: 420
+                items:
+                  - key: value
+                    path: config.js
+                name: ${APP_NAME}-${ENV}-site-config
+              name: site-config
  
   - apiVersion: v1
     kind: PersistentVolumeClaim

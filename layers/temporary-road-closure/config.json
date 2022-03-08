@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "temporary-road-closure",
             "title": "Temporary Road Closure",
-            "dataUrl": "./layers/temporary-road-closure/temporary-road-closure.geojson",
+            "layerName": "GM_TemporaryRoadClosures",
             "scaleMin": 152384,
             "attributes": [
                 {
@@ -40,7 +40,8 @@
             },
             "legend": {
                 "point": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }

@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "overhead-structure-without-height-marker",
             "title": "Overhead structure without posted height",
-            "dataUrl": "./layers/overhead-structure-without-height-marker/overhead-structure-without-height-marker.geojson",
+            "layerName": "GM_OverheadStructures",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/f3c942c0-7188-4661-82c8-1c46a82f7520",
             "scaleMin": 198647,
             "attributes": [
@@ -43,7 +43,8 @@
             },
             "legend": {
                 "point": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }

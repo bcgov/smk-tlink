@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "cardlock",
             "title": "Cardlock",
-            "dataUrl": "./layers/cardlock/cardlock.geojson",
+            "layerName": "GM_Cardlock",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/66398912-7103-4557-a17e-6a5d68577fba",
             "scaleMin": 198647,
             "attributes": [
@@ -37,7 +37,8 @@
             },
             "legend": {
                 "point": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }

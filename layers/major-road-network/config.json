@@ -4,7 +4,7 @@
             "type": "vector",
             "id": "major-road-network-high-zoom",
             "title": "Major Road Network",
-            "dataUrl": "./layers/major-road-network/major-road-network.geojson",
+            "layerName": "GM_MRN",
             "scaleMin": 18897,
             "isQueryable": false,
             "style": {
@@ -14,13 +14,14 @@
             },
             "legend": {
                 "line": true
-            }
+            },
+            "isInternal": true
         },
         {
             "type": "vector",
             "id": "major-road-network",
             "title": "Major Road Network",
-            "dataUrl": "./layers/major-road-network/major-road-network.geojson",
+            "layerName": "GM_MRN",
             "scaleMin": 1155582,
             "scaleMax": 18897,
             "where": null,
@@ -32,7 +33,8 @@
             },
             "legend": {
                 "line": true
-            }
+            },
+            "isInternal": true
         }
     ]
 }
