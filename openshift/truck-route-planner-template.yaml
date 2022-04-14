@@ -28,7 +28,7 @@ parameters:
     description: "Route Planner Service API Key"
     value: secret
   - name: "TLINK_API_HOST"
-    description: "The Translink GeoServer host subdomain."
+    description: "The Translink GeoServer host subdomain"
     value: devapi
  
 objects:
@@ -164,7 +164,7 @@ objects:
                   name: caddy-conf
                 - mountPath: /app/smk/trp
                   name: site-data
-                - mountPath: /app/smk/trp/config/key/
+                - mountPath: /app/smk/trp/config/key
                   name: volume-xy8eh
                 - mountPath: /app/smk/trp/config/site
                   name: site-config
