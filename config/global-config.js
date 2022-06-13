@@ -1,3 +1,3 @@
 window.TLINK_GLOBAL_CONFIG = {
-    "esriApiKey": "<your-api-key>"
+    "esriApiKey": "${{ secrets.ESRI_API_KEY }}"
 }
