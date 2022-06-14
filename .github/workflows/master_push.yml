@@ -12,6 +12,8 @@ jobs:
     - uses: actions/checkout@master
       with:
         ref: master
+    - name: Find and replace ESRI API key
+      run: find */global-config.js -type f -exec sed -i ''s/#{esriApiKey}#/${{ secrets.ESRI_API_KEY }}/g'' {} \;
     - name: Send Payload
       run: |
         curl -H "Content-Type: application/json" -X POST -d @$GITHUB_EVENT_PATH ${{ secrets.PROD_WEBHOOK_URL }}
