@@ -30,6 +30,9 @@ parameters:
   - name: "TLINK_API_HOST"
     description: "The Translink GeoServer host subdomain"
     value: devapi
+  - name: "ESRI_API_KEY"
+    description: "The ESRI API Key to use for accessing basemaps."
+    value: secret
  
 objects:
  
@@ -104,25 +107,14 @@ objects:
     data:
       value: |-
         window.TLINK_CONFIG = {
-          "regionalRoadsApiUrl": "https://${TLINK_API_HOST}.regionalroads.com/simplewfs/"
+          "regionalRoadsApiUrl": "https://${TLINK_API_HOST}.regionalroads.com/simplewfs/",
+          "esriApiKey": "${ESRI_API_KEY}"
         }
     kind: ConfigMap
     metadata:
       labels:
         app: ${APP_NAME}-${ENV}
       name: ${APP_NAME}-${ENV}-site-config
-
-  - apiVersion: v1
-    data:
-      value: |-
-        window.TLINK_CONFIG = {
-          "esriApiKey": "${{ secrets.ESRI_API_KEY }}"
-        }
-    kind: ConfigMap
-    metadata:
-      labels:
-        app: ${APP_NAME}-${ENV}
-      name: ${APP_NAME}-${ENV}-esri-api-key
 
   - apiVersion: apps/v1
     kind: Deployment
@@ -240,13 +232,6 @@ objects:
                     path: config.js
                 name: ${APP_NAME}-${ENV}-site-config
               name: site-config
-            - configMap:
-                defaultMode: 420
-                items:
-                  - key: value
-                    path: config.js
-                name: ${APP_NAME}-${ENV}-esri-api-key
-              name: esri-api-key
  
   - apiVersion: v1
     kind: PersistentVolumeClaim
