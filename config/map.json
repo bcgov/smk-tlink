@@ -15,6 +15,7 @@
         ]
     },
     "baseMap": "Streets",
+    "esriApiKey": "AAPKacb4ff83a3e34b4887bed2d86c318279EXFibvw9GBGQCOMSQBVRdU3aaWqj6GrdbTKGtSxq6MXtukzb2O7CSwa_bv1iY3ia",
     "minZoom": 10,
     "activeTool": "directions"
   },
