@@ -86,16 +86,16 @@
             "titleAttribute": "RouteType",
             "style": [
                 {
-                    "strokeWidth": 10,
+                    "strokeWidth": 5,
                     "strokeColor": "#47464f",
                     "strokeOpacity": 1
                 },
                 {
-                    "strokeWidth": 4,
+                    "strokeWidth": 2,
                     "strokeColor": "#ffff00",
                     "strokeOpacity": 1,
                     "strokeCap": "butt",
-                    "strokeDashes": "7,7"
+                    "strokeDashes": "3,3"
                 }
             ],
             "legend": {
