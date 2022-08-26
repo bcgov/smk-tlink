@@ -9,8 +9,8 @@
             "isQueryable": false,
             "style": {
                 "strokeWidth": 7.5,
-                "strokeColor": "#73B2FF",
-                "strokeOpacity": 0.5
+                "strokeColor": "#1067e6",
+                "strokeOpacity": 1
             },
             "legend": {
                 "line": true
@@ -28,8 +28,8 @@
             "isQueryable": false,
             "style": {
                 "strokeWidth": 5.25,
-                "strokeColor": "#73B2FF",
-                "strokeOpacity": 0.5
+                "strokeColor": "#1067e6",
+                "strokeOpacity": 1
             },
             "legend": {
                 "line": true

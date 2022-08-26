@@ -70,11 +70,20 @@
                     "title": "Notes"
                 }
             ],
-            "style": {
-                "strokeWidth": 3,
-                "strokeColor": "#267300",
-                "strokeOpacity": 1
-            },
+            "style": [
+                {
+                    "strokeWidth": 10,
+                    "strokeColor": "#000000",
+                    "strokeOpacity": 1
+                },
+                {
+                    "strokeWidth": 4,
+                    "strokeColor": "#ffff00",
+                    "strokeOpacity": 1,
+                    "strokeCap": "butt",
+                    "strokeDashes": "7,7"
+                }
+            ],
             "legend": {
                 "line": true
             },
@@ -112,11 +121,20 @@
                     "title": "Notes"
                 }
             ],
-            "style": {
-                "strokeWidth": 1.5,
-                "strokeColor": "#267300",
-                "strokeOpacity": 1
-            },
+            "style": [
+                {
+                    "strokeWidth": 10,
+                    "strokeColor": "#000000",
+                    "strokeOpacity": 1
+                },
+                {
+                    "strokeWidth": 4,
+                    "strokeColor": "#ffff00",
+                    "strokeOpacity": 1,
+                    "strokeCap": "butt",
+                    "strokeDashes": "7,7"
+                }
+            ],
             "legend": {
                 "line": true
             },
