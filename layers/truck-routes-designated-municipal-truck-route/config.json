@@ -32,11 +32,20 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": {
-                "strokeWidth": 3,
-                "strokeColor": "#6EBA60",
-                "strokeOpacity": 1
-            },
+            "style": [
+                {
+                    "strokeWidth": 10,
+                    "strokeColor": "#47464f",
+                    "strokeOpacity": 1
+                },
+                {
+                    "strokeWidth": 4,
+                    "strokeColor": "#ffffff",
+                    "strokeOpacity": 1,
+                    "strokeCap": "butt",
+                    "strokeDashes": "7,7"
+                }
+            ],
             "legend": {
                 "line": true
             },
@@ -75,11 +84,20 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": {
-                "strokeWidth": 1.5,
-                "strokeColor": "#6EBA60",
-                "strokeOpacity": 1
-            },
+            "style": [
+                {
+                    "strokeWidth": 5,
+                    "strokeColor": "#47464f",
+                    "strokeOpacity": 1
+                },
+                {
+                    "strokeWidth": 2,
+                    "strokeColor": "#ffffff",
+                    "strokeOpacity": 1,
+                    "strokeCap": "butt",
+                    "strokeDashes": "3,3"
+                }
+            ],
             "legend": {
                 "line": true
             },

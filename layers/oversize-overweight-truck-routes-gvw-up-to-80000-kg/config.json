@@ -24,9 +24,9 @@
             "titleAttribute": "RouteType",
             "style": [
                 {
-                    "strokeWidth": 4,
-                    "strokeColor": "#E8BDFF",
-                    "strokeOpacity": 0.5,
+                    "strokeWidth": 5,
+                    "strokeColor": "#ceace6",
+                    "strokeOpacity": 1,
                     "strokeCap": "butt"
                 }
             ],
