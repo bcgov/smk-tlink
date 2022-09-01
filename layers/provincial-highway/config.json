@@ -3,6 +3,7 @@
         {
             "type": "vector",
             "id": "provincial-highway-high-zoom",
+            "zIndex": 2200,
             "title": "Provincial Highway",
             "isVisible": false,
             "layerName": "GM_TruckRoutes",
@@ -19,9 +20,11 @@
             },
             "isInternal": true
         },
+
         {
             "type": "vector",
             "id": "provincial-highway",
+            "zIndex": 2200,
             "title": "Provincial Highway",
             "isVisible": false,
             "layerName": "GM_TruckRoutes",
@@ -38,9 +41,11 @@
             },
             "isInternal": true
         },
+
         {
             "type": "vector",
             "id": "truck-routes-provincial-highway-high-zoom",
+            "zIndex": 5500,
             "title": "Provincial Highway",
             "isVisible": false,
             "layerName": "GM_TruckRoutes",
@@ -70,19 +75,30 @@
                     "title": "Notes"
                 }
             ],
-            "style": {
-                "strokeWidth": 3,
-                "strokeColor": "#267300",
-                "strokeOpacity": 1
-            },
+            "style": [
+                {
+                    "strokeWidth": 10,
+                    "strokeColor": "#000000",
+                    "strokeOpacity": 1
+                },
+                {
+                    "strokeWidth": 4,
+                    "strokeColor": "#ffff00",
+                    "strokeOpacity": 1,
+                    "strokeCap": "butt",
+                    "strokeDashes": "7,7"
+                }
+            ],
             "legend": {
                 "line": true
             },
             "isInternal": true
         },
+
         {
             "type": "vector",
             "id": "truck-routes-provincial-highway",
+            "zIndex": 5500,
             "title": "Provincial Highway",
             "isVisible": false,
             "layerName": "GM_TruckRoutes",
@@ -112,11 +128,20 @@
                     "title": "Notes"
                 }
             ],
-            "style": {
-                "strokeWidth": 1.5,
-                "strokeColor": "#267300",
-                "strokeOpacity": 1
-            },
+            "style": [
+                {
+                    "strokeWidth": 5,
+                    "strokeColor": "#000000",
+                    "strokeOpacity": 1
+                },
+                {
+                    "strokeWidth": 2,
+                    "strokeColor": "#ffff00",
+                    "strokeOpacity": 1,
+                    "strokeCap": "butt",
+                    "strokeDashes": "3,3"
+                }
+            ],
             "legend": {
                 "line": true
             },

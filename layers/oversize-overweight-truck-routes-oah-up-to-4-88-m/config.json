@@ -24,19 +24,10 @@
             "titleAttribute": "RouteType",
             "style": [
                 {
-                    "strokeWidth": 4,
-                    "strokeColor": "#FFFF00",
-                    "strokeOpacity": 0.5,
-                    "strokeCap": "butt",
-                    "strokeDashes": "7,7"
-                },
-                {
-                    "strokeWidth": 4,
-                    "strokeColor": "#FF0000",
-                    "strokeOpacity": 0.5,
-                    "strokeCap": "butt",
-                    "strokeDashes": "7,7",
-                    "strokeDashOffset": 7
+                    "strokeWidth": 10,
+                    "strokeColor": "#ff01c8",
+                    "strokeOpacity": 1,
+                    "strokeCap": "butt"
                 }
             ],
             "legend": {
