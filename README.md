@@ -13,6 +13,7 @@ Add this entry to `/etc/hosts`:
 
     127.0.0.1       translink-d.apps.gov.bc.ca
 
-Start the app with `npm start`
+Install dependencies with `npm install`.
+Start the app with `npm start`.
 
-Access the app via: [Local](https://translink-d.apps.gov.bc.ca:7443/)
+Access the app via: [Local](https://translink-d.apps.gov.bc.ca:7443/).
