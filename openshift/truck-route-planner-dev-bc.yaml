@@ -21,7 +21,7 @@ metadata:
   source:
     type: Dockerfile
     dockerfile: >-
-      FROM artifacts.developer.gov.bc.ca/artifactory/docker-remote/alpine/git/latest
+      FROM artifacts.developer.gov.bc.ca/docker-remote/alpine/git/latest
 
 
       RUN apk update \
