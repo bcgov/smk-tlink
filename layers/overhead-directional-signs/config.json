@@ -9,11 +9,7 @@
             "scaleMin": 207900,
             "attributes": [
                 {
-                    "name": "Route",
-                    "title": "Route"
-                },
-                {
-                    "name": "Structure_Type",
+                    "name": "StructureType",
                     "title": "Structure Type"
                 },
                 {
