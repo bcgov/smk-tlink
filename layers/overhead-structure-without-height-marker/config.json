@@ -9,20 +9,12 @@
             "scaleMin": 198647,
             "attributes": [
                 {
-                    "name": "Route",
-                    "title": "Route"
-                },
-                {
-                    "name": "Structure_Name",
-                    "title": "Structure Name"
-                },
-                {
-                    "name": "Structure_Type",
+                    "name": "StructureType",
                     "title": "Structure Type"
                 },
                 {
                     "title": "Street View",
-                    "format": "asLink( this.feature.properties.Streetview_Link, 'Link' )"
+                    "format": "asLink( this.feature.properties.StreetviewLink, 'Link' )"
                 },
                 {
                     "name": "Comments",

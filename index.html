@@ -268,6 +268,10 @@
                                         features: fc.features.filter( filter )
                                     } )
                                 } )
+                                // .then( function ( o ) {
+                                //     console.log( layerId, o.features.length )
+                                //     return o
+                                // } )
                         },
                         set: function () {}
                     } )
@@ -290,21 +294,43 @@
                 prepareLayer( 'inspection-station' )
                 prepareLayer( 'major-road-network' )
                 prepareLayer( 'metro-vancouver-boundary' )
+
+                function hasHeightLimit( prop ) {
+                    let r = 
+                        prop.HeightLane1P != null ||
+                        prop.HeightLane2P != null ||
+                        prop.HeightLane3P != null ||
+                        prop.HeightLane4P != null ||
+                        prop.HeightLane5P != null ||
+                        prop.HeightLane6P != null ||
+                        prop.HeightLane7P != null ||
+                        prop.HeightLane1O != null ||
+                        prop.HeightLane2O != null ||
+                        prop.HeightLane3O != null ||
+                        prop.HeightLane4O != null ||
+                        prop.HeightLane5O != null ||
+                        prop.HeightLane6O != null ||
+                        prop.HeightLane7O != null
+                    return r
+                }
+
+                function isSign( prop ) {
+                    let r =
+                        prop.StructureType == "Advertisement Sign" || 
+                        prop.StructureType == "Overhead Sign/signal" || 
+                        prop.StructureType == "Sign" || 
+                        prop.StructureType == "Scale Sign" 
+                    return r
+                }
+
                 prepareLayer( 'overhead-directional-signs', function ( ft ) {
-                    return ft.properties.Posted_Limit != "Y" && ( 
-                        ft.properties.Structure_Type == "Advertisement Sign" || 
-                        ft.properties.Structure_Type == "Overhead Sign/Signal" || 
-                        ft.properties.Structure_Type == "Scale Sign" 
-                    )                        
+                    return !hasHeightLimit( ft.properties ) && isSign( ft.properties )
                 } )
                 prepareLayer( 'overhead-structure-with-height-marker', function ( ft ) {
-                    return ft.properties.Posted_Limit == "Y"
+                    return hasHeightLimit( ft.properties )
                 } )
                 prepareLayer( 'overhead-structure-without-height-marker', function ( ft ) {
-                    return ft.properties.Posted_Limit != "Y" && 
-                        ft.properties.Structure_Type != "Advertisement Sign" && 
-                        ft.properties.Structure_Type != "Overhead Sign/Signal" && 
-                        ft.properties.Structure_Type != "Scale Sign"
+                    return !hasHeightLimit( ft.properties ) && !isSign( ft.properties )
                 } )
                 prepareLayer( 'oversize-overweight-truck-routes-oah-up-to-4-88-m', function ( ft ) {
                     return ft.properties.HeightRestriction == "4.88"
