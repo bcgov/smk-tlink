@@ -143,6 +143,7 @@
 
         <script src="trp-vehicle-definitions.js"></script>
         <script src="config/site/config.js"></script>
+        <script src="smk-overrides.js"></script>
 
         <script>
         window.L_DISABLE_3D = true;
@@ -229,6 +230,8 @@
                     '?'
                 ] ),
             } ).then( function () {
+                installSmkOverrides()
+
                 var fetchPromise = {}
                 function fetchLayer( layerName ) {
                     var pr = fetchPromise[ layerName ]
