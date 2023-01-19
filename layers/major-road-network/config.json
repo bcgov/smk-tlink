@@ -5,7 +5,7 @@
             "id": "major-road-network-high-zoom",
             "title": "Major Road Network",
             "layerName": "GM_MRN",
-            "scaleMin": 18897,
+            "scaleMin": 23167,
             "isQueryable": false,
             "style": {
                 "strokeWidth": 7.5,
@@ -22,9 +22,7 @@
             "id": "major-road-network",
             "title": "Major Road Network",
             "layerName": "GM_MRN",
-            "scaleMin": 1155582,
-            "scaleMax": 18897,
-            "where": null,
+            "scaleMax": 23167,
             "isQueryable": false,
             "style": {
                 "strokeWidth": 5.25,
