@@ -21,7 +21,6 @@ function installSmkOverrides() {
             .then( drawLine )
             .then( drawFill )
             .then( function () {
-                console.log('done')
                 return [ {
                     url: cv.toDataURL( 'image/png' ),
                     title: self.config.legend.title || self.config.title,

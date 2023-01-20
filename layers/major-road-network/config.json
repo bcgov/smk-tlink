@@ -7,11 +7,7 @@
             "layerName": "GM_MRN",
             "scaleMin": 23167,
             "isQueryable": false,
-            "style": {
-                "strokeWidth": 7.5,
-                "strokeColor": "#1067e6",
-                "strokeOpacity": 1
-            },
+            "style": "<@= style['major-road-network-high-zoom'] @>",
             "legend": {
                 "line": true
             },
@@ -24,11 +20,7 @@
             "layerName": "GM_MRN",
             "scaleMax": 23167,
             "isQueryable": false,
-            "style": {
-                "strokeWidth": 5.25,
-                "strokeColor": "#1067e6",
-                "strokeOpacity": 1
-            },
+            "style": "<@= style['major-road-network'] @>",
             "legend": {
                 "line": true
             },
