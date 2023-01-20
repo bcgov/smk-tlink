@@ -22,14 +22,7 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": [
-                {
-                    "strokeWidth": 8,
-                    "strokeColor": "#17fae4",
-                    "strokeOpacity": 1,
-                    "strokeCap": "butt"
-                }
-            ],
+            "style": "<@= style['oversize-overweight-truck-routes-oaw-up-to-5-m'] @>",
             "legend": {
                 "line": true
             },

@@ -22,14 +22,7 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": [
-                {
-                    "strokeWidth": 5,
-                    "strokeColor": "#ceace6",
-                    "strokeOpacity": 1,
-                    "strokeCap": "butt"
-                }
-            ],
+            "style": "<@= style['oversize-overweight-truck-routes-gvw-up-to-80000-kg'] @>",
             "legend": {
                 "line": true
             },

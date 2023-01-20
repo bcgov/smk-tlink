@@ -32,20 +32,7 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": [
-                {
-                    "strokeWidth": 10,
-                    "strokeColor": "#47464f",
-                    "strokeOpacity": 1
-                },
-                {
-                    "strokeWidth": 4,
-                    "strokeColor": "#ffff00",
-                    "strokeOpacity": 1,
-                    "strokeCap": "butt",
-                    "strokeDashes": "7,7"
-                }
-            ],
+            "style": "<@= style['truck-routes-federal-road-with-no-truck-travel-restrictions-high-zoom'] @>",
             "legend": {
                 "line": true
             },
@@ -84,20 +71,7 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": [
-                {
-                    "strokeWidth": 5,
-                    "strokeColor": "#47464f",
-                    "strokeOpacity": 1
-                },
-                {
-                    "strokeWidth": 2,
-                    "strokeColor": "#ffff00",
-                    "strokeOpacity": 1,
-                    "strokeCap": "butt",
-                    "strokeDashes": "3,3"
-                }
-            ],
+            "style": "<@= style['truck-routes-federal-road-with-no-truck-travel-restrictions'] @>",
             "legend": {
                 "line": true
             },

@@ -8,7 +8,7 @@
             "isVisible": false,
             "layerName": "GM_TruckRoutes",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/0636a01a-a13f-48f9-94cf-1c0e59b3ba6b",
-            "scaleMin": 23167,
+            "scaleMin": 28505,
             "isQueryable": false,
             "style": {
                 "strokeWidth": 3,
@@ -29,7 +29,7 @@
             "isVisible": false,
             "layerName": "GM_TruckRoutes",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/0636a01a-a13f-48f9-94cf-1c0e59b3ba6b",
-            "scaleMax": 23167,
+            "scaleMax": 28505,
             "isQueryable": false,
             "style": {
                 "strokeWidth": 1.5,
@@ -50,7 +50,7 @@
             "isVisible": false,
             "layerName": "GM_TruckRoutes",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/0636a01a-a13f-48f9-94cf-1c0e59b3ba6b",
-            "scaleMin": 23167,
+            "scaleMin": 28505,
             "attributes": [
                 {
                     "name": "Municipality",
@@ -75,20 +75,7 @@
                     "title": "Notes"
                 }
             ],
-            "style": [
-                {
-                    "strokeWidth": 10,
-                    "strokeColor": "#000000",
-                    "strokeOpacity": 1
-                },
-                {
-                    "strokeWidth": 4,
-                    "strokeColor": "#ffff00",
-                    "strokeOpacity": 1,
-                    "strokeCap": "butt",
-                    "strokeDashes": "7,7"
-                }
-            ],
+            "style": "<@= style['truck-routes-provincial-highway-high-zoom'] @>",
             "legend": {
                 "line": true
             },
@@ -103,7 +90,7 @@
             "isVisible": false,
             "layerName": "GM_TruckRoutes",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/0636a01a-a13f-48f9-94cf-1c0e59b3ba6b",
-            "scaleMax": 23167,
+            "scaleMax": 28505,
             "attributes": [
                 {
                     "name": "Municipality",
@@ -128,20 +115,7 @@
                     "title": "Notes"
                 }
             ],
-            "style": [
-                {
-                    "strokeWidth": 5,
-                    "strokeColor": "#000000",
-                    "strokeOpacity": 1
-                },
-                {
-                    "strokeWidth": 2,
-                    "strokeColor": "#ffff00",
-                    "strokeOpacity": 1,
-                    "strokeCap": "butt",
-                    "strokeDashes": "3,3"
-                }
-            ],
+            "style": "<@= style['truck-routes-provincial-highway'] @>",
             "legend": {
                 "line": true
             },

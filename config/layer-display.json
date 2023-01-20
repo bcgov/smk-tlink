@@ -26,6 +26,16 @@
                 },
                 {
                     "type": "group",
+                    "title": "Major Road Network",
+                    "isVisible": false,
+                    "class": "smk-inline-legend",
+                    "items": [
+                        { "id": "major-road-network-high-zoom" },
+                        { "id": "major-road-network" }
+                    ]
+                },
+                {
+                    "type": "group",
                     "title": "Truck Advisories & Restrictions",
                     "isVisible": true,
                     "items": [
@@ -85,16 +95,6 @@
                         { "id": "port-of-vancouver-facilities-terminals", "isVisible": false, "class": "smk-inline-legend" },
                         { "id": "industrial-area", "isVisible": true, "class": "smk-inline-legend" },
                         { "id": "downtown-vancouver", "isVisible": false, "class": "smk-inline-legend" },
-                        {
-                            "type": "group",
-                            "title": "Major Road Network",
-                            "isVisible": false,
-                            "class": "smk-inline-legend",
-                            "items": [
-                                { "id": "major-road-network-high-zoom" },
-                                { "id": "major-road-network" }
-                            ]
-                        },
                         {
                             "type": "group",
                             "title": "Provincial Highway",
