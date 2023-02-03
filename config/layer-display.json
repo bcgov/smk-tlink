@@ -4,6 +4,28 @@
             "type": "layers",
             "display": [
                 {
+                    "type": "folder",
+                    "title": "Pre-screened Oversize-Overweight (OS-OW) Truck Routes",
+                    "isVisible": false,
+                    "items": [
+                        { "id": "oversize-overweight-truck-routes-gvw-up-to-80000-kg", "class": "smk-inline-legend" },
+                        { "id": "oversize-overweight-truck-routes-gvw-up-to-85000-kg", "class": "smk-inline-legend" },
+                        { "id": "oversize-overweight-truck-routes-gvw-up-to-125000-kg", "class": "smk-inline-legend" },
+                        { "id": "oversize-overweight-truck-routes-oaw-up-to-5-m", "class": "smk-inline-legend" },
+                        { "id": "oversize-overweight-truck-routes-oah-up-to-4-88-m", "class": "smk-inline-legend" }
+                    ]
+                },
+                {
+                    "type": "group",
+                    "title": "Major Road Network",
+                    "isVisible": false,
+                    "class": "smk-inline-legend",
+                    "items": [
+                        { "id": "major-road-network-high-zoom" },
+                        { "id": "major-road-network" }
+                    ]
+                },
+                {
                     "type": "group",
                     "title": "Truck Routes",
                     "isVisible": true,
@@ -22,16 +44,6 @@
 
                         { "id": "truck-routes-federal-road-with-no-truck-travel-restrictions" },
                         { "id": "truck-routes-federal-road-with-no-truck-travel-restrictions-high-zoom" }
-                    ]
-                },
-                {
-                    "type": "group",
-                    "title": "Major Road Network",
-                    "isVisible": false,
-                    "class": "smk-inline-legend",
-                    "items": [
-                        { "id": "major-road-network-high-zoom" },
-                        { "id": "major-road-network" }
                     ]
                 },
                 {
@@ -57,18 +69,6 @@
                     "items": [
                         { "id": "temporary-road-closure-extent" },
                         { "id": "temporary-road-closure" }
-                    ]
-                },
-                {
-                    "type": "folder",
-                    "title": "Pre-screened Oversize-Overweight (OS-OW) Truck Routes",
-                    "isVisible": false,
-                    "items": [
-                        { "id": "oversize-overweight-truck-routes-oah-up-to-4-88-m", "class": "smk-inline-legend" },
-                        { "id": "oversize-overweight-truck-routes-oaw-up-to-5-m", "class": "smk-inline-legend" },
-                        { "id": "oversize-overweight-truck-routes-gvw-up-to-80000-kg", "class": "smk-inline-legend" },
-                        { "id": "oversize-overweight-truck-routes-gvw-up-to-85000-kg", "class": "smk-inline-legend" },
-                        { "id": "oversize-overweight-truck-routes-gvw-up-to-125000-kg", "class": "smk-inline-legend" }
                     ]
                 },
                 {
