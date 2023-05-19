@@ -30,6 +30,9 @@ parameters:
   - name: "TLINK_API_HOST"
     description: "The Translink GeoServer host subdomain"
     value: devapi
+  - name: "ESRI_API_KEY"
+    description: "The ESRI API Key to use for accessing basemaps."
+    value: secret
  
 objects:
  
@@ -104,7 +107,8 @@ objects:
     data:
       value: |-
         window.TLINK_CONFIG = {
-          "regionalRoadsApiUrl": "https://${TLINK_API_HOST}.regionalroads.com/simplewfs/"
+          "regionalRoadsApiUrl": "https://${TLINK_API_HOST}.regionalroads.com/simplewfs/",
+          "esriApiKey": "${ESRI_API_KEY}"
         }
     kind: ConfigMap
     metadata:
