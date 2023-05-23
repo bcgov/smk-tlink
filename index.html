@@ -143,6 +143,7 @@
 
         <script src="trp-vehicle-definitions.js"></script>
         <script src="config/site/config.js"></script>
+        <script src="smk-overrides.js"></script>
 
         <script>
         window.L_DISABLE_3D = true;
@@ -184,51 +185,163 @@
 
             var defaultVehicle = TRP.vehicleTypes[ 0 ].configs[ 0 ]
 
-            SMK.INIT( {
-                'smk-container-sel': "#smk-map-frame",
-                'smk-config': [].concat( [
-                    './layers/cardlock/config.json',
-                    './layers/dangerous-goods-restrictions/config.json',
-                    './layers/downtown-vancouver/config.json',
-                    './layers/industrial-area/config.json',
-                    './layers/inspection-station/config.json',
-                    './layers/major-road-network/config.json',
-                    './layers/metro-vancouver-boundary/config.json',
-                    './layers/overhead-directional-signs/config.json',
-                    './layers/overhead-structure-with-height-marker/config.json',
-                    './layers/overhead-structure-without-height-marker/config.json',
-                    './layers/oversize-overweight-truck-routes-oah-up-to-4-88-m/config.json',
-                    './layers/oversize-overweight-truck-routes-oaw-up-to-5-m/config.json',
-                    './layers/oversize-overweight-truck-routes-gvw-up-to-80000-kg/config.json',
-                    './layers/oversize-overweight-truck-routes-gvw-up-to-85000-kg/config.json',
-                    './layers/oversize-overweight-truck-routes-gvw-up-to-125000-kg/config.json',
-                    './layers/port-of-vancouver-facilities-terminals/config.json',
-                    './layers/provincial-highway/config.json',
-                    './layers/truck-advisories-restrictions/config.json',
-                    './layers/truck-advisories-warning/config.json',
-                    './layers/truck-parking/config.json',
-                    './layers/truck-routes-designated-municipal-truck-route-with-restrictions/config.json',
-                    './layers/truck-routes-designated-municipal-truck-route/config.json',
-                    './layers/truck-routes-federal-road-with-no-truck-travel-restrictions/config.json',
-                    './layers/truck-routes-municipal-road-with-no-truck-travel-restriction/config.json',
-                    './layers/temporary-road-closure/config.json',
-                    './layers/temporary-road-closure-extent/config.json'
-                ], [
-                    './config/map.json',
-                    './config/layer-display.json',
+            var layerConfigs = [
+                './layers/cardlock/config.json',
+                './layers/dangerous-goods-restrictions/config.json',
+                './layers/downtown-vancouver/config.json',
+                './layers/industrial-area/config.json',
+                './layers/inspection-station/config.json',
+                './layers/major-road-network/config.json',
+                './layers/metro-vancouver-boundary/config.json',
+                './layers/overhead-directional-signs/config.json',
+                './layers/overhead-structure-with-height-marker/config.json',
+                './layers/overhead-structure-without-height-marker/config.json',
+                './layers/oversize-overweight-truck-routes-oah-up-to-4-88-m/config.json',
+                './layers/oversize-overweight-truck-routes-oaw-up-to-5-m/config.json',
+                './layers/oversize-overweight-truck-routes-gvw-up-to-80000-kg/config.json',
+                './layers/oversize-overweight-truck-routes-gvw-up-to-85000-kg/config.json',
+                './layers/oversize-overweight-truck-routes-gvw-up-to-125000-kg/config.json',
+                './layers/port-of-vancouver-facilities-terminals/config.json',
+                './layers/provincial-highway/config.json',
+                './layers/truck-advisories-restrictions/config.json',
+                './layers/truck-advisories-warning/config.json',
+                './layers/truck-parking/config.json',
+                './layers/truck-routes-designated-municipal-truck-route-with-restrictions/config.json',
+                './layers/truck-routes-designated-municipal-truck-route/config.json',
+                './layers/truck-routes-federal-road-with-no-truck-travel-restrictions/config.json',
+                './layers/truck-routes-municipal-road-with-no-truck-travel-restriction/config.json',
+                './layers/temporary-road-closure/config.json',
+                './layers/temporary-road-closure-extent/config.json'
+            ]
+
+            var temp = document.createElement( 'div' )
+            document.body.appendChild( temp )
+
+            function dashedLine( outerWidth, outerColour, innerWidth, innerColour, innerDashes ) {
+                return [
                     {
-                        tools: [ {
-                            type: 'directions',
-                            truckHeight: defaultVehicle.height,
-                            truckWidth: defaultVehicle.width,
-                            truckLength: defaultVehicle.length,
-                            truckWeight: defaultVehicle.weight,
-                        } ]
+                        "strokeWidth": outerWidth,
+                        "strokeColor": outerColour,
+                        "strokeOpacity": 1,
+                        "strokeCap": "butt"
                     },
-                    './config/key/route-planner.json',
-                    '?'
-                ] ),
-            } ).then( function () {
+                    {
+                        "strokeWidth": innerWidth,
+                        "strokeColor": innerColour,
+                        "strokeOpacity": 1,
+                        "strokeCap": "butt",
+                        "strokeDashes": innerDashes
+                    }
+                ]                
+            }
+
+            function dashedLine1( width, outerColour, innerColour ) {
+                var innerWidth = width * 2 / 5
+                var dash1 = width * 3 / 5
+                var dash2 = width 
+                return dashedLine( width, outerColour, width * 2 / 5, innerColour, dash1 + ',' + dash2 )
+            }
+
+            function solidLine( width, colour ) {
+                return {
+                    "strokeWidth": width,
+                    "strokeColor": colour,
+                    "strokeOpacity": 1,
+                    "strokeCap": "butt"
+                }
+            }
+
+            var thick1Low = 10,  thick1High = 12,
+                thick2Low = 8,  thick2High = 10,
+                thick3Low = 6,  thick3High = 8,
+                thick4Low = 4,  thick4High = 6,
+                thick5Low = 2,  thick5High = 4
+
+            var style = {
+                'major-road-network-high-zoom': solidLine( thick2High, "#1067e6" ),
+                'major-road-network': solidLine( thick2Low, "#1067e6" ),
+
+                'oversize-overweight-truck-routes-gvw-up-to-125000-kg': solidLine( thick5Low, "#9b54ba" ),
+                'oversize-overweight-truck-routes-gvw-up-to-80000-kg': solidLine( thick5Low, "#ceace6" ),
+                'oversize-overweight-truck-routes-gvw-up-to-85000-kg': solidLine( thick5Low, "#9f74be" ),
+                'oversize-overweight-truck-routes-oah-up-to-4-88-m': solidLine( thick3Low, "#ff01c8" ),
+                'oversize-overweight-truck-routes-oaw-up-to-5-m': solidLine( thick4Low, "#17fae4" ),
+
+                'truck-routes-provincial-highway-high-zoom': dashedLine1( thick1High, '#000000', '#ffff00' ),
+                'truck-routes-provincial-highway': dashedLine1( thick1Low, '#000000', '#ffff00' ),
+
+                'truck-routes-designated-municipal-truck-route-high-zoom': dashedLine1( thick1High, "#47464f", "#ffffff" ),
+                'truck-routes-designated-municipal-truck-route': dashedLine1( thick1Low, "#47464f", "#ffffff" ),
+
+                'truck-routes-designated-municipal-truck-route-with-restrictions-high-zoom': dashedLine1( thick1High, "#47464f", "#ff0000" ),
+                'truck-routes-designated-municipal-truck-route-with-restrictions': dashedLine1( thick1Low, "#47464f", "#ff0000" ),
+
+                'truck-routes-federal-road-with-no-truck-travel-restrictions-high-zoom': dashedLine1( thick1High, "#47464f", '#ffff00' ),
+                'truck-routes-federal-road-with-no-truck-travel-restrictions': dashedLine1( thick1Low, "#47464f", '#ffff00' ),
+
+                'truck-routes-municipal-road-with-no-truck-travel-restriction-high-zoom': dashedLine1( thick1High, "#47464f", '#ffff00' ),
+                'truck-routes-municipal-road-with-no-truck-travel-restriction': dashedLine1( thick1Low, "#47464f", '#ffff00' ),
+            }
+
+            // initialize SMK so all modules are loaded
+            SMK.INIT( {
+                'smk-id': 999,
+                'smk-container-sel': temp,
+                // baseUrl: self.smkBaseUrl,
+                'smk-config': [ {
+                    "viewer": {
+                        "baseMap": "StamenTonerLight",
+                        "esriApiKey": "AAPKacb4ff83a3e34b4887bed2d86c318279EXFibvw9GBGQCOMSQBVRdU3aaWqj6GrdbTKGtSxq6MXtukzb2O7CSwa_bv1iY3ia",
+                    }
+                } ]
+            } )
+            .then( function ( smk ) {
+                temp.parentElement.removeChild( temp )
+
+                // SMK has to be completely loaded before it can be patched 
+                installSmkOverrides()
+
+                // load and resolve templates in layer configs
+                return layerConfigs.reduce( function( acc, cfgUrl ) {
+                    var id = cfgUrl.toLowerCase().replace( /[^a-z0-9]+/g, '-' ).replace( /^[-]|[-]$/g, '' )
+                    var tag = 'config-' + id
+
+                    return acc.then( function ( cfgs ) {
+                        return include( [ { url: cfgUrl, loader: 'template' } ], tag ).then( function ( inc ) {
+                            var json = inc[ tag + '.config-json' ]
+                            var replaced = templateReplace( json, function( template ) {
+                                var res = JSON.stringify( eval( template ) )
+                                // console.log(tag,template,res)
+                                return res
+                            } )
+                            var c = JSON.parse( replaced )
+                            cfgs.push( c )
+                            return cfgs
+                        } )
+                    } )
+                }, Promise.resolve( [] ) )
+            } )
+            .then( function ( cfgs ) {
+                return SMK.INIT( {
+                    'smk-container-sel': "#smk-map-frame",
+                    'smk-config': [].concat( cfgs, [
+                        './config/map.json',
+                        './config/layer-display.json',
+                        {
+                            tools: [ {
+                                type: 'directions',
+                                truckHeight: defaultVehicle.height,
+                                truckWidth: defaultVehicle.width,
+                                truckLength: defaultVehicle.length,
+                                truckWeight: defaultVehicle.weight,
+                            } ]
+                        },
+                        './config/key/route-planner.json',
+                        '?'
+                    ] )
+                } )
+            } )
+            .then( function () {
                 var fetchPromise = {}
                 function fetchLayer( layerName ) {
                     var pr = fetchPromise[ layerName ]
@@ -237,8 +350,8 @@
                     var url = TLINK_CONFIG.regionalRoadsApiUrl + '?service=WFS&version=1.0.0&request=GetFeature&outputFormat=application/json&typeName=' + layerName
 
                     return fetchPromise[ layerName ] = SMK.UTIL.makePromise( function ( res, rej ) {
-                        $.get( url, null, null, 'json' ).then( res, function ( xhr, status, err ) { 
-                            rej( 'Failed requesting ' + url + ': ' + xhr.status + ',' + err ) 
+                        $.get( url, null, null, 'json' ).then( res, function ( xhr, status, err ) {
+                            rej( 'Failed requesting ' + url + ': ' + xhr.status + ',' + err )
                         } )
                     } )
                 }
@@ -247,12 +360,12 @@
                 function prepareLayer( layerId, filter ) {
                     var vw = SMK.MAP[ 1 ].$viewer
                     var ly = vw.layerId[ layerId ]
-                    
-                    Object.defineProperty( ly, 'loadCache', { 
+
+                    Object.defineProperty( ly, 'loadCache', {
                         get: function () {
                             var pr = preparePromise[ layerId ]
 
-                            if ( pr ) return pr 
+                            if ( pr ) return pr
 
                             ly.loadLayer = ( function ( inner ) {
                                 return function ( data ) {
@@ -260,14 +373,18 @@
                                 }
                             } )( ly.loadLayer )
 
-                            return preparePromise[ layerId ] = fetchLayer( ly.config.layerName )                                
+                            return preparePromise[ layerId ] = fetchLayer( ly.config.layerName )
                                 .then( function ( fc ) {
-                                    if ( !filter ) return fc 
+                                    if ( !filter ) return fc
 
                                     return $.extend( {}, fc, {
                                         features: fc.features.filter( filter )
                                     } )
                                 } )
+                                // .then( function ( o ) {
+                                //     console.log( layerId, o.features.length )
+                                //     return o
+                                // } )
                         },
                         set: function () {}
                     } )
@@ -289,22 +406,33 @@
                 prepareLayer( 'industrial-area' )
                 prepareLayer( 'inspection-station' )
                 prepareLayer( 'major-road-network' )
+                prepareLayer( 'major-road-network-high-zoom' )
                 prepareLayer( 'metro-vancouver-boundary' )
+
+                function isSign( prop ) {
+                    let r =
+                        // prop.StructureType == "Advertisement Sign" ||
+                        // prop.StructureType == "Scale Sign" ||
+                        prop.StructureType == "Overhead Sign/signal" ||
+                        prop.StructureType == "Sign"
+                    return r
+                }
+
+                function hasPostedLimit( prop ) {
+                    return prop.PostedLimitP || prop.PostedLimitO
+                }
+
                 prepareLayer( 'overhead-directional-signs', function ( ft ) {
-                    return ft.properties.Posted_Limit != "Y" && ( 
-                        ft.properties.Structure_Type == "Advertisement Sign" || 
-                        ft.properties.Structure_Type == "Overhead Sign/Signal" || 
-                        ft.properties.Structure_Type == "Scale Sign" 
-                    )                        
+                    return !hasPostedLimit( ft.properties ) && isSign( ft.properties )
+                    // return "PostedLimitP" = false AND "PostedLimitO" = false and ("StructureType" = 'Sign' OR "StructureType" = 'Overhead Sign/signal')
                 } )
                 prepareLayer( 'overhead-structure-with-height-marker', function ( ft ) {
-                    return ft.properties.Posted_Limit == "Y"
+                    return hasPostedLimit( ft.properties ) && !isSign( ft.properties )
+                    // ("PostedLimitP" = true OR "PostedLimitO" = true) AND ("StructureType" !='Overhead Sign/signal' AND "StructureType" != 'Sign')
                 } )
                 prepareLayer( 'overhead-structure-without-height-marker', function ( ft ) {
-                    return ft.properties.Posted_Limit != "Y" && 
-                        ft.properties.Structure_Type != "Advertisement Sign" && 
-                        ft.properties.Structure_Type != "Overhead Sign/Signal" && 
-                        ft.properties.Structure_Type != "Scale Sign"
+                    return !hasPostedLimit( ft.properties ) && !isSign( ft.properties )
+                    // "PostedLimitP" = false AND "PostedLimitO" = false AND "StructureType" != 'Sign' AND "StructureType" != 'Overhead Sign/signal'
                 } )
                 prepareLayer( 'oversize-overweight-truck-routes-oah-up-to-4-88-m', function ( ft ) {
                     return ft.properties.HeightRestriction == "4.88"
@@ -329,56 +457,56 @@
                     return ft.properties.ProvincialJurisdiction == 1
                 } )
                 prepareLayer( 'truck-advisories-restrictions-high-zoom', function ( ft ) {
-                    return ft.properties.RouteType != "Designated Municipal Truck Route with Restrictions" && 
+                    return ft.properties.RouteType != "Designated Municipal Truck Route with Restrictions" &&
                         ft.properties.AdvisoryType == "Restriction"
                 } )
                 prepareLayer( 'truck-advisories-restrictions', function ( ft ) {
-                    return ft.properties.RouteType != "Designated Municipal Truck Route with Restrictions" && 
+                    return ft.properties.RouteType != "Designated Municipal Truck Route with Restrictions" &&
                         ft.properties.AdvisoryType == "Restriction"
                 } )
                 prepareLayer( 'truck-advisories-warning-high-zoom', function ( ft ) {
-                    return ft.properties.RouteType != "Designated Municipal Truck Route with Restrictions" && 
+                    return ft.properties.RouteType != "Designated Municipal Truck Route with Restrictions" &&
                         ft.properties.AdvisoryType == "Truck Travel Warning"
                 } )
                 prepareLayer( 'truck-advisories-warning', function ( ft ) {
-                    return ft.properties.RouteType != "Designated Municipal Truck Route with Restrictions" && 
+                    return ft.properties.RouteType != "Designated Municipal Truck Route with Restrictions" &&
                         ft.properties.AdvisoryType == "Truck Travel Warning"
                 } )
                 prepareLayer( 'truck-parking' )
                 prepareLayer( "truck-routes-provincial-highway-high-zoom", function ( ft ) {
                     return ft.properties.ProvincialJurisdiction == 1
-                } ) 
+                } )
                 prepareLayer( "truck-routes-provincial-highway", function ( ft ) {
                     return ft.properties.ProvincialJurisdiction == 1
-                } ) 
+                } )
                 prepareLayer( "truck-routes-designated-municipal-truck-route", function ( ft ) {
                     return ft.properties.RouteType == "Designated Municipal Truck Route"
-                } ) 
+                } )
                 prepareLayer( "truck-routes-designated-municipal-truck-route-high-zoom", function ( ft ) {
                     return ft.properties.RouteType == "Designated Municipal Truck Route"
-                } ) 
+                } )
                 prepareLayer( "truck-routes-designated-municipal-truck-route-with-restrictions", function ( ft ) {
                     return ft.properties.RouteType == "Designated Municipal Truck Route with Restrictions"
-                } ) 
+                } )
                 prepareLayer( "truck-routes-designated-municipal-truck-route-with-restrictions-high-zoom", function ( ft ) {
                     return ft.properties.RouteType == "Designated Municipal Truck Route with Restrictions"
-                } ) 
+                } )
                 prepareLayer( "truck-routes-municipal-road-with-no-truck-travel-restriction", function ( ft ) {
-                    return ft.properties.RouteType == "Municipal Road with No Truck Travel Restriction" && 
+                    return ft.properties.RouteType == "Municipal Road with No Truck Travel Restriction" &&
                         ft.properties.AdvisoryType == null
-                } ) 
+                } )
                 prepareLayer( "truck-routes-municipal-road-with-no-truck-travel-restriction-high-zoom", function ( ft ) {
-                    return ft.properties.RouteType == "Municipal Road with No Truck Travel Restriction" && 
+                    return ft.properties.RouteType == "Municipal Road with No Truck Travel Restriction" &&
                         ft.properties.AdvisoryType == null
-                } ) 
+                } )
                 prepareLayer( "truck-routes-federal-road-with-no-truck-travel-restrictions", function ( ft ) {
                     return ft.properties.RouteType == "Federal Road with No Truck Travel Restrictions"
-                } ) 
+                } )
                 prepareLayer( "truck-routes-federal-road-with-no-truck-travel-restrictions-high-zoom", function ( ft ) {
                     return ft.properties.RouteType == "Federal Road with No Truck Travel Restrictions"
                 } )
                 prepareLayer( 'temporary-road-closure' )
-                prepareLayer( 'temporary-road-closure-extent' )                   
+                prepareLayer( 'temporary-road-closure-extent' )
 
                 // suppress double-tap to zoom
                 $( '.no-zoom, .smk-overlay' ).bind( 'touchend', function( e ) {
@@ -579,8 +707,30 @@
             function htmlTemplate( template, data ) {
                 return ( new Vue( { template: '<div>' + template + '</div>', data: data } ) ).$mount().$el.innerHTML
             }
+
+            function templateReplace( template, replacer ) {
+                if ( !template ) return template
+                if ( !replacer ) return template
+
+                var patt = /"<@=\s*(.*?)\s*@>"/g
+
+                var m = String( template ).match( patt );
+                if ( !m ) return template;
+
+                replacer = ( function ( inner ) {
+                    return function ( templ, match ) {
+                        var r = inner.apply( null, arguments )
+                        return r == null ? match : r
+                    }
+                } )( replacer )
+
+                return String( template ).replace( patt, function ( match, template ) {
+                    return replacer( template, match )
+                } )
+            }
+
         } )()
         </script>
     </body>
-    
+
 </html>
