@@ -9,12 +9,78 @@
             "scaleMin": 207900,
             "attributes": [
                 {
-                    "name": "Route",
-                    "title": "Route"
+                    "name": "StructureType",
+                    "title": "Structure Type"
                 },
                 {
-                    "name": "Structure_Type",
-                    "title": "Structure Type"
+                    "name": "HeightLane1O",
+                    "title": "<%= this.feature.properties.HeightLane1O ? 'Lane 1 Height SB/WB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane1P",
+                    "title": "<%= this.feature.properties.HeightLane1P ? 'Lane 1 Height, NB/EB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane2O",
+                    "title": "<%= this.feature.properties.HeightLane2O ? 'Lane 2 Height SB/WB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane2P",
+                    "title": "<%= this.feature.properties.HeightLane2P ? 'Lane 2 Height, NB/EB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane3O",
+                    "title": "<%= this.feature.properties.HeightLane3O ? 'Lane 3 Height SB/WB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane3P",
+                    "title": "<%= this.feature.properties.HeightLane3P ? 'Lane 3 Height, NB/EB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane4O",
+                    "title": "<%= this.feature.properties.HeightLane4O ? 'Lane 4 Height SB/WB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane4P",
+                    "title": "<%= this.feature.properties.HeightLane4P ? 'Lane 4 Height, NB/EB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane5O",
+                    "title": "<%= this.feature.properties.HeightLane5O ? 'Lane 5 Height SB/WB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane5P",
+                    "title": "<%= this.feature.properties.HeightLane5P ? 'Lane 5 Height, NB/EB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane6O",
+                    "title": "<%= this.feature.properties.HeightLane6O ? 'Lane 6 Height SB/WB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane6P",
+                    "title": "<%= this.feature.properties.HeightLane6P ? 'Lane 6 Height, NB/EB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane7O",
+                    "title": "<%= this.feature.properties.HeightLane7O ? 'Lane 7 Height SB/WB' : '' %>",
+                    "format": "asUnit('m')"
+                },
+                {
+                    "name": "HeightLane7P",
+                    "title": "<%= this.feature.properties.HeightLane7P ? 'Lane 7 Height, NB/EB' : '' %>",
+                    "format": "asUnit('m')"
                 },
                 {
                     "name": "Comments",
