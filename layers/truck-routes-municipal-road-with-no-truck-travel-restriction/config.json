@@ -32,11 +32,7 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": {
-                "strokeWidth": 3,
-                "strokeColor": "#E6E600",
-                "strokeOpacity": 1
-            },
+            "style": "<@= style['truck-routes-municipal-road-with-no-truck-travel-restriction-high-zoom'] @>",
             "legend": {
                 "line": true
             },
@@ -75,11 +71,7 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": {
-                "strokeWidth": 1.5,
-                "strokeColor": "#E6E600",
-                "strokeOpacity": 1
-            },
+            "style": "<@= style['truck-routes-municipal-road-with-no-truck-travel-restriction'] @>",
             "legend": {
                 "line": true
             },

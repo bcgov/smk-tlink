@@ -32,11 +32,7 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": {
-                "strokeWidth": 3,
-                "strokeColor": "#6EBA60",
-                "strokeOpacity": 1
-            },
+            "style": "<@= style['truck-routes-designated-municipal-truck-route-high-zoom'] @>",
             "legend": {
                 "line": true
             },
@@ -75,11 +71,7 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": {
-                "strokeWidth": 1.5,
-                "strokeColor": "#6EBA60",
-                "strokeOpacity": 1
-            },
+            "style": "<@= style['truck-routes-designated-municipal-truck-route'] @>",
             "legend": {
                 "line": true
             },
