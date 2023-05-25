@@ -67,15 +67,7 @@
                     "title": "Notes"
                 }
             ],
-<<<<<<< HEAD
-            "style": {
-                "strokeWidth": 3,
-                "strokeColor": "#267300",
-                "strokeOpacity": 1
-            },
-=======
             "style": "<@= style['truck-routes-provincial-highway-high-zoom'] @>",
->>>>>>> develop
             "legend": {
                 "line": true
             },
@@ -90,11 +82,7 @@
             "isVisible": false,
             "layerName": "GM_TruckRoutes",
             "metadataUrl": "https://catalogue.data.gov.bc.ca/dataset/0636a01a-a13f-48f9-94cf-1c0e59b3ba6b",
-<<<<<<< HEAD
-            "scaleMax": 23167,
-=======
             "scaleMax": 28505,
->>>>>>> develop
             "attributes": [
                 {
                     "name": "Municipality",
@@ -119,15 +107,7 @@
                     "title": "Notes"
                 }
             ],
-<<<<<<< HEAD
-            "style": {
-                "strokeWidth": 1.5,
-                "strokeColor": "#267300",
-                "strokeOpacity": 1
-            },
-=======
             "style": "<@= style['truck-routes-provincial-highway'] @>",
->>>>>>> develop
             "legend": {
                 "line": true
             },
