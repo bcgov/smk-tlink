@@ -31,7 +31,7 @@ metadata:
       WORKDIR /app
 
 
-      RUN git clone -b develop https://github.com/bcgov/smk-tlink.git
+      RUN git clone -b develop_2024 https://github.com/bcgov/smk-tlink.git
       /app/smk-tlink
 
 
