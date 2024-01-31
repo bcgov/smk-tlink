@@ -20,7 +20,7 @@ parameters:
     value: https://github.com/bcgov/smk-tlink.git
   - name: "GIT_BRANCH"
     description: "github repo branch"
-    value: dev
+    value: develop-2024
   - name: "TOOLS_NAMESPACE"
     description: "tools namespace where build will be"
     value: tools_namespace
