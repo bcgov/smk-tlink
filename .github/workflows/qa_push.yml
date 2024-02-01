@@ -3,7 +3,7 @@ name: qa_push
 on:
   push:
     branches:
-      - qa_2024
+      - qa
 
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
       with:
-        ref: qa_2024
+        ref: qa
     - name: Send Payload
       run: |
         curl -H "Content-Type: application/json" -X POST -d @$GITHUB_EVENT_PATH ${{ secrets.TEST_WEBHOOK_URL }}
