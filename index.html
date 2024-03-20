@@ -4,10 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
         <title>TRP - Translink</title>
-
+        <script src="./node_modules/@bcgov/smk/dist/smk.js"></script>
         <link rel="stylesheet" type="text/css" href="lib/dialog-polyfill/dialog-polyfill.css"/>
-        <script src="lib/dialog-polyfill/dialog-polyfill.js"></script>
-        <script src="lib/smk.js"></script>
+
         <link rel="stylesheet" type="text/css" href="smk-trp.css"/>
         <style>
             body.hide article {
@@ -149,7 +148,6 @@
         ( function () {
             if ( SMK.FAILURE ) {
                 var dialog = document.getElementById( 'disclaimer' )
-                dialogPolyfill.registerDialog(dialog)
                 dialog.showModal()
                 return
             }
@@ -157,7 +155,6 @@
             var dialog = document.getElementById( 'disclaimer' )
             include( [ { url: './fragments/disclaimer.html' }, { url: './fragments/disclaimer.css' } ], 'disclaimer' ).then( function ( inc ) {
                 dialog.innerHTML = inc[ 'disclaimer.disclaimer-html' ]
-                dialogPolyfill.registerDialog(dialog)
                 dialog.showModal()
             } )
 
