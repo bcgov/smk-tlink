@@ -6,7 +6,6 @@
         <title>TRP - Translink</title>
         <script src="./node_modules/@bcgov/smk/dist/smk.js"></script>
         <link rel="stylesheet" type="text/css" href="lib/dialog-polyfill/dialog-polyfill.css"/>
-
         <link rel="stylesheet" type="text/css" href="smk-trp.css"/>
         <style>
             body.hide article {
@@ -149,6 +148,7 @@
         ( function () {
             if ( SMK.FAILURE ) {
                 var dialog = document.getElementById( 'disclaimer' )
+                
                 dialog.showModal()
                 return
             }
@@ -156,6 +156,7 @@
             var dialog = document.getElementById( 'disclaimer' )
             include( [ { url: './fragments/disclaimer.html' }, { url: './fragments/disclaimer.css' } ], 'disclaimer' ).then( function ( inc ) {
                 dialog.innerHTML = inc[ 'disclaimer.disclaimer-html' ]
+               
                 dialog.showModal()
             } )
 
@@ -169,7 +170,7 @@
             } )
 
             document.getElementById( 'logo' ).addEventListener( 'click', function () {
-                SMK.MAP[ 1 ].$tool[ 'bespoke--about' ].active = true
+                SMK.MAP[ 2 ].$tool[ 'bespoke--about' ].active = true
             } )
 
             SMK.HANDLER.set( 'bespoke--reports', 'initialized', function ( smk, tool ) {
@@ -288,7 +289,7 @@
                 'smk-config': [ {
                     "viewer": {
                         "baseMap": "StamenTonerLight",
-                        "esriApiKey": "AAPKacb4ff83a3e34b4887bed2d86c318279EXFibvw9GBGQCOMSQBVRdU3aaWqj6GrdbTKGtSxq6MXtukzb2O7CSwa_bv1iY3ia",
+                        "esriApiKey": "",
                     }
                 } ]
             } )
@@ -355,7 +356,7 @@
 
                 var preparePromise = {}
                 function prepareLayer( layerId, filter ) {
-                    var vw = SMK.MAP[ 1 ].$viewer
+                    var vw = SMK.MAP[ 2 ].$viewer
                     var ly = vw.layerId[ layerId ]
 
                     Object.defineProperty( ly, 'loadCache', {
@@ -513,7 +514,7 @@
                     $( e.target ).click()
                 } )
 
-                $( 'body' ).addClass( 'device-' + SMK.MAP[ 1 ].$device )
+                $( 'body' ).addClass( 'device-' + SMK.MAP[ 2 ].$device )
 
                 SMK.HANDLER.set( 'bespoke--feedback', 'initialized', function ( smk ) {} )
 
