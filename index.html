@@ -285,12 +285,7 @@
                 'smk-id': 999,
                 'smk-container-sel': temp,
                 // baseUrl: self.smkBaseUrl,
-                'smk-config': [ {
-                    "viewer": {
-                        "baseMap": "Imagery",
-                        "esriApiKey": "",
-                    }
-                } ]
+                'smk-config': [ '?']
             } )
             .then( function ( smk ) {
                 temp.parentElement.removeChild( temp )
@@ -334,6 +329,7 @@
                             } ]
                         },
                         './config/key/route-planner.json',
+                        './config/key/esri-api-key.json',
                         '?'
                     ] )
                 } )

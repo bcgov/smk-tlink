@@ -4,21 +4,6 @@
   "name": "wfone-public-mobile",
   "createdBy": "vivid",
   "published": false,
-  "viewer": {
-    "type": "leaflet",
-    "location": {
-        "extent": [
-            -123.5129561160918,
-            48.77200307901124,
-            -122.21397142118256,
-            49.72867079292322
-        ]
-    },
-    "baseMap": "StamenTonerLight",
-    "esriApiKey": "",
-    "minZoom": 10,
-    "activeTool": "directions"
-  },
   "tools": [
     {
       "type": "location",
