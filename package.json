@@ -8,6 +8,7 @@
   "homepage": "https://bcgov.github.io/smk-tlink/",
   "repository": "github:bcgov/smk-tlink",
   "dependencies": {
+    "@bcgov/smk": "1.2.1",
     "dialog-polyfill": "^0.5.0",
     "grunt": "^1.0.3",
     "grunt-cli": "^1.2.0",
