@@ -7,12 +7,12 @@
   "viewer": {
     "type": "leaflet",
     "location": {
-        "extent": [
-            -123.5129561160918,
-            48.77200307901124,
-            -122.21397142118256,
-            49.72867079292322
-        ]
+      "extent": [
+        -123.5129561160918,
+        48.77200307901124,
+        -122.21397142118256,
+        49.72867079292322
+      ]
     },
     "baseMap": "Gray",
     "esriApiKey": "AAPKacb4ff83a3e34b4887bed2d86c318279EXFibvw9GBGQCOMSQBVRdU3aaWqj6GrdbTKGtSxq6MXtukzb2O7CSwa_bv1iY3ia",
@@ -79,6 +79,7 @@
         "Topographic",
         "Streets",
         "Imagery",
+        "StamenTonerLight",
         "DarkGray",
         "Gray"
       ],

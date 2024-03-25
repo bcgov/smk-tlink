@@ -19,7 +19,7 @@
                 {
                     "name": "AdvisoryDescription",
                     "title": "Advisory Description"
-                },                
+                },
                 {
                     "name": "Bylaw",
                     "title": "Bylaw Link",
@@ -36,11 +36,7 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": {
-                "strokeWidth": 3,
-                "strokeColor": "#A3FF73",
-                "strokeOpacity": 1
-            },
+            "style": "<@= style['truck-routes-designated-municipal-truck-route-with-restrictions-high-zoom'] @>",
             "legend": {
                 "line": true
             },
@@ -66,7 +62,7 @@
                 {
                     "name": "AdvisoryDescription",
                     "title": "Advisory Description"
-                },                
+                },
                 {
                     "name": "Bylaw",
                     "title": "Bylaw Link",
@@ -83,11 +79,7 @@
                 }
             ],
             "titleAttribute": "RouteType",
-            "style": {
-                "strokeWidth": 1.5,
-                "strokeColor": "#A3FF73",
-                "strokeOpacity": 1
-            },
+            "style": "<@= style['truck-routes-designated-municipal-truck-route-with-restrictions'] @>",
             "legend": {
                 "line": true
             },
