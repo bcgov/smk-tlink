@@ -285,7 +285,12 @@
                 'smk-id': 999,
                 'smk-container-sel': temp,
                 // baseUrl: self.smkBaseUrl,
-                'smk-config': [ '?']
+                'smk-config': [ {
+                    "viewer": {
+                        "baseMap": "Imagery",
+                        "esriApiKey": "AAPKacb4ff83a3e34b4887bed2d86c318279EXFibvw9GBGQCOMSQBVRdU3aaWqj6GrdbTKGtSxq6MXtukzb2O7CSwa_bv1iY3ia ",
+                    }
+                } ]
             } )
             .then( function ( smk ) {
                 temp.parentElement.removeChild( temp )
@@ -329,7 +334,6 @@
                             } ]
                         },
                         './config/key/route-planner.json',
-                        './config/key/esri-api-key.json',
                         '?'
                     ] )
                 } )
