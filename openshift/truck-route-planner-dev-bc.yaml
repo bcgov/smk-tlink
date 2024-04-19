@@ -27,6 +27,7 @@ metadata:
       RUN apk update \
           && apk --no-cache add git openssh-client \
           && apk --no-cache add --virtual devs tar curl
+          && apk --no-cache add nodejs
 
       WORKDIR /app
 
@@ -45,6 +46,7 @@ metadata:
 
 
       USER app
+
   triggers:
     - type: Generic
       generic:
