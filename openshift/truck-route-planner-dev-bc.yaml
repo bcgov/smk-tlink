@@ -25,7 +25,7 @@ metadata:
 
 
       RUN apk update \
-          && apk --no-cache add git openssh-client \
+          && apk --no-cache add git openssh-client nodejs npm \
           && apk --no-cache add --virtual devs tar curl
 
       WORKDIR /app
@@ -34,6 +34,9 @@ metadata:
       RUN git clone -b develop https://github.com/bcgov/smk-tlink.git
       /app/smk-tlink
 
+      RUN cd /app/smk-tlink \
+          && npm install \
+          && cd ../..
 
       RUN adduser -S app
 
