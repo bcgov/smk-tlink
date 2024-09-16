@@ -18,6 +18,6 @@
     "grunt-zip": "^0.17.1"
   },
   "scripts": {
-      "start": "grunt"
+    "start": "grunt"
   }
 }
